@@ -1,0 +1,582 @@
+[
+  {
+    "soru": "Obez bireylerde kilo kaybı için temel hedef nedir?",
+    "cevap": "Obez bireylerde temel hedef, harcanan enerjiden daha az kalori alarak kademeli ve sürdürülebilir bir kilo kaybı sağlamaktır. Genellikle haftada 0.5-1 kg ağırlık kaybı hedeflenir."
+  },
+  {
+    "soru": "Neden aşırı düşük kalorili şok diyetlerden kaçınılmalıdır?",
+    "cevap": "Aşırı düşük kalorili şok diyetlerden kaçınılmalıdır çünkü hızlı kilo kaybı, bazal metabolizma hızını düşürebilir ve uzun vadede sürdürülebilir değildir. Ayrıca ciddi sağlık riskleri doğurabilir."
+  },
+  {
+    "soru": "Türkiye Beslenme Rehberi'ne (TÜBER) göre sağlıklı bir diyette makro besin dağılımı nasıl olmalıdır?",
+    "cevap": "TÜBER'e göre sağlıklı bir diyetin enerjisinin yaklaşık %45-60'ı karbonhidratlardan, %10-20'si proteinden ve %20-35'i yağlardan gelmelidir."
+  },
+  {
+    "soru": "Obezite için hazırlanan zayıflama diyetlerinde doymuş yağ asitleri ne kadarla sınırlandırılmalıdır?",
+    "cevap": "Zayıflama diyetlerinde toplam yağ alımı enerjinin %30'unu geçmemeli ve doymuş yağ asitleri %7'den az tutulmalıdır."
+  },
+  {
+    "soru": "Sağlıklı yağ kaynaklarına örnekler nelerdir?",
+    "cevap": "Sağlıklı yağ kaynakları arasında zeytinyağı ve fındık yağı gibi tekli doymamış yağlar ile ayçiçek ve mısırözü yağı gibi çoklu doymamış bitkisel sıvı yağlar bulunur."
+  },
+  {
+    "soru": "Obezite diyetlerinde neden sık öğün tüketimi önerilir?",
+    "cevap": "Sık öğün tüketimi (genellikle 3 ana ve 2-3 ara öğün) metabolizmayı canlı tutar, aşırı acıkmayı önler, bir sonraki öğünde fazla yemeyi engeller ve kan şekeri dalgalanmalarını azaltır."
+  },
+  {
+    "soru": "Obez bireyler neden basit şekerler yerine kompleks karbonhidratları tercih etmelidir?",
+    "cevap": "Basit şekerler kan şekerini hızla yükseltip kısa sürede acıktırırken, kompleks karbonhidratlar (tam buğday, bulgur, yulaf gibi) lif oranları sayesinde daha uzun süre tok tutar ve kan şekerini daha yavaş yükseltir."
+  },
+  {
+    "soru": "Günlük posa (lif) alımını artırmak kilo yönetimine nasıl katkı sağlar?",
+    "cevap": "Yüksek lif alımı, kan şekerinin daha yavaş yükselmesini sağlar, insülin ihtiyacını azaltır, tokluk hissini artırır ve bağırsak hareketlerini düzenleyerek kabızlığı önler."
+  },
+  {
+    "soru": "Diyette posa miktarını artırmak için hangi gıda değişiklikleri yapılabilir?",
+    "cevap": "Posa miktarını artırmak için beyaz ekmek yerine tam tahıllı ekmek, pirinç yerine bulgur tercih edilmeli, meyveler suyu sıkılmak yerine posasıyla tüketilmeli ve kuru baklagiller haftada 2-3 kez yenmelidir."
+  },
+  {
+    "soru": "Kilo verme sürecinde protein tüketiminin önemi nedir?",
+    "cevap": "Protein tüketimi, kilo verme sürecinde tokluk hissini desteklediği için önemlidir. Ancak aşırı proteinli diyetlerden kaçınılmalı, enerjinin %15-20'si proteinlerden gelecek şekilde planlanmalıdır."
+  },
+  {
+    "soru": "Obezite diyetinde hangi protein kaynakları tercih edilmelidir?",
+    "cevap": "Yağsız veya az yağlı protein kaynakları olan balık, tavuk göğsü, hindi, yağsız kırmızı et, yumurta akı, baklagiller ve az yağlı süt ürünleri tercih edilmelidir."
+  },
+  {
+    "soru": "Alkol tüketimi kilo kontrolünü nasıl etkiler?",
+    "cevap": "Alkol, gram başına 7 kcal ile yüksek kalori içerir, besleyici değeri düşüktür ve iştahı açarak daha fazla yemeye neden olabilir. Bu nedenle kilo kontrolünü zorlaştırır."
+  },
+  {
+    "soru": "Diyabetli bireylerde alkol tüketimi neden risklidir?",
+    "cevap": "Diyabetli bireylerde alkol, kan şekeri kontrolünü bozabilir ve özellikle insülin veya hap kullananlarda gece hipoglisemilerine (kan şekeri düşüklüğü) yol açabilir."
+  },
+  {
+    "soru": "Sağlıklı yetişkinler için güvenli kabul edilen günlük kafein miktarı ne kadardır?",
+    "cevap": "Sağlıklı yetişkinlerde günde 400 mg'a kadar kafein (yaklaşık 3-4 fincan kahve) genelde güvenli kabul edilir."
+  },
+  {
+    "soru": "Diyabeti olanlarda aşırı kafein tüketiminin potansiyel olumsuz etkisi nedir?",
+    "cevap": "İnsülin direnci veya diyabeti olanlarda aşırı kafein, stres hormonlarını etkileyip kan şekeri düzenini bozabileceğinden makul sınırlar aşılmamalıdır."
+  },
+  {
+    "soru": "Obezite ve diyabet diyetinde önerilen tahıl ürünleri nelerdir?",
+    "cevap": "Tam tahıllı ekmek, kepekli makarna, bulgur, yulaf gibi yüksek lifli karbonhidratlar önerilmektedir."
+  },
+  {
+    "soru": "Yiyecekler hazırlanırken hangi pişirme yöntemleri tercih edilmelidir?",
+    "cevap": "Kızartma yerine haşlama, ızgara, fırınlama veya buğulama gibi daha sağlıklı pişirme yöntemleri kullanılmalıdır."
+  },
+  {
+    "soru": "Obezite ve diyabette neden işlenmiş et ürünlerinden kaçınılmalıdır?",
+    "cevap": "Sucuk, salam, sosis gibi işlem görmüş et ürünleri yüksek doymuş yağ, tuz ve kalori içerikleri nedeniyle kalp-damar sağlığı açısından riskli olduğu için önerilmez."
+  },
+  {
+    "soru": "Tereyağı ve kuyruk yağı gibi hayvansal yağlar neden sınırlandırılmalıdır?",
+    "cevap": "Tereyağı, kuyruk yağı, iç yağı gibi gıdalar yüksek doymuş yağ içeriğine sahip oldukları için kalp-damar sağlığını olumsuz etkileyebilir ve bu nedenle uzak durulmalıdır."
+  },
+  {
+    "soru": "Fast-food tarzı yiyeceklerin tüketilmemesinin sebebi nedir?",
+    "cevap": "Hamburger, pizza gibi fast-food yiyecekler ve patates kızartması gibi yağda kızartılmış besinler yüksek kalori ve sağlıksız yağ içerdikleri için mümkün olduğunca tüketilmemelidir."
+  },
+  {
+    "soru": "Tip 1 diyabet tedavisinde tıbbi beslenme tedavisinin rolü nedir?",
+    "cevap": "Tıbbi beslenme tedavisi, Tip 1 diyabet yönetiminin temel taşlarından biridir. Kan şekeri kontrolünü sağlamak ve uzun vadeli komplikasyonları önlemek için kritik öneme sahiptir."
+  },
+  {
+    "soru": "Tip 1 diyabetli bir birey kilo fazlası varsa nasıl bir beslenme planı uygulanmalıdır?",
+    "cevap": "Eğer Tip 1 diyabetli birey fazla kilolu ise, obezite bölümündeki prensipler uygulanarak hafif kalori kısıtlaması ile kilo kontrolü hedeflenir."
+  },
+  {
+    "soru": "Tip 1 diyabetlilerde karbonhidrat sayımı yöntemi nasıl işler?",
+    "cevap": "Karbonhidrat sayımı yönteminde, öğünlerde alınacak karbonhidrat miktarı (gram olarak) planlanır ve bu miktara uygun insülin dozu ayarlanır, bu da beslenme esnekliği sağlar."
+  },
+  {
+    "soru": "Tip 1 diyabetin uzun dönemde böbrek hasarına (nefropati) yol açması durumunda protein alımı nasıl ayarlanır?",
+    "cevap": "Diyabetin uzun dönemde böbrek hasarına (nefropati) yol açtığı durumlarda, doktor ve diyetisyen kontrolünde protein alımının sınırlandırılması gerekebilir."
+  },
+  {
+    "soru": "Tip 1 diyabetli kişilerde öğün düzeni neye göre ayarlanır?",
+    "cevap": "Tip 1 diyabetli kişilerde öğün sayısı ve zamanlaması, kullanılan insülin tipine ve rejimine göre kişiye özel olarak ayarlanır. Genellikle 3 ana ve 2-3 ara öğün önerilir."
+  },
+  {
+    "soru": "Tip 1 diyabette öğün atlamak neden tehlikelidir?",
+    "cevap": "Uzun süre aç kalmak veya öğün atlamak, insülin kullanımı nedeniyle tehlikeli hipoglisemilere (kan şekerinin aşırı düşmesi) yol açabileceği için kesinlikle önerilmez."
+  },
+  {
+    "soru": "Hipoglisemi anında uygulanması gereken '15-15 kuralı' nedir?",
+    "cevap": "Ani bir hipoglisemi durumunda, kan şekerini hızla yükseltmek için 15 gram kadar hızlı emilen karbonhidrat (örn. 3-4 kesme şeker veya 1 bardak meyve suyu) alınır ve 15 dakika sonra kan şekeri tekrar ölçülür."
+  },
+  {
+    "soru": "Diyet lifi (posa) Tip 1 diyabetlilerde kan şekerini nasıl etkiler?",
+    "cevap": "Lifli gıdalar, karbonhidratların sindirim sistemindeki emilimini yavaşlatarak öğün sonrası kan şekeri yükselmelerinin daha kontrollü ve yavaş olmasını sağlar."
+  },
+  {
+    "soru": "Tip 1 diyabetli bir birey ara öğünde sadece meyve yemek yerine ne yapmalıdır?",
+    "cevap": "Ara öğünde sadece meyve (karbonhidrat) yerine, yanına bir parça peynir veya bir bardak süt (protein) eklemek, karbonhidratların emilimini yavaşlatarak kan şekerini daha dengeli tutar."
+  },
+  {
+    "soru": "Tip 2 diyabetli bireylerin yaklaşık yüzde kaçı aşırı kilolu veya obezdir?",
+    "cevap": "Tip 2 diyabetli bireylerin büyük çoğunluğu, yaklaşık %80'i, aşırı kilolu veya obezdir."
+  },
+  {
+    "soru": "Tip 2 diyabet tedavisinde kilo kaybının önemi nedir?",
+    "cevap": "Tip 2 diyabette kilo kaybı, insülin direncini azaltır, kan şekeri ve HbA1c düzeylerini düşürür, kan basıncını ve kan yağ profilini iyileştirir. %5-10'luk bir kilo kaybı bile belirgin metabolik düzelmeler sağlayabilir."
+  },
+  {
+    "soru": "Tip 2 diyabetliler için karbonhidratların kalitesi neden önemlidir?",
+    "cevap": "Karbonhidratların kalitesi kritiktir çünkü diyet posası yüksek ve glisemik indeksi düşük karbonhidratlar (tam tahıllar, baklagiller) kan şekeri kontrolünü iyileştirir."
+  },
+  {
+    "soru": "Tip 2 diyabette neden düzenli öğün tüketimi önemlidir?",
+    "cevap": "Düzenli öğün tüketimi, gün boyu kan şekerinin daha stabil seyretmesine yardımcı olur ve bazı diyabet ilaçlarının neden olabileceği hipoglisemi riskini azaltır. Düzensiz yeme alışkanlıkları kan şekerinde dalgalanmalara yol açar."
+  },
+  {
+    "soru": "'Diyabetik ürün' olarak satılan gıdaları tüketirken nelere dikkat edilmelidir?",
+    "cevap": "'Diyabetik ürün' adı altında satılan gıdalar da enerji içerebilir. Karbonhidratı düşük olsa bile yağ içeriği yüksek olabilir, bu nedenle etiketleri incelenmeli ve porsiyon kontrolü ile tüketilmelidir. 'Diyet ürün' sınırsız tüketilebilir anlamına gelmez."
+  },
+  {
+    "soru": "Enerji vermeyen yapay tatlandırıcılar diyabetliler için uygun mudur?",
+    "cevap": "Sakkarin, aspartam, stevia gibi enerji içermeyen tatlandırıcılar, önerilen dozlarda kullanıldığında diyabetli bireyler için genellikle güvenlidir ve şekere alternatif olabilir."
+  },
+  {
+    "soru": "Tip 2 diyabetlilerde hipertansiyon sık görüldüğü için hangi gıdalara özellikle dikkat edilmelidir?",
+    "cevap": "Hipertansiyon riski nedeniyle, hazır soslar, tuzlu peynirler, konserveler, turşu ve salamura gibi yüksek tuzlu gıdalar ölçülü tüketilmelidir."
+  },
+  {
+    "soru": "Diyabetli bireyler meyve tüketirken porsiyon kontrolü yapmalı mıdır?",
+    "cevap": "Evet, meyveler doğal şeker (fruktoz) içerdiği için porsiyon kontrolü ile yenmelidir. Genellikle bir porsiyon meyve, 15 gram karbonhidrat içerecek miktar olarak tanımlanır."
+  },
+  {
+    "soru": "İncir, üzüm gibi glisemik indeksi yüksek meyveler tüketilirken neye dikkat edilmelidir?",
+    "cevap": "İncir, üzüm, karpuz gibi glisemik indeksi yüksek meyveler kan şekerini daha hızlı yükseltebileceği için porsiyon ölçüsüne daha fazla dikkat edilerek tüketilmelidir."
+  },
+  {
+    "soru": "Yoğun bir egzersiz programına başlamadan önce diyabet hastaları neden doktor kontrolünden geçmelidir?",
+    "cevap": "Diyabet hastaları, farkına varılmamış kalp-damar hastalığı, retinopati veya nefropati gibi komplikasyonlar nedeniyle yoğun egzersiz sırasında risk altında olabilirler. Bu yüzden başlamadan önce mutlaka doktor kontrolünden geçmelidirler."
+  },
+  {
+    "soru": "İleri diyabetik komplikasyonları olan bireyler için egzersiz önerisi nedir?",
+    "cevap": "Proliferatif retinopati, ciddi nöropati veya diyabetik ayak yaraları gibi ileri komplikasyonları olan bireylerde ağır egzersiz önerilmez; program çok hafif düzeyde ve mutlaka doktor onayıyla olmalıdır."
+  },
+  {
+    "soru": "Dünya Sağlık Örgütü'nün yetişkinler için haftalık egzersiz önerisi nedir?",
+    "cevap": "Haftada en az 150 dakika orta tempolu aerobik egzersiz (ör. tempolu yürüyüş) veya 75 dakika yüksek tempolu egzersiz yapılması önerilmektedir."
+  },
+  {
+    "soru": "Obez bireylerde egzersizin kilo kaybı dışındaki faydaları nelerdir?",
+    "cevap": "Egzersiz, obez bireylerde vücut kompozisyonunu iyileştirir (yağ kitlesini azaltır, kas kitlesini korur), kardiyovasküler sağlığı geliştirir, metabolik riskleri azaltır ve verilen kilonun korunmasına yardımcı olur."
+  },
+  {
+    "soru": "Obezite tedavisinde diyet ve egzersiz neden bir arada düşünülmelidir?",
+    "cevap": "Egzersiz tek başına çok büyük miktarda kilo kaybı sağlamasa da, diyet ile birlikte uygulandığında anlamlı sonuçlar verir ve kilo yönetiminde daha başarılı olunur."
+  },
+  {
+    "soru": "Egzersize yeni başlayan obez bir birey süreyi nasıl artırmalıdır?",
+    "cevap": "Yeni başlayanlar egzersize günde 5-10 dakika gibi kısa sürelerle başlayıp, kondisyonları arttıkça zamanla bu süreyi 30-60 dakikaya çıkarabilirler."
+  },
+  {
+    "soru": "Obez bireyler için en uygun ve güvenli aerobik egzersiz türü nedir ve neden?",
+    "cevap": "Yürüyüş, obez bireyler için en uygun ve güvenli aerobik egzersizlerden biridir çünkü eklemlere aşırı yük bindirmeden kalori yakmayı ve aktiviteyi artırmayı sağlar."
+  },
+  {
+    "soru": "Obezite tedavisinde direnç (kuvvet) egzersizlerinin rolü nedir?",
+    "cevap": "Direnç egzersizleri (haftada 2-3 gün önerilir), kas kütlesini korumaya ve artırmaya yardımcı olur. Bu da metabolizma hızını destekler."
+  },
+  {
+    "soru": "Orta yoğunluklu egzersiz nasıl tanımlanır?",
+    "cevap": "Orta yoğunluklu egzersiz, kişinin maksimum kalp hızının %50-70'ine denk gelen, konuşmayı zorlaştırmayacak ama hafif terletecek bir tempodur."
+  },
+  {
+    "soru": "Zaman bulamayan obez bireyler egzersiz seanslarını bölebilir mi?",
+    "cevap": "Evet, günde tek seferde 30-60 dakika yerine, 10'ar dakikalık üç seans şeklinde de egzersiz yapılabilir. Önemli olan haftalık toplam hedefe ulaşmaktır."
+  },
+  {
+    "soru": "İleri derecede obez ve eklem sorunu olan kişiler için hangi egzersiz türü önerilir?",
+    "cevap": "İleri derecede obez kişilerde, eklemlere binen yükü azalttığı için yüzme veya su aerobiği gibi su içinde yapılan egzersizler eklem dostu bir alternatiftir."
+  },
+  {
+    "soru": "Tüm egzersiz programlarında neden ısınma ve soğuma hareketleri yapılmalıdır?",
+    "cevap": "Egzersiz öncesi 5-10 dakikalık ısınma ve egzersiz sonrası 5 dakikalık soğuma-gerinme hareketleri, kasları ve eklemleri aktiviteye hazırlayarak sakatlanmaları önlemek için yapılmalıdır."
+  },
+  {
+    "soru": "Tip 1 diyabetli bireylerde egzersiz kan şekerini nasıl etkiler?",
+    "cevap": "Egzersiz sırasında kaslar enerji için glukoz kullanır ve insülinin etkisi artar. Bu durum, hem egzersiz sırasında hem de sonrasında kan şekerinde düşmelere (hipoglisemi) neden olabilir."
+  },
+  {
+    "soru": "Tip 1 diyabetli bir kişi egzersize başlamadan önce kan şekerini neden ölçmelidir?",
+    "cevap": "Egzersize başlamadan önce kan şekerini ölçmek, egzersizin güvenli olup olmadığını belirlemek içindir. Düşük veya çok yüksek kan şekeri seviyeleri egzersiz sırasında tehlikeli durumlara yol açabilir."
+  },
+  {
+    "soru": "Egzersiz öncesi kan şekeri 100 mg/dL'den düşük olan bir Tip 1 diyabetli ne yapmalıdır?",
+    "cevap": "Kan şekeri <100 mg/dL ise hipoglisemi riski vardır. Egzersize başlamadan önce 15 gram karbonhidrat içeren bir atıştırmalık (1 dilim ekmek veya 1 porsiyon meyve) yapılmalıdır."
+  },
+  {
+    "soru": "Kan şekeri 250 mg/dL'nin üzerinde ve idrarda keton pozitif olan bir Tip 1 diyabetli neden egzersiz yapmamalıdır?",
+    "cevap": "Bu durum ciddi insülin yetersizliğine işaret eder. Bu durumda egzersiz yapmak, kan şekerini daha da yükseltip keton seviyelerini artırarak tehlikeli bir durum olan diyabetik ketoasidoza yol açabilir."
+  },
+  {
+    "soru": "Tip 1 diyabetli bireyler için egzersiz yapmak için en uygun zaman nedir?",
+    "cevap": "Egzersiz yapmak için en uygun zaman, yemekten yaklaşık 1-2 saat sonrasıdır. Bu dönemde kanda emilen glukoz kaslar tarafından enerji olarak kullanılabilir ve kan şekeri daha dengeli seyreder."
+  },
+  {
+    "soru": "Tip 1 diyabetli bir birey, planlı egzersiz yapacağı gün insülin dozunu ayarlamalı mıdır?",
+    "cevap": "Evet, planlı egzersiz günlerinde, özellikle egzersiz yapılacak öğündeki hızlı etkili insülin dozunda bir azaltma yapılması gerekebilir. Bu ayarlama mutlaka hekime danışılarak yapılmalıdır."
+  },
+  {
+    "soru": "Egzersiz yapılacak bölgeye insülin enjeksiyonu yapmak neden önerilmez?",
+    "cevap": "Egzersiz yapılacak bölgeye (örneğin bisiklete binilecekse bacağa) insülin enjeksiyonu yapmak, o bölgedeki kan dolaşımının artmasıyla insülinin çok hızlı emilmesine ve hipoglisemiye neden olabilir."
+  },
+  {
+    "soru": "Tip 1 diyabetli bir kişi egzersiz yaparken yanında ne bulundurmalıdır?",
+    "cevap": "Egzersiz sırasında olası bir hipoglisemiye karşı yanında mutlaka şeker tableti, meyve suyu veya glukoz jeli gibi hızlı etki edecek bir karbonhidrat kaynağı bulundurmalıdır."
+  },
+  {
+    "soru": "Egzersiz sonrası 'gecikmiş hipoglisemi' riski nedir?",
+    "cevap": "Yoğun bir egzersiz seansı sonrasında vücudun artan insülin duyarlılığı saatlerce devam edebilir. Bu durum, egzersizden saatler sonra bile kan şekerinin düşme riskini, yani gecikmiş hipoglisemiyi beraberinde getirir."
+  },
+  {
+    "soru": "Yoğun bir egzersiz sonrası Tip 1 diyabetli bir birey ne yapmalıdır?",
+    "cevap": "Yoğun egzersiz sonrası, gecikmiş hipoglisemiyi önlemek için hem karbonhidrat hem de protein içeren bir ara öğün almalı ve yatmadan önce kan şekerini mutlaka kontrol etmelidir."
+  },
+  {
+    "soru": "Tip 1 diyabetlilerde arka arkaya 2 günden fazla egzersizsiz dönem olmaması neden önerilir?",
+    "cevap": "Egzersizi haftanın günlerine yaymak, kan şekeri kontrolü ve insülin duyarlılığı üzerinde daha tutarlı ve olumlu bir etki yarattığı için önerilir."
+  },
+  {
+    "soru": "Tip 2 diyabet yönetiminde düzenli fiziksel aktivitenin temel faydası nedir?",
+    "cevap": "Düzenli fiziksel aktivite, hücrelerin insüline duyarlılığını artırarak kan şekerinin daha iyi kontrol edilmesini sağlar. Kasların glukoz alımını insülinden bağımsız olarak da artırır."
+  },
+  {
+    "soru": "Tip 2 diyabetli bireylerde egzersizin kan şekeri dışındaki yararları nelerdir?",
+    "cevap": "Egzersiz, Tip 2 diyabette sık görülen hipertansiyon ve dislipidemi gibi durumları iyileştirir, kilo vermeyi kolaylaştırır ve kalp-damar hastalıkları riskini azaltır."
+  },
+  {
+    "soru": "Tip 2 diyabetli bireyler için önerilen egzersiz türleri nelerdir?",
+    "cevap": "Haftada en az 150 dakika orta tempolu aerobik egzersiz (yürüyüş, yüzme, bisiklet) ve haftada 2-3 gün direnç egzersizlerinin (hafif ağırlık kaldırma, vücut ağırlığı egzersizleri) kombinasyonu önerilir."
+  },
+  {
+    "soru": "Tip 2 diyabette günlük adım hedefi ne olmalıdır?",
+    "cevap": "Günde 7000-10000 adım atmak, hem genel sağlık hem de kan şekeri düzenlenmesi için faydalıdır ve metabolik göstergelerde iyileşme ile ilişkilidir."
+  },
+  {
+    "soru": "Diyabetik nöropatisi (sinir hasarı) olan bir birey ayakkabı seçerken neye dikkat etmelidir?",
+    "cevap": "Diyabetik nöropati nedeniyle ayakta his kaybı olabileceğinden, ayağı vurmayacak, rahat, koruyucu bir spor ayakkabı giyilmeli ve egzersiz sonrası ayaklar yara veya şişme açısından kontrol edilmelidir."
+  },
+  {
+    "soru": "Diyabetik retinopatisi (göz hasarı) olan bir birey hangi egzersizlerden kaçınmalıdır?",
+    "cevap": "Diyabetik retinopatisi olanlar, göz içi basıncını artırabilecek ağır kaldırma veya ağır güç gerektiren egzersizlerden kaçınmalı, daha hafif dirençlerle çalışmalıdır."
+  },
+  {
+    "soru": "İleri yaştaki diyabetliler için denge egzersizleri neden önemlidir?",
+    "cevap": "Tai chi, yoga gibi denge egzersizleri, yaşla birlikte artan düşme riskini önlemek adına egzersiz programına eklenmelidir."
+  },
+  {
+    "soru": "Yapay zeka diyetisyen modeli için veri hazırlarken neden JSON formatı avantajlıdır?",
+    "cevap": "JSON formatı, hem insanlar tarafından kolayca okunabilir hem de makineler tarafından rahatça işlenebilir. Ayrıca, kullanıcı profili ve diyet planı gibi iç içe geçmiş karmaşık veri yapılarını temsil etmek için esneklik sağlar."
+  },
+  {
+    "soru": "Yapay zeka diyetisyen modelini eğitirken kullanılacak verilerde neden anonimleştirme yapılmalıdır?",
+    "cevap": "Hastaların sağlık verileri çok hassas ve kişiseldir. KVKK ve GDPR gibi veri koruma yasalarına uymak ve kişisel gizliliği korumak için veriler mutlaka anonimleştirilmeli, kişisel kimlik bilgileri maskelenmelidir."
+  },
+  {
+    "soru": "Yapay zeka diyetisyen modelinin besleneceği bilgilerin güvenilirliği nasıl sağlanmalıdır?",
+    "cevap": "Modelin besleneceği bilgiler, Sağlık Bakanlığı, Dünya Sağlık Örgütü gibi güvenilir ve bilimsel kaynaklardan derlenmeli, kanıta dayalı ve güncel olmalıdır."
+  },
+  {
+    "soru": "Yapay zeka diyetisyen modeli, gerçek bir diyetisyenin yerini tutabilir mi?",
+    "cevap": "Hayır. Yapay zeka modeli ne kadar gelişmiş olursa olsun, gerçek bir diyetisyenin yerini tam olarak tutamaz. Bir rehberlik aracı olarak görülmeli ve kesin tıbbi tavsiye yerine öneri sunmalıdır. Kullanıcılar her zaman bir sağlık uzmanına danışmaları konusunda uyarılmalıdır."
+  },
+  {
+    "soru": "Kişiselleştirilmiş bir yapay zeka diyetisyen modeli hangi parametreleri göz önüne almalıdır?",
+    "cevap": "Model; yaş, cinsiyet, tıbbi durum, ilaçlar, aktivite seviyesi, kültürel beslenme alışkanlıkları ve kişisel tercihler (vejetaryenlik, alerjiler, sevilmeyen yiyecekler vb.) gibi birçok parametreyi dikkate almalıdır."
+  },
+  {
+    "soru": "Yapay zeka diyetisyen modelinin dili ve üslubu nasıl olmalıdır?",
+    "cevap": "Modelin dili saygılı, yargılayıcı olmayan, pozitif motivasyon sağlayan ve cesaretlendirici bir üslupta olmalıdır. Özellikle obezite gibi hassas konularda motivasyon kırıcı ifadelerden kaçınılmalıdır."
+  },
+  {
+    "soru": "Yapay zeka modeli, kullanıcıya çok düşük kalorili şok diyetleri önermeli midir?",
+    "cevap": "Hayır, model kesinlikle sağlık açısından riskli olabilecek çok düşük kalorili şok diyetler, bilimsel dayanağı olmayan popüler diyetler veya zararlı takviyeler önermemelidir. Daima sağlıklı ve dengeli beslenme ilkelerine bağlı kalmalıdır."
+  },
+  {
+    "soru": "Obezite hastalarında günlük kalori alımının bazal metabolizma hızının altına düşmemesi neden önemlidir?",
+    "cevap": "Kalori alımının bazal metabolizma hızının altına düşmesi, vücudun temel fonksiyonlarını sürdürmek için gereken enerjinin alınamamasına, kas kaybına ve metabolizmanın yavaşlamasına neden olabilir. Bu da uzun vadede kilo vermeyi zorlaştırır."
+  },
+  {
+    "soru": "Obezite diyetinde günlük kolesterol alımı için önerilen sınır nedir?",
+    "cevap": "Diyette günlük kolesterol alımı 300 mg/gün'den az olacak şekilde sınırlandırılmalıdır."
+  },
+  {
+    "soru": "Öğün planı oluşturulurken bireyin yaşam tarzı neden dikkate alınmalıdır?",
+    "cevap": "Öğün planının bireyin iş/okul programına, sosyal yaşamına ve alışkanlıklarına göre esnek ama tutarlı olması, diyete uyumu artırır ve planın uzun vadede sürdürülebilir olmasını sağlar."
+  },
+  {
+    "soru": "Obezite ve diyabet diyetinde haftalık kırmızı et tüketimi nasıl olmalıdır?",
+    "cevap": "Kırmızı et tüketimi sınırlandırılmalı, yerine beyaz et (tavuk, hindi) ve haftada en az 1-2 gün balık tüketimi önerilmektedir."
+  },
+  {
+    "soru": "Süt ve yoğurt gibi süt ürünleri tüketilirken hangi türleri seçilmelidir?",
+    "cevap": "Süt ve yoğurt gibi ürünlerin yarım yağlı veya yağsız olanları tercih edilmelidir."
+  },
+  {
+    "soru": "Ölçülü miktarda tüketilmesi önerilen kuruyemiş ve tohumlara örnekler nelerdir?",
+    "cevap": "Ceviz, badem, fındık, kabak çekirdeği gibi yağlı tohumlar, yüksek kalorili oldukları için porsiyon kontrolü yapılarak ölçülü miktarda tüketilebilir."
+  },
+  {
+    "soru": "Tatlı ihtiyacı için sağlıklı alternatifler neler olabilir?",
+    "cevap": "Tatlı ihtiyacını karşılamak için diyabetik tatlandırıcılarla hazırlanmış tatlılar veya daha sağlıklı bir seçenek olan taze meyveler tercih edilebilir."
+  },
+  {
+    "soru": "Rafine tahıllar (beyaz ekmek, pirinç) neden sınırlandırılmalıdır?",
+    "cevap": "Beyaz unlu mamuller ve beyaz pirinç gibi rafine tahılların kalorisi ve glisemik yükü yüksektir, kan şekerini hızla yükseltirler ve besin değerleri düşüktür. Bu yüzden diyetlerde olabildiğince az yer almalıdırlar."
+  },
+  {
+    "soru": "Eşlik eden hipertansiyonu olan bir birey için tuz kısıtlaması neden önemlidir?",
+    "cevap": "Yüksek tuz tüketimi kan basıncını artırarak hipertansiyonu kötüleştirebilir. Bu nedenle turşu, salamura, soya sosu gibi çok tuzlu besinlerden uzak durulmalıdır."
+  },
+  {
+    "soru": "Tip 1 diyabetli bir birey sağlıklı beslenme ilkelerine uyarak her besin grubundan tüketebilir mi?",
+    "cevap": "Evet, Tip 1 diyabetliler de sağlıklı ve dengeli beslenme ilkelerine uyarak her besin grubundan tüketebilirler, ancak bunu planlı, ölçülü ve aldıkları karbonhidrata göre insülin dozunu ayarlayarak yapmaları gerekir."
+  },
+  {
+    "soru": "Yoğun insülin tedavisi (bazal-bolus) uygulayan Tip 1 diyabetliler öğün zamanlarında esnek olabilir mi?",
+    "cevap": "Evet, karbonhidrat sayımına dayalı yoğun insülin tedavisi uygulayan bireyler, öğün zamanlarında daha fazla esnekliğe sahip olabilirler. Ancak yine de belirli bir düzene sahip olmak genellikle daha iyi glukoz kontrolü sağlar."
+  },
+  {
+    "soru": "Tip 1 diyabetli bireyler için günlük hedeflenen lif alımı ne kadardır?",
+    "cevap": "Tip 1 diyabetliler için günde en az 20-30 gram lif alınması hedeflenir. Bu, kan şekeri kontrolüne ve genel sindirim sağlığına yardımcı olur."
+  },
+  {
+    "soru": "Tip 2 diyabette kilo kaybı hedefiyle günlük kalori açığı ne kadar olmalıdır?",
+    "cevap": "Yavaş ve sürekli bir kilo kaybı için genellikle günlük 500-750 kkal civarında bir kalori açığı hedeflenir. Bu, haftada yaklaşık 0.5-1 kg kayba denk gelir."
+  },
+  {
+    "soru": "Tip 2 diyabetin erken dönemlerinde küçük bir kilo kaybı bile neden önemlidir?",
+    "cevap": "Hastalığın erken dönemlerinde %5-10 oranında bir vücut ağırlığı kaybı bile insülin direncinde, kan şekerinde ve diğer metabolik göstergelerde belirgin düzelmeler sağlayabilir."
+  },
+  {
+    "soru": "Tip 2 diyabetlilerde kalp-damar hastalığı riski nedeniyle hangi gıdalar kısıtlanır?",
+    "cevap": "Kalp-damar hastalığı riski yüksek olduğundan, sakatatlar ve tereyağı gibi kolesterol içeriği yüksek gıdalar ile doymuş ve trans yağ içeren gıdalar diyette kısıtlanır."
+  },
+  {
+    "soru": "Tip 2 diyabette kullanılan metformin gibi ilaçların hipoglisemi riski nasıldır?",
+    "cevap": "Metformin gibi bazı oral antidiyabetik ilaçların hipoglisemi yapma riski, insülin veya sülfonilüre grubu ilaçlara göre oldukça düşüktür."
+  },
+  {
+    "soru": "Bal ve pekmez gibi doğal şekerler diyabetli bireyler için serbest midir?",
+    "cevap": "Hayır, 'sağlıklı' veya 'doğal' olarak görülseler de bal ve pekmez gibi besinler de kan şekerini hızla yükselten basit şekerler içerirler. Bu nedenle tüketimleri porsiyon kontrolüyle ve çok sınırlı olmalıdır."
+  },
+  {
+    "soru": "Obezite hastalarında egzersizin haftanın çoğu gününe yayılması neden daha etkilidir?",
+    "cevap": "Araştırmalar, haftanın çoğu gününde düzenli yapılan egzersizin, sadece birkaç gün yoğun egzersiz yapmaya göre kilo yönetimi ve metabolik sağlık üzerinde daha başarılı olduğunu göstermektedir."
+  },
+  {
+    "soru": "Adım sayar (pedometre) kullanmak obezite yönetiminde nasıl bir fayda sağlar?",
+    "cevap": "Adım sayar veya akıllı telefon uygulamaları kullanmak, günlük fiziksel aktivite seviyesini somut bir hedefe (örneğin günde 8000-10000 adım) bağlayarak kişiyi motive eder ve ilerlemesini takip etmesini sağlar."
+  },
+  {
+    "soru": "Aerobik ve direnç egzersizlerinin kombine edilmesi neden en etkili yöntemdir?",
+    "cevap": "Aerobik ve direnç egzersizlerini birleştirmek, hem kalori yakımını ve kardiyovasküler sağlığı destekler (aerobik) hem de kas kütlesini koruyup metabolizmayı hızlandırır (direnç). Bu kombinasyon, kilo kontrolü ve metabolik risklerin azaltılmasında en etkili yaklaşımdır."
+  },
+  {
+    "soru": "65 yaş üstü veya fiziksel kısıtlılığı olan obez bireyler için egzersiz önerisi nedir?",
+    "cevap": "Bu bireylerin, önerilen egzersiz yoğunluk ve sürelerini yapamasalar bile, güçleri yettiği kadar fiziksel aktivitede bulunmaları (kısa yürüyüşler, ev içi hareketler vb.) sağlık açısından fayda sağlar. Hareketsiz kalmaktan her zaman daha iyidir."
+  },
+  {
+    "soru": "Tip 1 diyabetli bir kişi sabah aç karnına neden egzersiz yapmamalıdır?",
+    "cevap": "Açlık halinde yapılan egzersiz, karaciğerin glukoz üretmesi ve stres hormonlarının devreye girmesiyle paradoksal olarak kan şekerini yükseltebilir. Ayrıca insülin etkinliği olmadan kaslar glukoz kullanamayacağı için keton üretimi riski artar."
+  },
+  {
+    "soru": "Egzersiz, son yapılan insülin enjeksiyonunun zirve etki zamanına neden denk getirilmemelidir?",
+    "cevap": "İnsülinin etkisinin en yüksek olduğu zamanda (zirve etki) ağır egzersiz yapmak, iki kan şekeri düşürücü etkinin birleşmesiyle ciddi hipoglisemi riskini çok artırır."
+  },
+  {
+    "soru": "Uzun süren egzersizlerde Tip 1 diyabetli bir birey neden periyodik karbonhidrat takviyesi yapmalıdır?",
+    "cevap": "Uzun süren egzersizlerde (örneğin 1 saatten fazla) kasların glukoz kullanımı devam eder ve glikojen depoları tükenir. Hipoglisemiyi önlemek için her 30-60 dakikada bir küçük karbonhidrat takviyesi (5-15 g) yapmak gerekebilir."
+  },
+  {
+    "soru": "Tip 1 diyabetli ve iyi kontrollü gençler diledikleri sporları yapabilirler mi?",
+    "cevap": "Evet, genç ve iyi kontrollü Tip 1 diyabetli bireyler; futbol, basketbol, yüzme gibi diledikleri sporları yapabilirler. Tek şart, kan şekeri takibini ihmal etmemeleri, yanlarında hızlı karbonhidrat bulundurmaları ve egzersiz planlarını tedavi ekibiyle birlikte yapmalarıdır."
+  },
+  {
+    "soru": "Yemeklerden hemen sonra yapılacak kısa yürüyüşler Tip 2 diyabetlilere nasıl fayda sağlar?",
+    "cevap": "Yemeklerden sonra yapılacak 15-30 dakikalık hafif tempolu yürüyüşler, öğünle alınan glukozun kaslar tarafından hemen kullanılmasına yardımcı olarak yemek sonrası kan şekeri yükselmelerini (postprandial hiperglisemi) önemli ölçüde azaltır."
+  },
+  {
+    "soru": "Kas kaybı (sarkopeni) eğilimi olan yaşlı diyabetliler için direnç egzersizleri neden daha da önemlidir?",
+    "cevap": "Yaşla birlikte doğal olarak meydana gelen kas kaybı (sarkopeni), insülin direncini artırabilir. Direnç egzersizleri bu kas kaybını yavaşlatır veya tersine çevirir, böylece kan şekeri kontrolünü ve genel fiziksel gücü iyileştirir."
+  },
+  {
+    "soru": "Tip 2 diyabetli bir birey egzersiz yaparken sıcak havada nelere dikkat etmelidir?",
+    "cevap": "Sıcak havada uzun süreli egzersizlerden kaçınılmalı, terleme ile oluşabilecek ciddi sıvı kaybını (dehidrasyon) önlemek için egzersiz öncesi, sırası ve sonrasında bol su içilmelidir."
+  },
+  {
+    "soru": "Yapay zeka diyetisyen modelinin sürekli geri bildirim alması ve güncellenmesi neden bir etik ilkedir?",
+    "cevap": "Modelin önerilerinin doğruluğunu sağlamak, olası hataları düzeltmek ve yeni bilimsel gelişmelere göre güncel kalmak için kullanıcı geri bildirimlerini izlemek ve modeli düzenli olarak güncellemek, sistemin güvenilirliği ve etkinliği için etik bir gerekliliktir."
+  },
+  {
+    "soru": "Zayıflama diyetinde yağ alımının yaklaşık üçte ikisi hangi tür yağlardan sağlanmalıdır?",
+    "cevap": "Zayıflama diyetinde yağ alımının yaklaşık 2/3'ü zeytinyağı veya fındık yağı gibi sağlıklı tekli doymamış yağlardan sağlanmalıdır."
+  },
+  {
+    "soru": "Obezite diyeti uygulayan birinin günlük sıvı tüketimi ne kadar olmalıdır?",
+    "cevap": "Günde yaklaşık 2-3 litre sıvı tüketilmesi önerilir. Bu, çoğunlukla su ve şekersiz bitki çayları gibi kalorisiz içeceklerden oluşmalıdır."
+  },
+  {
+    "soru": "Şerbetli ve hamur tatlıları neden kaçınılması gereken besinler listesindedir?",
+    "cevap": "Şerbetli ve hamur tatlıları, kan şekerini çok hızlı yükselten basit şekerler ve rafine un içerirler. Ayrıca yüksek kalorili oldukları için kilo kontrolünü zorlaştırırlar."
+  },
+  {
+    "soru": "Tip 1 diyabetli ve büyüme çağındaki bir çocuğun beslenme planında neye özellikle dikkat edilmelidir?",
+    "cevap": "Büyüme çağındaki çocuklarda ve ergenlerde, beslenme planının sağlıklı büyümeyi ve gelişmeyi destekleyecek yeterli enerji, protein, vitamin ve minerali içerdiğinden emin olunmalıdır."
+  },
+  {
+    "soru": "Diyabetli bireylerin alkolü aç karnına içmekten kaçınmasının sebebi nedir?",
+    "cevap": "Alkol karaciğerden glukoz salınımını baskılayabilir. Aç karnına alkol içmek, yemekle birlikte alınabilecek karbonhidratın olmaması nedeniyle ciddi hipoglisemi riskini artırır."
+  },
+  {
+    "soru": "Direnç egzersizi programı oluşturulurken hangi prensip izlenmelidir?",
+    "cevap": "Direnç egzersizleri büyük kas gruplarını içermeli ve her bir hareket en az 8-15 tekrar olacak şekilde 1-2 set halinde yapılmalıdır. Zamanla ağırlık veya tekrar sayısı artırılarak progresyon sağlanmalıdır."
+  },
+  {
+    "soru": "Tip 1 diyabette kan şekeri 250 mg/dL'nin üzerinde ancak keton negatifse egzersiz yapılabilir mi?",
+    "cevap": "Kan şekeri >250 mg/dL ve keton negatif ise, dikkatli bir şekilde, orta tempoda kısa süreli bir egzersiz yapılabilir. Ancak tercih edilen, kan şekerini insülinle hedef aralığa düşürdükten sonra egzersiz yapmaktır."
+  },
+  {
+    "soru": "Egzersiz yapan Tip 1 diyabetli bir kişi, hipoglisemi belirtileri hissettiğinde ne yapmalıdır?",
+    "cevap": "Terleme, titreme, çarpıntı gibi hipoglisemi belirtileri hissedildiğinde aktivite hemen durdurulmalı, kan şekeri ölçülmeli ve hipoglisemi saptanırsa 15-15 kuralı uygulanmalıdır (15g karbonhidrat alıp 15 dk bekleme)."
+  },
+  {
+    "soru": "Tip 2 diyabetli ve eklem problemi olan bir kişi için bisiklet neden iyi bir alternatiftir?",
+    "cevap": "Bisiklet, vücut ağırlığını taşıdığı için diz ve kalça gibi eklemlere daha az yük bindiren (düşük darbeli) bir aktivitedir. Bu nedenle eklem problemi olanlar için yürüyüş veya koşuya göre daha iyi bir alternatif olabilir."
+  },
+  {
+    "soru": "Yapay zeka modelinin önerilerinde 'bir uzmana danışın' uyarısı neden önemlidir?",
+    "cevap": "Bu uyarı, modelin kendi sınırlarını bildiğini ve verdiği bilgilerin tıbbi bir teşhis veya tedavi yerine geçmediğini belirtmek için kritiktir. Kullanıcının sağlığıyla ilgili nihai kararlar için mutlaka bir doktora veya diyetisyene başvurması gerektiğini hatırlatır."
+  },
+  {
+    "soru": "Diyabet yönetiminde 'postprandial hiperglisemi' ne anlama gelir?",
+    "cevap": "Postprandial hiperglisemi, yemek yedikten sonra kan şekerinin normalden fazla yükselmesi durumunu ifade eder."
+  },
+  {
+    "soru": "Masa başı çalışan bir diyabetli, günlük aktivitesini nasıl artırabilir?",
+    "cevap": "Asansör yerine merdiven kullanmak, öğle aralarında kısa yürüyüşler yapmak, saat başı kalkıp ofis içinde dolaşmak ve telefon görüşmelerini ayakta yapmak gibi basit alışkanlıklarla günlük aktivitesini artırabilir."
+  },
+  {
+    "soru": "Düşük glisemik indeksli karbonhidrat ne demektir?",
+    "cevap": "Düşük glisemik indeksli karbonhidratlar, sindirildikten sonra kan şekerini yavaş ve daha kontrollü bir şekilde yükselten gıdalardır. Tam tahıllar, baklagiller ve nişastalı olmayan sebzeler bu gruba örnektir."
+  },
+  {
+    "soru": "Trans yağlar neden tamamen kaçınılması gereken yağlardır?",
+    "cevap": "Trans yağlar, kötü kolesterolü (LDL) yükseltip iyi kolesterolü (HDL) düşürerek kalp ve damar hastalıkları için en riskli yağ türüdür. Bu nedenle beslenmeden tamamen çıkarılmaları önerilir."
+  },
+  {
+    "soru": "Bir porsiyon meyve yaklaşık kaç gram karbonhidrat içerir?",
+    "cevap": "Diyabetik beslenme planlamasında genellikle bir porsiyon meyve, 15 gram karbonhidrat içerecek miktar olarak kabul edilir."
+  },
+  {
+    "soru": "Egzersiz sırasında yeterli su içmek neden önemlidir?",
+    "cevap": "Egzersiz sırasında terleme ile vücut sıvı kaybeder. Yeterli su içmek, vücudun susuz kalmasını (dehidrasyon) önler, performansı korur ve vücut ısısının düzenlenmesine yardımcı olur."
+  },
+  {
+    "soru": "Obezite tedavisinde sürdürülebilir kilo kaybı ne anlama gelir?",
+    "cevap": "Sürdürülebilir kilo kaybı, hızlı ve şok diyetlerle verilen ancak kısa sürede geri alınan kilolar yerine, sağlıklı beslenme ve yaşam tarzı değişiklikleriyle yavaşça verilen ve uzun vadede korunabilen kilo kaybı anlamına gelir."
+  },
+  {
+    "soru": "Tip 1 diyabette insülinin temel görevi nedir?",
+    "cevap": "Tip 1 diyabette pankreas insülin üretmediği için, dışarıdan verilen insülinin temel görevi, kandaki glukozun hücreler tarafından enerji olarak kullanılmasını sağlamak ve böylece kan şekerini düzenlemektir."
+  },
+  {
+    "soru": "Tip 2 diyabette 'insülin direnci' ne demektir?",
+    "cevap": "İnsülin direnci, vücuttaki hücrelerin (özellikle kas, yağ ve karaciğer hücrelerinin) pankreas tarafından üretilen insüline düzgün bir şekilde yanıt verememesi durumudur. Bu da kan şekerinin yükselmesine neden olur."
+  },
+  {
+    "soru": "HbA1c testi diyabet takibinde neyi gösterir?",
+    "cevap": "HbA1c testi, son 2-3 aylık ortalama kan şekeri seviyesini gösterir ve diyabetin ne kadar iyi kontrol altında olduğunun önemli bir göstergesidir."
+  },
+  {
+    "soru": "Diyabetik ayak bakımında nelere dikkat edilmelidir?",
+    "cevap": "Ayaklar her gün yara, kesik, su toplaması açısından kontrol edilmeli, uygun ve rahat ayakkabılar giyilmeli, tırnaklar düz kesilmeli ve ayaklar temiz ve kuru tutulmalıdır. Sinir hasarı nedeniyle küçük yaralar hissedilemeyebilir."
+  },
+  {
+    "soru": "Obezite hangi kronik hastalıklar için bir risk faktörüdür?",
+    "cevap": "Obezite; Tip 2 diyabet, kalp-damar hastalıkları, hipertansiyon, bazı kanser türleri, uyku apnesi ve eklem hastalıkları gibi birçok kronik hastalık için önemli bir risk faktörüdür."
+  },
+  {
+    "soru": "Kilo verme sürecinde kas kütlesini korumak neden önemlidir?",
+    "cevap": "Kas kütlesi, vücudun dinlenme halindeyken yaktığı kalori miktarını (bazal metabolizma hızı) belirler. Kas kütlesini korumak, metabolizmanın yavaşlamasını önler ve kilo verme sürecini destekler."
+  },
+  {
+    "soru": "Omega-3 yağ asitleri için hangi besinler tüketilmelidir?",
+    "cevap": "Omega-3 yağ asitleri açısından zengin olan somon, uskumru, sardalya gibi yağlı balıkların haftada 1-2 kez tüketilmesi önerilir. Ayrıca ceviz ve keten tohumu da iyi kaynaklardır."
+  },
+  {
+    "soru": "Yapay zeka modelinin kültürel beslenme alışkanlıklarını dikkate alması neden önemlidir?",
+    "cevap": "Modelin, kullanıcının alışkın olduğu ve sevdiği (örneğin Akdeniz mutfağı, geleneksel Türk mutfağı) yiyeceklere uygun planlar sunması, diyetin benimsenmesini ve uzun vadede sürdürülebilirliğini artırır."
+  },
+  {
+    "soru": "Keton cisimleri nedir ve ne zaman oluşur?",
+    "cevap": "Keton cisimleri, vücut enerji için yeterli glukoz bulamadığında (özellikle insülin yetersizliğinde) yağları yakmaya başladığında ortaya çıkan asidik yan ürünlerdir. Kontrolsüz diyabette tehlikeli seviyelere ulaşabilirler."
+  },
+  {
+    "soru": "İnsülin pompası kullanan bir birey egzersiz sırasında ne yapabilir?",
+    "cevap": "İnsülin pompası kullanan bireyler, egzersiz sırasında hipoglisemiyi önlemek için geçici olarak bazal insülin hızını düşürebilir veya pompayı kısa süreliğine durdurabilirler. Bu ayarlar doktor kontrolünde yapılmalıdır."
+  },
+  {
+    "soru": "Vücut Kitle İndeksi (VKİ) nasıl hesaplanır ve obezite tanısında nasıl kullanılır?",
+    "cevap": "Vücut Kitle İndeksi (VKİ), kişinin kilogram cinsinden ağırlığının, metre cinsinden boyunun karesine bölünmesiyle hesaplanır (kg/m²). VKİ'nin 30'un üzerinde olması genellikle obezite olarak tanımlanır."
+  },
+  {
+    "soru": "Diyabetik bir bireyde alkol tüketimi karaciğeri nasıl etkiler?",
+    "cevap": "Alkol, karaciğerin glukoneogenez (yeni glukoz üretme) sürecini baskılar. Bu durum, özellikle hipoglisemiye eğilimli bireylerde kan şekerinin tehlikeli seviyelere düşmesine neden olabilir."
+  },
+  {
+    "soru": "Diyet planında besin çeşitliliği neden önemlidir?",
+    "cevap": "Besin çeşitliliği, vücudun ihtiyaç duyduğu tüm vitamin, mineral ve diğer mikro besin öğelerinin yeterli miktarda alınmasını sağlar. Ayrıca tek tip beslenmenin getireceği monotonluğu önleyerek diyete uyumu artırır."
+  },
+  {
+    "soru": "Diyabetik bireylerin seyahat ederken yanlarında bulundurması gerekenler nelerdir?",
+    "cevap": "Diyabetli bireyler seyahat ederken yanlarında yeterli miktarda insülin/ilaç, ölçüm cihazı, test çubukları, hipoglisemi için atıştırmalıklar ve doktorlarından alacakları durumlarını belirten bir rapor bulundurmalıdır."
+  },
+  {
+    "soru": "Stresin kan şekeri üzerindeki etkisi nedir?",
+    "cevap": "Fiziksel veya duygusal stres, kortizol gibi stres hormonlarının salgılanmasına neden olur. Bu hormonlar, karaciğerden glukoz salınımını artırarak kan şekeri seviyelerinin yükselmesine yol açabilir."
+  },
+  {
+    "soru": "Obezite cerrahisi sonrası beslenme nasıl olmalıdır?",
+    "cevap": "Obezite cerrahisi sonrası beslenme, genellikle sıvı gıdalarla başlayıp zamanla püre ve katı gıdalara geçilen aşamalı bir süreçtir. Porsiyonlar çok küçüktür ve besin emilimindeki değişiklikler nedeniyle ömür boyu vitamin-mineral takviyesi gerekebilir."
+  },
+  {
+    "soru": "Gebelik diyabeti (gestasyonel diyabet) nedir?",
+    "cevap": "Gebelik diyabeti, daha önce diyabeti olmayan bir kadında gebelik sırasında ortaya çıkan yüksek kan şekeri durumudur. Genellikle doğumdan sonra düzelir ancak anne ve bebek için riskler taşır ve kadının ileride Tip 2 diyabet geliştirme riskini artırır."
+  },
+  {
+    "soru": "Hipogliseminin hafif ve şiddetli belirtileri nelerdir?",
+    "cevap": "Hafif belirtiler terleme, titreme, açlık, çarpıntı ve anksiyete olabilir. Şiddetli belirtiler ise kafa karışıklığı, konuşma güçlüğü, bilinç bulanıklığı, nöbet ve bilinç kaybını içerebilir."
+  },
+  {
+    "soru": "Sıvı yağlar katı yağlara göre neden daha sağlıklıdır?",
+    "cevap": "Sıvı yağlar (zeytinyağı, ayçiçek yağı gibi) genellikle doymamış yağ asitleri açısından zengindir. Bu yağlar kolesterol seviyelerini iyileştirirken, katı yağlarda (tereyağı, margarin) bulunan doymuş ve trans yağlar kalp hastalığı riskini artırır."
+  },
+  {
+    "soru": "Diyabetli bir birey için 'sağlıklı tabak' modeli nasıl olmalıdır?",
+    "cevap": "Sağlıklı tabak modeline göre, tabağın yarısı nişastalı olmayan sebzelerle (salata, brokoli, ıspanak), dörtte biri yağsız protein kaynaklarıyla (tavuk, balık, baklagiller) ve kalan dörtte biri de kompleks karbonhidratlarla (bulgur, tam buğday ekmeği) doldurulmalıdır."
+  },
+  {
+    "soru": "Hasta bir diyabetli (örneğin grip) beslenmesinde nelere dikkat etmelidir?",
+    "cevap": "Hastalık döneminde vücudun enerji ihtiyacı artabilir ve kan şekeri dalgalanabilir. Düzenli kan şekeri takibi yapılmalı, yeterli sıvı alınmalı ve iştahsızlık varsa çorba, yoğurt gibi sindirimi kolay karbonhidrat içeren gıdalarla beslenme desteklenmelidir."
+  },
+  {
+    "soru": "Diyabetik nefropati riski olan bir birey için protein kısıtlamasının amacı nedir?",
+    "cevap": "Diyabetik nefropati (böbrek hasarı) durumunda protein alımını kısıtlamak, böbreklerin üzerindeki yükü azaltarak hasarın ilerlemesini yavaşlatmayı ve böbrek fonksiyonlarını daha uzun süre korumayı amaçlar."
+  },
+  {
+    "soru": "İleri yaşta direnç egzersizleri neden düşme riskini azaltır?",
+    "cevap": "İleri yaşta yapılan direnç egzersizleri, bacak ve kalça kaslarını güçlendirir, dengeyi ve koordinasyonu artırır. Bu da yürüme stabilitesini iyileştirerek düşme riskini önemli ölçüde azaltır."
+  },
+  {
+    "soru": "Yapay zeka diyetisyen modelinin, kullanıcıya gerçekçi hedefler koymasının önemi nedir?",
+    "cevap": "Gerçekçi hedefler (örneğin haftada 0.5 kg kilo kaybı) belirlemek, kullanıcının motivasyonunu yüksek tutar ve hayal kırıklığı yaşamasını önler. Ulaşılamaz hedefler, kişinin programı tamamen bırakmasına neden olabilir."
+  }
+]
