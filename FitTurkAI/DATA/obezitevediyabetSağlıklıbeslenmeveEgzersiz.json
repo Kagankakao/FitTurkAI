@@ -1,0 +1,1522 @@
+[
+  {
+    "soru": "Diyabetli bireylerde posa tüketiminin kan şekeri üzerindeki etkisi nedir?",
+    "cevap": "Posa emilimi yavaşlatır, kan şekerinin daha yavaş yükselmesini sağlar ve ani glukoz dalgalanmalarını önler."
+  },
+  {
+    "soru": "Çocuklarda obezitenin önlenmesi için beslenmede hangi alışkanlıklar kazandırılmalıdır?",
+    "cevap": "Abur cuburdan uzak durma, su içme alışkanlığı, tam tahıl tercihleri ve aileyle birlikte sofraya oturma gibi alışkanlıklar önemlidir."
+  },
+  {
+    "soru": "İleri yaşta bireylerde B12 vitamini eksikliğinin nedeni nedir?",
+    "cevap": "Yaşla birlikte mide asidinin azalması B12 emilimini zorlaştırır, bu da eksiklik riskini artırır."
+  },
+  {
+    "soru": "Diyabetli bireylerde ara öğün tüketimi neden önemlidir?",
+    "cevap": "Uzun süreli açlıklar hipoglisemi riskini artırır. Ara öğünler kan şekerini dengede tutar ve aşırı yeme riskini azaltır."
+  },
+  {
+    "soru": "Diyabetli bireyler öğünlerinde protein alımına neden dikkat etmelidir?",
+    "cevap": "Protein, kan şekerini yavaş yükseltir, uzun süre tokluk sağlar ve kas kütlesini korur."
+  },
+  {
+    "soru": "Vardiyalı çalışan bireylerde öğün düzeni nasıl sağlanmalıdır?",
+    "cevap": "Uyku saatine göre 3 ana öğün ve 2-3 ara öğün planlanmalı; her gün aynı saatlerde yemek yenmeye çalışılmalıdır."
+  },
+  {
+    "soru": "Tam tahıllı ürünlerin tercih edilmesinin kan şekeri üzerindeki olumlu etkisi nedir?",
+    "cevap": "Glisemik indeksleri düşüktür, sindirimi yavaştır ve kan şekerinde ani yükselmeleri engeller."
+  },
+  {
+    "soru": "Diyabetli bireylerde su tüketiminin yetersiz olması ne gibi sorunlara yol açabilir?",
+    "cevap": "Dehidrasyon, kan şekeri konsantrasyonunu artırır ve böbrek fonksiyonlarını olumsuz etkileyebilir."
+  },
+  {
+    "soru": "Gece çalışan bireyler için kan şekeri kontrolünde en riskli zaman dilimi hangisidir?",
+    "cevap": "Sabaha karşı açlık artar ve kan şekeri düşebilir. Bu nedenle bu saatlerde ara öğün alınması önerilir."
+  },
+  {
+    "soru": "Çocukluk çağı obezitesinde ekran süresinin etkisi nedir?",
+    "cevap": "Uzun ekran süresi hareketsizliği artırır ve abur cubur tüketimini teşvik ederek obezite riskini yükseltir."
+  },
+  {
+    "soru": "Diyabetli bireylerde kızartmalar neden önerilmez?",
+    "cevap": "Kızartmalar fazla yağ içerir, insülin direncini artırır ve kan şekeri kontrolünü zorlaştırır."
+  },
+  {
+    "soru": "Tatlı krizleri yaşayan bireyler hangi saatte ve nasıl tüketim yapmalıdır?",
+    "cevap": "Tatlı ihtiyacı ana öğün sonrasına kaydırılmalı ve küçük porsiyon ev yapımı tatlılar tercih edilmelidir."
+  },
+  {
+    "soru": "Yemek yerken hızlı yemek tüketmenin diyabet üzerindeki olumsuz etkisi nedir?",
+    "cevap": "Hızlı yemek yeme tokluk sinyallerini geciktirir, fazla yemeye yol açar ve kan şekerinin hızlı yükselmesine neden olur."
+  },
+  {
+    "soru": "Ağır işte çalışan bireyler egzersizi neden ihmal etmemelidir?",
+    "cevap": "Egzersiz sadece kalori harcamak değil, kas yapısını korumak ve glukoz metabolizmasını dengelemek için de gereklidir."
+  },
+  {
+    "soru": "İleri yaşta bireylerde sindirimi kolaylaştırmak için nasıl pişirme yöntemleri tercih edilmelidir?",
+    "cevap": "Sebzeler yumuşak haşlanmalı, etler küçük parçalara ayrılmalı ve mümkünse fırın ya da buğulama yöntemi kullanılmalıdır."
+  },
+  {
+    "soru": "Diyabetli bireylerde sabit öğün saatleri neden önemlidir?",
+    "cevap": "Kan şekeri düzenliliği için insülin tedavisiyle uyumlu sabit öğün saatleri gereklidir."
+  },
+  {
+    "soru": "Hipoglisemi riski olan bireylerin egzersiz öncesi nasıl bir hazırlık yapması önerilir?",
+    "cevap": "Kan şekeri ölçülmeli, 100 mg/dL altındaysa egzersiz öncesi 1 meyve veya glukoz tablet alınmalıdır."
+  },
+  {
+    "soru": "Sebzelerin öğünlerde önceliklendirilmesinin faydası nedir?",
+    "cevap": "Sebzeler düşük kalorili, yüksek lif içerikli olup kan şekeri kontrolünü destekler ve erken tokluk sağlar."
+  },
+  {
+    "soru": "Ara öğünlerde kuru yemiş tercih edilirken porsiyon kontrolü neden önemlidir?",
+    "cevap": "Kuru yemişler sağlıklıdır ama kalori açısından yoğundur; bu nedenle 1 avuçtan fazla tüketilmemelidir."
+  },
+  {
+    "soru": "Diyabetli bireylerde fast-food tüketiminin riskleri nelerdir?",
+    "cevap": "Yüksek yağ, tuz ve basit karbonhidrat içerdiğinden kan şekerini hızla yükseltir ve obezite riskini artırır."
+  },
+  {
+    "soru": "Yaşlı bireylerde yemeklerin sindirimi kolaylaştırmak için nasıl servis edilmelidir?",
+    "cevap": "Yemekler küçük lokmalar hâlinde hazırlanmalı, iyi pişmiş ve yumuşak olmalı; sindirimi kolaylaştırmak için az yağlı ve baharatsız tercih edilmelidir."
+  },
+  {
+    "soru": "Diyabetli bireylerde öğünlerin çok uzun aralıklarla planlanması ne gibi sorunlara yol açar?",
+    "cevap": "Uzun öğün aralıkları hipoglisemiye, aşırı yeme riskine ve ani kan şekeri dalgalanmalarına neden olabilir."
+  },
+  {
+    "soru": "Günde 3 öğün beslenen bir birey ara öğün eklemeli midir?",
+    "cevap": "Kan şekeri dengesine katkı sağlamak ve uzun süreli açlıkları önlemek için 1–2 küçük ara öğün önerilebilir."
+  },
+  {
+    "soru": "Diyabetli bireyler için tatlandırıcılar nasıl kullanılmalıdır?",
+    "cevap": "Tatlandırıcılar ölçülü ve önerilen türlerde kullanılmalı; aşırı tüketimden kaçınılmalıdır."
+  },
+  {
+    "soru": "Egzersiz sonrası kas onarımını desteklemek için hangi besin öğeleri gereklidir?",
+    "cevap": "Protein, karbonhidrat ve yeterli sıvı alımı kas onarımı ve glikojen depolarının yenilenmesi için önemlidir."
+  },
+  {
+    "soru": "Diyabetli bireylerde günlük egzersiz sıklığı ne olmalıdır?",
+    "cevap": "Haftada en az 3 gün, tercihen 5 gün egzersiz yapılmalı; egzersiz günleri arasında 2 günden fazla ara verilmemelidir."
+  },
+  {
+    "soru": "Posalı beslenme kolesterol üzerinde ne gibi etki sağlar?",
+    "cevap": "Lifli gıdalar LDL kolesterolü düşürmeye yardımcı olur ve kalp damar sağlığını destekler."
+  },
+  {
+    "soru": "Yüksek tempolu çalışan bireylerde beslenme planı nasıl oluşturulmalıdır?",
+    "cevap": "Sık aralıklarla küçük ama dengeli öğünler planlanmalı; enerji ve sıvı kaybı karşılanmalıdır."
+  },
+  {
+    "soru": "Diyabetli bireyler nişastalı sebzeleri nasıl tüketmelidir?",
+    "cevap": "Haşlanmış ve porsiyon kontrollü şekilde tüketilmeli; patates, bezelye, mısır gibi sebzeler ölçülü alınmalıdır."
+  },
+  {
+    "soru": "Ara öğünlerde meyve tercih edilirken neye dikkat edilmelidir?",
+    "cevap": "Taze ve kabuklu meyveler tercih edilmeli, porsiyon kontrolü sağlanmalı ve tek başına değil proteinle birlikte tüketilmelidir."
+  },
+  {
+    "soru": "Diyabetli bireylerin günlük tuz alımı ne kadarla sınırlanmalıdır?",
+    "cevap": "Tuz alımı günde 5 gramın altında tutulmalı; işlenmiş ve hazır gıdalardan uzak durulmalıdır."
+  },
+  {
+    "soru": "Yaşlı bireylerde neden su içme hatırlatıcıları kullanılmalıdır?",
+    "cevap": "Susama hissi yaşla birlikte azalır; düzenli sıvı alımı için hatırlatıcılar kullanılmalıdır."
+  },
+  {
+    "soru": "Öğünlerde yemek sırası kan şekeri kontrolünü nasıl etkiler?",
+    "cevap": "Önce sebze ve protein, sonra karbonhidrat tüketmek glisemik cevabı düşürür."
+  },
+  {
+    "soru": "Egzersiz öncesi yüksek yağlı besin tüketmek neden önerilmez?",
+    "cevap": "Yağlı gıdalar sindirimi geciktirir ve egzersiz sırasında rahatsızlığa neden olabilir."
+  },
+  {
+    "soru": "Günde 2500 kcal enerji alan bireyin posa ihtiyacı ne kadardır?",
+    "cevap": "Her 1000 kcal için 14 gram önerildiğinden yaklaşık 35 gram posa alınmalıdır."
+  },
+  {
+    "soru": "Aşırı kafein tüketimi diyabetli bireylerde ne gibi sorunlara neden olabilir?",
+    "cevap": "Aşırı kafein kan şekeri kontrolünü zorlaştırabilir ve uyku düzenini bozarak insülin hassasiyetini olumsuz etkileyebilir."
+  },
+  {
+    "soru": "Sebze yemeklerinde kullanılan yağ miktarı ne kadar olmalıdır?",
+    "cevap": "1 kg sebze için yaklaşık 2 yemek kaşığı zeytinyağı kullanılmalıdır."
+  },
+  {
+    "soru": "Yavaş yemek yeme davranışı kilo kontrolüne nasıl katkı sağlar?",
+    "cevap": "Tokluk sinyalleri zamanında oluşur, aşırı yeme engellenir ve porsiyon kontrolü kolaylaşır."
+  },
+  {
+    "soru": "Kalsiyum ihtiyacının karşılanması için hangi besinler önerilir?",
+    "cevap": "Süt, yoğurt, ayran, peynir gibi süt ürünleri ile yeşil yapraklı sebzeler ve badem önerilir."
+  },
+  {
+    "soru": "İleri yaşta bireylerde gece açlığı nasıl yönetilmelidir?",
+    "cevap": "Yatmadan önce az miktarda protein içeren ara öğün (örneğin yoğurt) alınmalıdır."
+  },
+  {
+    "soru": "65 yaş üzeri bir birey neden öğün atlamamalıdır?",
+    "cevap": "Yaşlı bireylerde öğün atlamak, hipoglisemi riskini artırabilir ve iştah azaldığı için besin alımını daha da zorlaştırabilir."
+  },
+  {
+    "soru": "Gece vardiyasından dönen bir birey uyumadan önce ne tür bir öğün tüketmelidir?",
+    "cevap": "Gece vardiyasından dönen birey, uyumadan önce hafif bir kahvaltı benzeri öğün (örneğin yumurta, tam tahıllı ekmek ve süt) tüketmelidir."
+  },
+  {
+    "soru": "Yaşlı bireylerde neden küçük ama sık öğünler önerilir?",
+    "cevap": "Yaşlı bireylerde iştah ve sindirim kapasitesi azaldığı için küçük ama sık öğünler daha kolay tolere edilir ve besin alımı artar."
+  },
+  {
+    "soru": "Çocuklarda egzersiz nasıl teşvik edilmelidir?",
+    "cevap": "Çocuklarda egzersiz oyun şeklinde sunulmalı, aileyle birlikte yürüyüş, dans veya spor etkinliklerine katılım teşvik edilmelidir."
+  },
+  {
+    "soru": "Ergenlik çağındaki obez çocuklar için hangi ek destekler gerekebilir?",
+    "cevap": "Ergenlerde hormonal değişimlerle birlikte psikolojik destek ve akranlarıyla birlikte yapılacak fiziksel aktiviteler önem kazanır."
+  },
+  {
+    "soru": "Masa başı çalışan bir bireyin ofiste su tüketimini artırmak için ne yapması önerilir?",
+    "cevap": "Masanın üzerinde sürekli dolu bir su şişesi bulundurmak ve saat başı içme hatırlatıcıları kullanmak su tüketimini artırabilir."
+  },
+  {
+    "soru": "Vardiyalı çalışan bir birey için egzersiz önerisi nedir?",
+    "cevap": "Günde üç kere 10 dakikalık yürüyüşler veya sabah erken kalkıp hafif egzersiz yapmak zaman problemi olan bireyler için uygundur."
+  },
+  {
+    "soru": "İleri yaştaki bireylerde hangi egzersizler güvenli kabul edilir?",
+    "cevap": "Tempolu yürüyüş, sandalye destekli çömelme, denge egzersizleri ve esneme hareketleri yaşlı bireyler için güvenlidir."
+  },
+  {
+    "soru": "Obezitesi olan yaşlı bireylerde hangi egzersiz türleri tercih edilmelidir?",
+    "cevap": "Obez yaşlı bireyler için yüzme, su içinde yürüyüş gibi eklemlere yük bindirmeyen egzersizler daha uygundur."
+  },
+  {
+    "soru": "Hareketsiz çalışan bireylerde kan şekeri kontrolü için egzersiz nasıl olmalıdır?",
+    "cevap": "Her saat başı 5-10 dakikalık hafif yürüyüşler veya esneme hareketleri önerilir. Bu hareketlilik insülin duyarlılığını artırır."
+  },
+  {
+    "soru": "Diyabetli bir çocuk neden günde 60 dakika hareket etmeye teşvik edilmelidir?",
+    "cevap": "60 dakikalık günlük aktivite hem insülin duyarlılığını artırır hem de obezite riskini azaltır ve psikolojik faydalar sağlar."
+  },
+  {
+    "soru": "Gece vardiyasında çalışan bir birey neden sabah kahvaltısı gibi bir öğün yapmalıdır?",
+    "cevap": "Sabah yapılan kahvaltı, gece boyu bozulan biyoritmi yeniden dengelemeye yardımcı olur ve günün uyku öncesi kan şekerini sabit tutar."
+  },
+  {
+    "soru": "Fiziksel olarak aktif bir birey neden su dışında maden suyu da içmelidir?",
+    "cevap": "Terleme ile kaybedilen mineralleri yerine koymak için maden suyu iyi bir kaynaktır; özellikle ağır fiziksel iş yapanlar için uygundur."
+  },
+  {
+    "soru": "Diyabetli bireylerde yüksek şekerli alkollü içeceklerden neden kaçınılmalıdır?",
+    "cevap": "Tatlı likörler ve bira gibi şeker içeriği yüksek içkiler kan şekeri dalgalanmalarına ve hipoglisemiye yol açabilir."
+  },
+  {
+    "soru": "Yaşlı bireylerde egzersiz sırasında nelere dikkat edilmelidir?",
+    "cevap": "Düşme riskine karşı destekli egzersizler yapılmalı, egzersiz sırasında göğüs ağrısı, baş dönmesi gibi belirtiler olursa hemen ara verilmelidir."
+  },
+  {
+    "soru": "Masa başı çalışanlar için gün içinde ek enerji harcaması sağlamak adına ne önerilir?",
+    "cevap": "Asansör yerine merdiven kullanmak, toplantıları ayakta yapmak, öğle arasında yürüyüşe çıkmak önerilir."
+  },
+  {
+    "soru": "Çocukluk çağı obezitesi ileride ne gibi riskler taşır?",
+    "cevap": "Çocuklukta başlayan obezite, yetişkinlikte tip 2 diyabet, hipertansiyon ve kalp hastalığı riskini artırır."
+  },
+  {
+    "soru": "Diyabetli bireylerde öğün atlamak neden sakıncalıdır?",
+    "cevap": "Öğün atlamak hipoglisemiye ve sonraki öğünde aşırı yeme riskine yol açabilir, bu da kan şekeri kontrolünü zorlaştırır."
+  },
+  {
+    "soru": "Gece çalışan bireylerin glisemik kontrolü sağlamak için nasıl izleme yapması önerilir?",
+    "cevap": "Gece çalışan bireyler, kan şekerini sık aralıklarla ölçmeli, 100 mg/dL altındaysa egzersiz yapmadan önce ara öğün tüketmelidir."
+  },
+  {
+    "soru": "Yaşlı bireylerde vitamin eksikliği neden yaygındır?",
+    "cevap": "Yaş ilerledikçe mide asidi azalır ve besin emilimi düşer. Bu nedenle B12, D vitamini ve kalsiyum eksiklikleri sık görülür."
+  },
+  {
+    "soru": "Fiziksel olarak yoğun çalışan bir diyabetli birey egzersiz yapmalı mıdır?",
+    "cevap": "Evet, yoğun çalışan bireyler bile kas dengesini korumak için haftada 2 gün direnç ve esneme egzersizleri yapmalıdır."
+  },
+  {
+    "soru": "Yaşlı bireylerde hangi egzersiz tipi düşme riskini azaltır?",
+    "cevap": "Denge egzersizleri (tek ayak üzerinde durma, yavaş çömelme gibi) düşme riskini azaltmak için önerilir."
+  },
+  {
+    "soru": "Gece vardiyasında çalışan bir birey, kan şekeri 100 mg/dL'nin altındaysa ne yapmalıdır?",
+    "cevap": "Egzersiz öncesi küçük bir ara öğün almalı (örneğin 1 meyve veya 1 bardak kefir) ve kan şekeri düzeyini yükseltmelidir."
+  },
+  {
+    "soru": "Vücut ağırlığının %5 kaybı diyabetli bireyde ne gibi faydalar sağlar?",
+    "cevap": "İnsülin direnci azalır, kan şekeri daha kolay kontrol edilir ve kalp-damar hastalığı riski düşer."
+  },
+  {
+    "soru": "Çocuklarda aşırı kalori kısıtlaması neden önerilmez?",
+    "cevap": "Aşırı kalori kısıtlaması çocukların büyümesini ve gelişmesini olumsuz etkileyebilir. Dengeli beslenme esastır."
+  },
+  {
+    "soru": "Günde 3000 kcal enerji harcayan biri posa alımını nasıl planlamalıdır?",
+    "cevap": "Her 1000 kcal için 14 gram posa önerildiği için 3000 kcal alan biri günde yaklaşık 42 gram posa tüketmelidir."
+  },
+  {
+    "soru": "Diyabetli bireyler neden öğünlerinde kompleks karbonhidrat tercih etmelidir?",
+    "cevap": "Kompleks karbonhidratlar (tam tahıllar, baklagiller) kan şekerini yavaş yükseltir ve uzun süre tokluk sağlar."
+  },
+  {
+    "soru": "Yüksek tempolu işte çalışan bir diyabetli bireyin sıvı ihtiyacı nasıl karşılanmalıdır?",
+    "cevap": "Terlemeyle kaybedilen sıvıyı yerine koymak için suya ek olarak ayran ve maden suyu da tüketilmelidir."
+  },
+  {
+    "soru": "İleri yaşta diyabetli bireylerin egzersize başlamadan önce ne yapması gerekir?",
+    "cevap": "Bir doktora başvurarak kardiyak risk değerlendirmesi yaptırmaları önerilir; gerekiyorsa efor testi yapılmalıdır."
+  },
+  {
+    "soru": "Çocukların günlük ekran süresi ne kadarla sınırlandırılmalıdır?",
+    "cevap": "Çocuklarda ekran süresi günde 2 saatin altında tutulmalı, kalan zaman fiziksel aktivitelere ayrılmalıdır."
+  },
+  {
+    "soru": "Diyabetli bireyler tatlı krizlerini nasıl yönetebilir?",
+    "cevap": "Tatlı ihtiyacı meyve, tarçınlı yoğurt veya kuru meyve ile giderilebilir; rafine şekerli ürünlerden kaçınılmalıdır."
+  },
+  {
+    "soru": "Ofiste çalışan bir bireyin fiziksel aktiviteyi artırmak için uygulayabileceği yöntem nedir?",
+    "cevap": "Gün içinde toplantılara ayakta katılmak, merdiven kullanmak ve her saat başı ayağa kalkmak faydalıdır."
+  },
+  {
+    "soru": "Yaşlı diyabetli bireyler egzersiz sırasında hangi belirtilerde ara vermelidir?",
+    "cevap": "Baş dönmesi, göğüs ağrısı, çarpıntı gibi belirtiler oluşursa egzersize hemen ara verilmeli ve doktorla görüşülmelidir."
+  },
+  {
+    "soru": "Çocuklar neden aileleriyle birlikte yürüyüş yapmaya teşvik edilmelidir?",
+    "cevap": "Aileyle yapılan yürüyüşler hem fiziksel aktiviteyi artırır hem de çocuğun bu alışkanlığı sürdürmesini kolaylaştırır."
+  },
+  {
+    "soru": "Obezite tedavisinde neden sadece diyet yeterli değildir?",
+    "cevap": "Diyetin yanında fiziksel aktivite de olmalıdır çünkü egzersiz kas kütlesini korur, metabolizmayı destekler."
+  },
+  {
+    "soru": "Ağır iş yapan bir birey neden boş kalorilerden kaçınmalıdır?",
+    "cevap": "Enerji ihtiyacı yüksek olsa da boş kaloriler (şekerli, işlenmiş gıdalar) yerine besleyici öğünler tercih edilmelidir."
+  },
+  {
+    "soru": "Diyabetli bireylerin maden suyu tüketmesi hangi durumda faydalıdır?",
+    "cevap": "Terlemenin yoğun olduğu durumlarda maden suyu içmek, kaybedilen minerallerin yerine konmasını sağlar."
+  },
+  {
+    "soru": "Tatlı likörler ve bira gibi içecekler diyabetli bireylerde ne gibi risk oluşturur?",
+    "cevap": "Bu içecekler şeker içerikleri nedeniyle kan şekeri kontrolünü bozar ve hipoglisemi riskini artırabilir."
+  },
+  {
+    "soru": "Yaşlı bireylerde neden yemekler yumuşak ve kolay çiğnenebilir olmalıdır?",
+    "cevap": "Çiğneme sorunları sık görüldüğü için etler küçük doğranmalı, sebzeler yumuşak pişirilmelidir."
+  },
+  {
+    "soru": "Günlük 2000 kcal enerji alan biri lif ihtiyacını nasıl karşılamalıdır?",
+    "cevap": "Her 1000 kcal için 14 gram önerildiğinden, 2000 kcal alan birinin günde yaklaşık 28 gram lif tüketmesi gerekir."
+  },
+  {
+    "soru": "Gece çalışan diyabetli bireylerde öğün zamanlaması nasıl düzenlenmelidir?",
+    "cevap": "Gece çalışan bireyler, gece boyunca 2-3 küçük öğün ve sabaha karşı hafif bir kahvaltı planlamalı; gündüz uykusundan önce son öğün alınmalıdır."
+  },
+  {
+    "soru": "Fiziksel aktivitesi düşük yaşlı bireylerde neden direnç egzersizleri önerilir?",
+    "cevap": "Direnç egzersizleri kas kütlesini korur, sarkopeniyi önler ve yaşlılarda bağımsız yaşam becerilerini destekler."
+  },
+  {
+    "soru": "Yüksek kalorili ama besin değeri düşük gıdalar hangileridir?",
+    "cevap": "Şekerli içecekler, tatlılar, paketli abur cuburlar ve kızartmalar yüksek kalorili ancak besin değeri düşük gıdalardır."
+  },
+  {
+    "soru": "Diyabetli bireylerde kan şekeri düşüklüğünde hangi belirtiler görülür?",
+    "cevap": "Hipoglisemi belirtileri arasında terleme, baş dönmesi, çarpıntı, titreme ve bilinç bulanıklığı yer alır."
+  },
+  {
+    "soru": "Öğünlerde tabağın yarısının sebzelerden oluşması ne sağlar?",
+    "cevap": "Sebzeler düşük kalorili, lifli ve vitamin-mineral bakımından zengindir; kan şekerini yavaş yükseltir ve tokluk sağlar."
+  },
+  {
+    "soru": "Diyabetli bireylerde yağ alımı nasıl sınırlandırılmalıdır?",
+    "cevap": "Toplam enerjinin %30’undan azı yağdan gelmeli; doymuş yağ %7’yi aşmamalı, trans yağlardan kaçınılmalıdır."
+  },
+  {
+    "soru": "Diyet planı hazırlanırken bireyin alışkanlıkları neden dikkate alınmalıdır?",
+    "cevap": "Alışkanlıkları dikkate alınmayan diyetler sürdürülemez; bireyin yaşam tarzına uygun planlar daha başarılı olur."
+  },
+  {
+    "soru": "Kahvaltıda hangi gıdalar kompleks karbonhidrat kaynağı olabilir?",
+    "cevap": "Yulaf ezmesi, tam buğday ekmeği ve şekersiz tahıl gevrekleri kahvaltı için uygun kompleks karbonhidrat kaynaklarıdır."
+  },
+  {
+    "soru": "Çocuklarda ekran süresi neden kısıtlanmalıdır?",
+    "cevap": "Ekran süresi arttıkça hareketsizlik ve abur cubur tüketimi artar; bu da obezite ve diyabet riskini yükseltir."
+  },
+  {
+    "soru": "Tatlı ihtiyacı olan bir diyabetli birey ne tür alternatifler tüketebilir?",
+    "cevap": "Şekersiz meyve tatlıları, fırınlanmış elma, tarçınlı yoğurt gibi doğal alternatifler tercih edilebilir."
+  },
+  {
+    "soru": "Egzersiz sonrası ayaklarda oluşan kızarıklık veya yara diyabetli birey için ne anlama gelir?",
+    "cevap": "Ayakta yara oluşması enfeksiyon riski yaratır; hemen doktor kontrolü gerekir çünkü diyabetik nöropati buna neden olabilir."
+  },
+  {
+    "soru": "Diyabetli bireyler neden egzersiz öncesi kan şekerini ölçmelidir?",
+    "cevap": "Egzersiz sırasında hipoglisemi riski olduğundan, düşük kan şekeri varsa önceden ara öğün alınması gerekir."
+  },
+  {
+    "soru": "Fiziksel aktivite neden insülin duyarlılığını artırır?",
+    "cevap": "Egzersiz kasların glukozu daha etkili kullanmasını sağlar, bu da insülinin daha verimli çalışmasına katkıda bulunur."
+  },
+  {
+    "soru": "Tatlı içecekler diyabetli bireyler için neden önerilmez?",
+    "cevap": "Şekerli içecekler (gazoz, meyve suyu, enerji içeceği) kan şekerini hızla yükseltir ve ani dalgalanmalara yol açar."
+  },
+  {
+    "soru": "Haftada 2 gün direnç egzersizi yapmak yaşlılar için ne gibi fayda sağlar?",
+    "cevap": "Direnç egzersizleri yaşlılarda kas kaybını önler, kemik yoğunluğunu korur ve günlük işlevselliği artırır."
+  },
+  {
+    "soru": "Gece vardiyasında çalışan diyabetli bir birey ara öğün olarak ne tüketebilir?",
+    "cevap": "Gece ara öğün olarak yoğurt, 1 dilim tam buğday ekmeği, az tuzlu peynir veya bir avuç kuruyemiş tercih edilebilir."
+  },
+  {
+    "soru": "Neden öğünlerde her besin grubundan dengeli şekilde tüketmek gerekir?",
+    "cevap": "Her besin grubunun sağladığı farklı vitamin, mineral ve enerji kaynakları vücut fonksiyonları için gereklidir."
+  },
+  {
+    "soru": "Gece çalışan bir birey neden gündüz uyumadan önce yemek yemelidir?",
+    "cevap": "Bu öğün kan şekerinin düşmesini önler ve uyku kalitesini artırır; kahvaltı benzeri hafif bir öğün tercih edilmelidir."
+  },
+  {
+    "soru": "İleri yaş bireylerde çiğneme sorunları diyete nasıl yansıtılmalıdır?",
+    "cevap": "Yemekler yumuşak pişirilmeli, etler küçük parçalanmalı ve posalı gıdalar iyi haşlanarak sunulmalıdır."
+  },
+  {
+    "soru": "Diyabet tabak modelinde nişastalı karbonhidratlar tabağın ne kadarını oluşturur?",
+    "cevap": "Tabağın dörtte biri tam tahıllar veya baklagil gibi kompleks karbonhidratlardan oluşmalıdır."
+  },
+  {
+    "soru": "Diyabetli bireyler neden fast-food tarzı yiyeceklerden kaçınmalıdır?",
+    "cevap": "Fast-food yiyecekler genellikle yüksek kalori, doymuş yağ ve basit karbonhidrat içerir; bu da kan şekeri kontrolünü zorlaştırır."
+  },
+  {
+    "soru": "Neden posalı sebzeler diyabet tabak modelinde öne çıkar?",
+    "cevap": "Posalı sebzeler glisemik indeksi düşürür, sindirimi yavaşlatır ve uzun süre tokluk hissi sağlar."
+  },
+  {
+    "soru": "Diyabetli bireylerde kahvaltı öğünü neden atlanmamalıdır?",
+    "cevap": "Kahvaltı atlandığında sonraki öğünlerde aşırı yeme riski artar ve kan şekeri dalgalanmaları yaşanabilir."
+  },
+  {
+    "soru": "Obezite ve tip 2 diyabet arasındaki ilişki nedir?",
+    "cevap": "Obez bireylerde insülin direnci yaygındır; bu durum tip 2 diyabetin en önemli nedenlerinden biridir."
+  },
+  {
+    "soru": "Diyabetli bireylerde tuz alımı neden sınırlandırılmalıdır?",
+    "cevap": "Fazla tuz alımı hipertansiyon riskini artırır. Diyabetli bireylerde bu durum kalp hastalığı riskini yükseltir."
+  },
+  {
+    "soru": "Diyabetli bireylerin alkol tüketiminde dikkat etmesi gereken en önemli şey nedir?",
+    "cevap": "Şeker içeriği yüksek alkollerden kaçınmalı, alkol alındığında yemekle birlikte alınmalı ve hipoglisemiye karşı önlem alınmalıdır."
+  },
+  {
+    "soru": "Haşlama veya ızgara yöntemleri neden önerilir?",
+    "cevap": "Bu pişirme yöntemleri daha az yağ içerdiği için kalori kontrolünü kolaylaştırır ve sağlıklı beslenmeye katkı sağlar."
+  },
+  {
+    "soru": "Diyabetli bireylerde öğün düzeni neden sabit tutulmalıdır?",
+    "cevap": "Sabit öğün saatleri kan şekeri dalgalanmalarını önler ve insülin tedavisiyle uyumu kolaylaştırır."
+  },
+  {
+    "soru": "Yüksek posalı beslenme hangi sindirim problemlerine karşı koruyucudur?",
+    "cevap": "Kabızlık gibi sindirim sorunlarını önler, bağırsak sağlığını destekler ve kolesterolü düşürmeye yardımcı olabilir."
+  },
+  {
+    "soru": "Diyabetli bireylerde trans yağ tüketimi neden yasaklanmalıdır?",
+    "cevap": "Trans yağlar kalp hastalıkları riskini artırır ve insülin direncini kötüleştirebilir."
+  },
+  {
+    "soru": "Neden zeytinyağı gibi sağlıklı yağlar önerilir?",
+    "cevap": "Zeytinyağı antioksidan içerir, doymamış yağ asitleriyle kalp sağlığını destekler ve kan lipitlerini dengeler."
+  },
+  {
+    "soru": "Meyve tüketimi diyabetli bireyler için nasıl planlanmalıdır?",
+    "cevap": "Yüksek şeker içeren meyveler sınırlı tüketilmeli, porsiyon kontrolü sağlanmalı ve tercihen ana öğünle birlikte alınmalıdır."
+  },
+  {
+    "soru": "Diyabetli bireyler hangi süt ürünlerini tercih etmelidir?",
+    "cevap": "Az yağlı süt, yoğurt ve ayran tercih edilmeli; kaymak ve tam yağlı süt ürünlerinden kaçınılmalıdır."
+  },
+  {
+    "soru": "Yemek yerken yavaş çiğnemenin diyabetli bireylere faydası nedir?",
+    "cevap": "Yavaş yemek yeme tokluk hissini artırır, porsiyon kontrolüne yardımcı olur ve glukoz emilimini dengeler."
+  },
+  {
+    "soru": "Diyabetli bireyler neden lifli meyveleri kabuklarıyla tüketmelidir?",
+    "cevap": "Kabuklarıyla tüketilen meyveler daha fazla posa içerir, bu da kan şekerinin yavaş yükselmesine yardımcı olur."
+  },
+  {
+    "soru": "Tatlı krizleri için önerilen sağlıklı atıştırmalıklardan biri nedir?",
+    "cevap": "1 küçük elma ve 1 yemek kaşığı fıstık ezmesi gibi düşük glisemik ve proteinli atıştırmalıklar önerilir."
+  },
+  {
+    "soru": "Diyabetli bireyler dışarıda yemek yerken nelere dikkat etmelidir?",
+    "cevap": "Izgara, haşlama gibi pişirme yöntemleri tercih edilmeli, porsiyonlar paylaşılmalı ve tatlılardan kaçınılmalıdır."
+  },
+  {
+    "soru": "Diyabetli bireylerde karbonhidrat sayımı neden önemlidir?",
+    "cevap": "Karbonhidrat sayımı, insülin dozunun ayarlanmasına yardımcı olur ve kan şekeri kontrolünü kolaylaştırır."
+  },
+  {
+    "soru": "Kızartma yemekleri diyabetli bireyler için neden sakıncalıdır?",
+    "cevap": "Kızartmalar hem yağ hem de karbonhidrat yükünü artırır; bu da kan şekeri kontrolünü bozar."
+  },
+  {
+    "soru": "Kan şekeri kontrolü için akşam yemeğinde hangi tabak modeli uygulanmalıdır?",
+    "cevap": "Tabağın yarısı sebze, çeyreği tam tahıllı karbonhidrat ve çeyreği yağsız protein içermelidir."
+  },
+  {
+    "soru": "Diyabetli bireylerde neden öğün atlamak ani kan şekeri değişimlerine neden olabilir?",
+    "cevap": "Öğün atlandığında uzun açlık sonrası gelen öğün fazla insülin salınımına yol açar; bu da ani glukoz yükselmesi veya düşmesine sebep olabilir."
+  },
+  {
+    "soru": "Fiziksel aktivite düzeyi düşük bireyler için önerilen günlük kalori azaltımı ne kadardır?",
+    "cevap": "Günlük 500–1000 kcal’lik kalori azaltımı, haftalık 0.5–1 kg arasında kilo kaybı sağlayabilir ve bu düzey sağlıklıdır."
+  },
+  {
+    "soru": "Neden hızlı kilo vermeye yönelik şok diyetlerden kaçınılmalıdır?",
+    "cevap": "Hızlı kilo kaybı kas kaybına, metabolizma yavaşlamasına ve sağlık sorunlarına neden olabilir; sürdürülebilir değildir."
+  },
+  {
+    "soru": "Diyabetli bireyler neden basit karbonhidrat yerine kompleks karbonhidrat tercih etmelidir?",
+    "cevap": "Kompleks karbonhidratlar (tam tahıllar, baklagiller) glisemik indeksi düşük tutar ve kan şekeri kontrolünü kolaylaştırır."
+  },
+  {
+    "soru": "Doymuş yağ alımı diyabetli bireylerde hangi sınırda tutulmalıdır?",
+    "cevap": "Toplam enerjinin %7’sinden az doymuş yağ tüketimi önerilir; bu kalp sağlığı açısından da koruyucudur."
+  },
+  {
+    "soru": "Diyabet tabak modeline göre ideal tabak dağılımı nasıldır?",
+    "cevap": "Tabağın yarısı sebzeler, çeyreği tam tahıllar veya baklagil, diğer çeyreği ise yağsız proteinlerden oluşmalıdır."
+  },
+  {
+    "soru": "Lifli gıdalar tüketildiğinde kan şekeri nasıl etkilenir?",
+    "cevap": "Lifli gıdalar glukoz emilimini yavaşlatarak kan şekerinin daha kontrollü yükselmesini sağlar."
+  },
+  {
+    "soru": "Tatlı krizlerini yönetemeyen bir birey hangi alışkanlığı değiştirmelidir?",
+    "cevap": "Rafine şekerli ürün tüketimini azaltmalı, tatlı isteğini doğal meyveler, tarçınlı yoğurt gibi alternatiflerle bastırmalıdır."
+  },
+  {
+    "soru": "Kan şekerini hızla yükselten gıdalar nelerdir?",
+    "cevap": "Şekerli içecekler, beyaz ekmek, hamur işleri ve tatlılar kan şekerini hızla yükselten gıdalardır."
+  },
+  {
+    "soru": "Haftada 150 dakikalık egzersiz süresi nasıl dağıtılabilir?",
+    "cevap": "Haftada 5 gün, günde 30 dakika orta tempolu yürüyüş veya bisiklet gibi aktivitelerle bu süre tamamlanabilir."
+  },
+  {
+    "soru": "Egzersiz öncesi kan şekeri 100 mg/dL’nin altındaysa ne yapılmalıdır?",
+    "cevap": "Egzersizden önce 1 küçük meyve veya 1 dilim tam tahıllı ekmek gibi hızlı etkili karbonhidrat tüketilmelidir."
+  },
+  {
+    "soru": "Günlük öğün düzeni neden kan basıncını da etkiler?",
+    "cevap": "Düzenli öğünler tuz alımını dengeler, insülin salınımı üzerinden dolaylı yoldan kan basıncına da etki eder."
+  },
+  {
+    "soru": "Sık ara öğün tüketimi kan şekeri kontrolünü nasıl etkiler?",
+    "cevap": "Sık ve küçük ara öğünler uzun açlıkları önler, hipoglisemi riskini azaltır ve glukoz dengesini sağlar."
+  },
+  {
+    "soru": "Diyabetli bireylerin haftalık egzersiz planında direnç antrenmanının rolü nedir?",
+    "cevap": "Direnç egzersizleri kas kütlesini artırır, bazal metabolizmayı destekler ve insülin duyarlılığını geliştirir."
+  },
+  {
+    "soru": "Diyabetli bireylerde düşük karbonhidrat diyetleri neden sakıncalı olabilir?",
+    "cevap": "Karbonhidrat alımının aşırı kısıtlanması hipoglisemi riskini artırabilir ve beyin için gerekli enerjiyi kısıtlayabilir."
+  },
+  {
+    "soru": "Zamanında alınmayan öğünler diyabetli bireyde ne gibi sonuçlara yol açabilir?",
+    "cevap": "Uzun açlık sonrası gelen fazla yemek insülin salınımını bozarak kan şekeri dalgalanmasına neden olabilir."
+  },
+  {
+    "soru": "Günlük alınan kalorinin %30’unun yağlardan gelmesi ne anlama gelir?",
+    "cevap": "Yağ alımı dengeli olmalı; bu miktar kalp sağlığını koruyacak ve enerji ihtiyacını karşılayacak seviyededir."
+  },
+  {
+    "soru": "Yağsız protein kaynakları nelerdir?",
+    "cevap": "Derisiz tavuk, hindi, balık, yumurta beyazı, az yağlı süt ürünleri yağsız protein kaynakları arasında yer alır."
+  },
+  {
+    "soru": "Diyabetli bireyler neden besin etiketlerini okumalıdır?",
+    "cevap": "Besin etiketleri şeker, doymuş yağ ve karbonhidrat içeriği hakkında bilgi vererek daha bilinçli seçim yapılmasını sağlar."
+  },
+  {
+    "soru": "Diyabetli bireyler neden planlı alışveriş yapmalıdır?",
+    "cevap": "Planlı alışveriş, sağlıksız atıştırmalıklardan kaçınmayı kolaylaştırır ve dengeli beslenmeyi destekler."
+  },
+  {
+    "soru": "Diyabetli bireylerde nişastalı karbonhidrat tüketimi nasıl sınırlandırılmalıdır?",
+    "cevap": "Tabağın yalnızca dörtte biri nişastalı karbonhidrat içermelidir ve tercihen tam tahıllar ya da baklagillerden sağlanmalıdır."
+  },
+  {
+    "soru": "Ara öğünlerde kuru yemiş tercih edilirken nelere dikkat edilmelidir?",
+    "cevap": "Tuzsuz, kavrulmamış ve porsiyon kontrolü yapılmış kuru yemişler tercih edilmeli; 1 avuç miktarı aşılmamalıdır."
+  },
+  {
+    "soru": "Diyabetli bireylerin egzersiz sırasında yanında ne bulundurması önerilir?",
+    "cevap": "Hipoglisemi riskine karşı yanında meyve suyu, kuru meyve veya glukoz tableti gibi hızlı etki eden karbonhidrat bulunmalıdır."
+  },
+  {
+    "soru": "Diyabet tabak modelinde hangi sıvı içecekler tercih edilmelidir?",
+    "cevap": "Şekersiz su, ayran ve bitki çayları tercih edilmeli; şekerli meyve suları ve gazlı içeceklerden uzak durulmalıdır."
+  },
+  {
+    "soru": "Tatlı tüketimi tamamen yasak mı yoksa sınırlı mı olmalıdır?",
+    "cevap": "Tatlı tamamen yasaklanmaz ancak düşük glisemik indeksli ve ev yapımı, küçük porsiyonlarla sınırlı şekilde tüketilebilir."
+  },
+  {
+    "soru": "Diyabetli bireyler dışarıda yemek yerken hangi menüleri tercih etmelidir?",
+    "cevap": "Izgara et, haşlanmış sebze, çorba ve tam tahıllı ekmek içeren menüler tercih edilmelidir."
+  },
+  {
+    "soru": "Sebze yemekleri hazırlanırken dikkat edilmesi gereken yağ miktarı nedir?",
+    "cevap": "Sebzeler az zeytinyağı ile pişirilmeli ve 1 kg sebze için en fazla 2 yemek kaşığı yağ kullanılmalıdır."
+  },
+  {
+    "soru": "Diyabetli bireylerde aç karnına egzersiz yapmak neden önerilmez?",
+    "cevap": "Aç karnına egzersiz hipoglisemi riskini artırır; bu nedenle öncesinde küçük bir ara öğün tüketilmelidir."
+  },
+  {
+    "soru": "Ara öğünlerde meyve tüketirken nelere dikkat edilmelidir?",
+    "cevap": "Porsiyon kontrolü yapılmalı, tercihen kabuklu meyveler tercih edilmeli ve tek başına değil, yoğurt gibi proteinle birlikte alınmalıdır."
+  },
+  {
+    "soru": "Diyabetli bireylerde gün içindeki sıvı tüketimi nasıl takip edilmelidir?",
+    "cevap": "Her öğünle birlikte 1 bardak su ve gün boyunca toplam 8–10 bardak sıvı alınmalıdır; kafeinli içecekler sınırlı tüketilmelidir."
+  },
+  {
+    "soru": "Diyabetli bireylerde neden süt ve yoğurt tercih edilirken yağ oranına dikkat edilmelidir?",
+    "cevap": "Az yağlı ürünler hem kalp sağlığı açısından daha iyidir hem de toplam kalori alımını azaltmaya yardımcı olur."
+  },
+  {
+    "soru": "Egzersiz sonrası kan şekeri düşmesini önlemek için hangi ara öğün önerilir?",
+    "cevap": "1 su bardağı süt ve 1 dilim tam tahıllı ekmek gibi karbonhidrat ve protein içeren öğünler önerilir."
+  },
+  {
+    "soru": "Diyabetli bireylerin meyve suyu yerine meyve tüketmesi neden önerilir?",
+    "cevap": "Meyve suyu posa içermez, kan şekerini hızla yükseltir; meyve ise lif içerdiği için daha yavaş emilir."
+  },
+  {
+    "soru": "Tabağın yarısının sebzelerden oluşması hangi vitamin ve mineralleri sağlar?",
+    "cevap": "C vitamini, A vitamini, folik asit ve potasyum gibi önemli vitamin ve mineraller sağlanır."
+  },
+  {
+    "soru": "Diyabetli bireylerde egzersiz planı haftalık nasıl yapılandırılmalıdır?",
+    "cevap": "Haftada 3 gün tempolu yürüyüş, 2 gün direnç egzersizi, 1 gün denge çalışmaları planlanabilir."
+  },
+  {
+    "soru": "Diyabetli bireylerde hipoglisemi sonrası alınan karbonhidrat miktarı ne kadar olmalıdır?",
+    "cevap": "Yaklaşık 15 gram hızlı etki eden karbonhidrat (örneğin 1 meyve veya 150 ml meyve suyu) yeterlidir."
+  },
+  {
+    "soru": "Lif oranı yüksek beslenmenin glisemik yanıt üzerindeki etkisi nedir?",
+    "cevap": "Glisemik yanıtı düşürerek kan şekeri seviyesini dengeler ve ani yükselmeleri önler."
+  },
+  {
+    "soru": "Diyabetli bireyler neden uyumadan önce ara öğün tüketmelidir?",
+    "cevap": "Gece boyunca kan şekeri düşmesini önlemek için yoğurt veya küçük bir meyve gibi hafif ara öğün önerilir."
+  },
+  {
+    "soru": "Porsiyon kontrolü neden diyabet yönetiminde kritik bir unsurdur?",
+    "cevap": "Aşırı porsiyonlar glukoz yükünü artırır; kontrollü porsiyonlar ise kan şekerini dengede tutar."
+  },
+  {
+    "soru": "Günlük posa ihtiyacını karşılamak için neler tüketilmelidir?",
+    "cevap": "Tam tahıllar, kuru baklagiller, sebze ve meyveler günlük posa ihtiyacını karşılamaya yardımcı olur."
+  },
+  {
+    "soru": "Diyabetli bireylerde sabah kahvaltısı neden günün en önemli öğünüdür?",
+    "cevap": "Kahvaltı, gece boyunca düşen kan şekeri seviyesini dengeler, metabolizmayı başlatır ve gün boyu enerji sağlar."
+  },
+  {
+    "soru": "Tam buğday ekmeği beyaz ekmeğe göre neden daha uygundur?",
+    "cevap": "Tam buğday ekmeği daha fazla lif içerir, glisemik indeksi daha düşüktür ve daha uzun süre tokluk sağlar."
+  },
+  {
+    "soru": "Diyabetli bireyler neden yavaş yemek yemelidir?",
+    "cevap": "Yavaş yemek, tokluk hissinin daha erken oluşmasını sağlar, porsiyon kontrolüne yardımcı olur ve kan şekerinin hızlı yükselmesini önler."
+  },
+  {
+    "soru": "Tatlı tüketmek isteyen bir diyabetli birey ne zaman bu isteğini karşılamalıdır?",
+    "cevap": "Ana öğün sonrası, kan şekeri daha dengeliyken küçük porsiyon ev yapımı tatlılarla bu istek karşılanabilir."
+  },
+  {
+    "soru": "Neden glisemik indeksi düşük gıdalar tercih edilmelidir?",
+    "cevap": "Bu gıdalar kan şekerini yavaş yükseltir, uzun süre tokluk sağlar ve ani şeker düşüşlerini engeller."
+  },
+  {
+    "soru": "Akşam geç saatlerde yemek yeme alışkanlığı diyabetli bireylerde neden sakıncalıdır?",
+    "cevap": "Gece geç yemek yemek, insülin direncini artırabilir ve sabah açlık kan şekerinin yüksek çıkmasına neden olabilir."
+  },
+  {
+    "soru": "Diyabetli bireyler nişasta içeren sebzeleri nasıl tüketmelidir?",
+    "cevap": "Nişasta içeren sebzeler (patates, bezelye, mısır) sınırlı miktarda ve haşlanarak tüketilmelidir."
+  },
+  {
+    "soru": "Fazla yağ tüketimi diyabetli bireylerde ne gibi sorunlara yol açar?",
+    "cevap": "Karaciğer yağlanması, kilo artışı ve insülin direnci gibi olumsuz etkiler görülebilir."
+  },
+  {
+    "soru": "Diyabetli bireyler neden proteinle birlikte karbonhidrat tüketmelidir?",
+    "cevap": "Protein, karbonhidratın emilimini yavaşlatır ve kan şekerinin daha kontrollü yükselmesini sağlar."
+  },
+  {
+    "soru": "Gece atıştırmalıklarının diyabet üzerindeki olası etkisi nedir?",
+    "cevap": "Uygun seçilmezse gece kan şekerinin yükselmesine neden olabilir; protein ve lif içeren hafif atıştırmalıklar tercih edilmelidir."
+  },
+  {
+    "soru": "Diyabetli bireyler için en uygun tatlı türü hangisidir?",
+    "cevap": "Sütlü tatlılar, meyveli yoğurt, yulaflı kurabiyeler gibi düşük şekerli ve lif içeren tatlılar daha uygundur."
+  },
+  {
+    "soru": "Kan şekeri takibi yapan bireyler neden yemek öncesi ve sonrası ölçüm yapmalıdır?",
+    "cevap": "Bu ölçümler besinlerin glisemik etkisini izlemek ve doz ayarlaması yapmak açısından önemlidir."
+  },
+  {
+    "soru": "Diyabetli bireylerde haftada kaç gün egzersiz önerilir?",
+    "cevap": "En az 3 gün egzersiz yapılmalı, tercihen 5 güne yayılmalıdır. Egzersiz arası 2 günden fazla olmamalıdır."
+  },
+  {
+    "soru": "Pişirme yöntemi olarak fırınlama neden önerilir?",
+    "cevap": "Fırınlama, yağ kullanımını azaltır ve yiyeceklerin besin değerini korur."
+  },
+  {
+    "soru": "Diyabetli bireylerde öğünlerin protein içerme nedeni nedir?",
+    "cevap": "Proteinli öğünler glisemik yanıtı azaltır, kas kütlesini korur ve tokluk süresini uzatır."
+  },
+  {
+    "soru": "Etiketlerde 'şekersiz' ibaresi geçen ürünler her zaman güvenli midir?",
+    "cevap": "Hayır, şekersiz ürünler yağ veya sodyum açısından yüksek olabilir; tüm içerik değerlendirilmelidir."
+  },
+  {
+    "soru": "Ev yapımı yemekler dışarıda yenen yemeklere göre neden daha avantajlıdır?",
+    "cevap": "Ev yemekleri porsiyon ve içerik kontrolü sağlar, gizli şeker ve tuz içermez."
+  },
+  {
+    "soru": "Neden her ana öğünde farklı sebzeler tercih edilmelidir?",
+    "cevap": "Sebze çeşitliliği farklı vitamin ve minerallerin alınmasını sağlar ve öğünleri daha dengeli hale getirir."
+  },
+  {
+    "soru": "Ara öğünlerde yoğurt tercih edilmesi kan şekeri kontrolüne nasıl katkı sağlar?",
+    "cevap": "Yoğurt protein ve kalsiyum içerir, sindirimi yavaşlatır ve kan şekeri dalgalanmasını önler."
+  },
+  {
+    "soru": "Diyabetli bireylerde gazlı içecek tüketimi neden yasaklanmalıdır?",
+    "cevap": "Gazlı içecekler yüksek miktarda basit şeker içerir, kan şekerini hızla yükseltir ve insülin ihtiyacını artırır."
+  },
+  {
+    "soru": "Fiziksel olarak aktif olmayan bir birey için önerilen kalori azaltımı ne kadardır?",
+    "cevap": "Günlük 500–1000 kcal azaltmak, haftalık 0.5–1 kg arasında kilo kaybı sağlayabilir ve sağlıklı bir hız olarak kabul edilir."
+  },
+  {
+    "soru": "İleri yaşlı bireylerde protein alımının artırılmasının önemi nedir?",
+    "cevap": "İleri yaşta protein alımı kas kaybını önler, sarkopeniyi engeller ve bağımsız yaşamı sürdürmeyi destekler."
+  },
+  {
+    "soru": "Düşük kalorili ama besleyici değeri yüksek bir diyet nasıl olmalıdır?",
+    "cevap": "Tam tahıllar, sebzeler, baklagiller ve yağsız protein kaynaklarıyla dengelenmiş, enerji değeri düşük ama vitamin ve mineral yönünden zengin olmalıdır."
+  },
+  {
+    "soru": "Diyabetli bir birey akşam geç yemek yerse ne gibi sorunlarla karşılaşabilir?",
+    "cevap": "Geç saatte yemek yemek insülin direncini artırabilir ve sabah açlık kan şekeri seviyesini yükseltebilir."
+  },
+  {
+    "soru": "Çocuklarda neden kilo kaybı değil, boy uzamasının desteklenmesi önerilir?",
+    "cevap": "Çocuklarda büyüme devam ettiğinden düşük kalorili diyetler gelişimi olumsuz etkileyebilir; bu yüzden boy uzamasını destekleyen dengeli beslenme tercih edilmelidir."
+  },
+  {
+    "soru": "Masa başı çalışan bir diyabetli birey öğle yemeğinde ne tür seçimler yapmalıdır?",
+    "cevap": "Kızartma ve hamur işlerinden kaçınılmalı, haşlanmış sebzeler, ızgara et ve tam tahıllı ekmek tercih edilmelidir."
+  },
+  {
+    "soru": "Ağır işte çalışan bir obez birey için diyet nasıl düzenlenmelidir?",
+    "cevap": "Yüksek enerji gereksinimi dikkate alınarak sağlıklı, dengeli ve besleyici öğünler verilmeli, boş kalorilerden kaçınılmalıdır."
+  },
+  {
+    "soru": "Diyabetli bireylerde posalı beslenmenin sindirim sistemine etkisi nedir?",
+    "cevap": "Kabızlık gibi sorunları önler, bağırsak sağlığını destekler ve kan şekeri dalgalanmalarını azaltır."
+  },
+  {
+    "soru": "Doymuş yağ alımı diyabetli bireylerde neden kısıtlanmalıdır?",
+    "cevap": "Doymuş yağlar kalp-damar hastalıkları riskini artırır; bu nedenle günlük kalorinin %7’sini geçmemelidir."
+  },
+  {
+    "soru": "Diyabetli bireyler için trans yağların zararı nedir?",
+    "cevap": "Trans yağlar insülin direncini kötüleştirir, kolesterolü artırır ve kalp hastalıklarına zemin hazırlar."
+  },
+  {
+    "soru": "Yüksek kalorili ama besin değeri düşük gıdalar nelerdir?",
+    "cevap": "Şekerli içecekler, işlenmiş atıştırmalıklar, paketli tatlılar ve kızartmalar yüksek kalori içerir ama az besin sağlar."
+  },
+  {
+    "soru": "Egzersiz sonrası kan şekeri düşüklüğü yaşayan bireyler nasıl beslenmelidir?",
+    "cevap": "Egzersiz sonrası süt ve tam tahıllı ekmek gibi karbonhidrat ve protein içeren bir ara öğün alınmalıdır."
+  },
+  {
+    "soru": "Diyabetli bireylerin gece çalışan versiyonları öğünlerini nasıl ayarlamalı?",
+    "cevap": "Gece boyunca 2–3 küçük öğün ve sabaha karşı hafif bir kahvaltı planlanmalıdır; gündüz uykusundan önce son öğün alınmalıdır."
+  },
+  {
+    "soru": "Haftada 150 dakika egzersiz yapmak neden önemlidir?",
+    "cevap": "Bu süre, glukoz duyarlılığını artırır, kilo kontrolünü destekler ve kalp sağlığını korur."
+  },
+  {
+    "soru": "Tatlı krizleri yaşayan bir birey ne tür alternatifler tüketebilir?",
+    "cevap": "Tarçınlı yoğurt, fırınlanmış elma veya hurma gibi doğal ve lifli seçenekler önerilir."
+  },
+  {
+    "soru": "Diyabetli bireyler su dışında hangi içecekleri güvenle tüketebilir?",
+    "cevap": "Şekersiz bitki çayları, ayran ve maden suyu gibi şekersiz içecekler önerilir."
+  },
+  {
+    "soru": "Diyabetli bireylerde kahvaltının atlanması ne gibi riskler doğurur?",
+    "cevap": "Kahvaltının atlanması sonraki öğünlerde aşırı yeme ve ani kan şekeri yükselmelerine neden olabilir."
+  },
+  {
+    "soru": "Diyabetli bireylerde egzersiz öncesi kan şekeri 100 mg/dL'nin altındaysa ne yapılmalıdır?",
+    "cevap": "Egzersizden önce 15 gram karbonhidrat içeren bir ara öğün (meyve, meyve suyu) alınmalıdır."
+  },
+  {
+    "soru": "Kan şekeri takibinde yemek öncesi ve sonrası ölçümün amacı nedir?",
+    "cevap": "Yemeklerin glisemik etkisini izlemek, doz ayarlamak ve hipoglisemi riskini önlemektir."
+  },
+  {
+    "soru": "Gece atıştırmaları planlanırken nelere dikkat edilmelidir?",
+    "cevap": "Protein ve lif içeren, kan şekerini hızlı yükseltmeyen hafif öğünler tercih edilmelidir."
+  },
+  {
+    "soru": "Diyabetli bireylerde tatlı tüketimi nasıl sınırlı tutulmalıdır?",
+    "cevap": "Tatlı tüketimi haftada 1-2 kezle sınırlandırılmalı, küçük porsiyonlarda ve tercihen ev yapımı, sütlü tatlılar tercih edilmelidir."
+  },
+  {
+    "soru": "Yüksek lifli diyetin sindirim sistemi üzerindeki etkisi nedir?",
+    "cevap": "Lifli diyet bağırsak hareketlerini düzenler, kabızlığı önler ve bağırsak sağlığını destekler."
+  },
+  {
+    "soru": "Gece vardiyasında çalışan bir bireyin gün içi sıvı alımı nasıl planlanmalıdır?",
+    "cevap": "Gece boyu çalışırken düzenli su içilmeli, sabah uyumadan önce de sıvı alınmalı; kafeinli içecekler sınırlandırılmalıdır."
+  },
+  {
+    "soru": "Çocuklarda sabah kahvaltısının atlanması ne gibi riskler doğurur?",
+    "cevap": "Kahvaltı atlandığında dikkat dağınıklığı, enerji eksikliği ve gün içinde aşırı yeme davranışı görülebilir."
+  },
+  {
+    "soru": "Diyabetli bireylerde ara öğünlerde süt ürünlerinin tercih edilme nedeni nedir?",
+    "cevap": "Süt ürünleri protein ve kalsiyum içerir, tokluk sağlar ve kan şekerinin dengede kalmasına katkıda bulunur."
+  },
+  {
+    "soru": "Egzersiz sonrası hipoglisemi riski nasıl önlenebilir?",
+    "cevap": "Egzersizden sonra protein ve karbonhidrat içeren ara öğün (örneğin süt ve 1 dilim ekmek) tüketilmelidir."
+  },
+  {
+    "soru": "Diyabetli bireylerde porsiyon kontrolü nasıl sağlanabilir?",
+    "cevap": "Küçük tabak kullanımı, tabağın yarısını sebzeyle doldurma ve yavaş yemek yeme gibi yöntemlerle porsiyon kontrolü sağlanabilir."
+  },
+  {
+    "soru": "Çocuklarda fast food tüketimi obezite açısından neden sakıncalıdır?",
+    "cevap": "Fast food ürünler yüksek yağ, tuz ve kalori içerir; çocuklarda kilo artışına ve sağlıksız alışkanlıkların gelişmesine yol açabilir."
+  },
+  {
+    "soru": "Egzersiz yapan bir birey için su yerine hangi içecekler tercih edilebilir?",
+    "cevap": "Ayran, şekersiz maden suyu veya ev yapımı sebzeli içecekler tercih edilebilir; şekerli içeceklerden kaçınılmalıdır."
+  },
+  {
+    "soru": "Diyabetli bireylerde basit karbonhidratların sıklıkla tüketilmesi ne gibi etkiler yaratır?",
+    "cevap": "Kan şekerinin ani yükselmesine, ardından hızlı düşüşüne neden olur; bu da insülin dengesini bozar."
+  },
+  {
+    "soru": "Yaşlı bireylerde vitamin desteği hangi durumlarda zorunlu hale gelir?",
+    "cevap": "Besin emilimi bozulduğunda, iştahsızlık ya da ilaç kullanımı olduğunda destek gerekebilir."
+  },
+  {
+    "soru": "Öğün aralıklarının eşit olması kan şekeri kontrolüne nasıl yardımcı olur?",
+    "cevap": "Düzenli aralıklarla beslenmek kan şekeri dalgalanmalarını azaltır ve hipoglisemi riskini önler."
+  },
+  {
+    "soru": "Düşük karbonhidrat diyetlerinde lif eksikliği ne gibi sorunlara yol açar?",
+    "cevap": "Kabızlık, tokluk süresinin kısalması ve kolesterol kontrolünde zorluk gibi sorunlar yaşanabilir."
+  },
+  {
+    "soru": "Yağsız protein kaynaklarının tercih edilmesi neden önerilir?",
+    "cevap": "Doymuş yağ alımını azaltır, kalp sağlığını korur ve kan yağları üzerinde olumlu etkiler yaratır."
+  },
+  {
+    "soru": "Günlük yemek planında tatlı isteği nasıl kontrol altına alınabilir?",
+    "cevap": "Gün boyu yeterli kompleks karbonhidrat ve protein tüketimi, tatlı isteğini azaltabilir."
+  },
+  {
+    "soru": "Diyabetli bireylerin gece geç yemek yemesi ne gibi risk taşır?",
+    "cevap": "Gece geç yemek yemek kan şekeri kontrolünü bozar, sabah açlık glukozunu yükseltebilir ve kilo alımına neden olur."
+  },
+  {
+    "soru": "Tam tahıllı ekmek ile beyaz ekmek arasındaki farklar nelerdir?",
+    "cevap": "Tam tahıllı ekmek daha fazla lif ve vitamin içerir, glisemik indeksi daha düşüktür ve tokluk süresini uzatır."
+  },
+  {
+    "soru": "Diyabetli bireylerde besin etiketlerinin okunması neden önemlidir?",
+    "cevap": "Şeker, tuz ve doymuş yağ miktarları hakkında bilgi verir, böylece daha bilinçli seçim yapılabilir."
+  },
+  {
+    "soru": "Haftada en az kaç gün egzersiz yapmak önerilir?",
+    "cevap": "En az 3 gün, tercihen 5 gün egzersiz yapılmalıdır. Gün aşırı egzersiz önerilir."
+  },
+  {
+    "soru": "Yüksek glisemik indeksli gıdaların uzun vadede zararları nelerdir?",
+    "cevap": "İnsülin direnci, obezite, tip 2 diyabet ve kalp-damar hastalıklarına yol açabilir."
+  },
+  {
+    "soru": "Diyabetli bireyler için ideal kahvaltı tabağı nasıl olmalıdır?",
+    "cevap": "Tam tahıllı ekmek, haşlanmış yumurta, az yağlı peynir, yeşillik ve şekersiz çay içeren dengeli bir kahvaltı önerilir."
+  },
+  {
+    "soru": "Posa açısından zengin bir öğle yemeği örneği nedir?",
+    "cevap": "Mercimek çorbası, sebzeli bulgur pilavı, yoğurt ve mevsim salatası posa açısından zengin bir öğündür."
+  },
+  {
+    "soru": "Ara öğünlerde protein tüketimi neden önemlidir?",
+    "cevap": "Protein tokluk süresini uzatır, kan şekeri dalgalanmalarını azaltır ve kas kütlesini korumaya yardımcı olur."
+  },
+  {
+    "soru": "Diyabetli bireyler nişastalı sebzeleri günde ne kadar tüketmelidir?",
+    "cevap": "Nişastalı sebzeler toplam karbonhidrat miktarına göre sınırlandırılmalı; 1-2 porsiyonu geçmemelidir."
+  },
+  {
+    "soru": "Yemek öncesi su içmek porsiyon kontrolüne nasıl katkı sağlar?",
+    "cevap": "Su mide hacmini doldurarak erken tokluk hissi oluşturur ve daha az yemeğe yardımcı olur."
+  },
+  {
+    "soru": "Yatmadan hemen önce yüksek şekerli gıdalar tüketmenin sakıncası nedir?",
+    "cevap": "Gece kan şekeri yükselmesine, insülin dengesizliğine ve kilo artışına neden olabilir."
+  },
+  {
+    "soru": "Diyabetli bireylerde akşam yemeğinin saat kaçtan önce tüketilmesi önerilir?",
+    "cevap": "Yatmadan en az 2-3 saat önce tüketilmesi, gece kan şekeri kontrolü açısından faydalıdır."
+  },
+  {
+    "soru": "Glisemik yük ile glisemik indeks arasındaki fark nedir?",
+    "cevap": "Glisemik indeks gıdanın kan şekerini yükseltme hızını, glisemik yük ise bu etkinin miktarını da hesaba katar."
+  },
+  {
+    "soru": "Gece çalışan bireylerde kahvaltının işlevi nedir?",
+    "cevap": "Biyolojik ritmi düzene sokar, sabah kan şekeri dengesini sağlar ve günün ilk öğünü işlevini görür."
+  },
+  {
+    "soru": "Düşük glisemik indeksli karbonhidratlara örnekler nelerdir?",
+    "cevap": "Tam buğday ekmeği, yulaf, mercimek, nohut ve sebzeler düşük glisemik indeksli karbonhidratlardandır."
+  },
+  {
+    "soru": "Meyve suyu yerine meyve tüketmek hangi faydaları sağlar?",
+    "cevap": "Lif içerdiği için kan şekerini daha yavaş yükseltir, doygunluk sağlar ve daha az şeker içerir."
+  },
+  {
+    "soru": "Yağsız protein kaynakları neden her ana öğünde yer almalıdır?",
+    "cevap": "Kas kaybını önler, tokluk hissi sağlar ve kan şekerinin dengede kalmasına yardımcı olur."
+  },
+  {
+    "soru": "Diyabetli bireylerde gece açlığını bastırmak için en uygun besin nedir?",
+    "cevap": "Az yağlı süt, 1 dilim tam buğday ekmeği veya birkaç ceviz ideal gece ara öğünüdür."
+  },
+  {
+    "soru": "Karbonhidrat sayımı yöntemi kimler için uygundur?",
+    "cevap": "İnsülin kullanan diyabetli bireyler için karbonhidrat sayımı insülin dozunun ayarlanmasına yardımcı olur."
+  },
+  {
+    "soru": "Gece geç yenen yüksek yağlı yemeklerin etkisi nedir?",
+    "cevap": "Sindirim süresi uzar, kan şekeri kontrolü zorlaşır ve sabah glukoz seviyeleri yükselir."
+  },
+  {
+    "soru": "Diyabetli çocuklarda beslenme planı hazırlanırken nelere dikkat edilmelidir?",
+    "cevap": "Büyüme ve gelişme desteklenmeli, öğünler dengeli olmalı ve kan şekeri kontrolü göz önünde bulundurulmalıdır."
+  },
+  {
+    "soru": "Diyabetli bireylerde öğün atlamak hangi sağlık sorunlarına neden olabilir?",
+    "cevap": "Hipoglisemi, aşırı yeme, insülin dengesizliği ve kan şekeri dalgalanmaları oluşabilir."
+  },
+  {
+    "soru": "Günde 1500 kcal alan bir bireyin posa ihtiyacı yaklaşık ne kadardır?",
+    "cevap": "Her 1000 kcal için 14 gram posa önerildiğinden yaklaşık 21 gram posa alınmalıdır."
+  },
+  {
+    "soru": "Yüksek şekerli atıştırmalıkların yerine ne tür alternatifler önerilir?",
+    "cevap": "Kuru meyve + yoğurt, yulaf + süt, tarçınlı elma gibi düşük glisemik indeksli alternatifler önerilir."
+  },
+  {
+    "soru": "Tatlı ihtiyacını bastırmak için öğle yemeğinde hangi gıdalar tercih edilmelidir?",
+    "cevap": "Kompleks karbonhidratlar, protein ve sebzeler içeren öğünler tatlı krizlerini azaltır."
+  },
+  {
+    "soru": "Egzersiz sonrası tüketilecek öğünde hangi besin grupları yer almalıdır?",
+    "cevap": "Protein ve karbonhidrat içeren gıdalar (örneğin yoğurt ve tam tahıllı ekmek) kas onarımı ve glikojen depolarının yenilenmesi için önerilir."
+  },
+  {
+    "soru": "Diyabetli bireylerde gün içinde alınan toplam karbonhidrat miktarı nasıl belirlenmelidir?",
+    "cevap": "Kişinin yaş, kilo, aktivite düzeyi ve tedavi yöntemine göre diyetisyen tarafından belirlenmelidir."
+  },
+  {
+    "soru": "İleri yaş bireylerde tat duyusunun azalması yemek seçimlerini nasıl etkiler?",
+    "cevap": "Tuzlu ve tatlı isteği artabilir; bu nedenle baharatlarla lezzet artırımı yapılmalı, tuz ve şeker kısıtlanmalıdır."
+  },
+  {
+    "soru": "Meyve tüketiminde dikkat edilmesi gereken en önemli husus nedir?",
+    "cevap": "Porsiyon kontrolü yapılmalı, taze ve kabuklu meyveler tercih edilmelidir."
+  },
+  {
+    "soru": "Diyabetli bireylerde lif tüketiminin sindirim sistemi üzerindeki yararları nelerdir?",
+    "cevap": "Kabızlığı önler, bağırsak hareketlerini düzenler ve tokluk süresini uzatır."
+  },
+  {
+    "soru": "Yaşlı bireylerde azalan mide asidi emilimi hangi vitamin eksikliklerine yol açar?",
+    "cevap": "Özellikle B12 vitamini eksikliği sık görülür."
+  },
+  {
+    "soru": "Ağır fiziksel iş yapan bireylerin protein ihtiyacı neden artar?",
+    "cevap": "Kas yıkımı fazla olduğu için doku onarımı ve kas koruması amacıyla protein alımı artırılmalıdır."
+  },
+  {
+    "soru": "Günlük enerji alımı sabah ve akşam öğünlerine nasıl dağıtılmalıdır?",
+    "cevap": "Günün erken saatlerinde daha fazla, akşama doğru daha az kalori alınmalıdır."
+  },
+  {
+    "soru": "Yüksek tuz tüketiminin diyabetli bireylerdeki en olumsuz etkisi nedir?",
+    "cevap": "Hipertansiyon riskini artırır ve kalp-damar hastalıklarına zemin hazırlar."
+  },
+  {
+    "soru": "Gece çalışan bireylerde sindirimi kolay akşam öğünü nasıl olmalıdır?",
+    "cevap": "Az yağlı, posa içeriği dengeli ve hafif pişirilmiş yemekler tercih edilmelidir."
+  },
+  {
+    "soru": "Diyabetli bireylerde yemekten sonra tatlı ihtiyacını bastırmak için hangi öneriler verilebilir?",
+    "cevap": "Tarçınlı yoğurt, 1 adet kuru meyve veya yulaflı küçük kurabiye gibi hafif alternatifler önerilebilir."
+  },
+  {
+    "soru": "Sıcak havalarda diyabetli bireylerin sıvı alımında nelere dikkat etmesi gerekir?",
+    "cevap": "Şekersiz içecekler tercih edilmeli, maden suyu ile mineral dengesi korunmalıdır."
+  },
+  {
+    "soru": "Tatlı krizlerinin önlenmesi için kahvaltıda hangi besinler tercih edilmelidir?",
+    "cevap": "Yumurta, tam tahıllı ekmek ve peynir gibi protein ve kompleks karbonhidrat içeren besinler önerilir."
+  },
+  {
+    "soru": "Diyabetli bireyler çorba tüketirken nelere dikkat etmelidir?",
+    "cevap": "Un ve yağ eklenmemiş, sebzeli veya baklagilli çorbalar tercih edilmelidir."
+  },
+  {
+    "soru": "Kafeinli içeceklerin aşırı tüketimi diyabetli bireylerde hangi sorunlara yol açabilir?",
+    "cevap": "Uykusuzluk, kalp çarpıntısı ve kan şekeri dalgalanmalarına neden olabilir."
+  },
+  {
+    "soru": "Diyabetli bireylerde fiziksel aktivitenin düzenli olması neden önemlidir?",
+    "cevap": "İnsülin duyarlılığını artırır, kan şekeri kontrolünü kolaylaştırır ve kilo yönetimine katkı sağlar."
+  },
+  {
+    "soru": "Çocuklarda ekran süresi artışı beslenme alışkanlıklarını nasıl etkiler?",
+    "cevap": "Atıştırmalık tüketimi artar, öğün düzeni bozulur ve fiziksel aktivite azalır."
+  },
+  {
+    "soru": "Yüksek doymuş yağ içeren gıdaların diyabetli bireylerdeki etkisi nedir?",
+    "cevap": "Kan yağlarını artırarak kalp hastalıkları riskini yükseltir ve insülin direncini kötüleştirir."
+  },
+  {
+    "soru": "Diyabetli bireylerde haftalık egzersiz süresi ne kadar olmalıdır?",
+    "cevap": "Haftada en az 150 dakika orta şiddette egzersiz yapılmalıdır."
+  },
+  {
+    "soru": "Diyabetli bireylerde tatlı ihtiyacı kriz hâline gelirse nasıl müdahale edilmelidir?",
+    "cevap": "Şekersiz meyve tatlıları, tarçınla tatlandırılmış yoğurt veya kuru meyve + ceviz gibi alternatifler önerilmelidir."
+  },
+  {
+    "soru": "Diyabetli bireyler neden posalı sebzeleri haşlayarak tüketmelidir?",
+    "cevap": "Haşlama yöntemi sebzenin lif içeriğini korur, sindirimi kolaylaştırır ve glisemik etkisini azaltır."
+  },
+  {
+    "soru": "Yüksek tansiyon riski taşıyan bireylerde tuz tüketimi ne kadarla sınırlandırılmalıdır?",
+    "cevap": "Günlük tuz alımı 5 gramı geçmemelidir; bu da yaklaşık 1 silme tatlı kaşığına karşılık gelir."
+  },
+  {
+    "soru": "Diyabetli bireylerde gece ara öğünü atlamak ne gibi riskler doğurabilir?",
+    "cevap": "Gece boyunca kan şekeri düşebilir; bu durum hipoglisemiye ve uyku kalitesinin bozulmasına neden olabilir."
+  },
+  {
+    "soru": "Gece çalışan bireylerde sabah öğünü hangi özellikleri taşımalıdır?",
+    "cevap": "Hafif, sindirimi kolay, protein ve lif içeren bir kahvaltı şeklinde planlanmalıdır."
+  },
+  {
+    "soru": "Diyabetli bireylerde yemek sonrası tatlı yerine hangi meyveler önerilebilir?",
+    "cevap": "Elma, armut veya greyfurt gibi düşük glisemik indeksli meyveler önerilir."
+  },
+  {
+    "soru": "Diyabetli bireylerde kilo yönetiminde porsiyon kontrolü neden kritik öneme sahiptir?",
+    "cevap": "Fazla porsiyonlar glukoz yükünü artırır; porsiyon kontrolü ise kan şekerini dengelemeye yardımcı olur."
+  },
+  {
+    "soru": "Tatlı krizlerini önlemek için hangi ana öğün özellikleri önemlidir?",
+    "cevap": "Yeterli protein, kompleks karbonhidrat ve posa içeren öğünler tatlı ihtiyacını azaltır."
+  },
+  {
+    "soru": "Yoğun fiziksel aktivite sonrası diyabetli birey hangi içeceği tercih etmelidir?",
+    "cevap": "Ayran veya şekersiz maden suyu; kaybedilen mineralleri geri kazandırır ve kan şekerini destekler."
+  },
+  {
+    "soru": "Diyabetli bireylerde akşam yemeği ne kadar sürede tüketilmelidir?",
+    "cevap": "Yavaş ve bilinçli yemek yemek sindirimi kolaylaştırır, glukoz emilimini dengeler ve tokluk hissini artırır."
+  },
+  {
+    "soru": "Ara öğünler diyabet yönetiminde hangi rolü üstlenir?",
+    "cevap": "Kan şekeri dalgalanmalarını önler, açlık krizlerini azaltır ve ana öğünlerde aşırı yeme riskini düşürür."
+  },
+  {
+    "soru": "Kuru baklagillerin diyabet beslenmesindeki önemi nedir?",
+    "cevap": "Yüksek lif ve protein içerikleri ile glisemik yanıtı düşürür, uzun süre tokluk sağlar."
+  },
+  {
+    "soru": "Diyabetli bireylerin ana öğünlerinde hangi pişirme yöntemleri önerilir?",
+    "cevap": "Haşlama, ızgara, buğulama ve fırınlama gibi az yağlı yöntemler tercih edilmelidir."
+  },
+  {
+    "soru": "Diyabetli bireyler gün boyunca neden düzenli saatlerde yemek yemelidir?",
+    "cevap": "İnsülin salınımı ve kan şekeri dengesi düzenli öğün saatleri ile daha iyi kontrol edilir."
+  },
+  {
+    "soru": "Diyabetli bireyler neden gazlı içeceklerden uzak durmalıdır?",
+    "cevap": "Gazlı içecekler yüksek şeker içerdiği için kan şekeri kontrolünü zorlaştırır."
+  },
+  {
+    "soru": "Tatlı isteğini bastırmak için gün içerisinde hangi baharatlar kullanılabilir?",
+    "cevap": "Tarçın gibi kan şekeri dengeleyici baharatlar tatlı isteğini azaltabilir."
+  },
+  {
+    "soru": "İleri yaş diyabetli bireylerde düşük kalorili diyetlerin riskleri nelerdir?",
+    "cevap": "Kas kaybı, yetersiz besin alımı ve bağışıklık sisteminin zayıflaması gibi riskler vardır."
+  },
+  {
+    "soru": "Diyabetli bireylerde sağlıklı atıştırmalık alternatiflerine örnek nedir?",
+    "cevap": "1 dilim tam tahıllı ekmek üzerine az tuzlu lor peyniri gibi proteinli ve lifli atıştırmalıklar önerilir."
+  },
+  {
+    "soru": "Düşük glisemik indeksli gıdalar neden ana öğünlerde tercih edilmelidir?",
+    "cevap": "Kan şekerini yavaş yükseltir, uzun süre tokluk sağlar ve insülin ihtiyacını azaltır."
+  },
+  {
+    "soru": "Haftada en az kaç gün direnç egzersizi önerilir?",
+    "cevap": "En az 2 gün direnç (ağırlık) egzersizi, kas kütlesinin korunması için önerilir."
+  },
+  {
+    "soru": "Tatlı isteğini bastırmak için akşam ara öğününde ne önerilir?",
+    "cevap": "Bir avuç çiğ badem veya tarçınlı sütlü içecekler akşam tatlı isteğini bastırabilir."
+  },
+  {
+    "soru": "İleri yaşta diyabetli bireylerde neden enerji ihtiyacı azalır?",
+    "cevap": "Fiziksel aktivite azalır, metabolizma yavaşlar ve kas kütlesi azaldığı için enerji ihtiyacı düşer."
+  },
+  {
+    "soru": "Diyabetli bireylerde uzun süreli açlık neden sakıncalıdır?",
+    "cevap": "Hipoglisemiye neden olabilir ve sonrasında aşırı yemek tüketimine yol açabilir."
+  },
+  {
+    "soru": "Yemek öncesi ılık su içmenin diyabetli bireylerdeki faydası nedir?",
+    "cevap": "İştahı azaltabilir ve sindirimi kolaylaştırabilir."
+  },
+  {
+    "soru": "Diyabetli bireylerde sabah kahvaltısı neden atlanmamalıdır?",
+    "cevap": "Gece boyu düşen kan şekerini dengeler ve metabolizmayı harekete geçirir."
+  },
+  {
+    "soru": "Gece çalışan bireylerde en uygun akşam ara öğünü ne olmalıdır?",
+    "cevap": "Yoğurt, ceviz ve yulaf gibi hafif ve protein içeriği yüksek besinler tercih edilmelidir."
+  },
+  {
+    "soru": "Diyabetli bireylerin dışarıda yemek yerken dikkat etmesi gereken ilk şey nedir?",
+    "cevap": "Porsiyon kontrolü ve pişirme yöntemi; özellikle kızartmalardan uzak durulmalıdır."
+  },
+  {
+    "soru": "Diyabetli bireyler neden karbonhidratları gün içine yayarak tüketmelidir?",
+    "cevap": "Kan şekeri seviyesinin dengeli kalmasına yardımcı olur."
+  },
+  {
+    "soru": "Gece vardiyası sonrası uykudan önce hangi öğün önerilir?",
+    "cevap": "Hafif bir kahvaltı tarzı öğün; yumurta, kepekli ekmek ve süt içeren bir menü önerilir."
+  },
+  {
+    "soru": "Tatlı krizleri yaşayan bireylerde kahvaltıya eklenecek hangi besin yardımcı olabilir?",
+    "cevap": "Yulaf ezmesi ve tarçın tatlı isteğini bastırabilir."
+  },
+  {
+    "soru": "Günde kaç öğün beslenme, diyabetli bireyler için genellikle uygundur?",
+    "cevap": "3 ana öğün ve 2-3 ara öğün olmak üzere toplam 5-6 öğün önerilir."
+  },
+  {
+    "soru": "Tatlı krizlerine karşı gün içinde hangi çaylar önerilebilir?",
+    "cevap": "Tarçın, rezene veya karanfilli bitki çayları önerilir."
+  },
+  {
+    "soru": "Egzersiz sonrası en hızlı toparlanma için hangi öğün tüketilmelidir?",
+    "cevap": "Karbonhidrat ve protein içeren bir ara öğün (örneğin süt ve muz)."
+  },
+  {
+    "soru": "Diyabetli bireylerde glisemik indeks hesabı neden önemlidir?",
+    "cevap": "Besinlerin kan şekerine etkisini anlamak ve uygun seçimler yapmak için gereklidir."
+  },
+  {
+    "soru": "Akşam yemeğinde fazla karbonhidrat alımı hangi sağlık sorunlarına yol açabilir?",
+    "cevap": "Gece hiperglisemi, kilo artışı ve sabah açlık şekeri yüksekliği gibi sorunlara neden olabilir."
+  },
+  {
+    "soru": "Çocuklarda ara öğünlerde süt ve meyve verilmesinin faydası nedir?",
+    "cevap": "Protein, kalsiyum ve doğal şeker kombinasyonu sağlanır; büyümeyi destekler."
+  },
+  {
+    "soru": "Diyabetli bireylerde egzersiz sonrası oluşan yorgunluk için hangi takviyeler önerilebilir?",
+    "cevap": "Magnezyum ve potasyum yönünden zengin maden suyu veya ayran tüketilebilir."
+  },
+  {
+    "soru": "Gece geç saatte yemek yemek diyabetli bireylerde neden önerilmez?",
+    "cevap": "İnsülin duyarlılığı azalır, sabah kan şekeri yüksekliği riski artar."
+  },
+  {
+    "soru": "Süt ürünlerinin kan şekeri üzerindeki etkisi nasıldır?",
+    "cevap": "Protein içerikleri sayesinde kan şekerini yavaş yükseltir."
+  },
+  {
+    "soru": "İnsülin kullanan bireylerde egzersiz öncesi karbonhidrat alımı neden gereklidir?",
+    "cevap": "Hipoglisemi riskini azaltmak için egzersiz öncesi 15-30 gram karbonhidrat alınmalıdır."
+  },
+  {
+    "soru": "Diyabetli bireylerin sağlıklı bir gün sonu ara öğünü nasıl olmalıdır?",
+    "cevap": "Küçük porsiyon yoğurt, bir miktar ceviz veya az tuzlu peynir önerilir."
+  },
+  {
+    "soru": "Diyabetli bireyler neden glisemik indeksi düşük gıdaları tercih etmelidir?",
+    "cevap": "Bu gıdalar kan şekerini yavaş yükselterek hiperglisemi riskini azaltır ve daha uzun süre tokluk sağlar."
+  },
+  {
+    "soru": "Sabah aç karnına egzersiz yapmanın diyabetli bireylerdeki riski nedir?",
+    "cevap": "Aç karnına yapılan egzersiz hipoglisemiye yol açabilir; bu nedenle öncesinde küçük bir ara öğün önerilir."
+  },
+  {
+    "soru": "Gece vardiyası yapan diyabetli bireylerde sabah kan şekeri neden yüksek çıkabilir?",
+    "cevap": "Yetersiz uyku, gece geç yemek ve biyolojik ritim bozulması sabah şekeri yüksekliğine neden olabilir."
+  },
+  {
+    "soru": "Diyabetli bireylerde kan şekeri düşüklüğünde ilk müdahale ne olmalıdır?",
+    "cevap": "15 gram hızlı karbonhidrat (örneğin 1 bardak meyve suyu) tüketilmelidir."
+  },
+  {
+    "soru": "Yemeklerde posa miktarını artırmak için hangi yöntemler uygulanabilir?",
+    "cevap": "Sebze, tam tahıllı ürünler ve kuru baklagiller öğünlere eklenmelidir."
+  },
+  {
+    "soru": "Diyabetli bireylerde su tüketimi yetersiz olursa ne gibi belirtiler görülebilir?",
+    "cevap": "Baş ağrısı, halsizlik, idrar renginde koyulaşma ve kabızlık görülebilir."
+  },
+  {
+    "soru": "Diyabetli bireylerde yüksek şekerli kahvaltılıklar neden önerilmez?",
+    "cevap": "Bal, reçel, çikolata gibi gıdalar ani şeker yükselmesine ve dengesizliğe neden olur."
+  },
+  {
+    "soru": "Tatlı krizlerine karşı gün boyu öğünlerde hangi denge önemlidir?",
+    "cevap": "Protein, lif ve kompleks karbonhidrat dengesine dikkat edilmelidir."
+  },
+  {
+    "soru": "Diyabetli bireylerde kuru meyve tüketiminde nelere dikkat edilmelidir?",
+    "cevap": "Porsiyon kontrolü yapılmalı ve ek şeker içermeyen türler tercih edilmelidir."
+  },
+  {
+    "soru": "Fiziksel olarak aktif diyabetli bireylerde egzersiz sonrası su tüketimi nasıl olmalıdır?",
+    "cevap": "Egzersiz öncesi ve sonrası yeterli su tüketilmeli, kayıplar maden suyu ile telafi edilebilir."
+  },
+  {
+    "soru": "Diyabetli bireylerin haftalık menü planı yapmasının faydaları nelerdir?",
+    "cevap": "Beslenme dengesini korur, alışverişi kolaylaştırır ve yanlış besin alımını önler."
+  },
+  {
+    "soru": "Günlük su ihtiyacını karşılamak için önerilen yöntem nedir?",
+    "cevap": "Her öğünle birlikte su içmek ve gün boyunca yanında su şişesi taşımak faydalıdır."
+  },
+  {
+    "soru": "Diyabetli bireyler neden öğün aralarında tatlandırıcılı içeceklerden uzak durmalıdır?",
+    "cevap": "Tatlı isteğini artırabilir ve bazı yapay tatlandırıcılar bağırsak florasını etkileyebilir."
+  },
+  {
+    "soru": "Tatlı krizini bastırmak için diyabetli birey hangi ara öğünü seçebilir?",
+    "cevap": "Tarçınlı yoğurt, 1 adet kuru kayısı ve birkaç badem içeren ara öğün tercih edilebilir."
+  },
+  {
+    "soru": "Fazla protein alımının diyabetli bireylerdeki riski nedir?",
+    "cevap": "Böbrek fonksiyonu bozuksa fazla protein yükü zararlı olabilir, bu nedenle bireysel hesaplama gerekir."
+  },
+  {
+    "soru": "Diyabetli bireyler neden beyaz unlu ürünlerden kaçınmalıdır?",
+    "cevap": "Beyaz unlu ürünler glisemik indeksi yüksektir ve kan şekerini hızlı yükseltir."
+  },
+  {
+    "soru": "Gece çalışan bireylerin ideal sıvı tüketimi nasıl olmalıdır?",
+    "cevap": "Uyanık oldukları saatlere dengeli şekilde yayılmalı, kafeinsiz ve şekersiz içecekler tercih edilmelidir."
+  },
+  {
+    "soru": "Egzersiz öncesi karbonhidrat tüketimi neden egzersiz performansını artırır?",
+    "cevap": "Kaslara enerji sağlar, yorgunluğu geciktirir ve hipoglisemi riskini azaltır."
+  },
+  {
+    "soru": "Tatlı krizini bastırmak için doğal tatlı alternatiflerine örnek veriniz.",
+    "cevap": "Fırınlanmış tarçınlı elma, yulaf ezmeli muzlu kurabiye gibi doğal ve düşük şekerli tatlılar önerilir."
+  },
+  {
+    "soru": "Ara öğünlerde meyve suyu tüketmek neden önerilmez?",
+    "cevap": "Posa içermez, glisemik yükü yüksektir ve kan şekerini hızla yükseltir."
+  },
+  {
+    "soru": "Diyabetli bireylerde aşırı lif tüketiminin olumsuz etkileri olabilir mi?",
+    "cevap": "Evet, aşırı lif alımı şişkinlik, gaz ve bazı besin öğelerinin emilimini engelleyebilir."
+  },
+  {
+    "soru": "Diyabetli bireylerde sabah kahvaltısında sütlü kahve tüketimi nasıl olmalıdır?",
+    "cevap": "Şekersiz ve az yağlı süt ile hazırlanmalı, yanında tam tahıllı besinlerle dengelenmelidir."
+  },
+  {
+    "soru": "Günde 1500 kcal tüketen bir birey ne kadar lif almalıdır?",
+    "cevap": "Yaklaşık 21 gram lif almalıdır; her 1000 kcal için 14 gram önerilir."
+  },
+  {
+    "soru": "Diyabetli bireyler neden televizyon karşısında yemek yememelidir?",
+    "cevap": "Dikkat dağılır ve porsiyon kontrolü zorlaşır, bu da aşırı yeme riskini artırır."
+  },
+  {
+    "soru": "Kan şekerinin dalgalanmasını önlemek için öğün saatleri nasıl düzenlenmelidir?",
+    "cevap": "Her 3-4 saatte bir öğün tüketilerek kan şekeri dengede tutulmalıdır."
+  },
+  {
+    "soru": "Diyabetli bireylerde akşam yemeğinde karbonhidrat oranı ne olmalıdır?",
+    "cevap": "Tabağın dörtte biri kadar kompleks karbonhidrat içermelidir."
+  },
+  {
+    "soru": "Tatlı krizlerine karşı haftalık menüye hangi öğünler eklenebilir?",
+    "cevap": "Tarçınlı süt, fırın meyve ve yulaflı ara öğünler tatlı isteğini dengeler."
+  },
+  {
+    "soru": "Diyabetli bireylerde en sık karşılaşılan beslenme hatası nedir?",
+    "cevap": "Ara öğünleri atlamak ve ana öğünde aşırı yemek tüketmek en sık yapılan hatalardandır."
+  },
+  {
+    "soru": "Yoğun tempolu çalışan bireylerde tatlı tüketimini azaltmak için ne önerilir?",
+    "cevap": "Enerji sağlayan ama şeker içermeyen ara öğünler (ör. ceviz + hurma) önerilir."
+  },
+  {
+    "soru": "Egzersiz sonrası yoğurtlu ara öğünlerin faydası nedir?",
+    "cevap": "Protein sağlar, kas onarımını destekler ve glisemik yanıtı dengeler."
+  },
+  {
+    "soru": "Diyabetli bireylerin gece açlığına karşı ne tür ara öğün tercih etmesi uygundur?",
+    "cevap": "Yavaş sindirilen proteinli besinler (örneğin süt + ceviz) gece boyunca kan şekeri dengesini korur."
+  },
+  {
+    "soru": "Besin etiketinde ‘diyet’ yazısı varsa bu ürün mutlaka güvenli midir?",
+    "cevap": "Hayır, ‘diyet’ ürünler bazen yüksek sodyum veya doymuş yağ içerebilir, etiket dikkatle okunmalıdır."
+  },
+  {
+    "soru": "Diyabetli bireylerde kahvaltı sonrası tatlı isteğini bastırmak için ne önerilir?",
+    "cevap": "Yulaf, süt ve tarçınla yapılan kahvaltılar uzun süre tokluk sağlar."
+  },
+  {
+    "soru": "Diyabetli bireylerin sık yemek yeme alışkanlığı neden önemlidir?",
+    "cevap": "Kan şekeri dengesini sağlar ve hipoglisemi riskini azaltır."
+  },
+  {
+    "soru": "Tatlı isteğini azaltmak için hangi vitamin ve mineraller önemlidir?",
+    "cevap": "Magnezyum ve krom eksiklikleri tatlı isteğini artırabilir; yeterli alım önemlidir."
+  },
+  {
+    "soru": "Diyabetli bireyler tatlandırıcı kullanırken nelere dikkat etmelidir?",
+    "cevap": "Doğal tatlandırıcılar tercih edilmeli, günlük miktar aşılmamalıdır."
+  },
+  {
+    "soru": "Tatlı isteğini bastırmak için kahvaltıdan sonra hangi içecekler önerilir?",
+    "cevap": "Tarçınlı süt veya şekersiz bitki çayları (örneğin rezene) önerilir."
+  },
+  {
+    "soru": "Diyabetli bireylerde akşam yemeğinde kızartma tüketimi neden önerilmez?",
+    "cevap": "Yağlı ve ağır yemekler gece insülin dengesini bozar, sindirimi zorlaştırır."
+  },
+  {
+    "soru": "Diyabetli bireylerde su içme alışkanlığı nasıl kazandırılabilir?",
+    "cevap": "Görünür yerlere su şişesi koymak, su içmeyi hatırlatan uygulamalar kullanmak önerilir."
+  },
+  {
+    "soru": "Gece çalışan bireylerde sabah uykudan önce öğün planlaması nasıl olmalıdır?",
+    "cevap": "Karbonhidrat ve protein dengeli, hafif bir öğünle uyumadan önce kan şekeri dengelenmelidir."
+  },
+  {
+    "soru": "Diyabetli bireylerde akşam saatlerinde ağır yemekler tüketmek ne gibi riskler taşır?",
+    "cevap": "Kan şekeri kontrolü zorlaşır, gece hiperglisemisi ve sabah açlık şekeri yüksekliği görülebilir."
+  },
+  {
+    "soru": "Diyabetli bireylerde sabit öğün saatlerinin faydası nedir?",
+    "cevap": "İnsülin salınımı dengelenir, kan şekeri dalgalanmaları önlenir ve açlık krizleri azalır."
+  },
+  {
+    "soru": "Haşlanmış sebzelerin diyabetli bireylerdeki önemi nedir?",
+    "cevap": "Lif içerikleri korunur, glisemik indeks düşüktür ve sindirimi kolaydır."
+  },
+  {
+    "soru": "Yüksek glisemik indeksli gıdaların diyabet üzerindeki etkisi nedir?",
+    "cevap": "Kan şekerini hızlı yükseltir, ani insülin yanıtı oluşturur ve kontrolü zorlaştırır."
+  },
+  {
+    "soru": "Öğünlerde sebze tüketiminin avantajları nelerdir?",
+    "cevap": "Sebzeler posa sağlar, mideyi doldurur, düşük kalorilidir ve tokluk hissini artırır."
+  },
+  {
+    "soru": "Diyabetli bireyler neden öğünlerine baklagil eklemelidir?",
+    "cevap": "Düşük glisemik indekse sahiptirler, protein ve posa içerikleri yüksektir, tokluk sağlarlar."
+  },
+  {
+    "soru": "Diyabetli bireylerde gece hipoglisemisini önlemek için ne tür öğünler planlanmalıdır?",
+    "cevap": "Protein ve lif içeren düşük glisemik indeksli hafif ara öğünler planlanmalıdır."
+  },
+  {
+    "soru": "İnsülin kullanan bireylerde egzersiz sonrası tatlı tüketimi uygun mudur?",
+    "cevap": "Hayır, kan şekeri aniden yükselebilir; protein ve lif içeren öğünler daha uygundur."
+  },
+  {
+    "soru": "Diyabetli bireylerin tatlı tüketiminde en güvenli seçenek nedir?",
+    "cevap": "Sütlü ve şekersiz ev yapımı tatlılar küçük porsiyonlarla tüketilebilir."
+  },
+  {
+    "soru": "Masa başı çalışan bireylerde neden saat başı hareket önerilir?",
+    "cevap": "Kan dolaşımını artırır, insülin duyarlılığını destekler ve metabolizmayı canlı tutar."
+  },
+  {
+    "soru": "Diyabetli bireylerin gün içinde yeterli posa almadığında yaşayabileceği sorunlar nelerdir?",
+    "cevap": "Kabızlık, kan şekeri dalgalanması ve uzun süren açlık hissi görülebilir."
+  },
+  {
+    "soru": "Tatlı ihtiyacını bastırmak için öğünlerde hangi kombinasyon önerilir?",
+    "cevap": "Kompleks karbonhidrat + protein + lif kombinasyonu tokluk süresini uzatır."
+  },
+  {
+    "soru": "Diyabetli bireylerde hızlı kilo kaybı neden önerilmez?",
+    "cevap": "Kas kaybı, yetersiz beslenme ve metabolik dengesizliklere yol açabilir."
+  },
+  {
+    "soru": "Yemeklerden sonra yürüyüş yapmanın diyabetli bireylere faydası nedir?",
+    "cevap": "Postprandiyal glukozu düşürür ve insülin duyarlılığını artırır."
+  },
+  {
+    "soru": "Gece vardiyası sonrası birey kahvaltısını nasıl planlamalıdır?",
+    "cevap": "Yumurta, kepekli ekmek ve süt gibi dengeli ve sindirimi kolay besinler içermelidir."
+  },
+  {
+    "soru": "Çocukluk çağında abur cubur tüketimi neden sınırlanmalıdır?",
+    "cevap": "Obezite riskini artırır, sağlıksız alışkanlıklar kazandırır ve besin dengesini bozar."
+  },
+  {
+    "soru": "İleri yaş bireylerde sıvı ihtiyacının karşılanmaması neye yol açabilir?",
+    "cevap": "Kabızlık, baş dönmesi, idrar yolu enfeksiyonları ve böbrek problemlerine neden olabilir."
+  },
+  {
+    "soru": "Diyabetli bireylerde stresin etkisi nasıldır?",
+    "cevap": "Stres hormonları insülin direncini artırır ve kan şekeri dengesini bozar."
+  },
+  {
+    "soru": "Ara öğünlerde proteinli besin tüketmek neden önemlidir?",
+    "cevap": "Tokluk hissini artırır, glukoz emilimini dengeler ve ana öğüne fazla açlıkla girilmesini engeller."
+  },
+  {
+    "soru": "Diyabetli bireylerde tatlı ihtiyacı psikolojik mi, fizyolojik mi olabilir?",
+    "cevap": "Her ikisi de olabilir; kan şekeri dalgalanması ve duygusal yeme isteğiyle ilişkilidir."
+  },
+  {
+    "soru": "Diyabetli bireylerin glisemik yükü düşük öğünler tercih etmesi neden önemlidir?",
+    "cevap": "Kan şekeri dalgalanmalarını önler ve uzun süreli tokluk sağlar."
+  },
+  {
+    "soru": "Yemek sonrası uyuklama hissi diyabetli bireylerde neyi işaret edebilir?",
+    "cevap": "Yüksek karbonhidrat alımına bağlı ani kan şekeri yükselmesini ve sonrasında düşüşü gösterebilir."
+  },
+  {
+    "soru": "Diyabetli bireyler neden çorba tercihinde dikkatli olmalıdır?",
+    "cevap": "Unlu, kremalı çorbalar yerine sebze ve baklagil içeren lifli çorbalar tercih edilmelidir."
+  },
+  {
+    "soru": "Kan şekeri yönetiminde baharatların rolü nedir?",
+    "cevap": "Tarçın gibi bazı baharatlar insülin duyarlılığını artırabilir ve tatlı isteğini azaltabilir."
+  },
+  {
+    "soru": "Tatlı isteği günün belirli saatlerinde artıyorsa nasıl önlem alınmalıdır?",
+    "cevap": "O saatlerde lif ve protein dengeli ara öğün planlanmalı, su tüketimi artırılmalıdır."
+  },
+  {
+    "soru": "Diyabetli bireylerde ideal akşam ara öğünü ne içermelidir?",
+    "cevap": "Yoğurt + ceviz veya 1 dilim peynir + kepekli ekmek gibi protein ve lif içerikli olmalıdır."
+  },
+  {
+    "soru": "Günlük posa ihtiyacını karşılamak için en etkili kombinasyon nedir?",
+    "cevap": "Sebze, meyve kabukları, kuru baklagil ve tam tahılların birlikte tüketilmesidir."
+  },
+  {
+    "soru": "Tatlı isteği psikolojik ise nasıl başa çıkılabilir?",
+    "cevap": "Sosyal destek, dikkat dağıtma ve sağlıklı atıştırmalık hazırlığı faydalı olabilir."
+  },
+  {
+    "soru": "Diyabetli bireylerde akşam geç yemek yemenin zararı nedir?",
+    "cevap": "Gece kan şekerini yükseltir, sabah açlık şekeri yüksek çıkabilir."
+  },
+  {
+    "soru": "Diyet sırasında motivasyonu korumak için hangi davranış önerilir?",
+    "cevap": "Küçük hedefler belirlemek, yemek günlüğü tutmak ve olumlu geri bildirimler almak motivasyonu artırır."
+  },
+  {
+    "soru": "Diyabetli bireyler menülerini planlarken çeşitliliğe neden dikkat etmelidir?",
+    "cevap": "Farklı besin grupları vitamin ve mineral dengesini sağlar, sıkılmadan diyete devam edilmesini kolaylaştırır."
+  },
+  {
+    "soru": "Meyve suyu yerine taze meyve tercih edilmesinin faydası nedir?",
+    "cevap": "Meyve suyu posa içermez; taze meyve glisemik etkisi daha düşük ve tokluk sağlayıcıdır."
+  },
+  {
+    "soru": "Ara öğünde meyve ve yoğurt kombinasyonu hangi faydaları sağlar?",
+    "cevap": "Lif ve protein birlikte alınarak tokluk artırılır ve kan şekeri dengesi korunur."
+  },
+  {
+    "soru": "Diyabetli bireyler neden ani açlıklarda yavaş emilen karbonhidratları tercih etmelidir?",
+    "cevap": "Kan şekerini yavaş ve kontrollü şekilde yükseltir, uzun süreli tokluk sağlar."
+  },
+  {
+    "soru": "Diyabetli bireyler neden akşam çayı yanında tatlı tüketmemelidir?",
+    "cevap": "Akşam saatlerinde insülin duyarlılığı azaldığı için tatlı tüketimi glisemik dengeyi daha çok bozar."
+  },
+  {
+    "soru": "Gece vardiyası sonrası beslenmede en önemli öncelik nedir?",
+    "cevap": "Uyku öncesi sindirimi kolay ve kan şekeri dengeleyen bir öğün tüketmektir."
+  },
+  {
+    "soru": "Diyabetli bireylerde yetersiz protein tüketimi neye yol açabilir?",
+    "cevap": "Kas kaybına, tokluk süresinin kısalmasına ve kan şekeri dengesizliğine neden olabilir."
+  },
+  {
+    "soru": "Tatlı ihtiyacını bastırmak için en iyi içecek seçeneklerinden biri nedir?",
+    "cevap": "Tarçınlı bitki çayı veya az yağlı süt, tatlı isteğini baskılamaya yardımcı olur."
+  },
+  {
+    "soru": "Diyabetli bireyler beslenme programını hazırlarken neden kişisel alışkanlıklarını dikkate almalıdır?",
+    "cevap": "Sürdürülebilirlik ve motivasyon açısından kişisel uyum önemlidir, aksi halde diyet kısa sürede bırakılabilir."
+  },
+  {
+    "soru": "Diyabetli bireyler gün içinde kaç saatten fazla aç kalmamalıdır?",
+    "cevap": "Genellikle 4 saatten fazla aç kalmamak önerilir; bu kan şekeri dalgalanmasını önler."
+  }
+]
