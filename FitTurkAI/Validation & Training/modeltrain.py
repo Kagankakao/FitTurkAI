@@ -5,8 +5,10 @@ from transformers import (
     Trainer,
     TrainingArguments,
     DataCollatorForLanguageModeling,
+    BitsAndBytesConfig,
 )
 from datasets import load_dataset
+from peft import LoraConfig, get_peft_model, TaskType, prepare_model_for_kbit_training
 import os
 import json
 
@@ -30,7 +32,18 @@ def load_and_preprocess_data(tokenizer, data_directory="DATA"):
         tuple: A tuple containing the processed train and evaluation datasets.
     """
     print("Loading and preprocessing data...")
-    dataset = load_dataset('json', data_files=os.path.join(data_directory, 'train.json'), split='train')
+    # Create a dummy JSON file for demonstration if it doesn't exist
+    if not os.path.exists(data_directory):
+        os.makedirs(data_directory)
+    train_file_path = os.path.join(data_directory, 'train.json')
+    if not os.path.exists(train_file_path):
+        print(f"Creating dummy data at {train_file_path}")
+        dummy_data = [{"soru": f"Soru {i}", "cevap": f"Cevap {i}"} for i in range(100)]
+        with open(train_file_path, 'w', encoding='utf-8') as f:
+            for item in dummy_data:
+                f.write(json.dumps(item, ensure_ascii=False) + "\n")
+
+    dataset = load_dataset('json', data_files=train_file_path, split='train')
 
     def format_and_tokenize(examples):
         """
@@ -57,55 +70,88 @@ def load_and_preprocess_data(tokenizer, data_directory="DATA"):
     return train_dataset, eval_dataset
 
 
-def ai_model_definition(model_name="ytu-ce-cosmos/Turkish-Llama-8b-v0.1"):
+def ai_model_definition(model_name="Trendyol/Trendyol-LLM-7B-chat-v4.1.0"):
     """
-    Defines the 8B parameter AI model and tokenizer for text generation.
-    Includes memory optimizations for large model handling.
+    Defines the AI model and tokenizer for text generation using QLoRA.
+    Uses 4-bit quantization and LoRA for memory-efficient fine-tuning.
     """
-    print("Defining the 8B parameter AI model and tokenizer for Causal LM...")
-    
+    print("Defining the AI model and tokenizer with QLoRA...")
+
     if torch.cuda.is_available():
         gpu_memory = torch.cuda.get_device_properties(0).total_memory / (1024**3)
         print(f"Available GPU memory: {gpu_memory:.1f} GB")
-        
-        if gpu_memory < 20:
-            print("⚠️  WARNING: Less than 20GB GPU memory detected.")
-            print("   Consider using gradient checkpointing and smaller batch sizes.")
-        elif gpu_memory >= 24:
-            print("✅ Sufficient GPU memory for 8B model fine-tuning.")
-    
+        print("✅ Using QLoRA for memory-efficient fine-tuning.")
+
+    # Configure 4-bit quantization
+    bnb_config = BitsAndBytesConfig(
+        load_in_4bit=True,
+        bnb_4bit_use_double_quant=True,
+        bnb_4bit_quant_type="nf4",
+        bnb_4bit_compute_dtype=torch.bfloat16,
+    )
+
     tokenizer = AutoTokenizer.from_pretrained(model_name)
 
     if tokenizer.pad_token is None:
         print("Pad token not found. Setting pad_token to eos_token.")
         tokenizer.pad_token = tokenizer.eos_token
 
-    print("Loading 8B parameter model... This may take a few minutes.")
+    print("Loading model with 4-bit quantization... This may take a few minutes.")
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
-        torch_dtype=torch.float16,      # Use half precision to save memory
-        device_map="auto",              
-        low_cpu_mem_usage=True,         # Reduce CPU memory usage during loading
+        quantization_config=bnb_config,
+        device_map="auto",
+        trust_remote_code=True,
     )
     model.config.pad_token_id = tokenizer.pad_token_id
 
+    # Prepare model for k-bit training
+    model = prepare_model_for_kbit_training(model)
+
+    # Configure LoRA
+    lora_config = LoraConfig(
+        task_type=TaskType.CAUSAL_LM,
+        inference_mode=False,
+        r=16,  # LoRA rank
+        lora_alpha=32,  # LoRA scaling parameter
+        lora_dropout=0.1,
+        target_modules=[
+            "q_proj",
+            "k_proj",
+            "v_proj",
+            "o_proj",
+            "gate_proj",
+            "up_proj",
+            "down_proj",
+        ],
+        bias="none",
+    )
+
+    # Apply LoRA to the model
+    model = get_peft_model(model, lora_config)
+
+    # Print model info
+    model.print_trainable_parameters()
+
     param_count = sum(p.numel() for p in model.parameters())
     trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
-    
-    print("Model loaded successfully:")
+
+    print("QLoRA Model loaded successfully:")
     print(f"  Total parameters: {param_count:,}")
     print(f"  Trainable parameters: {trainable_params:,}")
-    print(f"  Model size: ~{param_count * 2 / (1024**3):.1f} GB (FP16)")
-    
+    print(f"  Trainable %: {100 * trainable_params / param_count:.2f}%")
+
     return model, tokenizer
 
 
 def fine_tune_ai_model(model, train_dataset, eval_dataset, tokenizer):
     """
-    Fine-tunes the 8B parameter generative AI model using optimized hyperparameters.
-    Configured specifically for large model fine-tuning with memory optimizations.
+    Fine-tunes the generative AI model using QLoRA.
+    Much more memory efficient than full fine-tuning.
     """
-    print("Starting the fine-tuning process for 8B parameter Causal LM...")
+    print("Starting the QLoRA fine-tuning process...")
+
+    model.config.use_cache = False
 
     data_collator = DataCollatorForLanguageModeling(
         tokenizer=tokenizer,
@@ -113,55 +159,59 @@ def fine_tune_ai_model(model, train_dataset, eval_dataset, tokenizer):
     )
 
     train_dataset_size = len(train_dataset)
-    
-    batch_size = 2
+
+    # QLoRA allows for larger batch sizes due to memory efficiency
+    batch_size = 4  # Can be larger with QLoRA
     gradient_accumulation_steps = 4
-    num_epochs = 3
-    
+    num_epochs = 3  # Can train for more epochs with QLoRA
     effective_batch_size = batch_size * gradient_accumulation_steps
     total_training_steps = (train_dataset_size / effective_batch_size) * num_epochs
-    
-    print(f"8B Model Training Configuration:")
+
+    print(f"QLoRA Training Configuration:")
     print(f"  Dataset size: {train_dataset_size}")
     print(f"  Per-device batch size: {batch_size}")
     print(f"  Gradient accumulation steps: {gradient_accumulation_steps}")
     print(f"  Effective batch size: {effective_batch_size}")
     print(f"  Epochs: {num_epochs}")
     print(f"  Total training steps: ~{int(total_training_steps)}")
-    print("  Estimated GPU memory needed: ~20-30GB")
 
     training_args = TrainingArguments(
         output_dir="./results",
         logging_dir="./logs",
         logging_strategy="steps",
-        logging_steps=50,
-        
+        logging_steps=10,
+
         save_strategy="epoch",
         eval_strategy="epoch",
         load_best_model_at_end=True,
         metric_for_best_model="eval_loss",
         greater_is_better=False,
-        
+
         num_train_epochs=num_epochs,
         per_device_train_batch_size=batch_size,
-        per_device_eval_batch_size=4,
+        per_device_eval_batch_size=8,  # Can be larger for eval
         gradient_accumulation_steps=gradient_accumulation_steps,
-        
-        fp16=True,
+
+        # Use BF16 for stability with QLoRA
+        bf16=True,
+        fp16=False,
         dataloader_pin_memory=False,
         gradient_checkpointing=True,
-        
-        learning_rate=1e-5,
+
+        learning_rate=2e-4,  # Higher learning rate for LoRA
         lr_scheduler_type="cosine",
-        warmup_ratio=0.05,
-        weight_decay=0.15,
-        
+        warmup_ratio=0.03,
+        weight_decay=0.001,  # Lower weight decay for LoRA
+
         remove_unused_columns=True,
         save_total_limit=2,
-        
-        max_grad_norm=1.0,
-        
-        report_to="tensorboard", 
+        max_grad_norm=0.3,  # Lower for LoRA
+
+        report_to="tensorboard",
+
+        # QLoRA specific optimizations
+        optim="paged_adamw_32bit",  # Memory-efficient optimizer
+        save_only_model=True,
     )
 
     trainer = Trainer(
@@ -173,28 +223,25 @@ def fine_tune_ai_model(model, train_dataset, eval_dataset, tokenizer):
         data_collator=data_collator,
     )
 
-    print("\n" + "="*60)
-    print("8B MODEL TRAINING CONFIGURATION SUMMARY")
-    print("="*60)
-    print(f"Effective Batch Size: {training_args.per_device_train_batch_size * training_args.gradient_accumulation_steps}")
-    print("="*60)
-
-    print("\n⚠️  8B MODEL MEMORY REQUIREMENTS:")
-    print("  • Minimum 20GB GPU memory recommended")
-    print("  • 24GB+ GPU memory for comfortable training")
-    print("  • Monitor GPU memory usage closely")
+    import warnings
+    warnings.filterwarnings("ignore", message="`tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`.")
 
     trainer.train()
-    print("Fine-tuning complete.")
-    
-    print(f"\nBest model loaded from: {trainer.state.best_model_checkpoint}")
-    print(f"Best eval loss: {trainer.state.best_metric}")
+    print("QLoRA fine-tuning complete.")
 
-    save_directory = "./fine_tuned_FitTurkAI"
-    print(f"Saving the best model to {save_directory}...")
-    trainer.save_model(save_directory)
+    if trainer.state.best_model_checkpoint:
+        print(f"\nBest model loaded from: {trainer.state.best_model_checkpoint}")
+        print(f"Best eval loss: {trainer.state.best_metric}")
+    else:
+        print("\nTraining finished, but no best model checkpoint was found.")
+
+    save_directory = "./fine_tuned_FitTurkAI_QLoRA"
+    print(f"Saving the LoRA adapters to {save_directory}...")
+
+    # Save only the LoRA adapters (much smaller)
+    model.save_pretrained(save_directory)
     tokenizer.save_pretrained(save_directory)
-    print("Best model and tokenizer saved successfully.")
+    print("LoRA adapters and tokenizer saved successfully.")
 
     return trainer
 
@@ -203,8 +250,19 @@ def fitness_ai_assistant_interaction(model, tokenizer, device):
     """
     Handles the interactive conversation with the fine-tuned AI assistant.
     """
+    instruction = """Sen, FitTürkAI adında, Bütünsel, Empatik ve Proaktif bir Sağlıklı Yaşam Koçusun. Görevin, kullanıcılara sadece beslenme ve egzersiz planları sunmak değil, aynı zamanda uyku, stres yönetimi gibi bütünsel sağlık konularında da rehberlik etmektir.
+
+ÖNEMLI KURALLAR:
+- Doktor olmadığını, tıbbi tavsiye vermediğini belirt
+- YASAKLI KELIMELER: "Tedavi", "reçete", "diyet listesi", "zayıflama programı", "garanti"
+- İZIN VERILEN KELIMELER: "Rehber", "çerçeve", "yol haritası", "öneri", "fikir"
+- Empatik, cesaret verici bir dil kullan
+- Porsiyon ve kalori bilgilerini sadece "yaklaşık", "tahmini" ifadeleriyle ver
+
+Kullanıcının sorusunu bu role göre yanıtla:"""
+
     print("\nFitness AI Assistant is ready! Type 'quit' or 'exit' to exit.")
-    
+
     model.eval()
 
     while True:
@@ -212,14 +270,14 @@ def fitness_ai_assistant_interaction(model, tokenizer, device):
         if user_input.lower() in ["quit", "exit"]:
             break
 
-        prompt = f"Soru: {user_input}\nCevap:"
-        
+        prompt = f"{instruction}\n\nSoru: {user_input}\nCevap:"
+
         inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
 
         with torch.no_grad():
             outputs = model.generate(
                 **inputs,
-                max_new_tokens=200,
+                max_new_tokens=256,
                 num_return_sequences=1,
                 no_repeat_ngram_size=3,
                 pad_token_id=tokenizer.eos_token_id,
@@ -236,17 +294,17 @@ def fitness_ai_assistant_interaction(model, tokenizer, device):
 
 
 def main():
-    """Main function to run the entire fine-tuning pipeline."""
+    """Main function to run the entire QLoRA fine-tuning pipeline."""
     device = setup_device()
 
     model, tokenizer = ai_model_definition()
 
-    train_dataset, eval_dataset = load_and_preprocess_data(tokenizer, data_directory="DATA")
+    train_dataset, eval_dataset = load_and_preprocess_data(tokenizer)
 
     trainer = fine_tune_ai_model(model, train_dataset, eval_dataset, tokenizer)
-    
+
     best_model = trainer.model
-    
+
     fitness_ai_assistant_interaction(best_model, tokenizer, device)
 
 
