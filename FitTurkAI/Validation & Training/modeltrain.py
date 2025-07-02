@@ -70,7 +70,7 @@ def load_and_preprocess_data(tokenizer, data_directory="DATA"):
     return train_dataset, eval_dataset
 
 
-def ai_model_definition(model_name="Trendyol/Trendyol-LLM-7B-chat-v4.1.0"):
+def ai_model_definition(model_name="ytu-ce-cosmos/Turkish-Llama-8b-v0.1"):
     """
     Defines the AI model and tokenizer for text generation using QLoRA.
     Uses 4-bit quantization and LoRA for memory-efficient fine-tuning.
