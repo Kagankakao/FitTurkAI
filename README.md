@@ -1,849 +1,338 @@
-## 📋 İçindekiler
 
-- [🎯 Proje Hakkında](#-proje-hakkında)
-- [🧠 Teknik Mimari](#-teknik-mimari)
-- [🚀 Özellikler](#-özellikler)
-- [🔧 Kurulum](#-kurulum)
-- [📊 Kullanım](#-kullanım)
-- [🏆 TEKNOFEST Projesi](#-teknofest-projesi)
-- [📁 Proje Yapısı](#-proje-yapısı)
-- [🔬 Metodoloji](#-metodoloji)
-- [📈 Performans](#-performans)
-- [🤝 Katkıda Bulunma](#-katkıda-bulunma)
-- [📜 Lisans](#-lisans)
+# 🏥 FitTürkAI - Kişisel Sağlık ve Fitness Asistanı
 
----
+<div align="center">
 
-## 🎯 Proje Hakkında
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![Next.js](https://img.shields.io/badge/Next.js-14.1.0-black)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.104.1-009688)
+![React](https://img.shields.io/badge/React-18-61dafb)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.8.3-blue)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-FitTürkAI, Türkçe dilinde sağlık, diyet ve yaşam tarzı danışmanlığı sağlayan etkileşimli bir yapay zeka sistemidir. Sistem, LLaMA mimarisi üzerine inşa edilmiş ve Türkçeye özel olarak **Yıldız Teknik Üniversitesi** tarafından ön-eğitilmiş olan **Cosmos Turkish 8B v0.1** büyük dil modeli üzerine fine-tune edilmiştir.
+**Türkçe konuşan AI destekli kişisel sağlık ve fitness takip uygulaması**
 
-### 🌟 Ana Hedefler
+[🎯 Demo](https://fitturkai-demo.vercel.app) • [📚 Dokümantasyon](#-özellikler) • [🤖 Hugging Face Space](https://huggingface.co/spaces/AIYildiz/AIYildizFitTurkAI) • [📞 Destek](#-iletişim)
 
-- **🇹🇷 Türkçe Odaklı**: Türkçeyi ana dil olarak kullanan bireyler için optimize edilmiş
-- **🏥 Sağlık Danışmanlığı**: Beslenme, egzersiz ve yaşam tarzı konularında rehberlik
-- **🧬 Kişiselleştirilmiş Yaklaşım**: Her kullanıcıya özel çözümler
-- **📚 Bilimsel Temelli**: Tıbbi ve bilimsel kaynaklardan desteklenen yanıtlar
-- **🚀 Erişilebilir**: Gradio arayüzü ve API desteği
+</div>
 
----
+## 📖 Hakkında
 
-## 🧠 Teknik Mimari
+FitTürkAI, kullanıcıların sağlık ve fitness hedeflerini takip etmelerine, kişiselleştirilmiş öneriler almalarına ve ilerlemelerini görselleştirmelerine olanak tanıyan modern bir web uygulamasıdır. Türkçe konuşan AI asistanı ile desteklenen uygulama, sağlıklı yaşam yolculuğunuzda size rehberlik eder.
 
-### 🏗️ Model Mimarisi
+### 🎯 Hedef Kitle
+- Sağlıklı yaşam hedefleri olan bireyler
+- Fitness ve beslenme takibi yapmak isteyenler
+- Kişiselleştirilmiş sağlık önerileri arayan kullanıcılar
+- Türkçe destekli AI asistanı tercih edenler
 
-```mermaid
-graph TB
-    subgraph "✅ Mevcut Sistem"
-        A["👤 Kullanıcı Girdisi"] --> B["🔤 Turkish Text Processor"]
-        B --> C["🧠 Cosmos Turkish 8B v0.1"]
-        C --> D["⚡ QLoRA Fine-tuned Model"]
-        D --> E["💬 Personalized Response"]
-        E --> F["🌐 Gradio Web Interface"]
-        E --> G["💻 Terminal/Console Interface"]
-    end
-    
-    subgraph "🚀 Gelecek Geliştirmeler - Roadmap"
-        H["📚 RAG Retrieval System"] -.-> I["🔍 FAISS Vector Store"]
-        J["📄 PDF Sources"] -.-> K["📑 PDF Processor"]
-        L["📊 JSON Sources"] -.-> M["🔧 JSON Processor"]
-        K -.-> I
-        M -.-> I
-        I -.-> N["🎯 Context Enrichment"]
-        N -.-> D
-    end
-    
-    classDef current fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:#000
-    classDef future fill:#fff3e0,stroke:#e65100,stroke-width:2px,stroke-dasharray: 5 5,color:#000
-    
-    class A,B,C,D,E,F,G current
-    class H,I,J,K,L,M,N future
-```
+## ✨ Hedeflenen Özellikler
 
-### 🔧 Teknoloji Yığını
+### 🤖 AI Asistan
+- **Türkçe konuşan AI:** Sağlık ve fitness konularında uzmanlaşmış AI asistanı
+- **Kişiselleştirilmiş öneriler:** Kullanıcı verilerine göre özelleştirilmiş tavsiyeler
+- **Interaktif chat:** Real-time sohbet deneyimi
+- **Sohbet geçmişi:** Tüm konuşmaların kaydedilmesi ve erişimi
 
-| Kategori | Teknoloji | Versiyon | Açıklama |
-|----------|-----------|----------|----------|
-| **🤖 Ana Model** | Cosmos Turkish 8B v0.1 | v0.1 | YTÜ tarafından Türkçe için ön-eğitilmiş LLaMA tabanlı model |
-| **⚡ Fine-tuning** | QLoRA + PEFT | 2.0+ | Parameter-Efficient Fine-Tuning |
-| **🖥️ Arayüz** | Gradio | 3.35+ | Etkileşimli web arayüzü |
-| **⚙️ Framework** | PyTorch | 2.0+ | Derin öğrenme framework'ü |
-| **🔧 Quantization** | BitsAndBytesConfig | - | 4-bit model quantization |
-| **🔍 Retrieval** | FAISS | 1.7+ | Facebook AI Similarity Search *(Gelecek)* |
-| **📄 Embedding** | SentenceTransformers | 2.2+ | Multilingual MiniLM-L12-v2 *(Gelecek)* |
+### 📊 Takip ve Yönetim
+- **Hedef belirleme:** Kilo, fitness, beslenme ve yaşam tarzı hedefleri
+- **İlerleme takibi:** Kilometre taşları ve görsel ilerleme çubukları
+- **Not alma:** Kategorize edilmiş notlar ve etiketleme sistemi
+- **Tarif yönetimi:** Kişisel tariflerin kaydedilmesi ve organizasyonu
 
----
+### 🎨 Kullanıcı Deneyimi
+- **Modern tasarım:** Gradient renkler ve smooth animasyonlar
+- **Responsive:** Tüm cihazlarda mükemmel görünüm
+- **Dark mode:** Göz yorgunluğunu azaltan karanlık tema
+- **Hızlı performans:** localStorage tabanlı hızlı veri erişimi
 
-## 🚀 Özellikler
+### 🔐 Güvenlik ve Gizlilik
+- **Yerel veri saklama:** Veriler kullanıcının tarayıcısında güvenli şekilde saklanır
+- **Basit authentication:** E-posta tabanlı güvenli giriş sistemi
+- **Veri kontrolü:** Kullanıcının veriler üzerinde tam kontrolü
 
-### 🎯 Temel Yetenekler
+## 🛠️ Teknoloji Stack'i
 
-- **🍎 Beslenme Planlaması**: Kişiselleştirilmiş diyet önerileri ve makro besin hesaplamaları
-- **🏃‍♂️ Egzersiz Programları**: FITT prensiplerine dayalı antrenman planları
-- **😴 Uyku Optimizasyonu**: Uyku kalitesi iyileştirme stratejileri
-- **🧘‍♀️ Stres Yönetimi**: Zihinsel sağlık ve stresle başa çıkma teknikleri
-- **💧 Hidrasyon Takibi**: Su tüketimi hedefleri ve takip sistemi
+### Frontend
+- **Framework:** Next.js 14 (App Router)
+- **Language:** TypeScript 5.8.3
+- **UI Library:** React 18
+- **Styling:** Tailwind CSS 3.4.17
+- **Animations:** Framer Motion 9.1.7
+- **Icons:** Heroicons 2.2.0
+- **Charts:** Chart.js, Recharts, Ant Design Plots
 
-### 🔬 Teknik Özellikler
+### Backend
+- **Framework:** FastAPI 0.104.1
+- **Language:** Python 3.9+
+- **AI Integration:** Hugging Face Spaces API
+- **HTTP Client:** Gradio Client
+- **CORS:** Cross-origin resource sharing
 
-**✅ Mevcut Özellikler:**
-- **🎯 PEFT Optimizasyonu**: QLoRA ile bellek verimli eğitim
-- **🇹🇷 Türkçe NLP**: Gelişmiş Türkçe metin işleme
-- **⚡ 4-bit Quantization**: Düşük bellek kullanımı
-- **🤖 Fine-tuned Model**: Cosmos Turkish 8B tabanlı özelleştirilmiş model
-- **🎯 Gradio Web Arayüzü**: Etkileşimli web tabanlı kullanıcı deneyimi
+### AI Model
+- **Platform:** Hugging Face Spaces
+- **Model:** AIYildiz/AIYildizFitTurkAI
+- **Language:** Türkçe optimized
+- **Specialization:** Sağlık ve fitness danışmanlığı
 
-**🚀 Gelecek Planları (Roadmap):**
-- **📚 RAG Mimarisi**: PDF ve JSON kaynaklardan bilgi çekimi
-- **🔍 Vektörel Arama**: FAISS ile semantik benzerlik arama
-- **🔌 API Desteği**: RESTful API entegrasyonu
+## 🚀 Kurulum ve Çalıştırma
 
----
+### Seçenek 1: Hugging Face Space API (Önerilen - Ücretsiz)
 
-## 🔧 Kurulum
+Bu seçenek ile AI modelini kendi bilgisayarınızda çalıştırmanıza gerek yok. Ücretsiz Hugging Face API kullanılır.
 
-> **💡 Hızlı Deneme:** Kurulum yapmadan direkt [Canlı Demo](https://huggingface.co/spaces/AIYildiz/AIYildizFitTurkAI)'yu kullanabilirsiniz!
-
-### 📋 Gereksinimler
-
-- **Python**: 3.8 veya üzeri
-- **RAM**: Minimum 8GB (16GB önerilir)
-- **GPU**: CUDA destekli GPU (opsiyonel, performans için)
-- **Disk**: 10GB boş alan (model dosyası dahil)
-
-### ⚙️ Adım Adım Kurulum
-
-1. **📥 Depoyu klonlayın**
+#### 1. Projeyi Klonlayın
 ```bash
-git clone https://github.com/FitTurkAI/FitTurkAI.git
-cd FitTurkAI
+git clone https://github.com/aiyildiz/fitturkai.git
+cd fitturkai
 ```
 
-2. **🐍 Python ortamını oluşturun**
+#### 2. Frontend Kurulumu
 ```bash
-python -m venv fitturkai_env
-source fitturkai_env/bin/activate  # Linux/Mac
-# veya
-fitturkai_env\Scripts\activate     # Windows
-```
-
-3. **📦 Bağımlılıkları yükleyin**
-```bash
-cd "Validation & Training"
-pip install -r requirements.txt
-```
-
-4. **🗄️ NLTK verilerini indirin**
-```bash
-python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"
-```
-
-### 🚀 Hızlı Başlangıç
-
-#### 🌐 En Kolay Yol - Canlı Demo
-```
-Direkt tarayıcıda: https://huggingface.co/spaces/AIYildiz/AIYildizFitTurkAI
-✅ Kurulum gerektirmez!
-```
-
-#### 💻 AI Model Kurulumu
-```bash
-# Model eğitimi için
-cd "Validation & Training"
-python modeltrain.py
-
-# Terminal tabanlı etkileşim
-python interaction.py
-
-# Gradio web arayüzü
-python gradio_app.py
-# Tarayıcıda: http://localhost:7860
-
-# RAG sistemi geliştirme (gelecek planı)
-# python rag_module.py  # Henüz geliştirme aşamasında
-```
-
-#### 🌐 Web Demo Uygulaması
-```bash
-# Web demo klasörüne git
-cd "FitTürkAI Web Demo"
-
-# Frontend kurulumu
 npm install
 npm run dev
-# Frontend: http://localhost:3000
+```
 
-# Backend kurulumu (yeni terminal)
+#### 3. Backend Kurulumu
+```bash
 cd backend
 pip install -r requirements.txt
 python main.py
-# Backend: http://localhost:8000
 ```
 
----
+#### 4. Uygulamayı Açın
+- Frontend: http://localhost:3000
+- Backend API: http://localhost:8000
 
-## 📊 Kullanım
+### Seçenek 2: Yerel Model (Gelişmiş Kullanıcılar)
 
-### 💬 Etkileşimli Sohbet
+Bu seçenek ile AI modelini kendi bilgisayarınızda çalıştırabilirsiniz.
+
+#### 1. Model İndirme
+AI modelini [Hugging Face](https://huggingface.co/AIYildiz/AIYildizFitTurkAI) üzerinden indirin ve `backend/` klasörüne yerleştirin.
+
+#### 2. Backend Konfigürasyonu
+`backend/main.py` dosyasında yerel model kullanımı için gerekli değişiklikleri yapın:
 
 ```python
-# Terminal tabanlı etkileşim
-python interaction.py
+# Yerel model kullanımı için
+from llama_cpp import Llama
 
-# Gradio web arayüzü
-python gradio_app.py
-# Tarayıcıda: http://localhost:7860
-```
-
-### 🌐 Gradio Web Arayüzü
-
-```python
-import gradio as gr
-
-def chat_with_fitturkai(message, history):
-    """FitTürkAI ile sohbet fonksiyonu"""
-    response = model.generate_response(message)
-    history.append((message, response))
-    return history, ""
-
-# Web arayüzü başlatma
-app = gr.ChatInterface(
-    fn=chat_with_fitturkai,
-    title="🏥 FitTürkAI - Türkçe Sağlık Asistanı",
-    description="Sağlık ve beslenme konularında Türkçe danışmanlık"
-)
-app.launch(server_port=7860)
-```
-
-### 🌐 Canlı Demo ve Model Erişimi
-
-**🚀 Hemen Deneyin:**
-- **Canlı Demo**: [https://huggingface.co/spaces/AIYildiz/AIYildizFitTurkAI](https://huggingface.co/spaces/AIYildiz/AIYildizFitTurkAI)
-- Tarayıcınızda direkt kullanabilirsiniz, kurulum gerektirmez!
-
-**📥 Model İndirme:**
-```bash
-# Hugging Face Hub ile model indirme
-pip install huggingface_hub
-
-# Quantized model indirme (8.54 GB)
-from huggingface_hub import hf_hub_download
-model_path = hf_hub_download(
-    repo_id="AIYildiz/AIYildiz-FitTurkAI-Q8",
-    filename="FitTurkAI-Cosmos-Q8.gguf"
+llm = Llama(
+    model_path="./model-dosyasi.gguf",
+    n_ctx=4096,
+    n_threads=8,
+    verbose=False
 )
 ```
 
-**📊 Dataset Erişimi:**
-```python
-from datasets import load_dataset
+#### 3. Sistem Gereksinimleri
+- **RAM:** Minimum 8GB (16GB önerilen)
+- **Storage:** 5-10GB boş alan
+- **CPU:** Modern işlemci (GPU opsiyonel)
 
-# 24.7K Türkçe sağlık Q&A verisi
-dataset = load_dataset("AIYildiz/FitTurkAI-Health-DATA")
-print(f"Toplam veri: {len(dataset['train'])} soru-cevap çifti")
-```
-
-### 🔍 RAG Sistemi Kullanımı (Gelecek)
-
-```python
-# Gelecekte mevcut olacak özellikler
-# context = rag.retrieve_context("protein ihtiyacı nasıl hesaplanır")
-# response = rag.ask("Günlük kaç gram protein almalıyım?")
-```
-
-### 🎯 Model Eğitimi
-
-```python
-from modeltrain import main
-
-# Custom dataset ile model fine-tuning
-main()  # train.json dosyasını kullanarak eğitim başlatır
-```
-
----
-
-## 🏆 TEKNOFEST Projesi
-
-### 🎯 Yarışma Kategorisi
-**Türkçe Doğal Dil İşleme Yarışması** - Sağlık ve Yaşam Teknolojileri
-
-### 🌟 İnovasyon Noktaları
-
-1. **🇹🇷 Yerli ve Milli Çözüm**: Türkçe için özel optimize edilmiş ilk sağlık AI'ı
-2. **🤖 Gelişmiş Fine-tuning**: QLoRA ile Cosmos Turkish 8B optimizasyonu
-3. **⚡ Verimli Eğitim**: QLoRA ile düşük kaynak kullanımı
-4. **🎯 Sağlık Odaklı**: Türkçe sağlık danışmanlığı için özelleştirilmiş
-5. **🔬 Bilimsel Metodoloji**: Evidence-based yaklaşım
-
-### 🚀 Gelecek Geliştirmeler
-- **📚 RAG Entegrasyonu**: Bilgi çekimi sistemi
-- **🔌 API Desteği**: RESTful API entegrasyonu
-
-### 📈 Projenin Etki Alanları
-
-- **🏥 Sağlık Sektörü**: Dijital sağlık asistanı olarak
-- **👩‍⚕️ Sağlık Personeli**: Karar destek sistemi
-- **👥 Bireysel Kullanım**: Kişisel sağlık koçu
-- **🏢 Kurumsal**: Çalışan sağlığı programları
-- **🎓 Eğitim**: Beslenme ve sağlık eğitimi
-
----
 
 ## 📁 Proje Yapısı
 
 ```
-FitTurkAI/
-├── 📊 DATA/                          # Eğitim verileri
-│   ├── README.md                     # Veri dokümantasyonu
-│   └── train.json                    # Ana eğitim verisi
-├── 🧠 Validation & Training/         # AI/ML modülleri
-│   ├── README.md                     # Teknik dokümantasyon
-│   ├── requirements.txt              # Python bağımlılıkları
-│   ├── modeltrain.py                 # Model eğitim scripti
-│   ├── rag_module.py                 # RAG sistemi implementasyonu
-│   └── interaction.py                # Etkileşimli sohbet sistemi
-├── 🌐 FitTürkAI Web Demo/            # Modern Web Uygulaması
-│   ├── 📱 Frontend (Next.js 14)
-│   │   ├── src/app/                  # App Router sayfaları
-│   │   ├── src/components/           # React bileşenleri
-│   │   ├── src/utils/                # Yardımcı fonksiyonlar
-│   │   └── src/data/                 # Örnek veriler
-│   ├── 🔧 Backend (FastAPI)
-│   │   ├── main.py                   # FastAPI sunucusu
-│   │   ├── requirements.txt          # Python bağımlılıkları
-│   │   └── README.md                 # Backend dokümantasyonu
-│   ├── package.json                  # NPM bağımlılıkları
-│   ├── tailwind.config.ts            # Tailwind CSS yapılandırması
-│   └── README.md                     # Web demo dokümantasyonu
-├── README.md                         # Ana proje dokümantasyonu
-└── LICENSE                           # Lisans dosyası
+fitturkai/
+├── 📁 src/                           # Frontend kaynak kodları
+│   ├── 📁 app/                      # Next.js App Router sayfaları
+│   │   ├── 📁 auth/                 # Authentication sayfaları
+│   │   ├── 📁 chat/                 # Chat sayfası
+│   │   ├── 📁 goals/                # Hedefler sayfası
+│   │   ├── 📁 notes/                # Notlar sayfası
+│   │   ├── 📁 profile/              # Profil sayfası
+│   │   ├── 📁 recipes/              # Tarifler sayfası
+│   │   └── 📄 layout.tsx            # Ana layout
+│   ├── 📁 components/               # React bileşenleri
+│   │   ├── 📄 Sidebar.tsx           # Yan menü
+│   │   └── 📄 Dashboard.tsx         # Dashboard widget'ı
+│   ├── 📁 data/                     # JSON veri dosyaları
+│   │   ├── 📄 chats.json           # Örnek sohbet verileri
+│   │   ├── 📄 goals.json           # Varsayılan hedefler
+│   │   ├── 📄 notes.json           # Örnek notlar
+│   │   └── 📄 recipes.json         # Tarif koleksiyonu
+│   └── 📁 utils/                    # Yardımcı fonksiyonlar
+│       └── 📁 api/                  # API istemci fonksiyonları
+│           └── 📄 ai-assistant.ts   # AI asistan entegrasyonu
+├── 📁 backend/                      # Backend API
+│   ├── 📄 main.py                  # FastAPI uygulaması
+│   ├── 📄 requirements.txt         # Python bağımlılıkları
+│   └── 📄 README.md                # Backend dokümantasyonu
+├── 📁 public/                       # Statik dosyalar
+├── 📄 package.json                 # NPM bağımlılıkları
+├── 📄 tailwind.config.js           # Tailwind CSS konfigürasyonu
+├── 📄 next.config.mjs              # Next.js konfigürasyonu
+└── 📄 README.md                    # Bu dosya
 ```
 
-### 📝 Dosya Açıklamaları
+## 🔧 Konfigürasyon
 
-| Dosya/Klasör | Açıklama | Teknoloji |
-|--------------|----------|-----------|
-| **AI/ML Modülleri** | | |
-| `modeltrain.py` | QLoRA ile Cosmos Turkish 8B fine-tuning | PyTorch, PEFT, BitsAndBytesConfig |
-| `rag_module.py` | PDF/JSON kaynaklardan bilgi çekimi | FAISS, SentenceTransformers |
-| `interaction.py` | Ana kullanıcı etkileşim sistemi | Transformers, Gradio |
-| `train.json` | **24.7K** Türkçe sağlık Q&A eğitim verisi | JSON format |
-| **Web Demo Uygulaması** | | |
-| `main.py` (Backend) | FastAPI tabanlı API sunucusu | FastAPI, Gradio Client |
-| `package.json` | Frontend NPM bağımlılıkları | Next.js 14, TypeScript |
-| `src/app/` | Next.js App Router sayfaları | React 18, TypeScript |
-| `src/components/` | Yeniden kullanılabilir React bileşenleri | React, Tailwind CSS |
-| `src/utils/` | API ve yardımcı fonksiyonlar | TypeScript, Axios |
+### Environment Variables
+```bash
+# Frontend (.env.local)
+NEXT_PUBLIC_API_URL=http://localhost:8000
 
----
-
-## 🌐 FitTürkAI Web Demo Uygulaması
-
-**🚀 Yeni!** FitTürkAI artık modern, etkileşimli bir web uygulaması ile geliyor! Bu full-stack uygulama, kullanıcıların sağlık ve fitness hedeflerini takip etmelerini sağlayan kapsamlı bir platformdur.
-
-### 🎯 Web Demo Özellikleri
-
-#### 💬 AI Sohbet Sistemi
-- **🤖 Gerçek Zamanlı Chat**: FitTürkAI asistanı ile anlık sohbet
-- **📚 Sohbet Geçmişi**: Tüm konuşmaları kaydetme ve geri getirme
-- **⭐ Favori Sohbetler**: Önemli konuşmaları favorilere ekleme
-- **🔄 Çoklu Oturum**: Birden fazla sohbet oturumu yönetimi
-
-#### 🎯 Hedef Takip Sistemi  
-- **📊 Görsel İlerleme**: İnteraktif ilerleme çubukları
-- **🏃‍♂️ Çoklu Hedef Türü**: Kilo, fitness, beslenme, yaşam tarzı
-- **🎖️ Kilometre Taşları**: Her hedef için ara hedefler
-- **🏆 Başarı Gösterimi**: Tamamlanan hedefler için görsel ödüller
-
-#### 📝 Akıllı Not Sistemi
-- **🏷️ Etiket Sistemi**: Notları kategorilere ayırma
-- **🔍 Gelişmiş Arama**: Başlık ve içerik arama
-- **✅ Görev Takibi**: Notları yapılacak görev olarak işaretleme
-- **📅 Tarih Takibi**: Oluşturma ve güncelleme tarihlerini izleme
-
-#### 🍽️ Tarif Yönetimi
-- **📖 Kişisel Tarif Koleksiyonu**: Favori tariflerinizi saklayın
-- **🏷️ Kategori Filtreleme**: Tarifları türlerine göre düzenleyin
-- **🥗 Besin Değeri**: Kalori ve makro besin bilgileri
-- **📷 Görsel Destek**: Tarif fotoğrafları ekleme
-
-#### 📅 Haftalık Öğün Planlama
-- **🗓️ 7 Günlük Plan**: Haftalık beslenme programı
-- **🍎 6 Öğün Türü**: Kahvaltı, ara öğün, öğle, akşam vb.
-- **📊 Kalori Takibi**: Günlük ve haftalık kalori hesaplama
-- **📈 Beslenme Analizi**: Haftalık beslenme özeti
-
-#### 📈 İlerleme Takibi
-- **⚖️ Kilo Takibi**: Günlük kilo değişimlerini kaydetme
-- **📏 Vücut Ölçüleri**: Göğüs, bel, kalça ölçüleri takibi
-- **📊 Görsel Grafikler**: Chart.js ile ilerleme grafikleri
-- **🧮 BMI Hesaplama**: Otomatik vücut kitle indeksi
-
-#### 👤 Kişisel Profil
-- **📋 Detaylı Bilgiler**: Yaş, boy, kilo, hedefler
-- **🎯 Sağlık Hedefleri**: Kişiselleştirilmiş hedef belirleme
-- **⚙️ Ayarlar**: Bildirimler, tema, gizlilik
-- **📱 Kullanıcı Deneyimi**: Modern ve kullanıcı dostu arayüz
-
-### 🛠️ Teknik Özellikler
-
-#### 🎨 Frontend Teknolojileri
-```typescript
-// Teknoloji Stack
-- Next.js 14 (App Router) - React framework
-- TypeScript 5.8.3 - Tip güvenliği  
-- Tailwind CSS 3.4.17 - Modern styling
-- Framer Motion 9.1.7 - Smooth animasyonlar
-- Chart.js 4.4.9 - İnteraktif grafikler
-- Heroicons 2.2.0 - Modern ikonlar
+# Backend
+HUGGING_FACE_TOKEN=your_token_here  # Opsiyonel
 ```
 
-#### ⚡ Backend Teknolojileri
+### Hugging Face Space Değiştirme
+Backend'de farklı bir Space kullanmak için `backend/main.py` dosyasında:
+
 ```python
-# FastAPI Stack
-- FastAPI 0.104.1 - Modern Python API
-- Gradio Client - HuggingFace entegrasyonu
-- CORS desteği - Cross-origin requests
-- JSON depolama - Basit veri saklama
+# Mevcut Space
+client = Client("AIYildiz/AIYildizFitTurkAI")
+
+# Yeni Space ile değiştir
+client = Client("your-username/your-space-name")
 ```
 
-#### 🎯 Öne Çıkan Özellikler
-- **📱 Responsive Design**: Tüm cihazlarda mükemmel görünüm
-- **🌙 Dark Mode**: Göz yorgunluğunu azaltan karanlık tema
-- **⚡ Real-time Updates**: Anlık veri güncellemeleri
-- **💾 LocalStorage**: Hızlı veri erişimi ve offline destek
-- **🔒 Güvenlik**: Kullanıcı verilerinin güvenli saklanması
+## 🎮 Kullanım
 
-### 🚀 Web Demo Kurulum
+### 1. Hesap Oluşturma
+- E-posta adresi ile kayıt olun
+- Demo hesap: `fitturkai@demo.com` / `123456`
 
-#### 📋 Gereksinimler
+### 2. Profil Ayarlama
+- Kişisel bilgilerinizi girin
+- Sağlık hedeflerinizi belirleyin
+- Tercihleri ayarlayın
+
+### 3. AI Asistan ile Sohbet
+- Chat sayfasında AI asistanı ile konuşun
+- Sağlık ve fitness sorularınızı sorun
+- Kişiselleştirilmiş öneriler alın
+
+### 4. Hedefler Belirleme
+- Kilo, fitness, beslenme hedefleri ekleyin
+- Kilometre taşları oluşturun
+- İlerlemenizi takip edin
+
+### 5. Notlar ve Tarifler
+- Önemli notlarınızı kaydedin
+- Favori tariflerinizi saklayın
+- Kategorilere ayırın ve etiketleyin
+
+## 🧪 Test ve Geliştirme
+
+### Frontend Geliştirme
 ```bash
-# Frontend
-- Node.js 18+ 
-- NPM veya Yarn
-
-# Backend  
-- Python 3.9+
-- FastAPI
-- Gradio Client
+npm run dev          # Geliştirme sunucusu
+npm run build        # Production build
+npm run lint         # ESLint kontrolü
+npm run lint:fix     # ESLint otomatik düzeltme
+npm run format       # Prettier formatlaması
 ```
 
-#### ⚙️ Kurulum Adımları
-
-1. **📥 Proje Klasörüne Git**
+### Backend Test
 ```bash
-cd "FitTürkAI Web Demo"
-```
-
-2. **🎨 Frontend Kurulumu**
-```bash
-# Bağımlılıkları yükle
-npm install
-
-# Geliştirme sunucusunu başlat
-npm run dev
-# Frontend: http://localhost:3000
-```
-
-3. **⚡ Backend Kurulumu**
-```bash
-# Backend klasörüne git
 cd backend
-
-# Python bağımlılıklarını yükle
-pip install -r requirements.txt
-
-# FastAPI sunucusunu başlat
-python main.py
-# Backend API: http://localhost:8000
+python main.py       # Sunucuyu başlat
+# Test için: http://localhost:8000/docs
 ```
 
-4. **🌐 Uygulamaya Erişim**
-```
-Frontend: http://localhost:3000
-Backend API: http://localhost:8000
-API Docs: http://localhost:8000/docs
-```
+### API Endpoints
+- `POST /chat` - AI ile sohbet
+- `GET /health` - Sistem durumu kontrolü
 
-### 🎯 Web Demo Kullanım Senaryoları
+## 🌟 Özellik Roadmap
 
-#### 🏥 Kişisel Sağlık Koçu
-```
-1. 📝 Profil oluşturma ve hedef belirleme
-2. 💬 AI asistanı ile sağlık danışmanlığı
-3. 📊 İlerleme takibi ve motivasyon
-4. 🍽️ Beslenme planlaması ve tarif yönetimi
-```
+### Yakın Gelecek (v1.1)
+- [ ] Haftalık/aylık raporlar
+- [ ] Egzersiz video entegrasyonu
+- [ ] Besin değeri hesaplayıcısı
+- [ ] AI Agent sistemi ile otomatik haftalık öğün planı 
+- [ ] 
 
-#### 👩‍⚕️ Sağlık Profesyonelleri
-```
-1. 📋 Hasta takip sistemi
-2. 📈 İlerleme raporları  
-3. 🎯 Hedef belirleme asistanı
-4. 📚 Bilgi bankası oluşturma
-```
+### Orta Vadeli (v1.5)
+- [ ] Mobil uygulama (React Native)
+- [ ] Wearable device entegrasyonu
+- [ ] Gelişmiş analytics dashboard
+- [ ] Multi-language support
 
-#### 🏢 Kurumsal Wellness
-```
-1. 👥 Çalışan sağlığı programları
-2. 📊 Toplu ilerleme takibi
-3. 🎖️ Motivasyon sistemleri
-4. 📈 Sağlık analitikleri
-```
-
-### 🔮 Web Demo Roadmap
-
-#### 🚀 Gelecek Özellikler v2.0
-- **🤖 AI Agent Sistemi**: Otomatik haftalık menü planlama
-- **📱 Mobile App**: React Native uygulaması
-- **🔗 Wearable Entegrasyon**: Akıllı saat desteği
-- **👥 Sosyal Özellikler**: Topluluk ve paylaşım
-- **📊 Gelişmiş Analytics**: ML tabanlı içgörüler
-- **🌍 Multi-language**: İngilizce ve diğer diller
-
-#### 🛠️ Teknik İyileştirmeler v1.5
-- **🗄️ Database**: PostgreSQL entegrasyonu
-- **🔐 Authentication**: JWT tabanlı güvenlik
-- **☁️ Cloud Storage**: AWS S3 fotoğraf depolama
-- **📧 Notifications**: Email ve push bildirimler
-- **🔌 API Gateway**: Rate limiting ve caching
-
----
-
-## 🔬 Metodoloji
-
-### 🎯 Model Geliştirme Süreci
-
-1. **📊 Veri Hazırlama**
-   - **24.7K Türkçe sağlık Q&A çifti** toplanması
-   - JSON formatında soru-cevap çiftlerinin oluşturulması
-   - [FitTurkAI-Health-DATA](https://huggingface.co/datasets/AIYildiz/FitTurkAI-Health-DATA) veri seti oluşturma
-
-2. **🧠 Model Seçimi**
-   - Cosmos Turkish 8B v0.1 base model kullanımı
-   - Türkçe dil performansı için optimize edilmiş mimari
-
-3. **⚡ Fine-tuning Optimizasyonu**
-   - QLoRA (Quantized LoRA) implementasyonu
-   - 4-bit quantization ile bellek optimizasyonu
-   - PEFT ile parameter-efficient training
-
-4. **🔍 RAG Sistemi Entegrasyonu**
-   - FAISS vector store oluşturma
-   - Multilingual embedding modeli entegrasyonu
-   - Turkish text processing pipeline
-
-### 📊 Eğitim Parametreleri
-
-| Parametre | Değer | Açıklama |
-|-----------|-------|----------|
-| **LoRA Rank** | 16 | Adapter boyutu |
-| **LoRA Alpha** | 32 | Scaling parametresi |
-| **Dropout** | 0.1 | Overfitting önleme |
-| **Batch Size** | 4 | Per-device training batch |
-| **Learning Rate** | 2e-4 | Optimizasyon hızı |
-| **Epochs** | 3 | Eğitim döngüsü |
-
----
-
-## 📈 Performans
-
-### 🎯 Model Metrikleri
-
-- **💾 Model Boyutu**: ~8B parametre 
-  - **Quantized (Q8)**: 8.54 GB GGUF formatı
-  - **Hugging Face**: [AIYildiz-FitTurkAI-Q8](https://huggingface.co/AIYildiz/AIYildiz-FitTurkAI-Q8)
-- **⚡ Inference Hızı**: ~50 token/saniye (RTX 3090)
-- **🎯 Turkish BLEU Score**: 78.5
-- **📊 Training Dataset**: 24.7K Türkçe sağlık Q&A çifti
-
-### 📊 Sistem Gereksinimleri
-
-| Konfigürasyon | RAM | GPU | Inference Hızı |
-|---------------|-----|-----|----------------|
-| **Minimum** | 8GB | CPU | ~5 token/saniye |
-| **Önerilen** | 16GB | RTX 3070 | ~35 token/saniye |
-| **Optimal** | 32GB | RTX 4090 | ~80 token/saniye |
-
----
+### Uzun Vadeli (v2.0)
+- [ ] Machine learning insights
+- [ ] Doktor/diyetisyen bağlantısı
+- [ ] Community features
+- [ ] Premium subscription
 
 ## 🤝 Katkıda Bulunma
 
-FitTürkAI açık kaynak bir projedir ve topluluk katkılarını memnuniyetle karşılar!
+### Katkı Türleri
+- 🐛 Bug raporları
+- 💡 Özellik önerileri
+- 📝 Dokümantasyon iyileştirmeleri
+- 🔧 Kod katkıları
+- 🎨 UI/UX tasarım önerileri
 
-### 🛠️ Geliştirme Süreci
+### Katkı Süreci
+1. **Fork:** Bu repository'yi fork edin
+2. **Branch:** Yeni bir feature branch oluşturun
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+3. **Commit:** Değişikliklerinizi commit edin
+   ```bash
+   git commit -m 'feat: Add amazing feature'
+   ```
+4. **Push:** Branch'inizi push edin
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+5. **PR:** Pull Request açın
 
-1. **🍴 Fork** edin
-2. **🌿 Branch** oluşturun (`git checkout -b feature/yeni-ozellik`)
-3. **💾 Commit** yapın (`git commit -m 'Yeni özellik: açıklama'`)
-4. **📤 Push** edin (`git push origin feature/yeni-ozellik`)
-5. **🔄 Pull Request** oluşturun
+### Commit Mesaj Formatı
+```
+type(scope): description
 
-### 🎯 Katkı Alanları
+Types: feat, fix, docs, style, refactor, test, chore
+```
 
-- 🌐 **Veri Zenginleştirme**: Yeni Türkçe sağlık verileri
-- 🧠 **Model İyileştirme**: Fine-tuning parametrelerinin optimizasyonu
-- 🔍 **RAG Geliştirme**: Retrieval algoritması iyileştirmeleri
-- 🖥️ **Arayüz Geliştirme**: Gradio UI/UX iyileştirmeleri
-- 📚 **Dokümantasyon**: Teknik dokümantasyon genişletme
+## 📝 Lisans
 
----
-
-## 🏷️ Versiyonlar
-
-### 📋 Versiyon Geçmişi
-
-- **v1.0.0** (2024-01) - İlk stabil sürüm
-  - Cosmos Turkish 8B entegrasyonu
-  - QLoRA fine-tuning implementasyonu
-  - Turkish text processing optimizasyonu
-  - FAISS performance artışı
-  - Gradio arayüz yenileme
-  - Mobile responsive tasarım
-
----
+Bu proje **MIT Lisansı** altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
 
 ## 📞 İletişim
 
-### 👥 Proje Ekibi
+### Geliştirici
+- **GitHub:** [@aiyildiz](https://github.com/aiyildiz)
+- **E-posta:** aiyildiz@gmail.com
 
-- **🏗️ Proje Lideri**: Bilal
-- **🧠 AI/ML Uzmanı**: [İsim] 
-- **💻 Yazılım Geliştirici**: [İsim]
-- **📊 Veri Bilimci**: Bilal Abiç
+### Destek
+- **Issues:** [GitHub Issues](https://github.com/aiyildiz/fitturkai/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/aiyildiz/fitturkai/discussions)
+- **Documentation:** [Wiki](https://github.com/aiyildiz/fitturkai/wiki)
 
-### 📧 İletişim Kanalları
-
-- **🚀 Canlı Demo**: [Hugging Face Spaces](https://huggingface.co/spaces/AIYildiz/AIYildizFitTurkAI)
-- **🤖 Model Hub**: [AIYildiz-FitTurkAI-Q8](https://huggingface.co/AIYildiz/AIYildiz-FitTurkAI-Q8)
-- **📊 Dataset**: [FitTurkAI-Health-DATA](https://huggingface.co/datasets/AIYildiz/FitTurkAI-Health-DATA)
-- **🐙 GitHub**: [FitTurkAI/FitTurkAI](https://github.com/FitTurkAI/FitTurkAI)
-- **📧 İletişim**: AIYildiz Team
-
----
-
-## ⚠️ Önemli Uyarı ve Sorumluluk Reddi
-
-### 🏥 Tıbbi Sorumluluk Reddi
-
-**FitTürkAI bir yapay zeka asistanıdır ve profesyonel tıbbi tavsiye, tanı veya tedavi sağlamaz.**
-
-- **❗ Tıbbi Acil Durumlar**: Acil sağlık durumlarında derhal 112'yi arayın
-- **👩‍⚕️ Profesyonel Danışmanlık**: Sağlık kararları alırken mutlaka doktor, diyetisyen veya sağlık uzmanına danışın
-- **🔬 Bilimsel Amaç**: Bu sistem sadece genel bilgilendirme ve eğitim amaçlıdır
-- **🚫 Sorumluluk**: FitTürkAI'nin verdiği bilgilere dayanılarak alınan kararlardan geliştiriciler sorumlu değildir
-- **📋 Kişisel Durumlar**: Her bireyin sağlık durumu farklıdır, kişiselleştirilmiş planlar için uzman desteği alın
-
-### 🔒 Gizlilik ve Veri Güvenliği
-
-- **💾 Yerel Depolama**: Verileriniz sadece tarayıcınızda saklanır
-- **🚫 Sunucu Kayıtları**: Kişisel sağlık bilgileriniz sunucularımızda saklanmaz
-- **🔐 Güvenlik**: Hassas bilgilerinizi paylaşırken dikkatli olun
-- **🗑️ Veri Silme**: Tarayıcı verilerini istediğiniz zaman silebilirsiniz
-
----
-
-## 🔧 Hata Giderme ve SSS
-
-### ❓ Sıkça Sorulan Sorular (FAQ)
-
-#### 🤖 AI ve Model İle İlgili
-
-**S: AI asistanı çok yavaş yanıt veriyor?**
-```
-✅ Çözümler:
-- İnternet bağlantınızı kontrol edin
-- Hugging Face Space'in durumunu kontrol edin
-- Farklı bir zaman diliminde deneyin (yoğunluk azaltmak için)
-- Backend timeout süresini artırın (backend/main.py)
-```
-
-**S: AI yanlış veya tutarsız bilgiler veriyor?**
-```
-✅ Önemli:
-- AI'ın verdiği bilgiler referans amaçlıdır
-- Önemli sağlık kararları için doktor danışmanlığı alın
-- Model sürekli geliştirilmektedir
-- Hatalı yanıtları GitHub Issues'de rapor edin
-```
-
-**S: Model çok fazla bellek kullanıyor?**
-```
-✅ Çözümler:
-- QLoRA quantized model kullanın (8GB yerine 4GB)
-- Cloud API kullanın (yerel model yerine)
-- CPU inference kullanın (GPU yerine)
-- Batch size'ı azaltın
-```
-
-#### 💻 Teknik Sorunlar
-
-**S: Frontend backend'e bağlanamıyor?**
-```bash
-# CORS hatası kontrolü
-curl -H "Origin: http://localhost:3000" http://localhost:8000/health
-
-# Çözüm: backend/main.py CORS ayarlarını kontrol edin
-allow_origins=["http://localhost:3000"]
-```
-
-**S: npm install hatası alıyorum?**
-```bash
-# Node.js versiyonunu kontrol edin
-node --version  # 18+ olmalı
-
-# Cache temizleme
-npm cache clean --force
-rm -rf node_modules package-lock.json
-npm install
-```
-
-**S: Python bağımlılık hatası?**
-```bash
-# Python versiyonu kontrolü
-python --version  # 3.9+ olmalı
-
-# Sanal ortam kontrolü
-which python
-# /path/to/venv/bin/python olmalı
-
-# Yeniden kurulum
-pip install --upgrade pip
-pip install -r requirements.txt --force-reinstall
-```
-
-#### 🌐 Web Demo Sorunları
-
-**S: Sayfalar yüklenmiyor?**
-```
-✅ Kontrol edin:
-1. http://localhost:3000 erişimi
-2. Backend çalışıyor mu? (http://localhost:8000/health)
-3. Tarayıcı konsol hatalarını kontrol edin (F12)
-4. Antivirus/firewall ayarları
-```
-
-**S: Veriler kayboldu?**
-```
-✅ Bilgi:
-- Veriler localStorage'da saklanır
-- Tarayıcı verilerini sildiğinizde kaybolur
-- Farklı tarayıcılarda farklı veriler
-- Export/import özelliği ekleneceek (v1.1)
-```
-
-**S: Dark mode çalışmıyor?**
-```bash
-# Tarayıcı localStorage kontrolü
-localStorage.getItem('theme')
-# 'dark' veya 'light' olmalı
-
-# Manuel ayarlama
-localStorage.setItem('theme', 'dark')
-```
-
-#### 🏥 Sağlık ve İçerik
-
-**S: Türkçe karakterler düzgün görünmüyor?**
-```
-✅ Çözüm:
-- UTF-8 encoding kontrol edin
-- Tarayıcı dil ayarlarını Türkçe yapın
-- Font ayarlarını kontrol edin
-```
-
-**S: Hangi sağlık konularında yardım alabilirim?**
-```
-✅ Desteklenen konular:
-- Beslenme ve diyet planlaması
-- Egzersiz programları
-- Uyku optimizasyonu
-- Stres yönetimi
-- Genel yaşam tarzı tavsiyeleri
-- Temel sağlık bilgileri
-
-❌ Desteklenmeyen:
-- Tıbbi tanı
-- İlaç önerileri
-- Acil tıbbi durumlar
-- Spesifik hastalık tedavileri
-```
-
-### 🔍 Debug ve Troubleshooting
-
-#### 🔧 Log Kontrolü
-
-```bash
-# Backend logları
-cd "FitTürkAI Web Demo/backend"
-python main.py --log-level debug
-
-# Frontend build logları
-cd "FitTürkAI Web Demo"
-npm run build
-
-# Tarayıcı konsol logları
-# F12 -> Console sekmesi
-```
-
-#### 📊 Sistem Durumu Kontrolü
-
-```bash
-# Sistem kaynakları
-htop  # veya top
-
-# Port kullanımı
-netstat -tulpn | grep :3000
-netstat -tulpn | grep :8000
-
-# Disk alanı
-df -h
-
-# Bellek kullanımı
-free -h
-```
-
-#### 🔄 Reset ve Temizleme
-
-```bash
-# Tam reset (tüm veriler silinir)
-rm -rf node_modules
-rm -rf __pycache__
-rm package-lock.json
-npm cache clean --force
-pip cache purge
-
-# Tarayıcı verileri temizleme
-# F12 -> Application -> Storage -> Clear storage
-```
-
----
-
-## 📜 Lisans
-
-Bu proje MIT Lisansı altında yayınlanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
-
----
-
+### AI Model
+- **Hugging Face Space:** [AIYildiz/AIYildizFitTurkAI](https://huggingface.co/spaces/AIYildiz/AIYildizFitTurkAI)
+- **Model Repository:** [Model Detayları](https://huggingface.co/AIYildiz/AIYildizFitTurkAI)
+- **Q8 Model Repository:** [Model Detayları](https://huggingface.co/AIYildiz/AIYildiz-FitTurkAI-Q8)
 ## 🙏 Teşekkürler
 
-- **🏛️ Yıldız Teknik Üniversitesi**: Cosmos Turkish 8B modeli için
-- **🤗 Hugging Face**: Model hosting ve transformers kütüphanesi
-- **🔬 Facebook Research**: FAISS ve PyTorch için
-- **🇹🇷 Türkiye Bilimsel ve Teknolojik Araştırma Kurumu (TÜBİTAK)**: TEKNOFEST desteği
+Bu projeye katkıda bulunan herkese teşekkür ederiz:
 
----
+- **Hugging Face** - AI model hosting için
+- **Next.js Team** - Framework desteği için
+- **FastAPI Team** - Backend framework için
+- **Tailwind CSS** - UI styling için
+- **Open Source Community** - Kullanılan tüm paketler için
+
+## 📊 İstatistikler
 
 <div align="center">
 
-**🇹🇷 Türkiye'nin Geleceği İçin Geliştiriliyor 🇹🇷**
-
-Made with ❤️ for Turkish Healthcare AI
-
-![Turkey](https://img.shields.io/badge/Made%20in-Turkey-red.svg)
+![GitHub stars](https://img.shields.io/github/stars/aiyildiz/fitturkai?style=social)
+![GitHub forks](https://img.shields.io/github/forks/aiyildiz/fitturkai?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/aiyildiz/fitturkai?style=social)
+![GitHub issues](https://img.shields.io/github/issues/aiyildiz/fitturkai)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/aiyildiz/fitturkai)
 
 </div>
-=======
+
+---
+
 <div align="center">
 
 **🏥 FitTürkAI ile sağlıklı yaşam yolculuğunuza başlayın!**
