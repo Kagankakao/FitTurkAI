@@ -84,7 +84,7 @@ Bu seçenek ile AI modelini kendi bilgisayarınızda çalıştırmanıza gerek y
 #### 1. Projeyi Klonlayın
 ```bash
 git clone https://github.com/FitTurkAI/FitTurkAI.git
-cd fitturkai
+cd "FitTürkAI Web Demo"
 ```
 
 #### 2. Frontend Kurulumu
