@@ -1,0 +1,16 @@
+# FitTurkAI AI/ML Gereksinimleri
+torch
+transformers
+sentence-transformers
+datasets
+peft
+bitsandbytes
+accelerate
+faiss-cpu
+numpy
+nltk
+PyPDF2
+PyMuPDF
+scikit-learn
+tqdm
+requests 
