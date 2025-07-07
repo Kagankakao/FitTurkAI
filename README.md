@@ -83,7 +83,7 @@ Bu seçenek ile AI modelini kendi bilgisayarınızda çalıştırmanıza gerek y
 
 #### 1. Projeyi Klonlayın
 ```bash
-git clone https://github.com/aiyildiz/fitturkai.git
+git clone https://github.com/FitTurkAI/FitTurkAI.git
 cd fitturkai
 ```
 
