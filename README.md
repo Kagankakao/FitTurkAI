@@ -1,21 +1,3 @@
-# 🏥 FitTürkAI: Türkçe Odaklı Sağlık ve Yaşam Tarzı Yapay Zeka Asistanı
-
-<div align="center">
-
-![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-orange.svg)
-![Transformers](https://img.shields.io/badge/🤗%20Transformers-4.30+-yellow.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![TEKNOFEST](https://img.shields.io/badge/TEKNOFEST-2024-red.svg)
-
-*Türkiye'nin İlk Yerli ve Milli Sağlık Yapay Zeka Asistanı*
-
-[🚀 Canlı Demo](https://huggingface.co/spaces/AIYildiz/AIYildizFitTurkAI) • [🤖 Model Hub](https://huggingface.co/AIYildiz/AIYildiz-FitTurkAI-Q8) • [📊 Dataset](https://huggingface.co/datasets/AIYildiz/FitTurkAI-Health-DATA) • [🔧 Kurulum](#kurulum) • [🏆 TEKNOFEST](#teknofest-projesi)
-
-</div>
-
----
-
 ## 📋 İçindekiler
 
 - [🎯 Proje Hakkında](#-proje-hakkında)
@@ -861,3 +843,7 @@ Made with ❤️ for Turkish Healthcare AI
 ![Turkey](https://img.shields.io/badge/Made%20in-Turkey-red.svg)
 
 </div>
+=======
+<div align="center">
+
+**🏥 FitTürkAI ile sağlıklı yaşam yolculuğunuza başlayın!**
