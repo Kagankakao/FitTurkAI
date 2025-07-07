@@ -1,4 +1,4 @@
-# FitTurkA# 
+
 🏥 FitTürkAI - Kişisel Sağlık ve Fitness Asistanı
 
 <div align="center">
