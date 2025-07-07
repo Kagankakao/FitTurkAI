@@ -26,7 +26,7 @@ FitTürkAI, kullanıcıların sağlık ve fitness hedeflerini takip etmelerine, 
 - Kişiselleştirilmiş sağlık önerileri arayan kullanıcılar
 - Türkçe destekli AI asistanı tercih edenler
 
-## ✨ Özellikler
+## ✨ Hedeflenen Özellikler
 
 ### 🤖 AI Asistan
 - **Türkçe konuşan AI:** Sağlık ve fitness konularında uzmanlaşmış AI asistanı
@@ -130,6 +130,7 @@ llm = Llama(
 - **RAM:** Minimum 8GB (16GB önerilen)
 - **Storage:** 5-10GB boş alan
 - **CPU:** Modern işlemci (GPU opsiyonel)
+
 
 ## 📁 Proje Yapısı
 
