@@ -1,5 +1,5 @@
 
-#🏥 FitTürkAI - Kişisel Sağlık ve Fitness Asistanı
+# 🏥 FitTürkAI - Kişisel Sağlık ve Fitness Asistanı
 
 <div align="center">
 
