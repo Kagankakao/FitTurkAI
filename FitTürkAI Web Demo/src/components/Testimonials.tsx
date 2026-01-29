@@ -23,8 +23,8 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-16 bg-white dark:bg-neutral-dark">
-      <h2 className="text-3xl font-bold text-center mb-10 text-fitness-blue dark:text-fitness-green">
+    <section className="py-16 bg-white dark:bg-slate-950">
+      <h2 className="text-3xl font-semibold text-center mb-10 text-slate-900 dark:text-slate-100">
         Kullanıcı Başarı Hikâyeleri
       </h2>
       <div className="max-w-2xl mx-auto">
@@ -38,20 +38,20 @@ export default function Testimonials() {
         >
           {testimonials.map((t, i) => (
             <SwiperSlide key={i}>
-              <div className="flex flex-col items-center bg-neutral-light dark:bg-fitness-dark rounded-2xl shadow-lg p-8 animate-fade-in">
+              <div className="flex flex-col items-center bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800/70 shadow-sm p-8 animate-fade-in">
                 <img
                   src={t.image}
                   alt={t.name}
-                  className="w-20 h-20 rounded-full object-cover mb-4 border-4 border-fitness-blue shadow"
+                  className="w-20 h-20 rounded-full object-cover mb-4 border-2 border-slate-200 dark:border-slate-700 shadow-sm"
                   onError={(e) =>
                     (e.currentTarget.src =
                       'https://ui-avatars.com/api/?name=' + encodeURIComponent(t.name))
                   }
                 />
-                <p className="text-lg text-gray-700 dark:text-gray-200 mb-2 text-center">
+                <p className="text-lg text-slate-700 dark:text-slate-200 mb-2 text-center">
                   “{t.text}”
                 </p>
-                <span className="font-semibold text-fitness-pink dark:text-fitness-orange">
+                <span className="font-semibold text-slate-900 dark:text-slate-100">
                   {t.name}
                 </span>
               </div>
