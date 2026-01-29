@@ -8,18 +8,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'neutral-light': '#f5f5f5',
-        'neutral-dark': '#22223b',
-        'primary': '#2563eb',
+        'neutral-light': '#f8fafc',
+        'neutral-dark': '#0f172a',
+        'primary': '#1f2937',
         'secondary': '#64748b',
-        'fitness-green': '#32cd32',
-        'fitness-blue': '#1e90ff',
-        'fitness-orange': '#ff8c00',
-        'fitness-pink': '#ff4f81',
-        'fitness-dark': '#18181b',
+        'fitness-green': '#059669',
+        'fitness-blue': '#2563eb',
+        'fitness-orange': '#f59e0b',
+        'fitness-pink': '#db2777',
+        'fitness-dark': '#0f172a',
       },
       backgroundImage: {
-        'hero-gradient': 'linear-gradient(90deg, #1e90ff 0%, #32cd32 50%, #ff8c00 100%)',
+        'hero-gradient': 'linear-gradient(120deg, #0f172a 0%, #111827 55%, #0b1220 100%)',
       },
       keyframes: {
         'fade-in': {

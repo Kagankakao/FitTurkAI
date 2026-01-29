@@ -11,24 +11,29 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#1E90FF', // canlı mavi
-          light: '#60A5FA',
-          dark: '#1E3A8A',
+          DEFAULT: '#1f2937',
+          light: '#475569',
+          dark: '#0f172a',
         },
         secondary: {
-          DEFAULT: '#32CD32', // canlı yeşil
-          light: '#6EE7B7',
-          dark: '#065F46',
+          DEFAULT: '#64748b',
+          light: '#94a3b8',
+          dark: '#334155',
         },
         accent: {
-          DEFAULT: '#FF4500', // canlı kırmızı/turuncu
-          light: '#FF7F50',
-          dark: '#B91C1C',
+          DEFAULT: '#0f766e',
+          light: '#5eead4',
+          dark: '#115e59',
         },
         neutral: {
-          light: '#F0F0F0',
-          dark: '#1A1A1A',
+          light: '#f8fafc',
+          dark: '#0f172a',
         },
+        'fitness-green': '#059669',
+        'fitness-blue': '#2563eb',
+        'fitness-orange': '#f59e0b',
+        'fitness-pink': '#db2777',
+        'fitness-dark': '#0f172a',
       },
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],

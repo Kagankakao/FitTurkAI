@@ -19,9 +19,10 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    @apply bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100;
   }
-  
-  * {
+
+  :where(a, button, input, select, textarea, [role='button']) {
     transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
@@ -46,18 +47,18 @@
 /* Modern yatay scroll bar */
 .scrollbar-thin {
   scrollbar-width: thin;
-  scrollbar-color: #10b981 #f1f5f9;
+  scrollbar-color: #94a3b8 #e2e8f0;
 }
 .scrollbar-thin::-webkit-scrollbar {
   height: 6px;
   width: 6px;
 }
 .scrollbar-thin::-webkit-scrollbar-thumb {
-  background: linear-gradient(to right, #10b981, #0ea5e9);
+  background: #94a3b8;
   border-radius: 6px;
 }
 .scrollbar-thin::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #e2e8f0;
   border-radius: 6px;
 }
 
@@ -131,7 +132,7 @@
 
 /* Focus ring improvements */
 .focus-ring {
-  @apply focus:outline-none focus:ring-2 focus:ring-emerald-400/20 focus:border-emerald-400;
+  @apply focus:outline-none focus:ring-2 focus:ring-slate-400/40 focus:border-slate-400;
 }
 
 /* Bu dosya, global CSS stillerini içerecektir. */ 
