@@ -79,7 +79,16 @@ export function Navbar() {
     document.cookie = 'token=; Max-Age=0; path=/';
     localStorage.removeItem('userEmail');
     setUser(null);
-    router.push('/auth/login');
+    router.push('/');
+  };
+
+  const handleDemoStart = () => {
+    const demoEmail = 'demo@fitturk.ai';
+    const token = 'demo-token-' + Date.now();
+    document.cookie = `token=${token}; path=/; max-age=2592000`;
+    localStorage.setItem('userEmail', demoEmail);
+    localStorage.setItem('userName', 'Demo Kullanıcı');
+    router.push('/chat');
   };
 
   return (
@@ -145,20 +154,12 @@ export function Navbar() {
                     </button>
                   </>
                 ) : (
-                  <>
-                    <Link
-                      href="/auth/login"
-                      className="text-sm font-medium text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white px-4 py-2 transition-colors duration-200"
-                    >
-                      Giriş Yap
-                    </Link>
-                    <Link
-                      href="/auth/register"
-                      className="ml-4 text-sm font-medium text-white bg-slate-900 hover:bg-slate-800 px-4 py-2 rounded-full transition-all duration-200"
-                    >
-                      Kayıt Ol
-                    </Link>
-                  </>
+                  <button
+                    onClick={handleDemoStart}
+                    className="ml-2 text-sm font-medium text-white bg-slate-900 hover:bg-slate-800 px-4 py-2 rounded-full transition-all duration-200"
+                  >
+                    Demoyu Dene
+                  </button>
                 )}
               </div>
             </div>

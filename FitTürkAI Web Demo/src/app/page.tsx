@@ -85,8 +85,8 @@ const steps = [
         <DevicePhoneMobileIcon className="w-7 h-7 text-slate-600 dark:text-slate-300" />
       </motion.div>
     ),
-    title: 'Kayıt Ol',
-    desc: 'Hemen ücretsiz kaydol.',
+    title: 'Demoyu Başlat',
+    desc: 'Tek tıkla AI deneyimine gir.',
   },
   {
     icon: (
@@ -97,8 +97,8 @@ const steps = [
         <CakeIcon className="w-7 h-7 text-slate-600 dark:text-slate-300" />
       </motion.div>
     ),
-    title: 'Profilini Doldur',
-    desc: 'Kişisel bilgilerini ve hedeflerini gir.',
+    title: 'Sohbete Gir',
+    desc: 'Asistanla konuşup modeli dene.',
   },
   {
     icon: (
@@ -106,8 +106,8 @@ const steps = [
         <ArrowTrendingUpIcon className="w-7 h-7 text-slate-600 dark:text-slate-300" />
       </motion.div>
     ),
-    title: 'İlerlemeni Takip Et',
-    desc: 'Gelişimini grafiklerle izle.',
+    title: 'Çıktıları İncele',
+    desc: 'Yanıtları ve önerileri keşfet.',
   },
 ];
 
@@ -156,6 +156,17 @@ export default function HomePage() {
       router.push('/profile');
     }
   }, []);
+
+  const startDemo = () => {
+    if (typeof window !== 'undefined') {
+      const demoEmail = 'demo@fitturk.ai';
+      const token = 'demo-token-' + Date.now();
+      document.cookie = `token=${token}; path=/; max-age=2592000`;
+      localStorage.setItem('userEmail', demoEmail);
+      localStorage.setItem('userName', 'Demo Kullanıcı');
+    }
+    router.push('/chat');
+  };
 
   if (loading) return <Loader />;
 
@@ -222,9 +233,9 @@ export default function HomePage() {
           className="px-8 py-3 rounded-full bg-slate-900 text-white font-semibold text-lg shadow-lg transition-all duration-300 hover:bg-slate-800 hover:scale-105"
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.95 }}
-          onClick={() => router.push('/auth/register')}
+          onClick={startDemo}
         >
-          Hemen Başla
+          Demoyu Başlat
         </motion.button>
       </section>
 
@@ -447,9 +458,9 @@ export default function HomePage() {
           className="px-10 py-4 rounded-full bg-slate-900 text-white font-semibold text-2xl shadow-xl transition-all duration-300 hover:bg-slate-800 hover:scale-105"
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.95 }}
-          onClick={() => router.push('/auth/register')}
+          onClick={startDemo}
         >
-          Şimdi Katıl!
+          Demoyu Dene
         </motion.button>
         <p className="mt-6 text-slate-600 dark:text-slate-300 text-lg text-center max-w-2xl">
           Hemen ücretsiz kaydol, sağlıklı yaşam yolculuğuna bugün başla! FitTurkAI ile hedeflerine

@@ -31,16 +31,17 @@ export default function Hero() {
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.95 }}
           className="px-8 py-3 rounded-full bg-white text-slate-900 font-semibold text-lg shadow-lg transition-all duration-300 hover:bg-slate-100"
+          onClick={() => router.push('/chat')}
         >
-          Planını Oluştur
+          Demoyu Başlat
         </motion.button>
         <motion.button
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.95 }}
           className="px-8 py-3 rounded-full border border-white/40 text-white font-semibold text-lg shadow-lg transition-all duration-300 hover:bg-white/10"
-          onClick={() => router.push('/auth/register')}
+          onClick={() => router.push('/chat')}
         >
-          Hemen Başla
+          Asistanı Dene
         </motion.button>
       </motion.div>
     </section>

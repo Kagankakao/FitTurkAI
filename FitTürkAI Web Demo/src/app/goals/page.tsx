@@ -40,10 +40,14 @@ export default function GoalsPage() {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const userEmail = localStorage.getItem('userEmail');
+      let userEmail = localStorage.getItem('userEmail');
       if (!userEmail) {
-        router.push('/auth/login');
-        return;
+        const demoEmail = 'demo@fitturk.ai';
+        const token = 'demo-token-' + Date.now();
+        document.cookie = `token=${token}; path=/; max-age=2592000`;
+        localStorage.setItem('userEmail', demoEmail);
+        localStorage.setItem('userName', 'Demo Kullanıcı');
+        userEmail = demoEmail;
       }
       setChecked(true);
       loadGoals(userEmail);

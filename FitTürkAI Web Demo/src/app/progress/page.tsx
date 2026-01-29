@@ -86,20 +86,26 @@ export default function ProgressPage() {
   const [error, setError] = useState<string | null>(null);
   const [age, setAge] = useState('');
   const [gender, setGender] = useState<'male' | 'female' | ''>('');
+  const [activeEmail, setActiveEmail] = useState('');
   const router = useRouter();
 
-  const userEmail = typeof window !== 'undefined' ? localStorage.getItem('userEmail') : '';
-  const progressKey = `progress_${userEmail}`;
+  const progressKey = `progress_${activeEmail}`;
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
+      let userEmail = localStorage.getItem('userEmail');
       if (!userEmail) {
-        router.push('/auth/login');
-        return;
+        const demoEmail = 'demo@fitturk.ai';
+        const token = 'demo-token-' + Date.now();
+        document.cookie = `token=${token}; path=/; max-age=2592000`;
+        localStorage.setItem('userEmail', demoEmail);
+        localStorage.setItem('userName', 'Demo Kullanıcı');
+        userEmail = demoEmail;
       }
+      setActiveEmail(userEmail || '');
       setChecked(true);
     }
-  }, [router, userEmail]);
+  }, [router]);
 
   useEffect(() => {
     if (!checked) return;

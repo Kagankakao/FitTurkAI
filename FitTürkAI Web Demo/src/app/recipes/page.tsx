@@ -35,19 +35,25 @@ export default function RecipesPage() {
   const [stepInput, setStepInput] = useState('');
   const [checked, setChecked] = useState(false);
   const [editingRecipe, setEditingRecipe] = useState<any | null>(null);
+  const [activeEmail, setActiveEmail] = useState('');
 
-  const userEmail = typeof window !== 'undefined' ? localStorage.getItem('userEmail') : '';
-  const recipesKey = `recipes_${userEmail}`;
+  const recipesKey = `recipes_${activeEmail}`;
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
+      let userEmail = localStorage.getItem('userEmail');
       if (!userEmail) {
-        router.push('/auth/login');
-        return;
+        const demoEmail = 'demo@fitturk.ai';
+        const token = 'demo-token-' + Date.now();
+        document.cookie = `token=${token}; path=/; max-age=2592000`;
+        localStorage.setItem('userEmail', demoEmail);
+        localStorage.setItem('userName', 'Demo Kullanıcı');
+        userEmail = demoEmail;
       }
+      setActiveEmail(userEmail || '');
       setChecked(true);
     }
-  }, [router, userEmail]);
+  }, [router]);
 
   useEffect(() => {
     if (!checked) return;
