@@ -25,31 +25,31 @@ export default function DashboardPage() {
   };
 
   return (
-    <div className="min-h-screen bg-neutral-light dark:bg-neutral-dark">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
       <main className="md:ml-64 p-6">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-extrabold bg-gradient-to-r from-fitness-blue via-fitness-green to-fitness-orange bg-clip-text text-transparent mb-8">
+          <h1 className="text-4xl font-semibold text-slate-900 dark:text-slate-100 mb-8">
             Ayarlar
           </h1>
 
           <div className="space-y-6">
             {/* Tema Ayarları */}
-            <div className="bg-white dark:bg-neutral-800 rounded-2xl shadow-xl p-6">
+            <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800/70 shadow-sm p-6">
               <div className="flex items-center gap-3 mb-4">
-                <Moon className="w-6 h-6 text-fitness-blue" />
+                <Moon className="w-6 h-6 text-slate-500" />
                 <h2 className="text-xl font-semibold">Tema Ayarları</h2>
               </div>
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-gray-700 dark:text-gray-300">Karanlık Mod</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <p className="text-slate-700 dark:text-slate-300">Karanlık Mod</p>
+                  <p className="text-sm text-slate-500 dark:text-slate-400">
                     Uygulamanın görünümünü karanlık temaya geçirir
                   </p>
                 </div>
                 <button
                   onClick={() => setDarkMode(!darkMode)}
-                  className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-fitness-blue focus:ring-offset-2 ${
-                    darkMode ? 'bg-fitness-green' : 'bg-gray-200'
+                  className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 ${
+                    darkMode ? 'bg-slate-900' : 'bg-slate-200'
                   }`}
                 >
                   <span
@@ -62,23 +62,23 @@ export default function DashboardPage() {
             </div>
 
             {/* Bildirim Ayarları */}
-            <div className="bg-white dark:bg-neutral-800 rounded-2xl shadow-xl p-6">
+            <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800/70 shadow-sm p-6">
               <div className="flex items-center gap-3 mb-4">
-                <Bell className="w-6 h-6 text-fitness-green" />
+                <Bell className="w-6 h-6 text-slate-500" />
                 <h2 className="text-xl font-semibold">Bildirim Ayarları</h2>
               </div>
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-gray-700 dark:text-gray-300">E-posta Bildirimleri</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                    <p className="text-slate-700 dark:text-slate-300">E-posta Bildirimleri</p>
+                    <p className="text-sm text-slate-500 dark:text-slate-400">
                       Önemli güncellemeler için e-posta al
                     </p>
                   </div>
                   <button
                     onClick={() => handleSettingChange('emailNotifications')}
-                    className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-fitness-blue focus:ring-offset-2 ${
-                      settings.emailNotifications ? 'bg-fitness-green' : 'bg-gray-200'
+                    className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 ${
+                      settings.emailNotifications ? 'bg-slate-900' : 'bg-slate-200'
                     }`}
                   >
                     <span
@@ -90,15 +90,15 @@ export default function DashboardPage() {
                 </div>
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-gray-700 dark:text-gray-300">Push Bildirimleri</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                    <p className="text-slate-700 dark:text-slate-300">Push Bildirimleri</p>
+                    <p className="text-sm text-slate-500 dark:text-slate-400">
                       Anlık bildirimler al
                     </p>
                   </div>
                   <button
                     onClick={() => handleSettingChange('pushNotifications')}
-                    className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-fitness-blue focus:ring-offset-2 ${
-                      settings.pushNotifications ? 'bg-fitness-green' : 'bg-gray-200'
+                    className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 ${
+                      settings.pushNotifications ? 'bg-slate-900' : 'bg-slate-200'
                     }`}
                   >
                     <span
@@ -112,23 +112,23 @@ export default function DashboardPage() {
             </div>
 
             {/* Gizlilik Ayarları */}
-            <div className="bg-white dark:bg-neutral-800 rounded-2xl shadow-xl p-6">
+            <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800/70 shadow-sm p-6">
               <div className="flex items-center gap-3 mb-4">
-                <Eye className="w-6 h-6 text-fitness-orange" />
+                <Eye className="w-6 h-6 text-slate-500" />
                 <h2 className="text-xl font-semibold">Gizlilik Ayarları</h2>
               </div>
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-gray-700 dark:text-gray-300">Profil Görünürlüğü</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                    <p className="text-slate-700 dark:text-slate-300">Profil Görünürlüğü</p>
+                    <p className="text-sm text-slate-500 dark:text-slate-400">
                       Profilinizi diğer kullanıcılara göster
                     </p>
                   </div>
                   <button
                     onClick={() => handleSettingChange('profileVisibility')}
-                    className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-fitness-blue focus:ring-offset-2 ${
-                      settings.profileVisibility ? 'bg-fitness-green' : 'bg-gray-200'
+                    className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 ${
+                      settings.profileVisibility ? 'bg-slate-900' : 'bg-slate-200'
                     }`}
                   >
                     <span

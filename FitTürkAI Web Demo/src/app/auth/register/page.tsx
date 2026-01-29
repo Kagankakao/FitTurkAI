@@ -84,7 +84,7 @@ export default function RegisterPage() {
   if (!checked) return null;
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-emerald-50 via-sky-50 to-slate-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 p-4 font-inter">
+    <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950 p-4 font-inter">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -94,7 +94,7 @@ export default function RegisterPage() {
           <Link href="/" className="inline-block">
             <Logo />
           </Link>
-          <h1 className="text-3xl font-bold mt-4 bg-gradient-to-r from-emerald-500 to-sky-500 bg-clip-text text-transparent">
+          <h1 className="text-3xl font-semibold mt-4 text-slate-900 dark:text-slate-100">
             Kayıt Ol
           </h1>
           <p className="text-slate-600 dark:text-slate-300 mt-2">
@@ -102,7 +102,7 @@ export default function RegisterPage() {
           </p>
         </div>
 
-        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700 p-8">
+        <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200/70 dark:border-slate-800/70 p-8">
           {error && (
             <div className="mb-4 p-4 bg-red-50 dark:bg-red-900/30 text-red-700 dark:text-red-300 rounded-xl border border-red-200 dark:border-red-800">
               {error}
@@ -121,7 +121,7 @@ export default function RegisterPage() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-emerald-400/20 focus:border-emerald-400 transition-all duration-200 placeholder-slate-500 dark:placeholder-slate-400"
+                className="w-full px-4 py-3 rounded-xl border border-slate-300/70 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-slate-400/20 focus:border-slate-400 transition-all duration-200 placeholder-slate-500 dark:placeholder-slate-400"
                 placeholder="Ad Soyad"
               />
             </div>
@@ -137,7 +137,7 @@ export default function RegisterPage() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-emerald-400/20 focus:border-emerald-400 transition-all duration-200 placeholder-slate-500 dark:placeholder-slate-400"
+                className="w-full px-4 py-3 rounded-xl border border-slate-300/70 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-slate-400/20 focus:border-slate-400 transition-all duration-200 placeholder-slate-500 dark:placeholder-slate-400"
                 placeholder="ornek@email.com"
               />
             </div>
@@ -154,7 +154,7 @@ export default function RegisterPage() {
                   value={formData.password}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-emerald-400/20 focus:border-emerald-400 transition-all duration-200 pr-12 placeholder-slate-500 dark:placeholder-slate-400"
+                  className="w-full px-4 py-3 rounded-xl border border-slate-300/70 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-slate-400/20 focus:border-slate-400 transition-all duration-200 pr-12 placeholder-slate-500 dark:placeholder-slate-400"
                   placeholder="••••••••"
                 />
                 <button
@@ -179,7 +179,7 @@ export default function RegisterPage() {
                   value={formData.confirmPassword}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-emerald-400/20 focus:border-emerald-400 transition-all duration-200 pr-12 placeholder-slate-500 dark:placeholder-slate-400"
+                  className="w-full px-4 py-3 rounded-xl border border-slate-300/70 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-slate-400/20 focus:border-slate-400 transition-all duration-200 pr-12 placeholder-slate-500 dark:placeholder-slate-400"
                   placeholder="••••••••"
                 />
                 <button
@@ -195,7 +195,7 @@ export default function RegisterPage() {
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full bg-gradient-to-r from-emerald-500 to-sky-500 hover:from-emerald-600 hover:to-sky-600 text-white rounded-xl py-3 font-semibold transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg"
+              className="w-full bg-slate-900 hover:bg-slate-800 text-white rounded-xl py-3 font-semibold transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed shadow-sm hover:shadow-md"
             >
               {isLoading ? 'Kayıt yapılıyor...' : 'Kayıt Ol'}
             </button>
@@ -206,7 +206,7 @@ export default function RegisterPage() {
               Zaten hesabınız var mı?{' '}
               <Link
                 href="/auth/login"
-                className="text-emerald-600 hover:text-sky-600 dark:text-emerald-400 dark:hover:text-sky-400 font-medium transition-colors"
+                className="text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200 font-medium transition-colors"
               >
                 Giriş Yap
               </Link>

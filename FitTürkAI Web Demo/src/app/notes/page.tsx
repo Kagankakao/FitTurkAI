@@ -215,10 +215,10 @@ export default function NotesPage() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-sky-50 to-slate-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 font-inter">
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-950 font-inter">
         <main className="p-6">
           <div className="flex justify-center items-center h-64">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-emerald-500"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-slate-400"></div>
           </div>
         </main>
       </div>
@@ -226,10 +226,10 @@ export default function NotesPage() {
   }
 
   return (
-    <div className="flex min-h-screen bg-gradient-to-br from-emerald-50 via-sky-50 to-slate-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
+    <div className="flex min-h-screen bg-slate-50 dark:bg-slate-950">
       <main className="flex-1 p-8">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-extrabold bg-gradient-to-r from-fitness-blue via-fitness-green to-fitness-orange bg-clip-text text-transparent mb-4 text-center drop-shadow-lg">
+          <h1 className="text-4xl font-semibold text-slate-900 dark:text-slate-100 mb-4 text-center">
             Notlar
           </h1>
           <motion.div
@@ -237,7 +237,7 @@ export default function NotesPage() {
             animate={{ opacity: 1, y: 0 }}
             className="mb-8"
           >
-            <p className="text-lg text-gray-600 dark:text-gray-300 text-center max-w-2xl mx-auto">
+            <p className="text-lg text-slate-600 dark:text-slate-300 text-center max-w-2xl mx-auto">
               Sağlık ve fitness yolculuğunda önemli notlarını burada saklayabilirsin. Kategorilere
               ayır, etiketle ve istediğin zaman geri dön!
             </p>
@@ -256,7 +256,7 @@ export default function NotesPage() {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               placeholder="Notlarda ara..."
-              className="input flex-1 rounded-xl shadow focus:ring-2 focus:ring-fitness-blue"
+              className="input flex-1 rounded-xl shadow-sm border border-slate-200/70 dark:border-slate-800/70 focus:ring-2 focus:ring-slate-400"
             />
           </div>
           <div className="flex flex-wrap gap-2 mb-4">
@@ -264,10 +264,10 @@ export default function NotesPage() {
               <button
                 key={tag}
                 onClick={() => handleToggleTag(tag)}
-                className={`px-3 py-1 rounded-full text-sm flex items-center space-x-1 shadow transition-all duration-200 border-2 ${
+                className={`px-3 py-1 rounded-full text-sm flex items-center space-x-1 shadow-sm transition-all duration-200 border ${
                   activeTags.includes(tag)
-                    ? 'bg-gradient-to-r from-fitness-blue to-fitness-green text-white border-fitness-blue scale-105'
-                    : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border-gray-200 dark:border-gray-700 hover:scale-105'
+                    ? 'bg-slate-900 text-white border-slate-900 scale-105'
+                    : 'bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-slate-200/70 dark:border-slate-800/70 hover:scale-105'
                 }`}
               >
                 <TagIcon className="w-4 h-4" />
@@ -283,9 +283,9 @@ export default function NotesPage() {
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: 'auto' }}
                 exit={{ opacity: 0, height: 0 }}
-                className="card mb-8 bg-white/95 dark:bg-neutral-900/90 rounded-2xl shadow-2xl p-8 border border-fitness-blue/30"
+                className="card mb-8 bg-white/95 dark:bg-slate-900/90 rounded-2xl border border-slate-200/70 dark:border-slate-800/70 shadow-sm p-8"
               >
-                <h2 className="text-2xl font-heading font-bold mb-4 text-fitness-blue dark:text-fitness-green">
+                <h2 className="text-2xl font-semibold mb-4 text-slate-900 dark:text-slate-100">
                   {editingNote ? 'Notu Düzenle' : 'Yeni Not'}
                 </h2>
                 <div className="space-y-4">
@@ -297,7 +297,7 @@ export default function NotesPage() {
                       type="text"
                       value={title}
                       onChange={(e) => setTitle(e.target.value)}
-                      className="input w-full rounded-xl shadow focus:ring-2 focus:ring-fitness-blue"
+                      className="input w-full rounded-xl shadow-sm border border-slate-200/70 dark:border-slate-800/70 focus:ring-2 focus:ring-slate-400"
                       placeholder="Not başlığı"
                     />
                   </div>
@@ -308,7 +308,7 @@ export default function NotesPage() {
                     <textarea
                       value={content}
                       onChange={(e) => setContent(e.target.value)}
-                      className="input w-full rounded-xl shadow focus:ring-2 focus:ring-fitness-blue"
+                      className="input w-full rounded-xl shadow-sm border border-slate-200/70 dark:border-slate-800/70 focus:ring-2 focus:ring-slate-400"
                       rows={5}
                       placeholder="Not içeriği"
                     />
@@ -321,7 +321,7 @@ export default function NotesPage() {
                       {tags.map((tag) => (
                         <span
                           key={tag}
-                          className="px-3 py-1 bg-gradient-to-r from-fitness-blue to-fitness-green text-white rounded-full text-xs flex items-center shadow"
+                          className="px-3 py-1 bg-slate-900 text-white rounded-full text-xs flex items-center shadow-sm"
                         >
                           {tag}
                           <button
@@ -340,7 +340,7 @@ export default function NotesPage() {
                         value={tagInput}
                         onChange={(e) => setTagInput(e.target.value)}
                         placeholder="Etiket ekle..."
-                        className="input flex-1 rounded-xl shadow focus:ring-2 focus:ring-fitness-blue"
+                        className="input flex-1 rounded-xl shadow-sm border border-slate-200/70 dark:border-slate-800/70 focus:ring-2 focus:ring-slate-400"
                         onKeyPress={(e) => {
                           if (e.key === 'Enter' && tagInput.trim()) {
                             handleAddTag();
@@ -383,15 +383,15 @@ export default function NotesPage() {
                 key={note._id?.toString()}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                whileHover={{ scale: 1.03, boxShadow: '0 8px 32px 0 rgba(0,0,0,0.12)' }}
-                className={`card bg-white/90 dark:bg-neutral-900/80 rounded-2xl shadow-xl p-6 transition-all duration-200 border border-gray-100 dark:border-gray-800 hover:border-fitness-blue ${note.completed ? 'opacity-60' : ''}`}
+                whileHover={{ scale: 1.02, boxShadow: '0 10px 24px 0 rgba(15, 23, 42, 0.08)' }}
+                className={`card bg-white/90 dark:bg-slate-900/80 rounded-2xl border border-slate-200/70 dark:border-slate-800/70 shadow-sm p-6 transition-all duration-200 hover:shadow-md ${note.completed ? 'opacity-60' : ''}`}
               >
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className={`text-lg font-bold text-fitness-blue dark:text-fitness-green flex-1 truncate ${note.completed ? 'line-through text-green-600 dark:text-green-400' : ''}`}>{note.title}</h3>
+                  <h3 className={`text-lg font-semibold text-slate-900 dark:text-slate-100 flex-1 truncate ${note.completed ? 'line-through text-slate-500 dark:text-slate-400' : ''}`}>{note.title}</h3>
                   <div className="flex space-x-2 items-center">
                     <button
                       onClick={() => handleToggleNoteCompleted(note._id?.toString() || '')}
-                      className={`p-2 rounded-full border-2 transition-all duration-200 ${note.completed ? 'bg-gradient-to-r from-fitness-green to-green-400 text-white border-fitness-green scale-110' : 'bg-gray-100 dark:bg-gray-700 text-gray-500 border-gray-300 dark:border-gray-700 hover:scale-105'}`}
+                      className={`p-2 rounded-full border transition-all duration-200 ${note.completed ? 'bg-slate-900 text-white border-slate-900 scale-110' : 'bg-white dark:bg-slate-800 text-slate-500 border-slate-200 dark:border-slate-700 hover:scale-105'}`}
                       title={note.completed ? 'Tamamlandı' : 'Tamamla'}
                     >
                       <CheckIcon className="w-5 h-5" />
@@ -415,21 +415,21 @@ export default function NotesPage() {
                     </button>
                   </div>
                 </div>
-                <p className="text-gray-700 dark:text-gray-200 mb-4 whitespace-pre-wrap min-h-[60px]">
+                <p className="text-slate-700 dark:text-slate-200 mb-4 whitespace-pre-wrap min-h-[60px]">
                   {note.content}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-2">
                   {note.tags.map((tag: string) => (
                     <span
                       key={tag}
-                      className="px-3 py-1 bg-gradient-to-r from-fitness-blue to-fitness-green text-white rounded-full text-xs flex items-center shadow"
+                      className="px-3 py-1 bg-slate-900 text-white rounded-full text-xs flex items-center shadow-sm"
                     >
                       <TagIcon className="w-4 h-4 mr-1" />
                       {tag}
                     </span>
                   ))}
                 </div>
-                <div className="mt-2 text-xs text-gray-500 dark:text-gray-400 flex flex-col gap-1">
+                <div className="mt-2 text-xs text-slate-500 dark:text-slate-400 flex flex-col gap-1">
                   <span>
                     Oluşturulma:{' '}
                     {note.createdAt ? new Date(note.createdAt).toLocaleDateString('tr-TR') : '-'}
@@ -449,7 +449,7 @@ export default function NotesPage() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               onClick={() => setIsCreating(true)}
-              className="fixed bottom-8 right-8 p-5 bg-gradient-to-br from-fitness-blue to-fitness-green text-white rounded-full shadow-2xl hover:scale-110 hover:shadow-fitness-blue/40 transition-all z-50 border-4 border-white dark:border-neutral-900"
+              className="fixed bottom-8 right-8 p-5 bg-slate-900 text-white rounded-full shadow-xl hover:scale-110 transition-all z-50 border-4 border-white dark:border-slate-950"
               title="Yeni Not Ekle"
             >
               <PlusIcon className="w-7 h-7" />

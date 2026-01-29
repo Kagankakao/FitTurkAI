@@ -288,29 +288,29 @@ export default function ChatPage() {
   if (!checked || !currentSession) return null;
 
   return (
-    <div className="h-screen bg-gradient-to-br from-emerald-50 via-sky-50 to-slate-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 font-inter overflow-hidden">
+    <div className="h-screen bg-slate-50 dark:bg-slate-950 font-inter overflow-hidden">
       <div className="h-full flex">
-        <div className="flex-1 flex bg-white/95 dark:bg-neutral-900/90 shadow-2xl border border-gray-200 dark:border-slate-700">
+        <div className="flex-1 flex bg-white/95 dark:bg-slate-900/90 shadow-sm border border-slate-200/70 dark:border-slate-800/70">
           
           {/* Ana Chat Bölümü */}
           <div className="flex-1 flex flex-col">
             
             {/* Başlık Alanı - Üstte */}
-            <div className="flex items-center justify-center px-8 py-6 bg-gradient-to-r from-fitness-blue/5 to-fitness-green/5 dark:from-fitness-blue/10 dark:to-fitness-green/10 border-b border-gray-200 dark:border-slate-700 relative">
+            <div className="flex items-center justify-center px-8 py-6 bg-slate-50 dark:bg-slate-900 border-b border-slate-200/70 dark:border-slate-800/70 relative">
               
               {/* Başlık - Merkezi */}
               <div className="flex items-center gap-4">
                 {/* Logo */}
-                <div className="w-14 h-14 bg-gradient-to-r from-fitness-blue to-fitness-green rounded-2xl flex items-center justify-center shadow-lg">
+                <div className="w-14 h-14 bg-slate-900 rounded-2xl flex items-center justify-center shadow-sm">
                   <HeartIcon className="w-7 h-7 text-white" />
                 </div>
                 
                 {/* Başlık */}
                 <div className="text-center">
-                  <h1 className="text-2xl font-bold bg-gradient-to-r from-fitness-blue via-fitness-green to-fitness-orange bg-clip-text text-transparent">
+                  <h1 className="text-2xl font-semibold text-slate-900 dark:text-slate-100">
                     FitTürkAI Asistanı
                   </h1>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm font-medium">
+                  <p className="text-slate-600 dark:text-slate-300 text-sm font-medium">
                     Kişisel sağlık danışmanınız
                   </p>
                 </div>
@@ -325,8 +325,8 @@ export default function ChatPage() {
                   whileTap={{ scale: 0.95 }}
                   className={`p-3 rounded-xl transition-all duration-200 ${
                     currentSession.isFavorite 
-                      ? 'bg-gradient-to-r from-fitness-blue to-fitness-green text-white shadow-lg' 
-                      : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                      ? 'bg-slate-900 text-white shadow-sm' 
+                      : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
                   }`}
                   title="Sohbeti Favorile"
                 >
@@ -338,7 +338,7 @@ export default function ChatPage() {
                   onClick={() => setSidebarOpen(!sidebarOpen)}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="p-3 rounded-xl bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200"
+                className="p-3 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all duration-200"
                 >
                   {sidebarOpen ? (
                     <ChevronRightIcon className="w-5 h-5" />
@@ -350,7 +350,7 @@ export default function ChatPage() {
             </div>
 
             {/* Chat Container - Ortalanmış */}
-            <div className="flex-1 flex justify-center bg-gray-50/50 dark:bg-slate-800/50 overflow-hidden">
+            <div className="flex-1 flex justify-center bg-slate-50/60 dark:bg-slate-900/60 overflow-hidden">
               <div className="w-full max-w-4xl flex flex-col h-full">
                 
                 {/* Sağlık Uyarısı */}
@@ -391,10 +391,10 @@ export default function ChatPage() {
                         }`}>
                           
                           {/* Avatar */}
-                          <div className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center shadow-lg ${
+                          <div className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center shadow-sm ${
                             message.isUser 
-                              ? 'bg-gradient-to-br from-fitness-blue to-sky-500' 
-                              : 'bg-gradient-to-br from-fitness-green to-emerald-500'
+                              ? 'bg-slate-900' 
+                              : 'bg-slate-700'
                           }`}>
                             {message.isUser ? (
                               <UserIcon className="w-5 h-5 text-white" />
@@ -404,10 +404,10 @@ export default function ChatPage() {
                           </div>
 
                           {/* Mesaj Balonu */}
-                          <div className={`relative px-5 py-4 rounded-3xl shadow-lg transition-all duration-200 hover:shadow-xl ${
+                          <div className={`relative px-5 py-4 rounded-3xl shadow-sm transition-all duration-200 hover:shadow-md ${
                             message.isUser
-                              ? 'bg-gradient-to-br from-sky-100 to-blue-100 dark:from-sky-900/50 dark:to-blue-900/50 text-slate-800 dark:text-slate-200 border border-fitness-blue/20'
-                              : 'bg-gradient-to-br from-emerald-50 to-green-50 dark:from-emerald-900/30 dark:to-green-900/30 text-slate-800 dark:text-slate-200 border border-fitness-green/30'
+                              ? 'bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200/70 dark:border-slate-700'
+                              : 'bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 border border-slate-200/70 dark:border-slate-800/70'
                           } ${message.isUser ? 'rounded-br-lg' : 'rounded-bl-lg'}`}>
                             
                             {/* Mesaj İçeriği */}
@@ -416,11 +416,7 @@ export default function ChatPage() {
                             </p>
                             
                             {/* Zaman */}
-                            <p className={`text-xs mt-3 font-medium ${
-                              message.isUser 
-                                ? 'text-fitness-blue dark:text-sky-400' 
-                                : 'text-fitness-green dark:text-emerald-400'
-                            }`}>
+                            <p className="text-xs mt-3 font-medium text-slate-500 dark:text-slate-400">
                               {message.timestamp.toLocaleTimeString('tr-TR', { 
                                 hour: '2-digit', 
                                 minute: '2-digit' 
@@ -430,8 +426,8 @@ export default function ChatPage() {
                             {/* Mesaj Kuyruğu */}
                             <div className={`absolute bottom-0 w-4 h-4 ${
                               message.isUser 
-                                ? 'right-0 translate-x-2 bg-gradient-to-br from-sky-100 to-blue-100 dark:from-sky-900/50 dark:to-blue-900/50 border-r border-b border-fitness-blue/20' 
-                                : 'left-0 -translate-x-2 bg-gradient-to-br from-emerald-50 to-green-50 dark:from-emerald-900/30 dark:to-green-900/30 border-l border-b border-fitness-green/30'
+                                ? 'right-0 translate-x-2 bg-slate-100 dark:bg-slate-800 border-r border-b border-slate-200/70 dark:border-slate-700' 
+                                : 'left-0 -translate-x-2 bg-white dark:bg-slate-900 border-l border-b border-slate-200/70 dark:border-slate-800/70'
                             } rotate-45`}></div>
                           </div>
                         </div>
@@ -448,14 +444,14 @@ export default function ChatPage() {
                       className="flex justify-start"
                     >
                       <div className="flex items-end gap-3 max-w-[85%]">
-                        <div className="w-10 h-10 bg-gradient-to-br from-fitness-green to-emerald-500 rounded-full flex items-center justify-center shadow-lg">
+                        <div className="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center shadow-sm">
                           <SparklesIcon className="w-5 h-5 text-white" />
                         </div>
-                        <div className="bg-gradient-to-br from-emerald-50 to-green-50 dark:from-emerald-900/30 dark:to-green-900/30 border border-fitness-green/30 rounded-3xl rounded-bl-lg px-5 py-4 shadow-lg">
+                        <div className="bg-white dark:bg-slate-900 border border-slate-200/70 dark:border-slate-800/70 rounded-3xl rounded-bl-lg px-5 py-4 shadow-sm">
                           <div className="flex items-center gap-1">
-                            <div className="w-2 h-2 bg-fitness-green rounded-full animate-bounce"></div>
-                            <div className="w-2 h-2 bg-fitness-green rounded-full animate-bounce delay-100"></div>
-                            <div className="w-2 h-2 bg-fitness-green rounded-full animate-bounce delay-200"></div>
+                            <div className="w-2 h-2 bg-slate-400 rounded-full animate-bounce"></div>
+                            <div className="w-2 h-2 bg-slate-400 rounded-full animate-bounce delay-100"></div>
+                            <div className="w-2 h-2 bg-slate-400 rounded-full animate-bounce delay-200"></div>
                           </div>
                         </div>
                       </div>
@@ -466,7 +462,7 @@ export default function ChatPage() {
                 </div>
 
                 {/* Mesaj Gönderme Formu - Sticky */}
-                <div className="sticky bottom-0 bg-white/95 dark:bg-neutral-900/90 p-6 border-t border-gray-200 dark:border-slate-700">
+                <div className="sticky bottom-0 bg-white/95 dark:bg-slate-900/90 p-6 border-t border-slate-200/70 dark:border-slate-800/70">
                   <form onSubmit={handleSubmit} className="flex gap-4 items-end">
                     <div className="flex-1 relative">
                       <input
@@ -474,12 +470,12 @@ export default function ChatPage() {
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
                         placeholder="Mesajınızı yazın..."
-                        className="w-full px-6 py-4 rounded-full border border-gray-300 dark:border-gray-600 focus:border-fitness-blue focus:ring-2 focus:ring-fitness-blue/20 transition-all duration-200 bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-200 placeholder-gray-500 dark:placeholder-gray-400 shadow-sm text-base outline-none"
+                        className="w-full px-6 py-4 rounded-full border border-slate-300/70 dark:border-slate-700 focus:border-slate-400 focus:ring-2 focus:ring-slate-400/20 transition-all duration-200 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-500 shadow-sm text-base outline-none"
                         disabled={isLoading}
                         autoFocus
                       />
                       {input.trim() && (
-                        <div className="absolute right-6 top-1/2 -translate-y-1/2 text-xs text-fitness-blue dark:text-sky-400 font-medium">
+                        <div className="absolute right-6 top-1/2 -translate-y-1/2 text-xs text-slate-500 dark:text-slate-400 font-medium">
                           Enter ↵
                         </div>
                       )}
@@ -490,7 +486,7 @@ export default function ChatPage() {
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       disabled={isLoading || !input.trim()}
-                      className="p-4 rounded-full bg-gradient-to-r from-fitness-blue to-fitness-green hover:from-fitness-blue/80 hover:to-fitness-green/80 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                      className="p-4 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-semibold shadow-sm transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                       aria-label="Mesaj Gönder"
                     >
                       <PaperAirplaneIcon className="w-6 h-6" />
@@ -509,7 +505,7 @@ export default function ChatPage() {
                 animate={{ width: 350, opacity: 1 }}
                 exit={{ width: 0, opacity: 0 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
-                className="w-80 bg-gradient-to-b from-emerald-50 via-sky-50 to-slate-50 dark:from-slate-800 dark:via-slate-800 dark:to-slate-900 border-l border-gray-200 dark:border-slate-700 overflow-hidden"
+                className="w-80 bg-slate-50 dark:bg-slate-900 border-l border-slate-200/70 dark:border-slate-800/70 overflow-hidden"
               >
                 <div className="p-6 h-full flex flex-col">
                   <div className="flex items-center justify-between mb-6">
@@ -520,7 +516,7 @@ export default function ChatPage() {
                       onClick={createNewSession}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="p-3 rounded-xl bg-gradient-to-r from-fitness-blue to-fitness-green text-white shadow-lg hover:shadow-xl transition-all duration-200"
+                      className="p-3 rounded-xl bg-slate-900 text-white shadow-sm hover:bg-slate-800 transition-all duration-200"
                     >
                       <PlusIcon className="w-5 h-5" />
                     </motion.button>
@@ -532,10 +528,10 @@ export default function ChatPage() {
                         key={session.id}
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
-                        className={`p-4 rounded-2xl cursor-pointer transition-all duration-200 hover:shadow-lg group ${
+                        className={`p-4 rounded-2xl cursor-pointer transition-all duration-200 hover:shadow-md group ${
                           currentSessionId === session.id
-                            ? 'bg-gradient-to-r from-fitness-blue/10 to-fitness-green/10 border border-fitness-blue/30 shadow-lg'
-                            : 'bg-white/90 dark:bg-slate-700 hover:bg-gray-50 dark:hover:bg-slate-600 border border-gray-200 dark:border-slate-600'
+                            ? 'bg-slate-100 dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700 shadow-sm'
+                            : 'bg-white/90 dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 border border-slate-200/70 dark:border-slate-700'
                         }`}
                         onClick={() => setCurrentSessionId(session.id)}
                       >
@@ -550,13 +546,13 @@ export default function ChatPage() {
                                 {session.title}
                               </p>
                               {session.isFavorite && (
-                                <StarIcon className="w-4 h-4 text-fitness-orange fill-current" />
+                                <StarIcon className="w-4 h-4 text-amber-400 fill-current" />
                               )}
                             </div>
                             <p className={`text-xs mt-1 ${
                               currentSessionId === session.id 
-                                ? 'text-fitness-blue dark:text-sky-400' 
-                                : 'text-gray-500 dark:text-gray-400'
+                                ? 'text-slate-600 dark:text-slate-300' 
+                                : 'text-slate-500 dark:text-slate-400'
                             }`}>
                               {session.messages.length} mesaj • {session.createdAt.toLocaleDateString('tr-TR')}
                             </p>

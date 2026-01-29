@@ -297,10 +297,10 @@ export default function GoalsPage() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-sky-50 to-slate-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 font-inter">
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-950 font-inter">
         <main className="p-6">
           <div className="flex justify-center items-center h-64">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-emerald-500"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-slate-400"></div>
           </div>
         </main>
       </div>
@@ -308,10 +308,10 @@ export default function GoalsPage() {
   }
 
   return (
-    <div className="flex min-h-screen bg-gradient-to-br from-blue-50 via-green-50 to-red-50 dark:from-blue-900 dark:via-green-900 dark:to-red-900">
+    <div className="flex min-h-screen bg-slate-50 dark:bg-slate-950">
       <main className="flex-1 p-8">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-extrabold bg-gradient-to-r from-fitness-blue via-fitness-green to-fitness-orange bg-clip-text text-transparent mb-4 text-center drop-shadow-lg">
+          <h1 className="text-4xl font-semibold text-slate-900 dark:text-slate-100 mb-4 text-center">
             Hedefler
           </h1>
           <motion.div
@@ -319,7 +319,7 @@ export default function GoalsPage() {
             animate={{ opacity: 1, y: 0 }}
             className="mb-8"
           >
-            <p className="text-lg text-gray-600 dark:text-gray-300 text-center max-w-2xl mx-auto">
+            <p className="text-lg text-slate-600 dark:text-slate-300 text-center max-w-2xl mx-auto">
               Hedeflerini belirle, ilerlemeni takip et ve başarıya ulaş! Her hedef için kilometre
               taşları ekleyebilirsin.
             </p>
@@ -338,9 +338,9 @@ export default function GoalsPage() {
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: 'auto' }}
                 exit={{ opacity: 0, height: 0 }}
-                className="card mb-8 bg-white/95 dark:bg-neutral-900/90 rounded-2xl shadow-2xl p-8 border border-fitness-blue/30"
+                className="card mb-8 bg-white/95 dark:bg-slate-900/90 rounded-2xl border border-slate-200/70 dark:border-slate-800/70 shadow-sm p-8"
               >
-                <h2 className="text-2xl font-heading font-bold mb-4 text-fitness-blue dark:text-fitness-green">
+                <h2 className="text-2xl font-semibold mb-4 text-slate-900 dark:text-slate-100">
                   {editingGoal ? 'Hedefi Düzenle' : 'Yeni Hedef'}
                 </h2>
                 <div className="space-y-4">
@@ -352,7 +352,7 @@ export default function GoalsPage() {
                       type="text"
                       value={title}
                       onChange={(e) => setTitle(e.target.value)}
-                      className="input w-full rounded-xl shadow focus:ring-2 focus:ring-fitness-blue"
+                      className="input w-full rounded-xl shadow-sm border border-slate-200/70 dark:border-slate-800/70 focus:ring-2 focus:ring-slate-400"
                       placeholder="Hedef başlığı"
                     />
                   </div>
@@ -363,7 +363,7 @@ export default function GoalsPage() {
                     <textarea
                       value={description}
                       onChange={(e) => setDescription(e.target.value)}
-                      className="input w-full rounded-xl shadow focus:ring-2 focus:ring-fitness-blue"
+                      className="input w-full rounded-xl shadow-sm border border-slate-200/70 dark:border-slate-800/70 focus:ring-2 focus:ring-slate-400"
                       rows={3}
                       placeholder="Hedef açıklaması"
                     />
@@ -376,7 +376,7 @@ export default function GoalsPage() {
                       <select
                         value={type}
                         onChange={(e) => setType(e.target.value as Goal['type'])}
-                        className="input w-full rounded-xl shadow focus:ring-2 focus:ring-fitness-blue"
+                        className="input w-full rounded-xl shadow-sm border border-slate-200/70 dark:border-slate-800/70 focus:ring-2 focus:ring-slate-400"
                       >
                         <option value="weight">Kilo</option>
                         <option value="fitness">Fitness</option>
@@ -392,7 +392,7 @@ export default function GoalsPage() {
                         type="text"
                         value={unit}
                         onChange={(e) => setUnit(e.target.value)}
-                        className="input w-full rounded-xl shadow focus:ring-2 focus:ring-fitness-blue"
+                        className="input w-full rounded-xl shadow-sm border border-slate-200/70 dark:border-slate-800/70 focus:ring-2 focus:ring-slate-400"
                         placeholder="kg, km, adet, vb."
                       />
                     </div>
@@ -406,7 +406,7 @@ export default function GoalsPage() {
                         type="number"
                         value={targetValue}
                         onChange={(e) => setTargetValue(parseFloat(e.target.value))}
-                        className="input w-full rounded-xl shadow focus:ring-2 focus:ring-fitness-blue"
+                        className="input w-full rounded-xl shadow-sm border border-slate-200/70 dark:border-slate-800/70 focus:ring-2 focus:ring-slate-400"
                       />
                     </div>
                     <div>
@@ -417,7 +417,7 @@ export default function GoalsPage() {
                         type="number"
                         value={currentValue}
                         onChange={(e) => setCurrentValue(parseFloat(e.target.value))}
-                        className="input w-full rounded-xl shadow focus:ring-2 focus:ring-fitness-blue"
+                        className="input w-full rounded-xl shadow-sm border border-slate-200/70 dark:border-slate-800/70 focus:ring-2 focus:ring-slate-400"
                       />
                     </div>
                   </div>
@@ -429,7 +429,7 @@ export default function GoalsPage() {
                       type="date"
                       value={deadline}
                       onChange={(e) => setDeadline(e.target.value)}
-                      className="input w-full rounded-xl shadow focus:ring-2 focus:ring-fitness-blue"
+                      className="input w-full rounded-xl shadow-sm border border-slate-200/70 dark:border-slate-800/70 focus:ring-2 focus:ring-slate-400"
                     />
                   </div>
                   <div className="flex justify-end space-x-4">
@@ -465,13 +465,13 @@ export default function GoalsPage() {
                 key={String(goal._id)}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                whileHover={{ scale: 1.03, boxShadow: '0 8px 32px 0 rgba(0,0,0,0.12)' }}
-                className={`card bg-white/90 dark:bg-neutral-900/80 rounded-2xl shadow-xl p-6 transition-all duration-200 border-2 border-fitness-blue/40 hover:border-fitness-green ${goal.completed ? 'opacity-60' : ''}`}
+                whileHover={{ scale: 1.02, boxShadow: '0 10px 24px 0 rgba(15, 23, 42, 0.08)' }}
+                className={`card bg-white/90 dark:bg-slate-900/80 rounded-2xl border border-slate-200/70 dark:border-slate-800/70 shadow-sm p-6 transition-all duration-200 hover:shadow-md ${goal.completed ? 'opacity-60' : ''}`}
               >
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <h3 className={`text-lg font-bold flex-1 truncate ${goal.completed ? 'line-through text-green-600 dark:text-green-400' : 'text-fitness-blue dark:text-fitness-green'}`}>{goal.title}</h3>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                    <h3 className={`text-lg font-semibold flex-1 truncate ${goal.completed ? 'line-through text-slate-500 dark:text-slate-400' : 'text-slate-900 dark:text-slate-100'}`}>{goal.title}</h3>
+                    <p className="text-sm text-slate-500 dark:text-slate-400">
                       {goal.type === 'weight' && 'Kilo'}
                       {goal.type === 'fitness' && 'Fitness'}
                       {goal.type === 'nutrition' && 'Beslenme'}
@@ -481,7 +481,7 @@ export default function GoalsPage() {
                   <div className="flex space-x-2 items-center">
                     <button
                       onClick={() => handleToggleGoalCompleted(String(goal._id))}
-                      className={`p-2 rounded-full border-2 transition-all duration-200 ${goal.completed ? 'bg-gradient-to-r from-fitness-green to-green-400 text-white border-fitness-green scale-110' : 'bg-gray-100 dark:bg-gray-700 text-gray-500 border-gray-300 dark:border-gray-700 hover:scale-105'}`}
+                      className={`p-2 rounded-full border transition-all duration-200 ${goal.completed ? 'bg-slate-900 text-white border-slate-900 scale-110' : 'bg-white dark:bg-slate-800 text-slate-500 border-slate-200 dark:border-slate-700 hover:scale-105'}`}
                       title={goal.completed ? 'Tamamlandı' : 'Tamamla'}
                     >
                       <CheckIcon className="w-5 h-5" />
@@ -509,7 +509,7 @@ export default function GoalsPage() {
                     </button>
                   </div>
                 </div>
-                <p className="text-gray-700 dark:text-gray-200 mb-4 min-h-[40px]">
+                <p className="text-slate-600 dark:text-slate-300 mb-4 min-h-[40px]">
                   {goal.description}
                 </p>
                 <div className="mb-4">
@@ -519,7 +519,7 @@ export default function GoalsPage() {
                   </div>
                   <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 overflow-hidden">
                     <motion.div
-                      className={`h-3 rounded-full ${goal.completed ? 'bg-gradient-to-r from-green-500 to-green-400' : 'bg-gradient-to-r from-fitness-blue to-fitness-green'}`}
+                      className={`h-3 rounded-full ${goal.completed ? 'bg-slate-400' : 'bg-slate-900'}`}
                       initial={{ width: 0 }}
                       animate={{
                         width: `${calculateProgress(goal)}%`,
@@ -554,7 +554,7 @@ export default function GoalsPage() {
                         <div className="flex items-center space-x-2 flex-1">
                           <button
                             onClick={() => handleToggleMilestone(goal, milestone.id)}
-                            className={`relative p-1 rounded-full border-2 transition-all duration-200 ${milestone.completed ? 'bg-gradient-to-r from-emerald-500 to-green-500 text-white border-emerald-500 scale-110 shadow-lg' : 'bg-gray-200 dark:bg-gray-700 text-gray-500 border-gray-300 dark:border-gray-700 hover:scale-105 hover:border-fitness-blue hover:bg-fitness-blue/10'}`}
+                            className={`relative p-1 rounded-full border transition-all duration-200 ${milestone.completed ? 'bg-slate-900 text-white border-slate-900 scale-110 shadow-sm' : 'bg-white dark:bg-slate-800 text-slate-500 border-slate-200 dark:border-slate-700 hover:scale-105 hover:border-slate-400 hover:bg-slate-50/60 dark:hover:bg-slate-700'}`}
                             title={milestone.completed ? 'Tamamlandı! 🎉' : 'Tamamla'}
                           >
                             <CheckIcon className="w-4 h-4" />
@@ -589,7 +589,7 @@ export default function GoalsPage() {
                     value={milestoneTitle}
                     onChange={(e) => setMilestoneTitle(e.target.value)}
                     placeholder="Yeni kilometre taşı ekle..."
-                    className="input flex-1 rounded-xl shadow focus:ring-2 focus:ring-fitness-blue text-sm"
+                    className="input flex-1 rounded-xl shadow-sm border border-slate-200/70 dark:border-slate-800/70 focus:ring-2 focus:ring-slate-400 text-sm"
                     onKeyPress={(e) => {
                       if (e.key === 'Enter' && milestoneTitle.trim()) {
                         handleAddMilestone(goal);
@@ -620,19 +620,19 @@ export default function GoalsPage() {
                   initial={{ scale: 0.8 }}
                   animate={{ scale: 1 }}
                   transition={{ type: "spring", stiffness: 260, damping: 20 }}
-                  className="text-3xl font-bold bg-gradient-to-r from-fitness-green via-fitness-blue to-fitness-orange bg-clip-text text-transparent mb-4"
+                  className="text-3xl font-semibold text-slate-900 dark:text-slate-100 mb-4"
                 >
                   🎉 Tebrikler! Başarıların Burada! 🎉
                 </motion.h2>
-                <p className="text-lg text-gray-600 dark:text-gray-300 mb-2">
+                <p className="text-lg text-slate-600 dark:text-slate-300 mb-2">
                   {completedGoals.length} hedefini başarıyla tamamladın!
                 </p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
+                <p className="text-sm text-slate-500 dark:text-slate-400">
                   Her tamamlanan hedef, sağlıklı yaşamına bir adım daha yaklaştırıyor 🌟
                 </p>
               </div>
               
-              <div className="bg-gradient-to-br from-green-50 via-blue-50 to-yellow-50 dark:from-green-900/20 dark:via-blue-900/20 dark:to-yellow-900/20 rounded-3xl p-8 border-2 border-fitness-green/30 shadow-2xl">
+              <div className="bg-slate-100 dark:bg-slate-900 rounded-3xl p-8 border border-slate-200/70 dark:border-slate-800/70 shadow-sm">
                 <div className="flex flex-wrap justify-center items-end gap-8">
                   {completedGoals.map((goal, idx) => {
                     const foodEmoji = foodEmojis[idx % foodEmojis.length];
@@ -673,7 +673,7 @@ export default function GoalsPage() {
                           initial={{ scale: 0 }}
                           animate={{ scale: 1 }}
                           transition={{ delay: idx * 0.3 + 0.5 }}
-                          className="absolute -top-2 -right-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full w-8 h-8 flex items-center justify-center text-lg font-bold shadow-lg"
+                          className="absolute -top-2 -right-2 bg-slate-900 text-white rounded-full w-8 h-8 flex items-center justify-center text-lg font-bold shadow-sm"
                         >
                           ✓
                         </motion.div>
@@ -684,10 +684,10 @@ export default function GoalsPage() {
                           transition={{ delay: idx * 0.3 + 0.7 }}
                           className="mt-4 text-center"
                         >
-                          <div className="font-semibold text-fitness-blue dark:text-fitness-green text-sm max-w-24 truncate">
+                          <div className="font-semibold text-slate-900 dark:text-slate-100 text-sm max-w-24 truncate">
                             {goal.title}
                           </div>
-                          <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                          <div className="text-xs text-slate-500 dark:text-slate-400 mt-1">
                             Tamamlandı!
                           </div>
                         </motion.div>
@@ -721,8 +721,8 @@ export default function GoalsPage() {
                   transition={{ delay: completedGoals.length * 0.3 + 1 }}
                   className="text-center mt-8"
                 >
-                  <div className="bg-white/50 dark:bg-neutral-800/50 rounded-2xl p-6 backdrop-blur-sm">
-                    <p className="text-lg font-semibold text-fitness-blue dark:text-fitness-green mb-2">
+                  <div className="bg-white/80 dark:bg-slate-900/80 rounded-2xl p-6 backdrop-blur-sm border border-slate-200/70 dark:border-slate-800/70">
+                    <p className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-2">
                       {completedGoals.length === 1 && "İlk hedefini tamamladın! Harika bir başlangıç! 🌱"}
                       {completedGoals.length === 2 && "İkinci hedefin de tamam! Momentum kazanıyorsun! 🚀"}
                       {completedGoals.length === 3 && "Üç hedef tamamlandı! Artık alışkanlık haline geldi! 💪"}

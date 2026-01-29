@@ -29,12 +29,12 @@ type Progress = {
 };
 
 const metricIcons: Record<string, JSX.Element> = {
-  chest: <UserIcon className="w-5 h-5 text-primary" />, // Göğüs
-  waist: <ScaleIcon className="w-5 h-5 text-primary" />, // Bel
-  hips: <HeartIcon className="w-5 h-5 text-primary" />, // Kalça
-  biceps: <ArrowTrendingUpIcon className="w-5 h-5 text-primary" />, // Biceps
-  thighs: <SparklesIcon className="w-5 h-5 text-primary" />, // Bacak
-  calves: <SparklesIcon className="w-5 h-5 text-primary" />, // Baldır
+  chest: <UserIcon className="w-5 h-5 text-slate-500" />, // Göğüs
+  waist: <ScaleIcon className="w-5 h-5 text-slate-500" />, // Bel
+  hips: <HeartIcon className="w-5 h-5 text-slate-500" />, // Kalça
+  biceps: <ArrowTrendingUpIcon className="w-5 h-5 text-slate-500" />, // Biceps
+  thighs: <SparklesIcon className="w-5 h-5 text-slate-500" />, // Bacak
+  calves: <SparklesIcon className="w-5 h-5 text-slate-500" />, // Baldır
 };
 
 // Ölçü anahtarlarını Türkçeleştir
@@ -205,7 +205,7 @@ export default function ProgressPage() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-neutral-light dark:bg-neutral-dark">
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
         <main className="md:ml-64 p-6">
           <div className="flex justify-center items-center h-64">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
@@ -216,7 +216,7 @@ export default function ProgressPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-fitness-blue via-fitness-green to-fitness-orange/30 dark:from-fitness-blue dark:via-fitness-green dark:to-fitness-orange/40 font-sans">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 font-sans">
       <main className="md:ml-64 p-4 md:p-8">
         <div className="max-w-4xl mx-auto space-y-8">
           <motion.div
@@ -224,10 +224,10 @@ export default function ProgressPage() {
             animate={{ opacity: 1, y: 0 }}
             className="mb-2"
           >
-            <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-2 font-sans drop-shadow">
+            <h1 className="text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100 mb-2 font-sans">
               İlerleme Takibi
             </h1>
-            <p className="text-gray-800 dark:text-gray-200 text-lg">
+            <p className="text-slate-600 dark:text-slate-300 text-lg">
               Vücut ölçülerinizi ve ilerlemenizi modern grafiklerle takip edin
             </p>
           </motion.div>
@@ -237,14 +237,14 @@ export default function ProgressPage() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4 }}
-            className="relative bg-white dark:bg-neutral-900 rounded-2xl shadow-2xl p-6 mb-6 border border-fitness-blue/30 hover:shadow-2xl transition-shadow"
+            className="relative bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800/70 shadow-sm p-6 mb-6 hover:shadow-md transition-shadow"
           >
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Kilo ve Yağ Oranı Grafiği</h2>
               {!isCreating && !editingProgress && (
                 <button
                   onClick={() => setIsCreating(true)}
-                  className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-fitness-blue via-fitness-green to-fitness-orange text-white rounded-full shadow-md hover:opacity-90 hover:scale-105 transition-all focus:outline-none focus:ring-2 focus:ring-fitness-blue focus:ring-offset-2 absolute right-6 top-6 z-10"
+                  className="flex items-center gap-2 px-4 py-2 bg-slate-900 text-white rounded-full shadow-sm hover:bg-slate-800 transition-all focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 absolute right-6 top-6 z-10"
                   aria-label="Yeni Kayıt Ekle"
                 >
                   <PlusIcon className="w-6 h-6" />
@@ -276,7 +276,7 @@ export default function ProgressPage() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 20 }}
                 layout
-                className="rounded-2xl shadow-lg p-6 border-2 transition-shadow flex flex-col justify-between bg-white dark:bg-neutral-900 border-fitness-blue/30 hover:shadow-2xl"
+                className="rounded-2xl shadow-sm p-6 border border-slate-200/70 dark:border-slate-800/70 transition-shadow flex flex-col justify-between bg-white dark:bg-slate-900 hover:shadow-md"
               >
                 <div className="flex items-center justify-between mb-2">
                   <div>
@@ -288,7 +288,7 @@ export default function ProgressPage() {
                         {progress.weight} <span className="text-base font-semibold text-gray-700 dark:text-gray-300">kg</span>
                       </span>
                       {progress.bodyFat !== undefined && (
-                        <span className="text-xl font-bold text-fitness-pink dark:text-fitness-orange">
+                        <span className="text-xl font-semibold text-slate-700 dark:text-slate-200">
                           %{progress.bodyFat}
                         </span>
                       )}
@@ -305,14 +305,14 @@ export default function ProgressPage() {
                         setPhotos(progress.photos || {});
                         setNotes(progress.notes || '');
                       }}
-                      className="p-2 text-fitness-blue hover:text-fitness-green rounded-full transition-colors"
+                      className="p-2 text-slate-500 hover:text-slate-700 rounded-full transition-colors"
                       aria-label="Düzenle"
                     >
                       <PencilIcon className="w-5 h-5" />
                     </button>
                     <button
                       onClick={() => handleDeleteProgress(progress._id)}
-                      className="p-2 text-fitness-pink hover:text-fitness-orange rounded-full transition-colors"
+                      className="p-2 text-slate-500 hover:text-rose-500 rounded-full transition-colors"
                       aria-label="Sil"
                     >
                       <TrashIcon className="w-5 h-5" />
@@ -322,14 +322,14 @@ export default function ProgressPage() {
 
                 {/* Ölçüler */}
                 <div className="mt-4">
-                  <h4 className="font-semibold text-fitness-blue dark:text-fitness-green mb-2 flex items-center gap-2">
-                    <ScaleIcon className="w-5 h-5 text-fitness-blue" /> Ölçüler
+                  <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-2 flex items-center gap-2">
+                    <ScaleIcon className="w-5 h-5 text-slate-500" /> Ölçüler
                   </h4>
                   <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3">
                     {Object.entries(progress.measurements || {}).map(([key, value]) =>
                       value ? (
-                        <div key={key} className="flex items-center gap-2 rounded-lg px-2 py-1 font-semibold text-base shadow-sm bg-gradient-to-r from-fitness-blue/10 via-fitness-green/10 to-fitness-orange/10 text-fitness-blue dark:text-fitness-green border border-fitness-blue/20">
-                          {metricIcons[key] || <UserIcon className="w-5 h-5 text-fitness-blue" />}
+                        <div key={key} className="flex items-center gap-2 rounded-lg px-2 py-1 font-semibold text-base shadow-sm bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200/70 dark:border-slate-700">
+                          {metricIcons[key] || <UserIcon className="w-5 h-5 text-slate-500" />}
                           <span className="font-medium">{measurementLabels[String(key) as keyof typeof measurementLabels] || key}:</span>
                           <span className="font-bold">{value} cm</span>
                         </div>
@@ -340,13 +340,13 @@ export default function ProgressPage() {
 
                 {/* Notlar */}
                 {progress.notes && (
-                  <div className="mt-4 p-3 rounded-lg bg-fitness-orange/90 text-white dark:bg-fitness-orange/90">
+                  <div className="mt-4 p-3 rounded-lg bg-slate-900 text-white">
                     <p className="text-sm">{progress.notes}</p>
                   </div>
                 )}
 
                 {/* Tarihler */}
-                <div className="mt-4 text-xs text-gray-700 dark:text-gray-300 flex gap-4">
+                <div className="mt-4 text-xs text-slate-600 dark:text-slate-300 flex gap-4">
                   <span>
                     Oluşturulma: {progress.createdAt ? new Date(progress.createdAt).toLocaleDateString('tr-TR') : '-'}
                   </span>
@@ -365,33 +365,33 @@ export default function ProgressPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 20 }}
-                className="bg-white dark:bg-neutral-dark rounded-2xl shadow-lg p-6 mb-8 border border-neutral-light dark:border-neutral-dark/70 max-w-xl mx-auto"
+                className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800/70 shadow-sm p-6 mb-8 max-w-xl mx-auto"
               >
-                <h2 className="text-2xl font-bold text-primary mb-4 flex items-center gap-2">
+                <h2 className="text-2xl font-semibold text-slate-900 dark:text-slate-100 mb-4 flex items-center gap-2">
                   <PlusIcon className="w-6 h-6" /> {editingProgress ? 'İlerleme Kaydını Düzenle' : 'Yeni İlerleme Kaydı'}
                 </h2>
                 <div className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 flex items-center gap-2">
+                      <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1 flex items-center gap-2">
                         <ScaleIcon className="w-5 h-5" /> Tarih
                       </label>
                       <input
                         type="date"
                         value={date ?? ''}
                         onChange={(e) => setDate(e.target.value)}
-                        className="input w-full rounded-xl border border-neutral-light dark:border-neutral-dark/70 bg-neutral-light dark:bg-neutral-dark/70 focus:ring-primary focus:border-primary"
+                        className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 flex items-center gap-2">
+                      <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1 flex items-center gap-2">
                         <UserIcon className="w-5 h-5" /> Kilo (kg)
                       </label>
                       <input
                         type="number"
                         value={weight}
                         onChange={(e) => setWeight(e.target.value)}
-                        className="input w-full rounded-xl border border-neutral-light dark:border-neutral-dark/70 bg-neutral-light dark:bg-neutral-dark/70 focus:ring-primary focus:border-primary"
+                        className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
                         min="0"
                         step="0.1"
                       />
@@ -406,7 +406,7 @@ export default function ProgressPage() {
                         type="number"
                         value={bodyFat}
                         onChange={(e) => setBodyFat(e.target.value)}
-                        className="input w-full rounded-xl border border-neutral-light dark:border-neutral-dark/70 bg-neutral-light dark:bg-neutral-dark/70 focus:ring-primary focus:border-primary"
+                        className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
                         min="0"
                         max="100"
                         step="0.1"
@@ -414,7 +414,7 @@ export default function ProgressPage() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-primary mb-2 flex items-center gap-2">
+                  <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-2 flex items-center gap-2">
                       <ScaleIcon className="w-5 h-5" /> Ölçüler (cm)
                     </h3>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
@@ -426,7 +426,7 @@ export default function ProgressPage() {
                           type="number"
                           value={measurements?.chest ?? ''}
                           onChange={(e) => handleMeasurementChange('chest', e.target.value ?? '')}
-                          className="input w-full rounded-xl border border-neutral-light dark:border-neutral-dark/70 bg-neutral-light dark:bg-neutral-dark/70 focus:ring-primary focus:border-primary"
+                          className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
                           min="0"
                           step="0.1"
                         />
@@ -439,7 +439,7 @@ export default function ProgressPage() {
                           type="number"
                           value={measurements?.waist ?? ''}
                           onChange={(e) => handleMeasurementChange('waist', e.target.value ?? '')}
-                          className="input w-full rounded-xl border border-neutral-light dark:border-neutral-dark/70 bg-neutral-light dark:bg-neutral-dark/70 focus:ring-primary focus:border-primary"
+                          className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
                           min="0"
                           step="0.1"
                         />
@@ -452,7 +452,7 @@ export default function ProgressPage() {
                           type="number"
                           value={measurements?.hips ?? ''}
                           onChange={(e) => handleMeasurementChange('hips', e.target.value ?? '')}
-                          className="input w-full rounded-xl border border-neutral-light dark:border-neutral-dark/70 bg-neutral-light dark:bg-neutral-dark/70 focus:ring-primary focus:border-primary"
+                          className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
                           min="0"
                           step="0.1"
                         />
@@ -465,7 +465,7 @@ export default function ProgressPage() {
                           type="number"
                           value={measurements?.biceps ?? ''}
                           onChange={(e) => handleMeasurementChange('biceps', e.target.value ?? '')}
-                          className="input w-full rounded-xl border border-neutral-light dark:border-neutral-dark/70 bg-neutral-light dark:bg-neutral-dark/70 focus:ring-primary focus:border-primary"
+                          className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
                           min="0"
                           step="0.1"
                         />
@@ -478,7 +478,7 @@ export default function ProgressPage() {
                           type="number"
                           value={measurements?.thighs ?? ''}
                           onChange={(e) => handleMeasurementChange('thighs', e.target.value ?? '')}
-                          className="input w-full rounded-xl border border-neutral-light dark:border-neutral-dark/70 bg-neutral-light dark:bg-neutral-dark/70 focus:ring-primary focus:border-primary"
+                          className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
                           min="0"
                           step="0.1"
                         />
@@ -491,7 +491,7 @@ export default function ProgressPage() {
                           type="number"
                           value={measurements?.calves ?? ''}
                           onChange={(e) => handleMeasurementChange('calves', e.target.value ?? '')}
-                          className="input w-full rounded-xl border border-neutral-light dark:border-neutral-dark/70 bg-neutral-light dark:bg-neutral-dark/70 focus:ring-primary focus:border-primary"
+                          className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
                           min="0"
                           step="0.1"
                         />
@@ -504,7 +504,7 @@ export default function ProgressPage() {
                           type="number"
                           value={age}
                           onChange={e => setAge(e.target.value)}
-                          className="input w-full rounded-xl border border-neutral-light dark:border-neutral-dark/70 bg-neutral-light dark:bg-neutral-dark/70 focus:ring-primary focus:border-primary"
+                          className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
                           min="0"
                           step="1"
                         />
@@ -516,7 +516,7 @@ export default function ProgressPage() {
                         <select
                           value={gender}
                           onChange={e => setGender(e.target.value as 'male' | 'female')}
-                          className="input w-full rounded-xl border border-neutral-light dark:border-neutral-dark/70 bg-neutral-light dark:bg-neutral-dark/70 focus:ring-primary focus:border-primary"
+                          className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
                         >
                           <option value="">Seçiniz</option>
                           <option value="male">Erkek</option>
@@ -531,7 +531,7 @@ export default function ProgressPage() {
                           type="number"
                           value={measurements?.height ?? ''}
                           onChange={e => handleMeasurementChange('height', e.target.value ?? '')}
-                          className="input w-full rounded-xl border border-neutral-light dark:border-neutral-dark/70 bg-neutral-light dark:bg-neutral-dark/70 focus:ring-primary focus:border-primary"
+                          className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
                           min="0"
                           step="0.1"
                         />
@@ -545,13 +545,13 @@ export default function ProgressPage() {
                     <textarea
                       value={notes ?? ''}
                       onChange={(e) => setNotes(e.target.value)}
-                      className="input w-full rounded-xl border border-neutral-light dark:border-neutral-dark/70 bg-neutral-light dark:bg-neutral-dark/70 focus:ring-primary focus:border-primary"
+                      className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
                       rows={3}
                       placeholder="Notlar"
                     />
                   </div>
                   <div className="flex justify-end space-x-4 mt-4">
-                    <button onClick={resetForm} className="px-4 py-2 rounded-full bg-neutral-light dark:bg-neutral-dark/70 text-gray-700 dark:text-gray-200 font-semibold shadow hover:bg-neutral/70 dark:hover:bg-neutral-dark transition-colors">
+                    <button onClick={resetForm} className="px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold shadow-sm hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
                       İptal
                     </button>
                     <button
@@ -560,7 +560,7 @@ export default function ProgressPage() {
                           ? handleUpdateProgress(editingProgress)
                           : handleCreateProgress()
                       }
-                      className="px-6 py-2 rounded-full bg-primary text-white font-bold shadow hover:bg-primary/90 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                      className="px-6 py-2 rounded-full bg-slate-900 text-white font-semibold shadow-sm hover:bg-slate-800 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2"
                     >
                       {editingProgress ? 'Güncelle' : 'Oluştur'}
                     </button>

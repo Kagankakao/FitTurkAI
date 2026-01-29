@@ -275,15 +275,15 @@ export default function ProfilePage() {
   };
 
   return (
-    <div className="relative flex min-h-screen bg-neutral-light dark:bg-neutral-dark overflow-x-hidden">
+    <div className="relative flex min-h-screen bg-slate-50 dark:bg-slate-950 overflow-x-hidden">
       {/* Arka plan blob */}
       <motion.div
-        className="absolute top-0 left-0 w-96 h-96 bg-fitness-blue opacity-20 rounded-full blur-3xl z-0"
+        className="absolute top-0 left-0 w-96 h-96 bg-slate-300/40 rounded-full blur-3xl z-0"
         animate={{ x: [0, 40, 0], y: [0, 30, 0] }}
         transition={{ repeat: Infinity, duration: 12, ease: 'easeInOut' }}
       />
       <motion.div
-        className="absolute bottom-0 right-0 w-80 h-80 bg-fitness-green opacity-20 rounded-full blur-3xl z-0"
+        className="absolute bottom-0 right-0 w-80 h-80 bg-slate-200/40 rounded-full blur-3xl z-0"
         animate={{ x: [0, -40, 0], y: [0, -30, 0] }}
         transition={{ repeat: Infinity, duration: 14, ease: 'easeInOut' }}
       />
@@ -294,10 +294,10 @@ export default function ProfilePage() {
             animate={{ opacity: 1, y: 0 }}
             className="mb-8 text-center"
           >
-            <h1 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-fitness-blue via-fitness-green to-fitness-orange bg-clip-text text-transparent mb-2">
+            <h1 className="text-4xl md:text-5xl font-semibold text-slate-900 dark:text-slate-100 mb-2">
               Profil
             </h1>
-            <p className="text-gray-600 dark:text-gray-300 text-lg">
+            <p className="text-slate-600 dark:text-slate-300 text-lg">
               {profile.personalInfo.name
                 ? `Hoş geldin, ${profile.personalInfo.name}!`
                 : 'Kişisel bilgilerini ve tercihlerini yönet.'}
@@ -307,16 +307,16 @@ export default function ProfilePage() {
           {/* Özet Kartları */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
             <motion.div
-              whileHover={{ scale: 1.07, y: -8, boxShadow: '0 8px 32px 0 rgba(30,144,255,0.15)' }}
-              className="bg-white dark:bg-neutral-800 rounded-2xl shadow-lg p-5 flex flex-col items-center text-center transition-transform cursor-pointer"
+              whileHover={{ scale: 1.03, y: -4, boxShadow: '0 10px 24px 0 rgba(15, 23, 42, 0.08)' }}
+              className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800/70 shadow-sm p-5 flex flex-col items-center text-center transition-transform cursor-pointer"
             >
               <motion.div
                 variants={iconVariants}
                 initial="initial"
                 animate="animate"
-                className="p-3 bg-fitness-blue/10 rounded-lg mb-2"
+                className="p-3 bg-slate-100 dark:bg-slate-800 rounded-lg mb-2"
               >
-                <UserIcon className="w-7 h-7 text-fitness-blue" />
+                <UserIcon className="w-7 h-7 text-slate-600" />
               </motion.div>
               <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400">
                 Vücut Kitle İndeksi
@@ -327,16 +327,16 @@ export default function ProfilePage() {
               </p>
             </motion.div>
             <motion.div
-              whileHover={{ scale: 1.07, y: -8, boxShadow: '0 8px 32px 0 rgba(50,205,50,0.15)' }}
-              className="bg-white dark:bg-neutral-800 rounded-2xl shadow-lg p-5 flex flex-col items-center text-center transition-transform cursor-pointer"
+              whileHover={{ scale: 1.03, y: -4, boxShadow: '0 10px 24px 0 rgba(15, 23, 42, 0.08)' }}
+              className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800/70 shadow-sm p-5 flex flex-col items-center text-center transition-transform cursor-pointer"
             >
               <motion.div
                 variants={iconVariants}
                 initial="initial"
                 animate="animate"
-                className="p-3 bg-fitness-green/10 rounded-lg mb-2"
+                className="p-3 bg-slate-100 dark:bg-slate-800 rounded-lg mb-2"
               >
-                <HeartIcon className="w-7 h-7 text-fitness-green" />
+                <HeartIcon className="w-7 h-7 text-slate-600" />
               </motion.div>
               <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400">
                 Bazal Metabolizma
@@ -345,16 +345,16 @@ export default function ProfilePage() {
               <p className="text-sm text-gray-500 dark:text-gray-400">kcal/gün</p>
             </motion.div>
             <motion.div
-              whileHover={{ scale: 1.07, y: -8, boxShadow: '0 8px 32px 0 rgba(255,140,0,0.15)' }}
-              className="bg-white dark:bg-neutral-800 rounded-2xl shadow-lg p-5 flex flex-col items-center text-center transition-transform cursor-pointer"
+              whileHover={{ scale: 1.03, y: -4, boxShadow: '0 10px 24px 0 rgba(15, 23, 42, 0.08)' }}
+              className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800/70 shadow-sm p-5 flex flex-col items-center text-center transition-transform cursor-pointer"
             >
               <motion.div
                 variants={iconVariants}
                 initial="initial"
                 animate="animate"
-                className="p-3 bg-fitness-orange/10 rounded-lg mb-2"
+                className="p-3 bg-slate-100 dark:bg-slate-800 rounded-lg mb-2"
               >
-                <FireIcon className="w-7 h-7 text-fitness-orange" />
+                <FireIcon className="w-7 h-7 text-slate-600" />
               </motion.div>
               <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400">
                 Günlük Enerji İhtiyacı
@@ -363,16 +363,16 @@ export default function ProfilePage() {
               <p className="text-sm text-gray-500 dark:text-gray-400">kcal/gün</p>
             </motion.div>
             <motion.div
-              whileHover={{ scale: 1.07, y: -8, boxShadow: '0 8px 32px 0 rgba(30,144,255,0.10)' }}
-              className="bg-white dark:bg-neutral-800 rounded-2xl shadow-lg p-5 flex flex-col items-center text-center transition-transform cursor-pointer"
+              whileHover={{ scale: 1.03, y: -4, boxShadow: '0 10px 24px 0 rgba(15, 23, 42, 0.08)' }}
+              className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800/70 shadow-sm p-5 flex flex-col items-center text-center transition-transform cursor-pointer"
             >
               <motion.div
                 variants={iconVariants}
                 initial="initial"
                 animate="animate"
-                className="p-3 bg-fitness-blue/10 rounded-lg mb-2"
+                className="p-3 bg-slate-100 dark:bg-slate-800 rounded-lg mb-2"
               >
-                <BeakerIcon className="w-7 h-7 text-fitness-blue" />
+                <BeakerIcon className="w-7 h-7 text-slate-600" />
               </motion.div>
               <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400">
                 Aktivite Seviyesi
@@ -388,7 +388,7 @@ export default function ProfilePage() {
           </div>
 
           {/* Profil Bilgileri Kartı */}
-          <div className="bg-white dark:bg-neutral-800 rounded-2xl shadow-xl p-8 mt-8">
+          <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800/70 shadow-sm p-8 mt-8">
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-xl font-heading font-semibold">Profil Bilgileri</h2>
               <div className="relative flex items-center">
@@ -407,18 +407,18 @@ export default function ProfilePage() {
                 </motion.button>
                 {showAssistantMsg && (
                   <div className="absolute left-full top-1/2 -translate-y-1/2 ml-3 flex items-center z-40">
-                    <div className="bg-white dark:bg-neutral-800 border border-fitness-blue dark:border-fitness-green shadow-md rounded-lg px-5 py-2 flex items-center gap-2 text-xs md:text-sm text-gray-700 dark:text-gray-200 animate-fade-in min-w-[260px] max-w-[340px] text-center">
-                      <SparklesIcon className="w-5 h-5 text-fitness-green flex-shrink-0" />
+                    <div className="bg-white dark:bg-slate-900 border border-slate-200/70 dark:border-slate-800/70 shadow-sm rounded-lg px-5 py-2 flex items-center gap-2 text-xs md:text-sm text-slate-700 dark:text-slate-200 animate-fade-in min-w-[260px] max-w-[340px] text-center">
+                      <SparklesIcon className="w-5 h-5 text-slate-500 flex-shrink-0" />
                       <span className="leading-tight text-center block whitespace-normal">
                         Profil bilgilerini eksiksiz doldurursan<br />sana daha iyi ve kişisel hizmet sunabiliriz!
                       </span>
-                      <button onClick={handleCloseAssistantMsg} className="ml-1 p-1 rounded hover:bg-gray-100 dark:hover:bg-neutral-700 transition">
+                      <button onClick={handleCloseAssistantMsg} className="ml-1 p-1 rounded hover:bg-slate-100 dark:hover:bg-slate-800 transition">
                         <XMarkIcon className="w-4 h-4 text-gray-400 hover:text-red-500" />
                       </button>
                     </div>
                     {/* Ok işareti */}
                     <svg className="absolute left-0 top-1/2 -translate-x-full -translate-y-1/2" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <polygon points="12,0 0,0 6,7" fill="#3b82f6" className="dark:fill-fitness-green" />
+                      <polygon points="12,0 0,0 6,7" fill="#64748b" className="dark:fill-slate-500" />
                     </svg>
                   </div>
                 )}
@@ -426,13 +426,13 @@ export default function ProfilePage() {
             </div>
 
             {/* Sekmeler */}
-            <div className="border-b border-gray-200 dark:border-gray-700 mb-6 flex gap-4">
+            <div className="border-b border-slate-200/70 dark:border-slate-800/70 mb-6 flex gap-4">
               <button
                 onClick={() => setActiveTab('personal')}
                 className={`pb-4 px-1 border-b-2 font-medium text-sm transition-all duration-300 ${
                   activeTab === 'personal'
-                    ? 'border-fitness-blue text-fitness-blue'
-                    : 'border-transparent text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
+                    ? 'border-slate-900 dark:border-slate-100 text-slate-900 dark:text-slate-100'
+                    : 'border-transparent text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
                 }`}
               >
                 Kişisel Bilgiler
@@ -441,8 +441,8 @@ export default function ProfilePage() {
                 onClick={() => setActiveTab('health')}
                 className={`pb-4 px-1 border-b-2 font-medium text-sm transition-all duration-300 ${
                   activeTab === 'health'
-                    ? 'border-fitness-green text-fitness-green'
-                    : 'border-transparent text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
+                    ? 'border-slate-900 dark:border-slate-100 text-slate-900 dark:text-slate-100'
+                    : 'border-transparent text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
                 }`}
               >
                 Sağlık Bilgileri
@@ -451,8 +451,8 @@ export default function ProfilePage() {
                 onClick={() => setActiveTab('settings')}
                 className={`pb-4 px-1 border-b-2 font-medium text-sm transition-all duration-300 ${
                   activeTab === 'settings'
-                    ? 'border-fitness-orange text-fitness-orange'
-                    : 'border-transparent text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
+                    ? 'border-slate-900 dark:border-slate-100 text-slate-900 dark:text-slate-100'
+                    : 'border-transparent text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300'
                 }`}
               >
                 Ayarlar
@@ -751,19 +751,19 @@ export default function ProfilePage() {
             {/* Ayarlar */}
             {activeTab === 'settings' && (
               <div className="space-y-6">
-                <div className="bg-gray-50 dark:bg-neutral-700/50 rounded-xl p-6">
+                <div className="bg-slate-50 dark:bg-slate-800/60 rounded-xl p-6 border border-slate-200/70 dark:border-slate-700/70">
                   <h3 className="text-lg font-semibold mb-4">Tema Ayarları</h3>
                   <div className="flex items-center justify-between">
                 <div>
-                      <p className="text-gray-700 dark:text-gray-300">Karanlık Mod</p>
-                      <p className="text-sm text-gray-500 dark:text-gray-400">
+                      <p className="text-slate-700 dark:text-slate-300">Karanlık Mod</p>
+                      <p className="text-sm text-slate-500 dark:text-slate-400">
                         Uygulamanın görünümünü karanlık temaya geçirir
                       </p>
                     </div>
                     <button
                       onClick={() => setDarkMode(!darkMode)}
-                      className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-fitness-blue focus:ring-offset-2 ${
-                        darkMode ? 'bg-fitness-green' : 'bg-gray-200'
+                      className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 ${
+                        darkMode ? 'bg-slate-900' : 'bg-slate-200'
                       }`}
                     >
                       <span
@@ -775,19 +775,19 @@ export default function ProfilePage() {
                     </div>
                 </div>
 
-                <div className="bg-gray-50 dark:bg-neutral-700/50 rounded-xl p-6">
+                <div className="bg-slate-50 dark:bg-slate-800/60 rounded-xl p-6 border border-slate-200/70 dark:border-slate-700/70">
                   <h3 className="text-lg font-semibold mb-4">Bildirim Ayarları</h3>
                   <div className="space-y-4">
                     <div className="flex items-center justify-between">
                 <div>
-                        <p className="text-gray-700 dark:text-gray-300">E-posta Bildirimleri</p>
-                        <p className="text-sm text-gray-500 dark:text-gray-400">
+                        <p className="text-slate-700 dark:text-slate-300">E-posta Bildirimleri</p>
+                        <p className="text-sm text-slate-500 dark:text-slate-400">
                           Önemli güncellemeler için e-posta al
                         </p>
                   </div>
                       <button
-                        className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-fitness-blue focus:ring-offset-2 ${
-                          profile.preferences.emailNotifications ? 'bg-fitness-green' : 'bg-gray-200'
+                        className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 ${
+                          profile.preferences.emailNotifications ? 'bg-slate-900' : 'bg-slate-200'
                         }`}
                         onClick={() => handleInputChange('preferences', 'emailNotifications', !profile.preferences.emailNotifications)}
                       >
@@ -800,14 +800,14 @@ export default function ProfilePage() {
                     </div>
                     <div className="flex items-center justify-between">
                 <div>
-                        <p className="text-gray-700 dark:text-gray-300">Push Bildirimleri</p>
-                        <p className="text-sm text-gray-500 dark:text-gray-400">
+                        <p className="text-slate-700 dark:text-slate-300">Push Bildirimleri</p>
+                        <p className="text-sm text-slate-500 dark:text-slate-400">
                           Anlık bildirimler al
                         </p>
                   </div>
                       <button
-                        className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-fitness-blue focus:ring-offset-2 ${
-                          profile.preferences.pushNotifications ? 'bg-fitness-green' : 'bg-gray-200'
+                        className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 ${
+                          profile.preferences.pushNotifications ? 'bg-slate-900' : 'bg-slate-200'
                         }`}
                         onClick={() => handleInputChange('preferences', 'pushNotifications', !profile.preferences.pushNotifications)}
                       >
@@ -821,19 +821,19 @@ export default function ProfilePage() {
                   </div>
                 </div>
 
-                <div className="bg-gray-50 dark:bg-neutral-700/50 rounded-xl p-6">
+                <div className="bg-slate-50 dark:bg-slate-800/60 rounded-xl p-6 border border-slate-200/70 dark:border-slate-700/70">
                   <h3 className="text-lg font-semibold mb-4">Gizlilik Ayarları</h3>
                   <div className="space-y-4">
                     <div className="flex items-center justify-between">
                 <div>
-                        <p className="text-gray-700 dark:text-gray-300">Profil Görünürlüğü</p>
-                        <p className="text-sm text-gray-500 dark:text-gray-400">
+                        <p className="text-slate-700 dark:text-slate-300">Profil Görünürlüğü</p>
+                        <p className="text-sm text-slate-500 dark:text-slate-400">
                           Profilinizi diğer kullanıcılara göster
                         </p>
                   </div>
                       <button
-                        className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-fitness-blue focus:ring-offset-2 ${
-                          profile.preferences.profileVisibility ? 'bg-fitness-green' : 'bg-gray-200'
+                        className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 ${
+                          profile.preferences.profileVisibility ? 'bg-slate-900' : 'bg-slate-200'
                         }`}
                         onClick={() => handleInputChange('preferences', 'profileVisibility', !profile.preferences.profileVisibility)}
                       >

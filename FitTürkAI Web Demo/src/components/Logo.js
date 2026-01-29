@@ -8,7 +8,7 @@ const Logo = () => {
       {!imgError && (
         <Image src="/logo.png" alt="FitTurkAI Logo" width={36} height={36} onError={() => setImgError(true)} />
       )}
-      <span className="font-bold text-2xl bg-gradient-to-r from-fitness-blue via-fitness-green to-fitness-orange bg-clip-text text-transparent select-none">
+      <span className="font-semibold text-2xl text-slate-900 dark:text-slate-100 select-none">
         FitTurkAI
       </span>
     </div>

@@ -258,7 +258,7 @@ export default function RecipesPage() {
   if (!checked) return null;
 
   return (
-    <div className="min-h-screen bg-neutral-light dark:bg-neutral-dark font-sans">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 font-sans">
       {/* <NavBar /> */}
 
       <main className="md:ml-64 p-6">
@@ -268,10 +268,10 @@ export default function RecipesPage() {
             animate={{ opacity: 1, y: 0 }}
             className="mb-8"
           >
-            <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-2 font-sans drop-shadow">
+            <h1 className="text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100 mb-2 font-sans">
               Tarifler
             </h1>
-            <p className="text-gray-800 dark:text-gray-200 text-lg">
+            <p className="text-slate-600 dark:text-slate-300 text-lg">
               Sağlıklı ve lezzetli tarifler keşfedin veya kendi tarifinizi ekleyin!
             </p>
           </motion.div>
@@ -282,9 +282,9 @@ export default function RecipesPage() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Tariflerde ara..."
-              className="input flex-1 rounded-xl shadow focus:ring-2 focus:ring-fitness-blue bg-white dark:bg-neutral-900 text-gray-900 dark:text-white"
+              className="input flex-1 rounded-xl shadow-sm border border-slate-200/70 dark:border-slate-800/70 focus:ring-2 focus:ring-slate-400 bg-white dark:bg-slate-900 text-slate-900 dark:text-white"
             />
-            <button className="px-4 py-2 rounded-full bg-gradient-to-r from-fitness-blue via-fitness-green to-fitness-orange text-white font-bold shadow hover:opacity-90 hover:scale-105 transition-all" onClick={() => setIsCreating(true)}>
+            <button className="px-4 py-2 rounded-full bg-slate-900 text-white font-semibold shadow-sm hover:bg-slate-800 transition-all" onClick={() => setIsCreating(true)}>
               + Tarif Ekle
             </button>
           </div>
@@ -301,9 +301,9 @@ export default function RecipesPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 20 }}
-                className="bg-white dark:bg-neutral-900 rounded-2xl shadow-2xl p-8 border-2 border-fitness-blue/30 mb-8 max-w-2xl mx-auto"
+                className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800/70 shadow-sm p-8 mb-8 max-w-2xl mx-auto"
               >
-                <h2 className="text-2xl font-bold text-fitness-blue dark:text-fitness-green mb-4">
+                <h2 className="text-2xl font-semibold text-slate-900 dark:text-slate-100 mb-4">
                   {editingRecipe ? 'Tarifi Düzenle' : 'Yeni Tarif'}
                 </h2>
                 <div className="space-y-4">
@@ -315,7 +315,7 @@ export default function RecipesPage() {
                       type="text"
                       value={title}
                       onChange={(e) => setTitle(e.target.value)}
-                      className="input w-full rounded-xl shadow focus:ring-2 focus:ring-fitness-blue bg-white dark:bg-neutral-900 text-gray-900 dark:text-white"
+                      className="input w-full rounded-xl shadow-sm border border-slate-200/70 dark:border-slate-800/70 focus:ring-2 focus:ring-slate-400 bg-white dark:bg-slate-900 text-slate-900 dark:text-white"
                       placeholder="Tarif başlığı"
                     />
                   </div>
@@ -326,7 +326,7 @@ export default function RecipesPage() {
                     <textarea
                       value={description}
                       onChange={(e) => setDescription(e.target.value)}
-                      className="input w-full rounded-xl shadow focus:ring-2 focus:ring-fitness-blue bg-white dark:bg-neutral-900 text-gray-900 dark:text-white"
+                      className="input w-full rounded-xl shadow-sm border border-slate-200/70 dark:border-slate-800/70 focus:ring-2 focus:ring-slate-400 bg-white dark:bg-slate-900 text-slate-900 dark:text-white"
                       rows={3}
                       placeholder="Tarif açıklaması"
                     />
@@ -341,7 +341,7 @@ export default function RecipesPage() {
                           <button
                             key={cat}
                             type="button"
-                            className={`px-3 py-1 rounded-full border-2 text-sm font-medium transition-all duration-200 ${category.includes(cat) ? 'bg-fitness-blue text-white border-fitness-blue' : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border-gray-200 dark:border-gray-700'}`}
+                            className={`px-3 py-1 rounded-full border text-sm font-medium transition-all duration-200 ${category.includes(cat) ? 'bg-slate-900 text-white border-slate-900' : 'bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-slate-200/70 dark:border-slate-800/70'}`}
                             onClick={() =>
                               setCategory((prev) =>
                                 prev.includes(cat) ? prev.filter((c) => c !== cat) : [...prev, cat]
@@ -377,7 +377,7 @@ export default function RecipesPage() {
                         value={ingredientInput}
                         onChange={(e) => setIngredientInput(e.target.value)}
                         placeholder="Malzeme ekle..."
-                        className="input flex-1 rounded-xl shadow focus:ring-2 focus:ring-fitness-blue bg-white dark:bg-neutral-900 text-gray-900 dark:text-white"
+                        className="input flex-1 rounded-xl shadow-sm border border-slate-200/70 dark:border-slate-800/70 focus:ring-2 focus:ring-slate-400 bg-white dark:bg-slate-900 text-slate-900 dark:text-white"
                         onKeyPress={(e) => {
                           if (e.key === 'Enter') handleAddIngredient();
                         }}
@@ -402,7 +402,7 @@ export default function RecipesPage() {
                         value={stepInput}
                         onChange={(e) => setStepInput(e.target.value)}
                         placeholder="Adım ekle..."
-                        className="input flex-1 rounded-xl shadow focus:ring-2 focus:ring-fitness-blue bg-white dark:bg-neutral-900 text-gray-900 dark:text-white"
+                        className="input flex-1 rounded-xl shadow-sm border border-slate-200/70 dark:border-slate-800/70 focus:ring-2 focus:ring-slate-400 bg-white dark:bg-slate-900 text-slate-900 dark:text-white"
                         onKeyPress={(e) => {
                           if (e.key === 'Enter') handleAddStep();
                         }}
