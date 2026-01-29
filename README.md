@@ -243,8 +243,7 @@ python main.py       # Sunucuyu başlat
 - [ ] Haftalık/aylık raporlar
 - [ ] Egzersiz video entegrasyonu
 - [ ] Besin değeri hesaplayıcısı
-- [ ] AI Agent sistemi ile otomatik haftalık öğün planı 
-- [ ] 
+- [ ] AI Agent sistemi ile otomatik haftalık öğün planı
 
 ### Orta Vadeli (v1.5)
 - [ ] Mobil uygulama (React Native)
