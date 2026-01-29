@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function Loader() {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-fitness-dark dark:bg-neutral-light">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950 dark:bg-slate-50">
       <motion.div
         className="flex flex-col items-center"
         initial={{ opacity: 0 }}
@@ -11,7 +11,7 @@ export default function Loader() {
         transition={{ duration: 0.5 }}
       >
         <motion.div
-          className="w-16 h-16 rounded-full bg-gradient-to-tr from-fitness-pink to-fitness-orange flex items-center justify-center shadow-lg"
+          className="w-16 h-16 rounded-full bg-white/10 dark:bg-slate-900 flex items-center justify-center shadow-lg border border-white/10 dark:border-slate-800"
           animate={{ scale: [1, 1.2, 1] }}
           transition={{ repeat: Infinity, duration: 1 }}
         >
@@ -28,7 +28,7 @@ export default function Loader() {
             />
           </svg>
         </motion.div>
-        <span className="mt-4 text-lg font-bold text-white dark:text-fitness-dark animate-fade-in">
+        <span className="mt-4 text-lg font-semibold text-white dark:text-slate-900 animate-fade-in">
           FitTurkAI
         </span>
       </motion.div>

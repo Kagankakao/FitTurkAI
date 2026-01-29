@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="relative w-full min-h-[60vh] flex flex-col items-center justify-center bg-hero-gradient text-white py-16 overflow-hidden">
       <motion.h1
-        className="text-4xl md:text-6xl font-extrabold text-center drop-shadow-lg"
+        className="text-4xl md:text-6xl font-semibold text-center tracking-tight"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -14,7 +14,7 @@ export default function Hero() {
         Hayalindeki Vücuda Ulaş!
       </motion.h1>
       <motion.p
-        className="mt-6 text-lg md:text-2xl text-center max-w-2xl mx-auto"
+        className="mt-6 text-lg md:text-2xl text-center max-w-2xl mx-auto text-white/80"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
@@ -30,14 +30,14 @@ export default function Hero() {
         <motion.button
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.95 }}
-          className="px-8 py-3 rounded-full bg-fitness-pink text-white font-bold text-lg shadow-lg transition-all duration-300 hover:bg-fitness-orange"
+          className="px-8 py-3 rounded-full bg-white text-slate-900 font-semibold text-lg shadow-lg transition-all duration-300 hover:bg-slate-100"
         >
           Planını Oluştur
         </motion.button>
         <motion.button
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.95 }}
-          className="px-8 py-3 rounded-full bg-fitness-blue text-white font-bold text-lg shadow-lg transition-all duration-300 hover:bg-fitness-green"
+          className="px-8 py-3 rounded-full border border-white/40 text-white font-semibold text-lg shadow-lg transition-all duration-300 hover:bg-white/10"
           onClick={() => router.push('/auth/register')}
         >
           Hemen Başla

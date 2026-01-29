@@ -43,16 +43,16 @@ export default function DrawerSidebar({ open, onClose }: { open: boolean; onClos
           {/* Overlay */}
           <div className="fixed inset-0 bg-black/40 backdrop-blur-sm" onClick={onClose} />
           {/* Drawer */}
-          <aside className="relative w-72 max-w-full h-full bg-white dark:bg-neutral-900 shadow-2xl flex flex-col p-6">
+          <aside className="relative w-72 max-w-full h-full bg-white dark:bg-slate-950 shadow-xl flex flex-col p-6 border-r border-slate-200/60 dark:border-slate-800/60">
             <button
-              className="absolute top-4 right-4 p-2 rounded hover:bg-gray-100 dark:hover:bg-neutral-800"
+              className="absolute top-4 right-4 p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800"
               onClick={onClose}
               aria-label="Kapat"
             >
               <X size={24} />
             </button>
             <div className="mb-8 mt-2 text-center">
-              <span className="font-extrabold text-2xl bg-gradient-to-r from-fitness-blue via-fitness-green to-fitness-orange bg-clip-text text-transparent select-none">
+              <span className="font-semibold text-xl text-slate-900 dark:text-slate-100 select-none tracking-tight">
                 Menü
               </span>
             </div>
@@ -61,7 +61,7 @@ export default function DrawerSidebar({ open, onClose }: { open: boolean; onClos
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-all duration-200 hover:bg-fitness-blue/10 dark:hover:bg-fitness-green/10 text-gray-700 dark:text-gray-200 text-lg"
+                  className="flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-all duration-200 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 text-base"
                   onClick={onClose}
                 >
                   <link.icon className="w-6 h-6" />
@@ -71,7 +71,7 @@ export default function DrawerSidebar({ open, onClose }: { open: boolean; onClos
             </nav>
             <button
               onClick={handleLogout}
-              className="mt-8 w-full py-3 rounded-lg bg-red-500 hover:bg-red-600 text-white font-semibold transition"
+              className="mt-8 w-full py-3 rounded-lg bg-rose-600 hover:bg-rose-500 text-white font-semibold transition"
             >
               Çıkış Yap
             </button>

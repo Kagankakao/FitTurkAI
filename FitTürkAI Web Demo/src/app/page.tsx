@@ -37,7 +37,7 @@ const advantages = [
   {
     icon: (
       <motion.div animate={{ scale: [1, 1.2, 1] }} transition={{ repeat: Infinity, duration: 2 }}>
-        <FireIcon className="w-8 h-8 text-fitness-orange" />
+        <FireIcon className="w-8 h-8 text-slate-600 dark:text-slate-300" />
       </motion.div>
     ),
     title: 'Akıllı Planlama',
@@ -49,7 +49,7 @@ const advantages = [
         animate={{ rotate: [0, 10, -10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
       >
-        <HeartIcon className="w-8 h-8 text-fitness-green" />
+        <HeartIcon className="w-8 h-8 text-slate-600 dark:text-slate-300" />
       </motion.div>
     ),
     title: 'Sağlık Takibi',
@@ -58,7 +58,7 @@ const advantages = [
   {
     icon: (
       <motion.div animate={{ y: [0, -8, 0] }} transition={{ repeat: Infinity, duration: 2 }}>
-        <UserGroupIcon className="w-8 h-8 text-fitness-blue" />
+        <UserGroupIcon className="w-8 h-8 text-slate-600 dark:text-slate-300" />
       </motion.div>
     ),
     title: 'Topluluk',
@@ -70,7 +70,7 @@ const advantages = [
         animate={{ scale: [1, 1.2, 1], rotate: [0, 10, -10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
       >
-        <SparklesIcon className="w-8 h-8 text-fitness-pink" />
+        <SparklesIcon className="w-8 h-8 text-slate-600 dark:text-slate-300" />
       </motion.div>
     ),
     title: 'Yapay Zeka Desteği',
@@ -82,7 +82,7 @@ const steps = [
   {
     icon: (
       <motion.div animate={{ scale: [1, 1.1, 1] }} transition={{ repeat: Infinity, duration: 2 }}>
-        <DevicePhoneMobileIcon className="w-7 h-7 text-fitness-blue" />
+        <DevicePhoneMobileIcon className="w-7 h-7 text-slate-600 dark:text-slate-300" />
       </motion.div>
     ),
     title: 'Kayıt Ol',
@@ -94,7 +94,7 @@ const steps = [
         animate={{ rotate: [0, 10, -10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
       >
-        <CakeIcon className="w-7 h-7 text-fitness-orange" />
+        <CakeIcon className="w-7 h-7 text-slate-600 dark:text-slate-300" />
       </motion.div>
     ),
     title: 'Profilini Doldur',
@@ -103,7 +103,7 @@ const steps = [
   {
     icon: (
       <motion.div animate={{ y: [0, -8, 0] }} transition={{ repeat: Infinity, duration: 2 }}>
-        <ArrowTrendingUpIcon className="w-7 h-7 text-fitness-green" />
+        <ArrowTrendingUpIcon className="w-7 h-7 text-slate-600 dark:text-slate-300" />
       </motion.div>
     ),
     title: 'İlerlemeni Takip Et',
@@ -179,15 +179,15 @@ export default function HomePage() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col bg-neutral-light dark:bg-fitness-dark relative overflow-x-hidden">
+    <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 relative overflow-x-hidden">
       {/* Hareketli arka plan daireleri */}
       <motion.div
-        className="absolute top-0 left-0 w-96 h-96 bg-fitness-blue opacity-20 rounded-full blur-3xl z-0"
+        className="absolute top-0 left-0 w-96 h-96 bg-slate-300/40 rounded-full blur-3xl z-0"
         animate={{ x: [0, 40, 0], y: [0, 30, 0] }}
         transition={{ repeat: Infinity, duration: 12, ease: 'easeInOut' }}
       />
       <motion.div
-        className="absolute bottom-0 right-0 w-80 h-80 bg-fitness-green opacity-20 rounded-full blur-3xl z-0"
+        className="absolute bottom-0 right-0 w-80 h-80 bg-slate-200/40 rounded-full blur-3xl z-0"
         animate={{ x: [0, -40, 0], y: [0, -30, 0] }}
         transition={{ repeat: Infinity, duration: 14, ease: 'easeInOut' }}
       />
@@ -195,7 +195,7 @@ export default function HomePage() {
       {/* Hero + Slogan */}
       <section className="relative z-10 flex flex-col items-center justify-center py-20">
         <motion.h1
-          className="text-4xl md:text-6xl font-extrabold text-center bg-gradient-to-r from-fitness-blue via-fitness-green to-fitness-orange bg-clip-text text-transparent drop-shadow-lg mb-4"
+        className="text-4xl md:text-6xl font-semibold text-center text-slate-900 dark:text-slate-100 mb-4 tracking-tight"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -204,7 +204,7 @@ export default function HomePage() {
         </motion.h1>
         <AnimatePresence mode="wait">
           <motion.div
-            className="text-xl md:text-2xl font-semibold text-center mb-6 min-h-[2.5rem]"
+            className="text-xl md:text-2xl font-semibold text-center mb-6 min-h-[2.5rem] text-slate-600 dark:text-slate-300"
             key={sloganIndex}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -214,12 +214,12 @@ export default function HomePage() {
             {slogans[sloganIndex]}
           </motion.div>
         </AnimatePresence>
-        <p className="max-w-2xl text-center text-gray-700 dark:text-gray-200 mb-8 text-lg">
+        <p className="max-w-2xl text-center text-slate-600 dark:text-slate-300 mb-8 text-lg">
           Yapay zeka destekli kişisel sağlık ve fitness asistanı ile hedeflerine ulaş. Akıllı
           planlama, beslenme takibi, topluluk ve daha fazlası burada!
         </p>
         <motion.button
-          className="px-8 py-3 rounded-full bg-gradient-to-r from-fitness-blue via-fitness-green to-fitness-orange text-white font-bold text-lg shadow-lg transition-all duration-300 hover:opacity-90 hover:scale-105"
+          className="px-8 py-3 rounded-full bg-slate-900 text-white font-semibold text-lg shadow-lg transition-all duration-300 hover:bg-slate-800 hover:scale-105"
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => router.push('/auth/register')}
@@ -229,12 +229,12 @@ export default function HomePage() {
       </section>
 
       {/* Tanıtım ve Bilgilendirme */}
-      <section className="relative z-10 py-12 bg-white/80 dark:bg-neutral-900/80 border-y border-fitness-blue/10">
+      <section className="relative z-10 py-12 bg-white/90 dark:bg-slate-950/80 border-y border-slate-200/70 dark:border-slate-800/70">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-4 bg-gradient-to-r from-fitness-blue via-fitness-green to-fitness-orange bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-slate-900 dark:text-slate-100">
             Sağlıklı Yaşam, Akıllı Takip!
           </h2>
-          <p className="text-lg md:text-xl text-gray-700 dark:text-gray-200 mb-6">
+          <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-6">
             FitTurkAI, sağlıklı yaşam yolculuğunda sana rehberlik eden, tamamen
             kişiselleştirilebilir ve yapay zeka destekli bir platformdur. Hedeflerine ulaşmak için
             ihtiyacın olan her şey tek bir yerde: Akıllı planlama, beslenme ve egzersiz takibi,
@@ -242,33 +242,33 @@ export default function HomePage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
             <div className="flex flex-col items-center">
-              <BoltIcon className="w-12 h-12 text-fitness-blue mb-2" />
+              <BoltIcon className="w-12 h-12 text-slate-500 mb-2" />
               <h3 className="font-bold text-xl mb-1">Yapay Zeka ile Kişisel Asistan</h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-slate-600 dark:text-slate-300">
                 Hedeflerine ve alışkanlıklarına göre sana özel öneriler, planlar ve hatırlatmalar
                 sunar.
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <ScaleIcon className="w-12 h-12 text-fitness-green mb-2" />
+              <ScaleIcon className="w-12 h-12 text-slate-500 mb-2" />
               <h3 className="font-bold text-xl mb-1">Gelişmiş Takip & Analiz</h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-slate-600 dark:text-slate-300">
                 Kilo, vücut ölçüleri, su tüketimi, uyku ve daha fazlasını kolayca takip et,
                 gelişimini grafiklerle izle.
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <UserGroupIcon className="w-12 h-12 text-fitness-orange mb-2" />
+              <UserGroupIcon className="w-12 h-12 text-slate-500 mb-2" />
               <h3 className="font-bold text-xl mb-1">Topluluk ve Motivasyon</h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-slate-600 dark:text-slate-300">
                 Benzer hedeflere sahip insanlarla iletişim kur, başarı hikayelerini paylaş,
                 motivasyonunu artır.
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <ChatBubbleLeftRightIcon className="w-12 h-12 text-fitness-pink mb-2" />
+              <ChatBubbleLeftRightIcon className="w-12 h-12 text-slate-500 mb-2" />
               <h3 className="font-bold text-xl mb-1">7/24 Destek ve Sohbet</h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-slate-600 dark:text-slate-300">
                 Sorularını anında sor, uzmanlardan ve topluluktan destek al.
               </p>
             </div>
@@ -282,7 +282,7 @@ export default function HomePage() {
           {advantages.map((adv, i) => (
             <motion.div
               key={i}
-              className="bg-white dark:bg-neutral-900 rounded-2xl shadow-xl p-6 flex flex-col items-center text-center hover:scale-105 transition-all"
+              className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800/70 shadow-sm p-6 flex flex-col items-center text-center hover:shadow-md transition-all"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -290,23 +290,23 @@ export default function HomePage() {
             >
               {adv.icon}
               <div className="font-bold text-lg mt-3 mb-1">{adv.title}</div>
-              <div className="text-gray-500 dark:text-gray-300 text-sm">{adv.desc}</div>
+              <div className="text-slate-500 dark:text-slate-300 text-sm">{adv.desc}</div>
             </motion.div>
           ))}
         </div>
       </section>
 
       {/* Nasıl Çalışır */}
-      <section className="relative z-10 py-12 bg-white/80 dark:bg-neutral-900/80 border-y border-fitness-blue/10">
+      <section className="relative z-10 py-12 bg-white/90 dark:bg-slate-950/80 border-y border-slate-200/70 dark:border-slate-800/70">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8 bg-gradient-to-r from-fitness-blue via-fitness-green to-fitness-orange bg-clip-text text-transparent">
+          <h2 className="text-2xl md:text-3xl font-semibold text-center mb-8 text-slate-900 dark:text-slate-100">
             Nasıl Çalışır?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((step, i) => (
               <motion.div
                 key={i}
-                className="bg-gradient-to-br from-fitness-blue/10 via-fitness-green/10 to-fitness-orange/10 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition-all"
+                className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800/70 shadow-sm p-6 flex flex-col items-center text-center hover:shadow-md transition-all"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -314,7 +314,7 @@ export default function HomePage() {
               >
                 {step.icon}
                 <div className="font-bold text-lg mt-3 mb-1">{step.title}</div>
-                <div className="text-gray-500 dark:text-gray-300 text-sm">{step.desc}</div>
+                <div className="text-slate-500 dark:text-slate-300 text-sm">{step.desc}</div>
               </motion.div>
             ))}
           </div>
@@ -324,10 +324,10 @@ export default function HomePage() {
       {/* Özellikler */}
       <section className="relative z-10 py-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8 bg-gradient-to-r from-fitness-blue via-fitness-green to-fitness-orange bg-clip-text text-transparent">
+          <h2 className="text-2xl md:text-3xl font-semibold text-center mb-8 text-slate-900 dark:text-slate-100">
             Öne Çıkan Özellikler
           </h2>
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg text-gray-700 dark:text-gray-200">
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg text-slate-600 dark:text-slate-300">
             <li>
               <b>✔ Kişiselleştirilmiş Planlar:</b> Hedeflerine ve yaşam tarzına uygun, tamamen sana
               özel planlar oluştur.
@@ -355,12 +355,12 @@ export default function HomePage() {
       </section>
 
       {/* Sıkça Sorulan Sorular */}
-      <section className="relative z-10 py-12 bg-white/80 dark:bg-neutral-900/80 border-y border-fitness-blue/10">
+      <section className="relative z-10 py-12 bg-white/90 dark:bg-slate-950/80 border-y border-slate-200/70 dark:border-slate-800/70">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8 bg-gradient-to-r from-fitness-blue via-fitness-green to-fitness-orange bg-clip-text text-transparent">
+          <h2 className="text-2xl md:text-3xl font-semibold text-center mb-8 text-slate-900 dark:text-slate-100">
             Sıkça Sorulan Sorular
           </h2>
-          <div className="space-y-6 text-left text-gray-700 dark:text-gray-200">
+          <div className="space-y-6 text-left text-slate-600 dark:text-slate-300">
             <div>
               <b>FitTurkAI ücretsiz mi?</b>
               <p>
@@ -391,14 +391,14 @@ export default function HomePage() {
 
       {/* Kullanıcı Yorumları */}
       <section className="relative z-10 py-12">
-        <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-8 bg-gradient-to-r from-fitness-blue via-fitness-green to-fitness-orange bg-clip-text text-transparent">
+        <h2 className="text-2xl md:text-3xl font-semibold text-center mb-8 text-slate-900 dark:text-slate-100">
           Kullanıcı Yorumları
         </h2>
         <div className="max-w-4xl mx-auto overflow-x-auto flex gap-6 pb-4">
           {testimonials.map((t, i) => (
             <motion.div
               key={i}
-              className="min-w-[320px] bg-white dark:bg-neutral-900 rounded-2xl shadow-xl p-6 flex flex-col items-center text-center hover:scale-105 transition-all relative"
+              className="min-w-[320px] bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800/70 shadow-sm p-6 flex flex-col items-center text-center hover:shadow-md transition-all relative"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -408,10 +408,10 @@ export default function HomePage() {
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ repeat: Infinity, duration: 2 }}
               >
-                <StarIcon className="w-8 h-8 text-yellow-400 mb-2" />
+                <StarIcon className="w-8 h-8 text-amber-400 mb-2" />
               </motion.div>
               <div className="font-bold text-lg mb-1">{t.name}</div>
-              <div className="text-gray-500 dark:text-gray-300 text-sm mb-2">{t.comment}</div>
+              <div className="text-slate-500 dark:text-slate-300 text-sm mb-2">{t.comment}</div>
               <div className="flex gap-1">
                 {[...Array(t.stars)].map((_, idx) => (
                   <motion.span
@@ -419,7 +419,7 @@ export default function HomePage() {
                     animate={{ scale: [1, 1.3, 1] }}
                     transition={{ repeat: Infinity, duration: 1.5, delay: idx * 0.2 }}
                   >
-                    <StarIcon className="w-5 h-5 text-yellow-400" />
+                    <StarIcon className="w-5 h-5 text-amber-400" />
                   </motion.span>
                 ))}
               </div>
@@ -429,12 +429,12 @@ export default function HomePage() {
       </section>
 
       {/* Güvenlik ve Gizlilik */}
-      <section className="relative z-10 py-12 bg-white/80 dark:bg-neutral-900/80 border-y border-fitness-blue/10">
+      <section className="relative z-10 py-12 bg-white/90 dark:bg-slate-950/80 border-y border-slate-200/70 dark:border-slate-800/70">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-extrabold mb-4 bg-gradient-to-r from-fitness-blue via-fitness-green to-fitness-orange bg-clip-text text-transparent">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-slate-900 dark:text-slate-100">
             Güvenlik ve Gizliliğiniz Bizim İçin Önemli
           </h2>
-          <p className="text-lg text-gray-700 dark:text-gray-200 mb-4">
+          <p className="text-lg text-slate-600 dark:text-slate-300 mb-4">
             Tüm verileriniz modern güvenlik standartları ile korunur. Kişisel bilgileriniz asla
             üçüncü kişilerle paylaşılmaz. Gizlilik politikamıza her zaman ulaşabilirsiniz.
           </p>
@@ -444,14 +444,14 @@ export default function HomePage() {
       {/* CTA */}
       <section className="relative z-10 py-12 flex flex-col items-center">
         <motion.button
-          className="px-10 py-4 rounded-full bg-gradient-to-r from-fitness-blue via-fitness-green to-fitness-orange text-white font-bold text-2xl shadow-xl transition-all duration-300 hover:opacity-90 hover:scale-105"
+          className="px-10 py-4 rounded-full bg-slate-900 text-white font-semibold text-2xl shadow-xl transition-all duration-300 hover:bg-slate-800 hover:scale-105"
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => router.push('/auth/register')}
         >
           Şimdi Katıl!
         </motion.button>
-        <p className="mt-6 text-gray-600 dark:text-gray-300 text-lg text-center max-w-2xl">
+        <p className="mt-6 text-slate-600 dark:text-slate-300 text-lg text-center max-w-2xl">
           Hemen ücretsiz kaydol, sağlıklı yaşam yolculuğuna bugün başla! FitTurkAI ile hedeflerine
           ulaşmak artık çok daha kolay ve eğlenceli.
         </p>

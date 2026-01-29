@@ -42,14 +42,14 @@ export default function DashboardSidebar() {
       initial={{ x: -80, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className={`hidden md:flex flex-col ${collapsed ? 'w-20' : 'w-56'} min-h-screen bg-white dark:bg-neutral-900 shadow-xl py-8 px-2 transition-all duration-300 fixed top-0 left-0 z-30`}
+      className={`hidden md:flex flex-col ${collapsed ? 'w-20' : 'w-56'} min-h-screen bg-white dark:bg-slate-950 border-r border-slate-200/60 dark:border-slate-800/60 shadow-sm py-8 px-2 transition-all duration-300 fixed top-0 left-0 z-30`}
     >
       <div className={`mb-8 flex items-center justify-between ${collapsed ? 'px-0' : 'px-2'}`}>
         <div className="flex items-center gap-2 overflow-hidden">
           {/* Eğer logo dosyası yoksa sadece yazı göster */}
           {/* <img src="/logo.png" alt="Logo" className="w-8 h-8" /> */}
           <span
-            className={`font-extrabold bg-gradient-to-r from-fitness-blue via-fitness-green to-fitness-orange bg-clip-text text-transparent select-none whitespace-nowrap transition-all duration-300 ${collapsed ? 'text-2xl' : 'text-xl md:text-2xl'}`}
+            className={`font-semibold text-slate-900 dark:text-slate-100 select-none whitespace-nowrap transition-all duration-300 ${collapsed ? 'text-2xl' : 'text-xl md:text-2xl'}`}
             style={{ maxWidth: collapsed ? 32 : 140, overflow: 'hidden', textOverflow: 'ellipsis' }}
           >
             {collapsed ? 'F' : 'FitTurkAI'}
@@ -57,7 +57,7 @@ export default function DashboardSidebar() {
         </div>
         <button
           type="button"
-          className="p-2 rounded hover:bg-fitness-blue/10 dark:hover:bg-fitness-green/10 transition"
+          className="p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800 transition"
           onClick={() => setCollapsed((c) => !c)}
           aria-label="Sidebar Aç/Kapa"
         >
@@ -69,10 +69,10 @@ export default function DashboardSidebar() {
           <Link
             key={link.href}
             href={link.href}
-            className={`flex items-center gap-3 px-4 py-2 rounded-lg font-medium transition-all duration-200 hover:bg-fitness-blue/10 dark:hover:bg-fitness-green/10 ${
+            className={`flex items-center gap-3 px-4 py-2 rounded-lg font-medium transition-all duration-200 hover:bg-slate-100 dark:hover:bg-slate-800 ${
               pathname === link.href
-                ? 'bg-fitness-blue/20 dark:bg-fitness-green/20 text-fitness-blue dark:text-fitness-green'
-                : 'text-gray-700 dark:text-gray-200'
+                ? 'bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white'
+                : 'text-slate-700 dark:text-slate-200'
             } ${collapsed ? 'justify-center px-2' : ''}`}
           >
             <link.icon className="w-5 h-5" />
@@ -83,7 +83,7 @@ export default function DashboardSidebar() {
       <button
         type="button"
         onClick={handleLogout}
-        className={`mt-8 w-full py-2 rounded-lg bg-red-500 hover:bg-red-600 text-white font-semibold transition ${collapsed ? 'px-0 text-xs' : ''}`}
+        className={`mt-8 w-full py-2 rounded-lg bg-rose-600 hover:bg-rose-500 text-white font-semibold transition ${collapsed ? 'px-0 text-xs' : ''}`}
       >
         {!collapsed ? 'Çıkış Yap' : <ChevronLeft size={18} />}
       </button>
