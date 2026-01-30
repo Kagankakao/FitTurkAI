@@ -28,7 +28,7 @@ export default function DrawerSidebar({ open, onClose }: { open: boolean; onClos
     document.cookie = 'token=; Max-Age=0; path=/';
     localStorage.removeItem('userEmail');
     onClose();
-    router.push('/auth/login');
+    router.push('/');
   };
   return (
     <AnimatePresence>

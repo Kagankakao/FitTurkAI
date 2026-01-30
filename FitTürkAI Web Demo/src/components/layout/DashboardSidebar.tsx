@@ -35,7 +35,7 @@ export default function DashboardSidebar() {
   const handleLogout = () => {
     document.cookie = 'token=; Max-Age=0; path=/';
     localStorage.removeItem('userEmail');
-    router.push('/auth/login');
+    router.push('/');
   };
   return (
     <motion.aside

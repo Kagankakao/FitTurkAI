@@ -164,12 +164,15 @@ export default function ProfilePage() {
   const saveProfile = () => {
     try {
       setError(null);
-      const userEmail = localStorage.getItem('userEmail');
+      let userEmail = localStorage.getItem('userEmail');
       
       if (!userEmail) {
-        setError('Kullanıcı oturumu yok!');
-        router.push('/auth/login');
-        return;
+        const demoEmail = 'demo@fitturk.ai';
+        const token = 'demo-token-' + Date.now();
+        document.cookie = `token=${token}; path=/; max-age=2592000`;
+        localStorage.setItem('userEmail', demoEmail);
+        localStorage.setItem('userName', 'Demo Kullanıcı');
+        userEmail = demoEmail;
       }
 
       const profileKey = `profile_${userEmail}`;

@@ -213,6 +213,9 @@ export default function HomePage() {
         >
           FitTurkAI
         </motion.h1>
+        <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-slate-200/70 dark:border-slate-700/70 bg-white/80 dark:bg-slate-900/80 px-4 py-1 text-xs font-medium text-slate-600 dark:text-slate-300">
+          Demo modunda çalışır • Kayıt gerekmez
+        </div>
         <AnimatePresence mode="wait">
           <motion.div
             className="text-xl md:text-2xl font-semibold text-center mb-6 min-h-[2.5rem] text-slate-600 dark:text-slate-300"
