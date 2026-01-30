@@ -261,7 +261,7 @@ export default function HomePage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
             <div className="flex flex-col items-center">
-              <BoltIcon className="w-12 h-12 text-slate-500 mb-2" />
+              <BoltIcon className="w-12 h-12 text-emerald-600 dark:text-emerald-400 mb-2" />
               <h3 className="font-bold text-xl mb-1">Yapay Zeka ile Kişisel Asistan</h3>
               <p className="text-slate-600 dark:text-slate-300">
                 Hedeflerine ve alışkanlıklarına göre sana özel öneriler, planlar ve hatırlatmalar
@@ -269,7 +269,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <ScaleIcon className="w-12 h-12 text-slate-500 mb-2" />
+              <ScaleIcon className="w-12 h-12 text-lime-600 dark:text-lime-400 mb-2" />
               <h3 className="font-bold text-xl mb-1">Gelişmiş Takip & Analiz</h3>
               <p className="text-slate-600 dark:text-slate-300">
                 Kilo, vücut ölçüleri, su tüketimi, uyku ve daha fazlasını kolayca takip et,
@@ -277,7 +277,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <UserGroupIcon className="w-12 h-12 text-slate-500 mb-2" />
+              <UserGroupIcon className="w-12 h-12 text-teal-600 dark:text-teal-400 mb-2" />
               <h3 className="font-bold text-xl mb-1">Topluluk ve Motivasyon</h3>
               <p className="text-slate-600 dark:text-slate-300">
                 Benzer hedeflere sahip insanlarla iletişim kur, başarı hikayelerini paylaş,
@@ -285,7 +285,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <ChatBubbleLeftRightIcon className="w-12 h-12 text-slate-500 mb-2" />
+              <ChatBubbleLeftRightIcon className="w-12 h-12 text-amber-600 dark:text-amber-400 mb-2" />
               <h3 className="font-bold text-xl mb-1">7/24 Destek ve Sohbet</h3>
               <p className="text-slate-600 dark:text-slate-300">
                 Sorularını anında sor, uzmanlardan ve topluluktan destek al.
