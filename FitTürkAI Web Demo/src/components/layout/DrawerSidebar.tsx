@@ -14,12 +14,12 @@ import {
 import { useRouter } from 'next/navigation';
 
 const links = [
-  { name: 'Profil', href: '/profile', icon: UserIcon, color: 'text-brand-dark' },
+  { name: 'Profil', href: '/profile', icon: UserIcon, color: 'text-brand-green' },
   { name: 'Notlar', href: '/notes', icon: BookOpenIcon, color: 'text-brand-green' },
-  { name: 'Hedefler', href: '/goals', icon: FlagIcon, color: 'text-brand-dark' },
+  { name: 'Hedefler', href: '/goals', icon: FlagIcon, color: 'text-brand-green' },
   { name: 'İlerleme', href: '/progress', icon: ChartBarIcon, color: 'text-brand-green' },
-  { name: 'Tarifler', href: '/recipes', icon: FireIcon, color: 'text-brand-dark' },
-  { name: 'Ayarlar', href: '/dashboard', icon: Settings, color: 'text-brand-dark' },
+  { name: 'Tarifler', href: '/recipes', icon: FireIcon, color: 'text-brand-green' },
+  { name: 'Ayarlar', href: '/dashboard', icon: Settings, color: 'text-brand-green' },
 ];
 
 export default function DrawerSidebar({ open, onClose }: { open: boolean; onClose: () => void }) {
@@ -61,7 +61,7 @@ export default function DrawerSidebar({ open, onClose }: { open: boolean; onClos
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-all duration-200 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 text-base"
+                  className="flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-all duration-200 hover:bg-brand-light/70 dark:hover:bg-slate-800 text-brand-dark/80 dark:text-slate-200 text-base"
                   onClick={onClose}
                 >
                   <link.icon className={`w-6 h-6 ${link.color}`} />

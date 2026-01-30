@@ -19,13 +19,13 @@ import { Menu, ChevronLeft, ChevronRight } from 'react-feather';
 
 const links = [
   { name: 'Notlar', href: '/notes', icon: BookOpenIcon, color: 'text-brand-green' },
-  { name: 'Hedefler', href: '/goals', icon: FlagIcon, color: 'text-brand-dark' },
+  { name: 'Hedefler', href: '/goals', icon: FlagIcon, color: 'text-brand-green' },
   { name: 'İlerleme', href: '/progress', icon: ChartBarIcon, color: 'text-brand-green' },
-  { name: 'Tarifler', href: '/recipes', icon: FireIcon, color: 'text-brand-dark' },
+  { name: 'Tarifler', href: '/recipes', icon: FireIcon, color: 'text-brand-green' },
   { name: 'Öğün Planlama', href: '/meal-planning', icon: CalendarIcon, color: 'text-brand-green' },
   { name: 'FitTürkAI Asistan', href: '/chat', icon: SparklesIcon, color: 'text-brand-green' },
-  { name: 'Profil', href: '/profile', icon: UserIcon, color: 'text-brand-dark' },
-  { name: 'Ayarlar', href: '/dashboard', icon: Cog6ToothIcon, color: 'text-brand-dark' },
+  { name: 'Profil', href: '/profile', icon: UserIcon, color: 'text-brand-green' },
+  { name: 'Ayarlar', href: '/dashboard', icon: Cog6ToothIcon, color: 'text-brand-green' },
 ];
 
 export default function DashboardSidebar() {
@@ -69,10 +69,10 @@ export default function DashboardSidebar() {
           <Link
             key={link.href}
             href={link.href}
-            className={`flex items-center gap-3 px-4 py-2 rounded-lg font-medium transition-all duration-200 hover:bg-slate-100 dark:hover:bg-slate-800 ${
+            className={`flex items-center gap-3 px-4 py-2 rounded-lg font-medium transition-all duration-200 hover:bg-brand-light/70 dark:hover:bg-slate-800 ${
               pathname === link.href
-                ? 'bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white'
-                : 'text-slate-700 dark:text-slate-200'
+                ? 'bg-brand-light/80 dark:bg-slate-800 text-brand-dark dark:text-white'
+                : 'text-brand-dark/80 dark:text-slate-200'
             } ${collapsed ? 'justify-center px-2' : ''}`}
           >
             <link.icon className={`w-5 h-5 ${link.color}`} />
