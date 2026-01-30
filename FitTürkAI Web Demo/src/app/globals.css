@@ -132,4 +132,14 @@
   @apply focus:outline-none focus:ring-2 focus:ring-slate-400/40 focus:border-slate-400;
 }
 
+/* Brand palette overrides for legacy classes */
+.text-slate-900,
+.text-gray-900 {
+  color: #36656b;
+}
+
+.bg-slate-900 {
+  background-color: #36656b;
+}
+
 /* Bu dosya, global CSS stillerini içerecektir. */ 

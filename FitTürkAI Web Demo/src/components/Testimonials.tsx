@@ -24,7 +24,7 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <section className="py-16 bg-white dark:bg-slate-950">
-      <h2 className="text-3xl font-semibold text-center mb-10 text-slate-900 dark:text-slate-100">
+      <h2 className="text-3xl font-semibold text-center mb-10 text-brand-dark dark:text-slate-100">
         Kullanıcı Başarı Hikâyeleri
       </h2>
       <div className="max-w-2xl mx-auto">
@@ -48,10 +48,10 @@ export default function Testimonials() {
                       'https://ui-avatars.com/api/?name=' + encodeURIComponent(t.name))
                   }
                 />
-                <p className="text-lg text-slate-700 dark:text-slate-200 mb-2 text-center">
+                <p className="text-lg text-brand-dark/80 dark:text-slate-200 mb-2 text-center">
                   “{t.text}”
                 </p>
-                <span className="font-semibold text-slate-900 dark:text-slate-100">
+                <span className="font-semibold text-brand-dark dark:text-slate-100">
                   {t.name}
                 </span>
               </div>

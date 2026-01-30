@@ -133,7 +133,7 @@ export function Navbar() {
                   {dark ? (
                     <Sun size={20} className="text-amber-400" />
                   ) : (
-                    <Moon size={20} className="text-slate-700" />
+                    <Moon size={20} className="text-brand-dark" />
                   )}
                 </button>
               )}
@@ -142,7 +142,7 @@ export function Navbar() {
                   <>
                     <Link
                       href="/profile"
-                      className="text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900 px-4 py-2"
+                      className="text-sm font-medium text-brand-dark/80 dark:text-gray-200 hover:text-brand-dark px-4 py-2"
                     >
                       {user.name ? `Merhaba, ${user.name}` : 'Profilim'}
                     </Link>

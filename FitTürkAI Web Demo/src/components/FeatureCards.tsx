@@ -38,7 +38,7 @@ export default function FeatureCards() {
             viewport={{ once: true }}
           >
             <span className="text-4xl mb-3">{f.icon}</span>
-            <h3 className="font-semibold text-lg mb-2 text-slate-900 dark:text-slate-100">
+            <h3 className="font-semibold text-lg mb-2 text-brand-dark dark:text-slate-100">
               {f.title}
             </h3>
             <p className="text-slate-600 dark:text-slate-300 text-sm">{f.desc}</p>

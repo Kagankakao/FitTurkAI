@@ -329,8 +329,8 @@ export default function ChatPage() {
                   whileTap={{ scale: 0.95 }}
                   className={`p-3 rounded-xl transition-all duration-200 ${
                     currentSession.isFavorite 
-                      ? 'bg-emerald-600 text-white shadow-sm' 
-                      : 'bg-emerald-50 dark:bg-slate-800 text-emerald-700 dark:text-emerald-200 hover:bg-emerald-100 dark:hover:bg-slate-700'
+                      ? 'bg-brand-dark text-white shadow-sm' 
+                      : 'bg-brand-light/70 dark:bg-slate-800 text-brand-dark hover:bg-brand-soft/80 dark:hover:bg-slate-700'
                   }`}
                   title="Sohbeti Favorile"
                 >
@@ -342,7 +342,7 @@ export default function ChatPage() {
                   onClick={() => setSidebarOpen(!sidebarOpen)}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                className="p-3 rounded-xl bg-emerald-50 dark:bg-slate-800 text-emerald-700 dark:text-emerald-200 hover:bg-emerald-100 dark:hover:bg-slate-700 transition-all duration-200"
+                className="p-3 rounded-xl bg-brand-light/70 dark:bg-slate-800 text-brand-dark hover:bg-brand-soft/80 dark:hover:bg-slate-700 transition-all duration-200"
                 >
                   {sidebarOpen ? (
                     <ChevronRightIcon className="w-5 h-5" />
@@ -410,8 +410,8 @@ export default function ChatPage() {
                           {/* Mesaj Balonu */}
                           <div className={`relative px-5 py-4 rounded-3xl shadow-sm transition-all duration-200 hover:shadow-md ${
                             message.isUser
-                              ? 'bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200/70 dark:border-slate-700'
-                              : 'bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 border border-slate-200/70 dark:border-slate-800/70'
+                              ? 'bg-slate-100 dark:bg-slate-800 text-brand-dark dark:text-slate-200 border border-slate-200/70 dark:border-slate-700'
+                              : 'bg-white dark:bg-slate-900 text-brand-dark dark:text-slate-200 border border-slate-200/70 dark:border-slate-800/70'
                           } ${message.isUser ? 'rounded-br-lg' : 'rounded-bl-lg'}`}>
                             
                             {/* Mesaj İçeriği */}
@@ -474,7 +474,7 @@ export default function ChatPage() {
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
                         placeholder="Mesajınızı yazın..."
-                        className="w-full px-6 py-4 rounded-full border border-slate-300/70 dark:border-slate-700 focus:border-slate-400 focus:ring-2 focus:ring-slate-400/20 transition-all duration-200 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-500 shadow-sm text-base outline-none"
+                        className="w-full px-6 py-4 rounded-full border border-slate-300/70 dark:border-slate-700 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 transition-all duration-200 bg-white dark:bg-slate-800 text-brand-dark dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-500 shadow-sm text-base outline-none"
                         disabled={isLoading}
                         autoFocus
                       />
@@ -490,7 +490,7 @@ export default function ChatPage() {
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       disabled={isLoading || !input.trim()}
-                      className="p-4 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold shadow-sm transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                      className="p-4 rounded-full bg-brand-green hover:bg-brand-soft text-white font-semibold shadow-sm transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                       aria-label="Mesaj Gönder"
                     >
                       <PaperAirplaneIcon className="w-6 h-6" />
@@ -513,14 +513,14 @@ export default function ChatPage() {
               >
                 <div className="p-6 h-full flex flex-col">
                   <div className="flex items-center justify-between mb-6">
-                    <h2 className="text-lg font-bold text-slate-800 dark:text-slate-200">
+                    <h2 className="text-lg font-bold text-brand-dark dark:text-slate-200">
                       Sohbet Geçmişi
                     </h2>
                     <motion.button
                       onClick={createNewSession}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="p-3 rounded-xl bg-emerald-600 text-white shadow-sm hover:bg-emerald-500 transition-all duration-200"
+                      className="p-3 rounded-xl bg-brand-green text-white shadow-sm hover:bg-brand-soft transition-all duration-200"
                     >
                       <PlusIcon className="w-5 h-5" />
                     </motion.button>
@@ -544,8 +544,8 @@ export default function ChatPage() {
                             <div className="flex items-center gap-2">
                               <p className={`text-sm font-semibold truncate ${
                                 currentSessionId === session.id 
-                                  ? 'text-slate-800 dark:text-slate-200' 
-                                  : 'text-slate-800 dark:text-slate-200'
+                                  ? 'text-brand-dark dark:text-slate-200' 
+                                  : 'text-brand-dark dark:text-slate-200'
                               }`}>
                                 {session.title}
                               </p>

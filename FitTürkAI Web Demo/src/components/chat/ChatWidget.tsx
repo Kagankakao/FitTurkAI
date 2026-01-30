@@ -216,10 +216,10 @@ export default function ChatWidget({ fullscreen = false }: ChatWidgetProps) {
                   <div className="w-8 h-8 bg-brand-green rounded-xl flex items-center justify-center shadow-sm">
                     <HeartIcon className="w-4 h-4 text-white" />
                   </div>
-                  <div className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-slate-400 rounded-full border border-white dark:border-slate-800 animate-pulse"></div>
+                  <div className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-brand-soft rounded-full border border-white dark:border-slate-800 animate-pulse"></div>
                 </div>
                 <div>
-                  <h3 className={`font-semibold text-slate-800 dark:text-slate-200 ${
+                  <h3 className={`font-semibold text-brand-dark dark:text-slate-200 ${
                     fullscreen ? 'text-lg' : 'text-sm'
                   }`}>
                     FitTürkAI Asistanı
@@ -265,7 +265,7 @@ export default function ChatWidget({ fullscreen = false }: ChatWidgetProps) {
                 {fullscreen && (
                   <div className="p-4 border-b border-slate-200 dark:border-slate-700">
                     <div className="flex items-center justify-between mb-3">
-                      <h4 className="text-sm font-medium text-slate-700 dark:text-slate-300">Sohbet Geçmişi</h4>
+                      <h4 className="text-sm font-medium text-brand-dark/80 dark:text-slate-300">Sohbet Geçmişi</h4>
                       <motion.button
                         onClick={createNewSession}
                         whileHover={{ scale: 1.05 }}
@@ -283,8 +283,8 @@ export default function ChatWidget({ fullscreen = false }: ChatWidgetProps) {
                           whileTap={{ scale: 0.98 }}
                           className={`flex-shrink-0 px-3 py-2 rounded-xl text-xs font-medium transition-all duration-200 ${
                             currentSessionId === session.id
-                              ? 'bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200/70 dark:border-slate-700'
-                              : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
+                              ? 'bg-slate-100 dark:bg-slate-800 text-brand-dark dark:text-slate-200 border border-slate-200/70 dark:border-slate-700'
+                              : 'bg-slate-100 dark:bg-slate-700 text-brand-dark/80 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
                           }`}
                           onClick={() => setCurrentSessionId(session.id)}
                         >
@@ -331,8 +331,8 @@ export default function ChatWidget({ fullscreen = false }: ChatWidgetProps) {
                             fullscreen ? 'text-base' : 'text-sm'
                           } whitespace-pre-wrap break-words ${
                             message.isUser
-                              ? 'bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200'
-                              : 'bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 border border-slate-200/70 dark:border-slate-800/70'
+                              ? 'bg-slate-100 dark:bg-slate-800 text-brand-dark dark:text-slate-200'
+                              : 'bg-white dark:bg-slate-900 text-brand-dark dark:text-slate-200 border border-slate-200/70 dark:border-slate-800/70'
                           } ${message.isUser ? 'rounded-br-md' : 'rounded-bl-md'}`}>
                             
                             {message.content}
@@ -397,7 +397,7 @@ export default function ChatWidget({ fullscreen = false }: ChatWidgetProps) {
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
                         placeholder="Mesajınızı yazın ve Enter'a basın..."
-                        className={`w-full px-3 py-2.5 pr-10 rounded-2xl border border-slate-200/70 dark:border-slate-700 focus:border-slate-400 focus:ring-2 focus:ring-slate-400/20 transition-all duration-200 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 placeholder-slate-500 dark:placeholder-slate-400 shadow-sm ${
+                        className={`w-full px-3 py-2.5 pr-10 rounded-2xl border border-slate-200/70 dark:border-slate-700 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 transition-all duration-200 bg-white dark:bg-slate-800 text-brand-dark dark:text-slate-200 placeholder-slate-500 dark:placeholder-slate-400 shadow-sm ${
                           fullscreen ? 'text-base' : 'text-sm'
                         } outline-none`}
                         disabled={isLoading}
