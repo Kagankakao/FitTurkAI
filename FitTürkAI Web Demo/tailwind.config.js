@@ -19,9 +19,9 @@ module.exports = {
         'fitness-dark': '#0f172a',
       },
       backgroundImage: {
-        'hero-gradient': 'linear-gradient(120deg, #0f172a 0%, #111827 50%, #0b1220 100%)',
+        'hero-gradient': 'linear-gradient(120deg, #ecfdf3 0%, #fef3c7 45%, #ffe4e6 100%)',
         'produce-glow':
-          'radial-gradient(600px circle at 15% 10%, rgba(16, 185, 129, 0.25), transparent 45%), radial-gradient(500px circle at 85% 20%, rgba(251, 146, 60, 0.2), transparent 45%), radial-gradient(500px circle at 80% 80%, rgba(236, 72, 153, 0.16), transparent 50%)',
+          'radial-gradient(700px circle at 20% 15%, rgba(16, 185, 129, 0.35), transparent 50%), radial-gradient(600px circle at 85% 20%, rgba(251, 146, 60, 0.28), transparent 50%), radial-gradient(600px circle at 80% 80%, rgba(236, 72, 153, 0.22), transparent 55%)',
       },
       keyframes: {
         'fade-in': {
