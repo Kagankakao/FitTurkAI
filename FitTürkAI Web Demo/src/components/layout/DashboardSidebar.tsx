@@ -18,14 +18,14 @@ import { useState } from 'react';
 import { Menu, ChevronLeft, ChevronRight } from 'react-feather';
 
 const links = [
-  { name: 'Notlar', href: '/notes', icon: BookOpenIcon },
-  { name: 'Hedefler', href: '/goals', icon: FlagIcon },
-  { name: 'İlerleme', href: '/progress', icon: ChartBarIcon },
-  { name: 'Tarifler', href: '/recipes', icon: FireIcon },
-  { name: 'Öğün Planlama', href: '/meal-planning', icon: CalendarIcon },
-  { name: 'FitTürkAI Asistan', href: '/chat', icon: SparklesIcon },
-  { name: 'Profil', href: '/profile', icon: UserIcon },
-  { name: 'Ayarlar', href: '/dashboard', icon: Cog6ToothIcon },
+  { name: 'Notlar', href: '/notes', icon: BookOpenIcon, color: 'text-emerald-600 dark:text-emerald-400' },
+  { name: 'Hedefler', href: '/goals', icon: FlagIcon, color: 'text-lime-600 dark:text-lime-400' },
+  { name: 'İlerleme', href: '/progress', icon: ChartBarIcon, color: 'text-teal-600 dark:text-teal-400' },
+  { name: 'Tarifler', href: '/recipes', icon: FireIcon, color: 'text-orange-500 dark:text-orange-400' },
+  { name: 'Öğün Planlama', href: '/meal-planning', icon: CalendarIcon, color: 'text-amber-600 dark:text-amber-400' },
+  { name: 'FitTürkAI Asistan', href: '/chat', icon: SparklesIcon, color: 'text-emerald-500 dark:text-emerald-400' },
+  { name: 'Profil', href: '/profile', icon: UserIcon, color: 'text-sky-600 dark:text-sky-400' },
+  { name: 'Ayarlar', href: '/dashboard', icon: Cog6ToothIcon, color: 'text-slate-600 dark:text-slate-400' },
 ];
 
 export default function DashboardSidebar() {
@@ -75,7 +75,7 @@ export default function DashboardSidebar() {
                 : 'text-slate-700 dark:text-slate-200'
             } ${collapsed ? 'justify-center px-2' : ''}`}
           >
-            <link.icon className="w-5 h-5" />
+            <link.icon className={`w-5 h-5 ${link.color}`} />
             {!collapsed && link.name}
           </Link>
         ))}

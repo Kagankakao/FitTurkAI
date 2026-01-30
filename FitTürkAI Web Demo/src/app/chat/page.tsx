@@ -305,7 +305,7 @@ export default function ChatPage() {
               {/* Başlık - Merkezi */}
               <div className="flex items-center gap-4">
                 {/* Logo */}
-                <div className="w-14 h-14 bg-slate-900 rounded-2xl flex items-center justify-center shadow-sm">
+                <div className="w-14 h-14 bg-emerald-600 rounded-2xl flex items-center justify-center shadow-sm">
                   <HeartIcon className="w-7 h-7 text-white" />
                 </div>
                 
@@ -329,8 +329,8 @@ export default function ChatPage() {
                   whileTap={{ scale: 0.95 }}
                   className={`p-3 rounded-xl transition-all duration-200 ${
                     currentSession.isFavorite 
-                      ? 'bg-slate-900 text-white shadow-sm' 
-                      : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
+                      ? 'bg-emerald-600 text-white shadow-sm' 
+                      : 'bg-emerald-50 dark:bg-slate-800 text-emerald-700 dark:text-emerald-200 hover:bg-emerald-100 dark:hover:bg-slate-700'
                   }`}
                   title="Sohbeti Favorile"
                 >
@@ -342,7 +342,7 @@ export default function ChatPage() {
                   onClick={() => setSidebarOpen(!sidebarOpen)}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                className="p-3 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all duration-200"
+                className="p-3 rounded-xl bg-emerald-50 dark:bg-slate-800 text-emerald-700 dark:text-emerald-200 hover:bg-emerald-100 dark:hover:bg-slate-700 transition-all duration-200"
                 >
                   {sidebarOpen ? (
                     <ChevronRightIcon className="w-5 h-5" />
@@ -397,8 +397,8 @@ export default function ChatPage() {
                           {/* Avatar */}
                           <div className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center shadow-sm ${
                             message.isUser 
-                              ? 'bg-slate-900' 
-                              : 'bg-slate-700'
+                              ? 'bg-emerald-600' 
+                              : 'bg-teal-600'
                           }`}>
                             {message.isUser ? (
                               <UserIcon className="w-5 h-5 text-white" />
@@ -448,7 +448,7 @@ export default function ChatPage() {
                       className="flex justify-start"
                     >
                       <div className="flex items-end gap-3 max-w-[85%]">
-                        <div className="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center shadow-sm">
+                        <div className="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center shadow-sm">
                           <SparklesIcon className="w-5 h-5 text-white" />
                         </div>
                         <div className="bg-white dark:bg-slate-900 border border-slate-200/70 dark:border-slate-800/70 rounded-3xl rounded-bl-lg px-5 py-4 shadow-sm">
@@ -490,7 +490,7 @@ export default function ChatPage() {
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       disabled={isLoading || !input.trim()}
-                      className="p-4 rounded-full bg-slate-900 hover:bg-slate-800 text-white font-semibold shadow-sm transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                      className="p-4 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold shadow-sm transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                       aria-label="Mesaj Gönder"
                     >
                       <PaperAirplaneIcon className="w-6 h-6" />
@@ -520,7 +520,7 @@ export default function ChatPage() {
                       onClick={createNewSession}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="p-3 rounded-xl bg-slate-900 text-white shadow-sm hover:bg-slate-800 transition-all duration-200"
+                      className="p-3 rounded-xl bg-emerald-600 text-white shadow-sm hover:bg-emerald-500 transition-all duration-200"
                     >
                       <PlusIcon className="w-5 h-5" />
                     </motion.button>

@@ -14,12 +14,12 @@ import {
 import { useRouter } from 'next/navigation';
 
 const links = [
-  { name: 'Profil', href: '/profile', icon: UserIcon },
-  { name: 'Notlar', href: '/notes', icon: BookOpenIcon },
-  { name: 'Hedefler', href: '/goals', icon: FlagIcon },
-  { name: 'İlerleme', href: '/progress', icon: ChartBarIcon },
-  { name: 'Tarifler', href: '/recipes', icon: FireIcon },
-  { name: 'Ayarlar', href: '/dashboard', icon: Settings },
+  { name: 'Profil', href: '/profile', icon: UserIcon, color: 'text-sky-600 dark:text-sky-400' },
+  { name: 'Notlar', href: '/notes', icon: BookOpenIcon, color: 'text-emerald-600 dark:text-emerald-400' },
+  { name: 'Hedefler', href: '/goals', icon: FlagIcon, color: 'text-lime-600 dark:text-lime-400' },
+  { name: 'İlerleme', href: '/progress', icon: ChartBarIcon, color: 'text-teal-600 dark:text-teal-400' },
+  { name: 'Tarifler', href: '/recipes', icon: FireIcon, color: 'text-orange-500 dark:text-orange-400' },
+  { name: 'Ayarlar', href: '/dashboard', icon: Settings, color: 'text-slate-600 dark:text-slate-400' },
 ];
 
 export default function DrawerSidebar({ open, onClose }: { open: boolean; onClose: () => void }) {
@@ -64,7 +64,7 @@ export default function DrawerSidebar({ open, onClose }: { open: boolean; onClos
                   className="flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-all duration-200 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 text-base"
                   onClick={onClose}
                 >
-                  <link.icon className="w-6 h-6" />
+                  <link.icon className={`w-6 h-6 ${link.color}`} />
                   {link.name}
                 </Link>
               ))}
