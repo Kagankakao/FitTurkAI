@@ -182,7 +182,7 @@ export default function ChatWidget({ fullscreen = false }: ChatWidgetProps) {
           onClick={() => setIsOpen(!isOpen)}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="fixed bottom-6 right-6 z-50 p-4 bg-emerald-600 hover:bg-emerald-500 text-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300"
+          className="fixed bottom-6 right-6 z-50 p-4 bg-brand-green hover:bg-brand-soft text-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300"
           aria-label="Sohbet Asistanını Aç"
         >
           <div className="relative">
@@ -213,7 +213,7 @@ export default function ChatWidget({ fullscreen = false }: ChatWidgetProps) {
             }`}>
               <div className="flex items-center gap-3">
                 <div className="relative">
-                  <div className="w-8 h-8 bg-emerald-600 rounded-xl flex items-center justify-center shadow-sm">
+                  <div className="w-8 h-8 bg-brand-green rounded-xl flex items-center justify-center shadow-sm">
                     <HeartIcon className="w-4 h-4 text-white" />
                   </div>
                   <div className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-slate-400 rounded-full border border-white dark:border-slate-800 animate-pulse"></div>
@@ -270,7 +270,7 @@ export default function ChatWidget({ fullscreen = false }: ChatWidgetProps) {
                         onClick={createNewSession}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="p-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white shadow-sm transition-all duration-200"
+                        className="p-1.5 rounded-lg bg-brand-green hover:bg-brand-soft text-white shadow-sm transition-all duration-200"
                       >
                         <PlusIcon className="w-3 h-3" />
                       </motion.button>
@@ -316,8 +316,8 @@ export default function ChatWidget({ fullscreen = false }: ChatWidgetProps) {
                           {/* Avatar */}
                           <div className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center shadow-sm ${
                             message.isUser 
-                              ? 'bg-emerald-600' 
-                              : 'bg-teal-600'
+                              ? 'bg-brand-green' 
+                              : 'bg-brand-dark'
                           }`}>
                             {message.isUser ? (
                               <UserIcon className="w-3 h-3 text-white" />
@@ -364,7 +364,7 @@ export default function ChatWidget({ fullscreen = false }: ChatWidgetProps) {
                       <div className={`flex items-end gap-2 ${
                         fullscreen ? 'max-w-lg' : 'max-w-[85%]'
                       }`}>
-                        <div className="w-6 h-6 bg-teal-600 rounded-full flex items-center justify-center shadow-sm">
+                        <div className="w-6 h-6 bg-brand-dark rounded-full flex items-center justify-center shadow-sm">
                           <SparklesIcon className="w-3 h-3 text-white" />
                         </div>
                         <div className="bg-white dark:bg-slate-900 border border-slate-200/70 dark:border-slate-800/70 rounded-2xl rounded-bl-md px-3 py-2 shadow-sm">
@@ -415,7 +415,7 @@ export default function ChatWidget({ fullscreen = false }: ChatWidgetProps) {
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       disabled={isLoading || !input.trim()}
-                      className="p-2.5 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white shadow-sm transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                      className="p-2.5 rounded-2xl bg-brand-green hover:bg-brand-soft text-white shadow-sm transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                       aria-label="Mesaj Gönder"
                     >
                       <PaperAirplaneIcon className="w-4 h-4" />

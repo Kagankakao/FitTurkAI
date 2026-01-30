@@ -37,7 +37,7 @@ const advantages = [
   {
     icon: (
       <motion.div animate={{ scale: [1, 1.2, 1] }} transition={{ repeat: Infinity, duration: 2 }}>
-        <FireIcon className="w-8 h-8 text-orange-500" />
+        <FireIcon className="w-8 h-8 text-brand-dark" />
       </motion.div>
     ),
     title: 'Akıllı Planlama',
@@ -49,7 +49,7 @@ const advantages = [
         animate={{ rotate: [0, 10, -10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
       >
-        <HeartIcon className="w-8 h-8 text-rose-500" />
+        <HeartIcon className="w-8 h-8 text-brand-green" />
       </motion.div>
     ),
     title: 'Sağlık Takibi',
@@ -58,7 +58,7 @@ const advantages = [
   {
     icon: (
       <motion.div animate={{ y: [0, -8, 0] }} transition={{ repeat: Infinity, duration: 2 }}>
-        <UserGroupIcon className="w-8 h-8 text-emerald-500" />
+        <UserGroupIcon className="w-8 h-8 text-brand-green" />
       </motion.div>
     ),
     title: 'Topluluk',
@@ -70,7 +70,7 @@ const advantages = [
         animate={{ scale: [1, 1.2, 1], rotate: [0, 10, -10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
       >
-        <SparklesIcon className="w-8 h-8 text-amber-500" />
+        <SparklesIcon className="w-8 h-8 text-brand-green" />
       </motion.div>
     ),
     title: 'Yapay Zeka Desteği',
@@ -82,7 +82,7 @@ const steps = [
   {
     icon: (
       <motion.div animate={{ scale: [1, 1.1, 1] }} transition={{ repeat: Infinity, duration: 2 }}>
-        <DevicePhoneMobileIcon className="w-7 h-7 text-emerald-500" />
+        <DevicePhoneMobileIcon className="w-7 h-7 text-brand-green" />
       </motion.div>
     ),
     title: 'Demoyu Başlat',
@@ -94,7 +94,7 @@ const steps = [
         animate={{ rotate: [0, 10, -10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
       >
-        <CakeIcon className="w-7 h-7 text-orange-500" />
+        <CakeIcon className="w-7 h-7 text-brand-dark" />
       </motion.div>
     ),
     title: 'Sohbete Gir',
@@ -103,7 +103,7 @@ const steps = [
   {
     icon: (
       <motion.div animate={{ y: [0, -8, 0] }} transition={{ repeat: Infinity, duration: 2 }}>
-        <ArrowTrendingUpIcon className="w-7 h-7 text-sky-500" />
+        <ArrowTrendingUpIcon className="w-7 h-7 text-brand-dark" />
       </motion.div>
     ),
     title: 'Çıktıları İncele',
@@ -193,17 +193,17 @@ export default function HomePage() {
     <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 relative overflow-x-hidden">
       {/* Hareketli arka plan daireleri */}
       <motion.div
-        className="absolute top-0 left-0 w-96 h-96 bg-emerald-300/30 rounded-full blur-3xl z-0"
+        className="absolute top-0 left-0 w-96 h-96 bg-brand-green/30 rounded-full blur-3xl z-0"
         animate={{ x: [0, 40, 0], y: [0, 30, 0] }}
         transition={{ repeat: Infinity, duration: 12, ease: 'easeInOut' }}
       />
       <motion.div
-        className="absolute bottom-0 right-0 w-80 h-80 bg-orange-200/40 rounded-full blur-3xl z-0"
+        className="absolute bottom-0 right-0 w-80 h-80 bg-brand-soft/50 rounded-full blur-3xl z-0"
         animate={{ x: [0, -40, 0], y: [0, -30, 0] }}
         transition={{ repeat: Infinity, duration: 14, ease: 'easeInOut' }}
       />
       <motion.div
-        className="absolute top-1/3 right-16 w-72 h-72 bg-rose-200/30 rounded-full blur-3xl z-0"
+        className="absolute top-1/3 right-16 w-72 h-72 bg-brand-light/60 rounded-full blur-3xl z-0"
         animate={{ x: [0, -30, 0], y: [0, 20, 0] }}
         transition={{ repeat: Infinity, duration: 16, ease: 'easeInOut' }}
       />
@@ -211,7 +211,7 @@ export default function HomePage() {
       {/* Hero + Slogan */}
       <section className="relative z-10 flex flex-col items-center justify-center py-20">
         <motion.h1
-        className="text-4xl md:text-6xl font-semibold text-center text-slate-900 dark:text-slate-100 mb-4 tracking-tight"
+        className="text-4xl md:text-6xl font-semibold text-center text-brand-dark dark:text-slate-100 mb-4 tracking-tight"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -238,7 +238,7 @@ export default function HomePage() {
           planlama, beslenme takibi, topluluk ve daha fazlası burada!
         </p>
         <motion.button
-          className="px-8 py-3 rounded-full bg-emerald-600 text-white font-semibold text-lg shadow-lg transition-all duration-300 hover:bg-emerald-500 hover:scale-105"
+          className="px-8 py-3 rounded-full bg-brand-green text-white font-semibold text-lg shadow-lg transition-all duration-300 hover:bg-brand-soft hover:scale-105"
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.95 }}
           onClick={startDemo}
@@ -261,7 +261,7 @@ export default function HomePage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
             <div className="flex flex-col items-center">
-              <BoltIcon className="w-12 h-12 text-emerald-600 dark:text-emerald-400 mb-2" />
+              <BoltIcon className="w-12 h-12 text-brand-green mb-2" />
               <h3 className="font-bold text-xl mb-1">Yapay Zeka ile Kişisel Asistan</h3>
               <p className="text-slate-600 dark:text-slate-300">
                 Hedeflerine ve alışkanlıklarına göre sana özel öneriler, planlar ve hatırlatmalar
@@ -269,7 +269,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <ScaleIcon className="w-12 h-12 text-lime-600 dark:text-lime-400 mb-2" />
+              <ScaleIcon className="w-12 h-12 text-brand-dark mb-2" />
               <h3 className="font-bold text-xl mb-1">Gelişmiş Takip & Analiz</h3>
               <p className="text-slate-600 dark:text-slate-300">
                 Kilo, vücut ölçüleri, su tüketimi, uyku ve daha fazlasını kolayca takip et,
@@ -277,7 +277,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <UserGroupIcon className="w-12 h-12 text-teal-600 dark:text-teal-400 mb-2" />
+              <UserGroupIcon className="w-12 h-12 text-brand-green mb-2" />
               <h3 className="font-bold text-xl mb-1">Topluluk ve Motivasyon</h3>
               <p className="text-slate-600 dark:text-slate-300">
                 Benzer hedeflere sahip insanlarla iletişim kur, başarı hikayelerini paylaş,
@@ -285,7 +285,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <ChatBubbleLeftRightIcon className="w-12 h-12 text-amber-600 dark:text-amber-400 mb-2" />
+              <ChatBubbleLeftRightIcon className="w-12 h-12 text-brand-dark mb-2" />
               <h3 className="font-bold text-xl mb-1">7/24 Destek ve Sohbet</h3>
               <p className="text-slate-600 dark:text-slate-300">
                 Sorularını anında sor, uzmanlardan ve topluluktan destek al.
@@ -463,7 +463,7 @@ export default function HomePage() {
       {/* CTA */}
       <section className="relative z-10 py-12 flex flex-col items-center">
         <motion.button
-          className="px-10 py-4 rounded-full bg-emerald-600 text-white font-semibold text-2xl shadow-xl transition-all duration-300 hover:bg-emerald-500 hover:scale-105"
+          className="px-10 py-4 rounded-full bg-brand-green text-white font-semibold text-2xl shadow-xl transition-all duration-300 hover:bg-brand-soft hover:scale-105"
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.95 }}
           onClick={startDemo}

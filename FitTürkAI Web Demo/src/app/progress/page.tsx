@@ -29,12 +29,12 @@ type Progress = {
 };
 
 const metricIcons: Record<string, JSX.Element> = {
-  chest: <UserIcon className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />, // Göğüs
-  waist: <ScaleIcon className="w-5 h-5 text-lime-600 dark:text-lime-400" />, // Bel
-  hips: <HeartIcon className="w-5 h-5 text-rose-500 dark:text-rose-400" />, // Kalça
-  biceps: <ArrowTrendingUpIcon className="w-5 h-5 text-orange-500 dark:text-orange-400" />, // Biceps
-  thighs: <SparklesIcon className="w-5 h-5 text-teal-500 dark:text-teal-400" />, // Bacak
-  calves: <SparklesIcon className="w-5 h-5 text-sky-500 dark:text-sky-400" />, // Baldır
+  chest: <UserIcon className="w-5 h-5 text-brand-green" />, // Göğüs
+  waist: <ScaleIcon className="w-5 h-5 text-brand-dark" />, // Bel
+  hips: <HeartIcon className="w-5 h-5 text-brand-green" />, // Kalça
+  biceps: <ArrowTrendingUpIcon className="w-5 h-5 text-brand-dark" />, // Biceps
+  thighs: <SparklesIcon className="w-5 h-5 text-brand-green" />, // Bacak
+  calves: <SparklesIcon className="w-5 h-5 text-brand-dark" />, // Baldır
 };
 
 // Ölçü anahtarlarını Türkçeleştir
@@ -329,13 +329,13 @@ export default function ProgressPage() {
                 {/* Ölçüler */}
                 <div className="mt-4">
                   <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-2 flex items-center gap-2">
-                    <ScaleIcon className="w-5 h-5 text-emerald-600 dark:text-emerald-400" /> Ölçüler
+                    <ScaleIcon className="w-5 h-5 text-brand-green" /> Ölçüler
                   </h4>
                   <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3">
                     {Object.entries(progress.measurements || {}).map(([key, value]) =>
                       value ? (
                         <div key={key} className="flex items-center gap-2 rounded-lg px-2 py-1 font-semibold text-base shadow-sm bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200/70 dark:border-slate-700">
-                          {metricIcons[key] || <UserIcon className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />}
+                          {metricIcons[key] || <UserIcon className="w-5 h-5 text-brand-green" />}
                           <span className="font-medium">{measurementLabels[String(key) as keyof typeof measurementLabels] || key}:</span>
                           <span className="font-bold">{value} cm</span>
                         </div>

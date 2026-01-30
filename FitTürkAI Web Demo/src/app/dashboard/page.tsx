@@ -36,7 +36,7 @@ export default function DashboardPage() {
             {/* Tema Ayarları */}
             <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800/70 shadow-sm p-6">
               <div className="flex items-center gap-3 mb-4">
-                <Moon className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
+                <Moon className="w-6 h-6 text-brand-green" />
                 <h2 className="text-xl font-semibold">Tema Ayarları</h2>
               </div>
               <div className="flex items-center justify-between">
@@ -64,7 +64,7 @@ export default function DashboardPage() {
             {/* Bildirim Ayarları */}
             <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800/70 shadow-sm p-6">
               <div className="flex items-center gap-3 mb-4">
-                <Bell className="w-6 h-6 text-amber-500 dark:text-amber-400" />
+                <Bell className="w-6 h-6 text-brand-dark" />
                 <h2 className="text-xl font-semibold">Bildirim Ayarları</h2>
               </div>
               <div className="space-y-4">
@@ -114,7 +114,7 @@ export default function DashboardPage() {
             {/* Gizlilik Ayarları */}
             <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/70 dark:border-slate-800/70 shadow-sm p-6">
               <div className="flex items-center gap-3 mb-4">
-                <Eye className="w-6 h-6 text-teal-600 dark:text-teal-400" />
+                <Eye className="w-6 h-6 text-brand-green" />
                 <h2 className="text-xl font-semibold">Gizlilik Ayarları</h2>
               </div>
               <div className="space-y-4">

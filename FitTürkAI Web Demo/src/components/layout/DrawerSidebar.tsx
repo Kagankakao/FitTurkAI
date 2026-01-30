@@ -14,12 +14,12 @@ import {
 import { useRouter } from 'next/navigation';
 
 const links = [
-  { name: 'Profil', href: '/profile', icon: UserIcon, color: 'text-sky-600 dark:text-sky-400' },
-  { name: 'Notlar', href: '/notes', icon: BookOpenIcon, color: 'text-emerald-600 dark:text-emerald-400' },
-  { name: 'Hedefler', href: '/goals', icon: FlagIcon, color: 'text-lime-600 dark:text-lime-400' },
-  { name: 'İlerleme', href: '/progress', icon: ChartBarIcon, color: 'text-teal-600 dark:text-teal-400' },
-  { name: 'Tarifler', href: '/recipes', icon: FireIcon, color: 'text-orange-500 dark:text-orange-400' },
-  { name: 'Ayarlar', href: '/dashboard', icon: Settings, color: 'text-slate-600 dark:text-slate-400' },
+  { name: 'Profil', href: '/profile', icon: UserIcon, color: 'text-brand-dark' },
+  { name: 'Notlar', href: '/notes', icon: BookOpenIcon, color: 'text-brand-green' },
+  { name: 'Hedefler', href: '/goals', icon: FlagIcon, color: 'text-brand-dark' },
+  { name: 'İlerleme', href: '/progress', icon: ChartBarIcon, color: 'text-brand-green' },
+  { name: 'Tarifler', href: '/recipes', icon: FireIcon, color: 'text-brand-dark' },
+  { name: 'Ayarlar', href: '/dashboard', icon: Settings, color: 'text-brand-dark' },
 ];
 
 export default function DrawerSidebar({ open, onClose }: { open: boolean; onClose: () => void }) {

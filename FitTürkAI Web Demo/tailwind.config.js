@@ -8,6 +8,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        brand: {
+          dark: '#36656B',
+          green: '#75B06F',
+          soft: '#DAD887',
+          light: '#F0F8A4',
+        },
+        emerald: {
+          900: '#36656B',
+          600: '#75B06F',
+          500: '#75B06F',
+          400: '#DAD887',
+          300: '#F0F8A4',
+        },
         'neutral-light': '#f8fafc',
         'neutral-dark': '#0f172a',
         'primary': '#1f2937',
@@ -19,9 +32,9 @@ module.exports = {
         'fitness-dark': '#0f172a',
       },
       backgroundImage: {
-        'hero-gradient': 'linear-gradient(120deg, #ecfdf3 0%, #fef3c7 45%, #ffe4e6 100%)',
+        'hero-gradient': 'linear-gradient(120deg, #F0F8A4 0%, #DAD887 45%, #75B06F 100%)',
         'produce-glow':
-          'radial-gradient(700px circle at 20% 15%, rgba(16, 185, 129, 0.35), transparent 50%), radial-gradient(600px circle at 85% 20%, rgba(251, 146, 60, 0.28), transparent 50%), radial-gradient(600px circle at 80% 80%, rgba(236, 72, 153, 0.22), transparent 55%)',
+          'radial-gradient(700px circle at 20% 15%, rgba(117, 176, 111, 0.35), transparent 50%), radial-gradient(600px circle at 85% 20%, rgba(218, 216, 135, 0.35), transparent 50%), radial-gradient(600px circle at 80% 80%, rgba(240, 248, 164, 0.45), transparent 55%)',
       },
       keyframes: {
         'fade-in': {

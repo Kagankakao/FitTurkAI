@@ -324,7 +324,7 @@ export default function ProfilePage() {
                 animate="animate"
                 className="p-3 bg-slate-100 dark:bg-slate-800 rounded-lg mb-2"
               >
-                <UserIcon className="w-7 h-7 text-emerald-600 dark:text-emerald-400" />
+                <UserIcon className="w-7 h-7 text-brand-green" />
               </motion.div>
               <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400">
                 Vücut Kitle İndeksi
@@ -344,7 +344,7 @@ export default function ProfilePage() {
                 animate="animate"
                 className="p-3 bg-slate-100 dark:bg-slate-800 rounded-lg mb-2"
               >
-                <HeartIcon className="w-7 h-7 text-rose-500 dark:text-rose-400" />
+                <HeartIcon className="w-7 h-7 text-brand-dark" />
               </motion.div>
               <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400">
                 Bazal Metabolizma
@@ -362,7 +362,7 @@ export default function ProfilePage() {
                 animate="animate"
                 className="p-3 bg-slate-100 dark:bg-slate-800 rounded-lg mb-2"
               >
-                <FireIcon className="w-7 h-7 text-orange-500 dark:text-orange-400" />
+                <FireIcon className="w-7 h-7 text-brand-green" />
               </motion.div>
               <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400">
                 Günlük Enerji İhtiyacı
@@ -380,7 +380,7 @@ export default function ProfilePage() {
                 animate="animate"
                 className="p-3 bg-slate-100 dark:bg-slate-800 rounded-lg mb-2"
               >
-                <BeakerIcon className="w-7 h-7 text-teal-500 dark:text-teal-400" />
+                <BeakerIcon className="w-7 h-7 text-brand-dark" />
               </motion.div>
               <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400">
                 Aktivite Seviyesi
@@ -416,7 +416,7 @@ export default function ProfilePage() {
                 {showAssistantMsg && (
                   <div className="absolute left-full top-1/2 -translate-y-1/2 ml-3 flex items-center z-40">
                     <div className="bg-white dark:bg-slate-900 border border-slate-200/70 dark:border-slate-800/70 shadow-sm rounded-lg px-5 py-2 flex items-center gap-2 text-xs md:text-sm text-slate-700 dark:text-slate-200 animate-fade-in min-w-[260px] max-w-[340px] text-center">
-                      <SparklesIcon className="w-5 h-5 text-lime-500 dark:text-lime-400 flex-shrink-0" />
+                      <SparklesIcon className="w-5 h-5 text-brand-green flex-shrink-0" />
                       <span className="leading-tight text-center block whitespace-normal">
                         Profil bilgilerini eksiksiz doldurursan<br />sana daha iyi ve kişisel hizmet sunabiliriz!
                       </span>

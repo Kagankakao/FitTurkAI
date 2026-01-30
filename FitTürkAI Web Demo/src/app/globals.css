@@ -16,7 +16,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    @apply bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100;
+    @apply bg-brand-light text-brand-dark dark:bg-slate-950 dark:text-slate-100;
   }
 
   :where(a, button, input, select, textarea, [role='button']) {

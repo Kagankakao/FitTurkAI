@@ -305,13 +305,13 @@ export default function ChatPage() {
               {/* Başlık - Merkezi */}
               <div className="flex items-center gap-4">
                 {/* Logo */}
-                <div className="w-14 h-14 bg-emerald-600 rounded-2xl flex items-center justify-center shadow-sm">
+                <div className="w-14 h-14 bg-brand-green rounded-2xl flex items-center justify-center shadow-sm">
                   <HeartIcon className="w-7 h-7 text-white" />
                 </div>
                 
                 {/* Başlık */}
                 <div className="text-center">
-                  <h1 className="text-2xl font-semibold text-slate-900 dark:text-slate-100">
+                  <h1 className="text-2xl font-semibold text-brand-dark dark:text-slate-100">
                     FitTürkAI Asistanı
                   </h1>
                   <p className="text-slate-600 dark:text-slate-300 text-sm font-medium">
@@ -397,8 +397,8 @@ export default function ChatPage() {
                           {/* Avatar */}
                           <div className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center shadow-sm ${
                             message.isUser 
-                              ? 'bg-emerald-600' 
-                              : 'bg-teal-600'
+                              ? 'bg-brand-green' 
+                              : 'bg-brand-dark'
                           }`}>
                             {message.isUser ? (
                               <UserIcon className="w-5 h-5 text-white" />
@@ -448,7 +448,7 @@ export default function ChatPage() {
                       className="flex justify-start"
                     >
                       <div className="flex items-end gap-3 max-w-[85%]">
-                        <div className="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center shadow-sm">
+                        <div className="w-10 h-10 bg-brand-dark rounded-full flex items-center justify-center shadow-sm">
                           <SparklesIcon className="w-5 h-5 text-white" />
                         </div>
                         <div className="bg-white dark:bg-slate-900 border border-slate-200/70 dark:border-slate-800/70 rounded-3xl rounded-bl-lg px-5 py-4 shadow-sm">

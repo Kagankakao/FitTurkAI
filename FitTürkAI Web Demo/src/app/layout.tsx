@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="tr">
-      <body className="font-sans bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+      <body className="font-sans bg-brand-light text-brand-dark dark:bg-slate-950 dark:text-slate-100">
         <div className="min-h-screen flex flex-col">
           <ClientLayout>
             <MotionLayout>{children}</MotionLayout>

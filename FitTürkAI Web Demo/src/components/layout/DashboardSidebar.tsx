@@ -18,14 +18,14 @@ import { useState } from 'react';
 import { Menu, ChevronLeft, ChevronRight } from 'react-feather';
 
 const links = [
-  { name: 'Notlar', href: '/notes', icon: BookOpenIcon, color: 'text-emerald-600 dark:text-emerald-400' },
-  { name: 'Hedefler', href: '/goals', icon: FlagIcon, color: 'text-lime-600 dark:text-lime-400' },
-  { name: 'İlerleme', href: '/progress', icon: ChartBarIcon, color: 'text-teal-600 dark:text-teal-400' },
-  { name: 'Tarifler', href: '/recipes', icon: FireIcon, color: 'text-orange-500 dark:text-orange-400' },
-  { name: 'Öğün Planlama', href: '/meal-planning', icon: CalendarIcon, color: 'text-amber-600 dark:text-amber-400' },
-  { name: 'FitTürkAI Asistan', href: '/chat', icon: SparklesIcon, color: 'text-emerald-500 dark:text-emerald-400' },
-  { name: 'Profil', href: '/profile', icon: UserIcon, color: 'text-sky-600 dark:text-sky-400' },
-  { name: 'Ayarlar', href: '/dashboard', icon: Cog6ToothIcon, color: 'text-slate-600 dark:text-slate-400' },
+  { name: 'Notlar', href: '/notes', icon: BookOpenIcon, color: 'text-brand-green' },
+  { name: 'Hedefler', href: '/goals', icon: FlagIcon, color: 'text-brand-dark' },
+  { name: 'İlerleme', href: '/progress', icon: ChartBarIcon, color: 'text-brand-green' },
+  { name: 'Tarifler', href: '/recipes', icon: FireIcon, color: 'text-brand-dark' },
+  { name: 'Öğün Planlama', href: '/meal-planning', icon: CalendarIcon, color: 'text-brand-green' },
+  { name: 'FitTürkAI Asistan', href: '/chat', icon: SparklesIcon, color: 'text-brand-green' },
+  { name: 'Profil', href: '/profile', icon: UserIcon, color: 'text-brand-dark' },
+  { name: 'Ayarlar', href: '/dashboard', icon: Cog6ToothIcon, color: 'text-brand-dark' },
 ];
 
 export default function DashboardSidebar() {
@@ -49,7 +49,7 @@ export default function DashboardSidebar() {
           {/* Eğer logo dosyası yoksa sadece yazı göster */}
           {/* <img src="/logo.png" alt="Logo" className="w-8 h-8" /> */}
           <span
-            className={`font-semibold text-slate-900 dark:text-slate-100 select-none whitespace-nowrap transition-all duration-300 ${collapsed ? 'text-2xl' : 'text-xl md:text-2xl'}`}
+            className={`font-semibold text-brand-dark dark:text-slate-100 select-none whitespace-nowrap transition-all duration-300 ${collapsed ? 'text-2xl' : 'text-xl md:text-2xl'}`}
             style={{ maxWidth: collapsed ? 32 : 140, overflow: 'hidden', textOverflow: 'ellipsis' }}
           >
             {collapsed ? 'F' : 'FitTurkAI'}
