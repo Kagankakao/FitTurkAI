@@ -35,6 +35,11 @@ const config: Config = {
         'fitness-pink': '#db2777',
         'fitness-dark': '#0f172a',
       },
+      backgroundImage: {
+        'hero-gradient': 'linear-gradient(120deg, #0f172a 0%, #111827 50%, #0b1220 100%)',
+        'produce-glow':
+          'radial-gradient(600px circle at 15% 10%, rgba(16, 185, 129, 0.25), transparent 45%), radial-gradient(500px circle at 85% 20%, rgba(251, 146, 60, 0.2), transparent 45%), radial-gradient(500px circle at 80% 80%, rgba(236, 72, 153, 0.16), transparent 50%)',
+      },
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         inter: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],

@@ -37,7 +37,7 @@ const advantages = [
   {
     icon: (
       <motion.div animate={{ scale: [1, 1.2, 1] }} transition={{ repeat: Infinity, duration: 2 }}>
-        <FireIcon className="w-8 h-8 text-slate-600 dark:text-slate-300" />
+        <FireIcon className="w-8 h-8 text-orange-500" />
       </motion.div>
     ),
     title: 'Akıllı Planlama',
@@ -49,7 +49,7 @@ const advantages = [
         animate={{ rotate: [0, 10, -10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
       >
-        <HeartIcon className="w-8 h-8 text-slate-600 dark:text-slate-300" />
+        <HeartIcon className="w-8 h-8 text-rose-500" />
       </motion.div>
     ),
     title: 'Sağlık Takibi',
@@ -58,7 +58,7 @@ const advantages = [
   {
     icon: (
       <motion.div animate={{ y: [0, -8, 0] }} transition={{ repeat: Infinity, duration: 2 }}>
-        <UserGroupIcon className="w-8 h-8 text-slate-600 dark:text-slate-300" />
+        <UserGroupIcon className="w-8 h-8 text-emerald-500" />
       </motion.div>
     ),
     title: 'Topluluk',
@@ -70,7 +70,7 @@ const advantages = [
         animate={{ scale: [1, 1.2, 1], rotate: [0, 10, -10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
       >
-        <SparklesIcon className="w-8 h-8 text-slate-600 dark:text-slate-300" />
+        <SparklesIcon className="w-8 h-8 text-amber-500" />
       </motion.div>
     ),
     title: 'Yapay Zeka Desteği',
@@ -82,7 +82,7 @@ const steps = [
   {
     icon: (
       <motion.div animate={{ scale: [1, 1.1, 1] }} transition={{ repeat: Infinity, duration: 2 }}>
-        <DevicePhoneMobileIcon className="w-7 h-7 text-slate-600 dark:text-slate-300" />
+        <DevicePhoneMobileIcon className="w-7 h-7 text-emerald-500" />
       </motion.div>
     ),
     title: 'Demoyu Başlat',
@@ -94,7 +94,7 @@ const steps = [
         animate={{ rotate: [0, 10, -10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
       >
-        <CakeIcon className="w-7 h-7 text-slate-600 dark:text-slate-300" />
+        <CakeIcon className="w-7 h-7 text-orange-500" />
       </motion.div>
     ),
     title: 'Sohbete Gir',
@@ -103,7 +103,7 @@ const steps = [
   {
     icon: (
       <motion.div animate={{ y: [0, -8, 0] }} transition={{ repeat: Infinity, duration: 2 }}>
-        <ArrowTrendingUpIcon className="w-7 h-7 text-slate-600 dark:text-slate-300" />
+        <ArrowTrendingUpIcon className="w-7 h-7 text-sky-500" />
       </motion.div>
     ),
     title: 'Çıktıları İncele',
@@ -193,14 +193,19 @@ export default function HomePage() {
     <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 relative overflow-x-hidden">
       {/* Hareketli arka plan daireleri */}
       <motion.div
-        className="absolute top-0 left-0 w-96 h-96 bg-slate-300/40 rounded-full blur-3xl z-0"
+        className="absolute top-0 left-0 w-96 h-96 bg-emerald-300/30 rounded-full blur-3xl z-0"
         animate={{ x: [0, 40, 0], y: [0, 30, 0] }}
         transition={{ repeat: Infinity, duration: 12, ease: 'easeInOut' }}
       />
       <motion.div
-        className="absolute bottom-0 right-0 w-80 h-80 bg-slate-200/40 rounded-full blur-3xl z-0"
+        className="absolute bottom-0 right-0 w-80 h-80 bg-orange-200/40 rounded-full blur-3xl z-0"
         animate={{ x: [0, -40, 0], y: [0, -30, 0] }}
         transition={{ repeat: Infinity, duration: 14, ease: 'easeInOut' }}
+      />
+      <motion.div
+        className="absolute top-1/3 right-16 w-72 h-72 bg-rose-200/30 rounded-full blur-3xl z-0"
+        animate={{ x: [0, -30, 0], y: [0, 20, 0] }}
+        transition={{ repeat: Infinity, duration: 16, ease: 'easeInOut' }}
       />
 
       {/* Hero + Slogan */}
