@@ -290,7 +290,7 @@ export default function RecipesPage() {
               placeholder="Tariflerde ara..."
               className="input flex-1 rounded-xl shadow-sm border border-slate-200/70 dark:border-slate-800/70 focus:ring-2 focus:ring-slate-400 bg-white dark:bg-slate-900 text-slate-900 dark:text-white"
             />
-            <button className="px-4 py-2 rounded-full bg-slate-900 text-white font-semibold shadow-sm hover:bg-slate-800 transition-all" onClick={() => setIsCreating(true)}>
+            <button className="px-4 py-2 rounded-full bg-emerald-600 text-white font-semibold shadow-sm hover:bg-emerald-500 transition-all" onClick={() => setIsCreating(true)}>
               + Tarif Ekle
             </button>
           </div>
@@ -347,7 +347,7 @@ export default function RecipesPage() {
                           <button
                             key={cat}
                             type="button"
-                            className={`px-3 py-1 rounded-full border text-sm font-medium transition-all duration-200 ${category.includes(cat) ? 'bg-slate-900 text-white border-slate-900' : 'bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-slate-200/70 dark:border-slate-800/70'}`}
+                            className={`px-3 py-1 rounded-full border text-sm font-medium transition-all duration-200 ${category.includes(cat) ? 'bg-emerald-600 text-white border-emerald-600' : 'bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-slate-200/70 dark:border-slate-800/70'}`}
                             onClick={() =>
                               setCategory((prev) =>
                                 prev.includes(cat) ? prev.filter((c) => c !== cat) : [...prev, cat]

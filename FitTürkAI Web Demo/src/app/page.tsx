@@ -238,7 +238,7 @@ export default function HomePage() {
           planlama, beslenme takibi, topluluk ve daha fazlası burada!
         </p>
         <motion.button
-          className="px-8 py-3 rounded-full bg-slate-900 text-white font-semibold text-lg shadow-lg transition-all duration-300 hover:bg-slate-800 hover:scale-105"
+          className="px-8 py-3 rounded-full bg-emerald-600 text-white font-semibold text-lg shadow-lg transition-all duration-300 hover:bg-emerald-500 hover:scale-105"
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.95 }}
           onClick={startDemo}
@@ -463,7 +463,7 @@ export default function HomePage() {
       {/* CTA */}
       <section className="relative z-10 py-12 flex flex-col items-center">
         <motion.button
-          className="px-10 py-4 rounded-full bg-slate-900 text-white font-semibold text-2xl shadow-xl transition-all duration-300 hover:bg-slate-800 hover:scale-105"
+          className="px-10 py-4 rounded-full bg-emerald-600 text-white font-semibold text-2xl shadow-xl transition-all duration-300 hover:bg-emerald-500 hover:scale-105"
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.95 }}
           onClick={startDemo}

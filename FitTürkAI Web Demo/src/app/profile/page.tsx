@@ -771,7 +771,7 @@ export default function ProfilePage() {
                     <button
                       onClick={() => setDarkMode(!darkMode)}
                       className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 ${
-                        darkMode ? 'bg-slate-900' : 'bg-slate-200'
+                        darkMode ? 'bg-emerald-600' : 'bg-slate-200'
                       }`}
                     >
                       <span
@@ -795,7 +795,7 @@ export default function ProfilePage() {
                   </div>
                       <button
                         className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 ${
-                          profile.preferences.emailNotifications ? 'bg-slate-900' : 'bg-slate-200'
+                          profile.preferences.emailNotifications ? 'bg-emerald-600' : 'bg-slate-200'
                         }`}
                         onClick={() => handleInputChange('preferences', 'emailNotifications', !profile.preferences.emailNotifications)}
                       >
@@ -815,7 +815,7 @@ export default function ProfilePage() {
                   </div>
                       <button
                         className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 ${
-                          profile.preferences.pushNotifications ? 'bg-slate-900' : 'bg-slate-200'
+                          profile.preferences.pushNotifications ? 'bg-emerald-600' : 'bg-slate-200'
                         }`}
                         onClick={() => handleInputChange('preferences', 'pushNotifications', !profile.preferences.pushNotifications)}
                       >
@@ -841,7 +841,7 @@ export default function ProfilePage() {
                   </div>
                       <button
                         className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 ${
-                          profile.preferences.profileVisibility ? 'bg-slate-900' : 'bg-slate-200'
+                          profile.preferences.profileVisibility ? 'bg-emerald-600' : 'bg-slate-200'
                         }`}
                         onClick={() => handleInputChange('preferences', 'profileVisibility', !profile.preferences.profileVisibility)}
                       >

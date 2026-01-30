@@ -156,7 +156,7 @@ export function Navbar() {
                 ) : (
                   <button
                     onClick={handleDemoStart}
-                    className="ml-2 text-sm font-medium text-white bg-slate-900 hover:bg-slate-800 px-4 py-2 rounded-full transition-all duration-200"
+                    className="ml-2 text-sm font-medium text-white bg-emerald-600 hover:bg-emerald-500 px-4 py-2 rounded-full transition-all duration-200"
                   >
                     Demoyu Dene
                   </button>

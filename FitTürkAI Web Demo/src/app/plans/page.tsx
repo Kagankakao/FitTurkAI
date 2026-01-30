@@ -10,12 +10,12 @@ export default function PlansPage() {
           oluşturabilir veya mevcut planlarını düzenleyebilirsin.
         </p>
         <div className="flex flex-wrap gap-6 justify-center mt-4">
-          <div className="bg-slate-900 rounded-xl p-6 shadow-sm text-white w-56 text-center hover:scale-105 transition">
+          <div className="bg-emerald-600 rounded-xl p-6 shadow-sm text-white w-56 text-center hover:scale-105 transition">
             <span className="text-3xl">🏋️‍♂️</span>
             <div className="font-bold mt-2">Antrenman Planı</div>
             <div className="text-sm mt-1">Haftalık ve günlük antrenmanlarını takip et.</div>
           </div>
-          <div className="bg-slate-800 rounded-xl p-6 shadow-sm text-white w-56 text-center hover:scale-105 transition">
+          <div className="bg-lime-600 rounded-xl p-6 shadow-sm text-white w-56 text-center hover:scale-105 transition">
             <span className="text-3xl">🥗</span>
             <div className="font-bold mt-2">Beslenme Planı</div>
             <div className="text-sm mt-1">Kişisel diyet ve öğünlerini planla.</div>

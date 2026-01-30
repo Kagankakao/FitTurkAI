@@ -485,7 +485,7 @@ export default function GoalsPage() {
                   <div className="flex space-x-2 items-center">
                     <button
                       onClick={() => handleToggleGoalCompleted(String(goal._id))}
-                      className={`p-2 rounded-full border transition-all duration-200 ${goal.completed ? 'bg-slate-900 text-white border-slate-900 scale-110' : 'bg-white dark:bg-slate-800 text-slate-500 border-slate-200 dark:border-slate-700 hover:scale-105'}`}
+                      className={`p-2 rounded-full border transition-all duration-200 ${goal.completed ? 'bg-emerald-600 text-white border-emerald-600 scale-110' : 'bg-white dark:bg-slate-800 text-slate-500 border-slate-200 dark:border-slate-700 hover:scale-105'}`}
                       title={goal.completed ? 'Tamamlandı' : 'Tamamla'}
                     >
                       <CheckIcon className="w-5 h-5" />
@@ -523,7 +523,7 @@ export default function GoalsPage() {
                   </div>
                   <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 overflow-hidden">
                     <motion.div
-                      className={`h-3 rounded-full ${goal.completed ? 'bg-slate-400' : 'bg-slate-900'}`}
+                      className={`h-3 rounded-full ${goal.completed ? 'bg-emerald-300' : 'bg-emerald-600'}`}
                       initial={{ width: 0 }}
                       animate={{
                         width: `${calculateProgress(goal)}%`,
@@ -558,7 +558,7 @@ export default function GoalsPage() {
                         <div className="flex items-center space-x-2 flex-1">
                           <button
                             onClick={() => handleToggleMilestone(goal, milestone.id)}
-                            className={`relative p-1 rounded-full border transition-all duration-200 ${milestone.completed ? 'bg-slate-900 text-white border-slate-900 scale-110 shadow-sm' : 'bg-white dark:bg-slate-800 text-slate-500 border-slate-200 dark:border-slate-700 hover:scale-105 hover:border-slate-400 hover:bg-slate-50/60 dark:hover:bg-slate-700'}`}
+                            className={`relative p-1 rounded-full border transition-all duration-200 ${milestone.completed ? 'bg-emerald-600 text-white border-emerald-600 scale-110 shadow-sm' : 'bg-white dark:bg-slate-800 text-slate-500 border-slate-200 dark:border-slate-700 hover:scale-105 hover:border-slate-400 hover:bg-slate-50/60 dark:hover:bg-slate-700'}`}
                             title={milestone.completed ? 'Tamamlandı! 🎉' : 'Tamamla'}
                           >
                             <CheckIcon className="w-4 h-4" />
@@ -677,7 +677,7 @@ export default function GoalsPage() {
                           initial={{ scale: 0 }}
                           animate={{ scale: 1 }}
                           transition={{ delay: idx * 0.3 + 0.5 }}
-                          className="absolute -top-2 -right-2 bg-slate-900 text-white rounded-full w-8 h-8 flex items-center justify-center text-lg font-bold shadow-sm"
+                          className="absolute -top-2 -right-2 bg-emerald-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-lg font-bold shadow-sm"
                         >
                           ✓
                         </motion.div>

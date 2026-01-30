@@ -250,7 +250,7 @@ export default function ProgressPage() {
               {!isCreating && !editingProgress && (
                 <button
                   onClick={() => setIsCreating(true)}
-                  className="flex items-center gap-2 px-4 py-2 bg-slate-900 text-white rounded-full shadow-sm hover:bg-slate-800 transition-all focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 absolute right-6 top-6 z-10"
+                  className="flex items-center gap-2 px-4 py-2 bg-emerald-600 text-white rounded-full shadow-sm hover:bg-emerald-500 transition-all focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 absolute right-6 top-6 z-10"
                   aria-label="Yeni Kayıt Ekle"
                 >
                   <PlusIcon className="w-6 h-6" />
@@ -346,7 +346,7 @@ export default function ProgressPage() {
 
                 {/* Notlar */}
                 {progress.notes && (
-                  <div className="mt-4 p-3 rounded-lg bg-slate-900 text-white">
+                  <div className="mt-4 p-3 rounded-lg bg-emerald-600 text-white">
                     <p className="text-sm">{progress.notes}</p>
                   </div>
                 )}
@@ -566,7 +566,7 @@ export default function ProgressPage() {
                           ? handleUpdateProgress(editingProgress)
                           : handleCreateProgress()
                       }
-                      className="px-6 py-2 rounded-full bg-slate-900 text-white font-semibold shadow-sm hover:bg-slate-800 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2"
+                      className="px-6 py-2 rounded-full bg-emerald-600 text-white font-semibold shadow-sm hover:bg-emerald-500 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2"
                     >
                       {editingProgress ? 'Güncelle' : 'Oluştur'}
                     </button>

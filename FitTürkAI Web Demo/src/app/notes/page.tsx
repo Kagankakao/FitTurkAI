@@ -270,7 +270,7 @@ export default function NotesPage() {
                 onClick={() => handleToggleTag(tag)}
                 className={`px-3 py-1 rounded-full text-sm flex items-center space-x-1 shadow-sm transition-all duration-200 border ${
                   activeTags.includes(tag)
-                    ? 'bg-slate-900 text-white border-slate-900 scale-105'
+                    ? 'bg-emerald-600 text-white border-emerald-600 scale-105'
                     : 'bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border-slate-200/70 dark:border-slate-800/70 hover:scale-105'
                 }`}
               >
@@ -325,7 +325,7 @@ export default function NotesPage() {
                       {tags.map((tag) => (
                         <span
                           key={tag}
-                          className="px-3 py-1 bg-slate-900 text-white rounded-full text-xs flex items-center shadow-sm"
+                          className="px-3 py-1 bg-emerald-600 text-white rounded-full text-xs flex items-center shadow-sm"
                         >
                           {tag}
                           <button
@@ -395,7 +395,7 @@ export default function NotesPage() {
                   <div className="flex space-x-2 items-center">
                     <button
                       onClick={() => handleToggleNoteCompleted(note._id?.toString() || '')}
-                      className={`p-2 rounded-full border transition-all duration-200 ${note.completed ? 'bg-slate-900 text-white border-slate-900 scale-110' : 'bg-white dark:bg-slate-800 text-slate-500 border-slate-200 dark:border-slate-700 hover:scale-105'}`}
+                      className={`p-2 rounded-full border transition-all duration-200 ${note.completed ? 'bg-emerald-600 text-white border-emerald-600 scale-110' : 'bg-white dark:bg-slate-800 text-slate-500 border-slate-200 dark:border-slate-700 hover:scale-105'}`}
                       title={note.completed ? 'Tamamlandı' : 'Tamamla'}
                     >
                       <CheckIcon className="w-5 h-5" />
@@ -426,7 +426,7 @@ export default function NotesPage() {
                   {note.tags.map((tag: string) => (
                     <span
                       key={tag}
-                      className="px-3 py-1 bg-slate-900 text-white rounded-full text-xs flex items-center shadow-sm"
+                      className="px-3 py-1 bg-emerald-600 text-white rounded-full text-xs flex items-center shadow-sm"
                     >
                       <TagIcon className="w-4 h-4 mr-1" />
                       {tag}
@@ -453,7 +453,7 @@ export default function NotesPage() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               onClick={() => setIsCreating(true)}
-              className="fixed bottom-8 right-8 p-5 bg-slate-900 text-white rounded-full shadow-xl hover:scale-110 transition-all z-50 border-4 border-white dark:border-slate-950"
+              className="fixed bottom-8 right-8 p-5 bg-emerald-600 text-white rounded-full shadow-xl hover:scale-110 transition-all z-50 border-4 border-white dark:border-slate-950"
               title="Yeni Not Ekle"
             >
               <PlusIcon className="w-7 h-7" />

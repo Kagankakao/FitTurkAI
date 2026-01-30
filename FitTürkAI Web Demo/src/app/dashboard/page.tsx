@@ -49,7 +49,7 @@ export default function DashboardPage() {
                 <button
                   onClick={() => setDarkMode(!darkMode)}
                   className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 ${
-                    darkMode ? 'bg-slate-900' : 'bg-slate-200'
+                    darkMode ? 'bg-emerald-600' : 'bg-slate-200'
                   }`}
                 >
                   <span
@@ -78,7 +78,7 @@ export default function DashboardPage() {
                   <button
                     onClick={() => handleSettingChange('emailNotifications')}
                     className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 ${
-                      settings.emailNotifications ? 'bg-slate-900' : 'bg-slate-200'
+                    settings.emailNotifications ? 'bg-emerald-600' : 'bg-slate-200'
                     }`}
                   >
                     <span
@@ -98,7 +98,7 @@ export default function DashboardPage() {
                   <button
                     onClick={() => handleSettingChange('pushNotifications')}
                     className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 ${
-                      settings.pushNotifications ? 'bg-slate-900' : 'bg-slate-200'
+                    settings.pushNotifications ? 'bg-emerald-600' : 'bg-slate-200'
                     }`}
                   >
                     <span
@@ -128,7 +128,7 @@ export default function DashboardPage() {
                   <button
                     onClick={() => handleSettingChange('profileVisibility')}
                     className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 ${
-                      settings.profileVisibility ? 'bg-slate-900' : 'bg-slate-200'
+                    settings.profileVisibility ? 'bg-emerald-600' : 'bg-slate-200'
                     }`}
                   >
                     <span
