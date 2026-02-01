@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { PlusIcon, PencilIcon, TrashIcon, CheckIcon } from '@heroicons/react/24/outline';
 import { useRouter } from 'next/navigation';
@@ -459,13 +458,7 @@ export default function GoalsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {goals.length === 0 && (
               <div className="col-span-full flex flex-col items-center justify-center py-16 opacity-60">
-                <Image
-                  src="/empty-goals.svg"
-                  alt="Boş Hedefler"
-                  width={128}
-                  height={128}
-                  className="w-32 h-32 mb-4"
-                />
+                <img src="/empty-goals.svg" alt="Boş Hedefler" className="w-32 h-32 mb-4" />
                 <p className="text-lg font-semibold">
                   Henüz hiç hedefin yok. Hemen bir hedef ekle!
                 </p>

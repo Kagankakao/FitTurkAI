@@ -155,7 +155,7 @@ export default function HomePage() {
     if (token) {
       router.push('/profile');
     }
-  }, [router]);
+  }, []);
 
   const startDemo = () => {
     if (typeof window !== 'undefined') {

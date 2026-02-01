@@ -63,7 +63,7 @@ export default function ChatWidget({ fullscreen = false }: ChatWidgetProps) {
       setSessions([newSession]);
       setCurrentSessionId(newSession.id);
     }
-  }, [sessions.length]);
+  }, []);
 
   useEffect(() => {
     scrollToBottom();

@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 // import NavBar from '@/components/NavBar'
 import RecipeCard from '@/components/RecipeCard';
@@ -367,13 +366,10 @@ export default function RecipesPage() {
                     </label>
                     <input type="file" accept="image/*" onChange={handleImageChange} />
                     {image && (
-                      <Image
+                      <img
                         src={image}
                         alt="Tarif görseli"
-                        width={128}
-                        height={128}
                         className="mt-2 w-32 h-32 object-cover rounded-xl border"
-                        unoptimized
                       />
                     )}
                   </div>

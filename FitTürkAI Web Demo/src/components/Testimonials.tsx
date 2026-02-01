@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';

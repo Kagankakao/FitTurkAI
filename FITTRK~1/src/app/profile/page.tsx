@@ -89,22 +89,20 @@ export default function ProfilePage() {
         setProfile(parsedProfile);
       } else {
         // Yeni profil oluştur
-        setProfile((prev: any) => {
-          const newProfile = {
-            ...prev,
-            personalInfo: {
-              ...prev.personalInfo,
-              name: userName || userEmail.split('@')[0] || 'Kullanıcı',
-            },
-          };
-          localStorage.setItem(profileKey, JSON.stringify(newProfile));
-          return newProfile;
-        });
+        const newProfile = {
+          ...profile,
+          personalInfo: {
+            ...profile.personalInfo,
+            name: userName || userEmail.split('@')[0] || 'Kullanıcı',
+          }
+        };
+        setProfile(newProfile);
+        localStorage.setItem(profileKey, JSON.stringify(newProfile));
       }
       
       setIsLoading(false);
     }
-  }, []);
+  }, [router]);
 
   useEffect(() => {
     // Profil değişikliklerini kaydet

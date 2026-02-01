@@ -6,13 +6,7 @@ const Logo = () => {
   return (
     <div className="flex items-center gap-2 pt-1">
       {!imgError && (
-        <Image
-          src="/fitturk_logo.svg"
-          alt="FitTurkAI Logo"
-          width={36}
-          height={36}
-          onError={() => setImgError(true)}
-        />
+        <Image src="/logo.png" alt="FitTurkAI Logo" width={36} height={36} onError={() => setImgError(true)} />
       )}
       <span className="font-semibold text-2xl text-brand-dark dark:text-slate-100 select-none">
         FitTurkAI
