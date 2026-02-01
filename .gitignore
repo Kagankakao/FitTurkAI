@@ -201,6 +201,14 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
+# Node / Next.js
+node_modules/
+.next/
+out/
+.vercel/
+.env.local
+.env.*.local
+
 # Marimo
 marimo/_static/
 marimo/_lsp/
