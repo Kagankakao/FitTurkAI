@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   PaperAirplaneIcon, 
@@ -33,6 +33,7 @@ interface ChatSession {
 
 export default function ChatPage() {
   const router = useRouter();
+  const isDemoMode = process.env.NEXT_PUBLIC_DEMO_MODE !== 'false';
   const [checked, setChecked] = useState(false);
   const [sessions, setSessions] = useState<ChatSession[]>([]);
   const [currentSessionId, setCurrentSessionId] = useState<string | null>(null);
@@ -41,28 +42,6 @@ export default function ChatPage() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [isTyping, setIsTyping] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const initializeChatSessions = async () => {
-      if (typeof window !== 'undefined') {
-        let userEmail = localStorage.getItem('userEmail');
-        if (!userEmail) {
-          const demoEmail = 'demo@fitturk.ai';
-          const token = 'demo-token-' + Date.now();
-          document.cookie = `token=${token}; path=/; max-age=2592000`;
-          localStorage.setItem('userEmail', demoEmail);
-          localStorage.setItem('userName', 'Demo Kullanıcı');
-          userEmail = demoEmail;
-        }
-        setChecked(true);
-        
-        // Kullanıcıya özel sohbet verilerini her zaman yükle
-        await loadChatSessions(userEmail);
-      }
-    };
-
-    initializeChatSessions();
-  }, [router]);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -150,6 +129,23 @@ export default function ChatPage() {
     setIsTyping(true);
 
     try {
+      if (isDemoMode) {
+        const aiMessage: Message = {
+          id: updatedMessages.length + 1,
+          content:
+            'Bu bir frontend demo sürümüdür. Yapay zeka özelliğini kullanmak için projeyi yerelde çalıştırmanız gerekir.',
+          isUser: false,
+          timestamp: new Date(),
+        };
+        const finalMessages = [...updatedMessages, aiMessage];
+        const finalSessions = sessions.map((s) =>
+          s.id === currentSession.id ? { ...s, messages: finalMessages } : s
+        );
+        setSessions(finalSessions);
+        saveChatSessions(finalSessions, currentSessionId || undefined);
+        return;
+      }
+
       const apiMessages = [
         ...currentSession.messages.map((msg) => ({
           role: msg.isUser ? ('user' as const) : ('assistant' as const),
@@ -195,8 +191,91 @@ export default function ChatPage() {
     }
   };
 
-  const loadChatSessions = async (userEmail: string) => {
+  const saveChatSessions = useCallback(async (sessions: ChatSession[], activeSessionId?: string) => {
     try {
+      const userEmail = localStorage.getItem('userEmail');
+      if (!userEmail) return;
+
+      if (isDemoMode) {
+        const storageKey = `chat_sessions_${userEmail}`;
+        localStorage.setItem(
+          storageKey,
+          JSON.stringify({
+            sessions,
+            activeSessionId,
+          })
+        );
+        return;
+      }
+      
+      const response = await fetch('http://localhost:8000/save-chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          userEmail,
+          sessions,
+          activeSessionId
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Chat verileri kaydedilemedi');
+      }
+
+      const result = await response.json();
+      console.log('Chat verileri kaydedildi:', result.message);
+    } catch (error) {
+      console.error('Sohbet verileri kaydedilirken hata:', error);
+    }
+  }, [isDemoMode]);
+
+  const createInitialSession = useCallback(() => {
+    const newSession: ChatSession = {
+      id: Date.now().toString(),
+      title: 'Yeni Sohbet',
+      messages: [{
+        id: 1,
+        content: 'Merhaba! FitTürkAI sağlık asistanınıza hoş geldiniz. Size nasıl yardımcı olabilirim? Beslenme, egzersiz, sağlık hedefleri konusunda sorularınızı paylaşabilirsiniz.',
+        isUser: false,
+        timestamp: new Date(),
+      }],
+      createdAt: new Date(),
+      isFavorite: false,
+    };
+    setSessions([newSession]);
+    setCurrentSessionId(newSession.id);
+    saveChatSessions([newSession], newSession.id);
+  }, [saveChatSessions]);
+
+  const loadChatSessions = useCallback(async (userEmail: string) => {
+    try {
+      if (isDemoMode) {
+        const storageKey = `chat_sessions_${userEmail}`;
+        const stored = localStorage.getItem(storageKey);
+        if (stored) {
+          const parsed = JSON.parse(stored);
+          const parsedSessions = parsed.sessions.map((session: any) => ({
+            ...session,
+            createdAt: new Date(session.createdAt),
+            messages: session.messages.map((msg: any) => ({
+              ...msg,
+              timestamp: new Date(msg.timestamp),
+            })),
+          }));
+          setSessions(parsedSessions);
+          if (parsed.activeSessionId && parsedSessions.find((s: any) => s.id === parsed.activeSessionId)) {
+            setCurrentSessionId(parsed.activeSessionId);
+          } else if (parsedSessions.length > 0) {
+            setCurrentSessionId(parsedSessions[0].id);
+          }
+          return;
+        }
+        createInitialSession();
+        return;
+      }
+
       const response = await fetch('http://localhost:8000/load-chat', {
         method: 'POST',
         headers: {
@@ -237,53 +316,29 @@ export default function ChatPage() {
       console.error('Sohbet verileri yüklenirken hata:', error);
       createInitialSession();
     }
-  };
+  }, [createInitialSession, isDemoMode]);
 
-  const createInitialSession = () => {
-    const newSession: ChatSession = {
-      id: Date.now().toString(),
-      title: 'Yeni Sohbet',
-      messages: [{
-        id: 1,
-        content: 'Merhaba! FitTürkAI sağlık asistanınıza hoş geldiniz. Size nasıl yardımcı olabilirim? Beslenme, egzersiz, sağlık hedefleri konusunda sorularınızı paylaşabilirsiniz.',
-        isUser: false,
-        timestamp: new Date(),
-      }],
-      createdAt: new Date(),
-      isFavorite: false,
-    };
-    setSessions([newSession]);
-    setCurrentSessionId(newSession.id);
-    saveChatSessions([newSession], newSession.id);
-  };
+  useEffect(() => {
+    const initializeChatSessions = async () => {
+      if (typeof window !== 'undefined') {
+        let userEmail = localStorage.getItem('userEmail');
+        if (!userEmail) {
+          const demoEmail = 'demo@fitturk.ai';
+          const token = 'demo-token-' + Date.now();
+          document.cookie = `token=${token}; path=/; max-age=2592000`;
+          localStorage.setItem('userEmail', demoEmail);
+          localStorage.setItem('userName', 'Demo Kullanıcı');
+          userEmail = demoEmail;
+        }
+        setChecked(true);
 
-  const saveChatSessions = async (sessions: ChatSession[], activeSessionId?: string) => {
-    try {
-      const userEmail = localStorage.getItem('userEmail');
-      if (!userEmail) return;
-      
-      const response = await fetch('http://localhost:8000/save-chat', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          userEmail,
-          sessions,
-          activeSessionId
-        }),
-      });
-
-      if (!response.ok) {
-        throw new Error('Chat verileri kaydedilemedi');
+        // Kullanıcıya özel sohbet verilerini her zaman yükle
+        await loadChatSessions(userEmail);
       }
+    };
 
-      const result = await response.json();
-      console.log('Chat verileri kaydedildi:', result.message);
-    } catch (error) {
-      console.error('Sohbet verileri kaydedilirken hata:', error);
-    }
-  };
+    initializeChatSessions();
+  }, [router, loadChatSessions]);
 
   useEffect(() => {
     scrollToBottom();
@@ -372,14 +427,14 @@ export default function ChatPage() {
                       <p className="text-xs text-amber-700 dark:text-amber-300 leading-relaxed">
                         FitTürkAI bir yapay zeka asistanıdır ve gerçek bir sağlık uzmanı değildir. 
                         Verilen öneriler genel bilgi amaçlıdır ve hata yapabilir. Sağlık sorunlarınız için 
-                        mutlaka <strong>doktorunuza danışınız</strong>. Acil durumlarda 112'yi arayın.
+                        mutlaka <strong>doktorunuza danışınız</strong>. Acil durumlarda 112&apos;yi arayın.
                       </p>
                     </div>
                   </div>
                 </div>
                 
                 {/* Mesajlar Alanı */}
-                <div className="flex-1 overflow-y-auto scrollbar-none px-6 pb-6 space-y-6">
+                <div className="flex-1 overflow-hidden px-6 pb-6 space-y-6">
                   <AnimatePresence mode="popLayout">
                     {currentSession.messages.map((message) => (
                       <motion.div

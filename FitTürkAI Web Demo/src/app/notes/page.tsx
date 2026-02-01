@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { PlusIcon, PencilIcon, TrashIcon, TagIcon, CheckIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useRouter } from 'next/navigation';
@@ -378,7 +379,13 @@ export default function NotesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredNotes.length === 0 && (
               <div className="col-span-full flex flex-col items-center justify-center py-16 opacity-60">
-                <img src="/empty-notes.svg" alt="Boş Notlar" className="w-32 h-32 mb-4" />
+                <Image
+                  src="/empty-notes.svg"
+                  alt="Boş Notlar"
+                  width={128}
+                  height={128}
+                  className="w-32 h-32 mb-4"
+                />
                 <p className="text-lg font-semibold">Henüz hiç notun yok. Hemen bir not ekle!</p>
               </div>
             )}

@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import Footer from '@/components/layout/Footer';
 import MotionLayout from '@/components/MotionLayout';
 import ClientLayout from './ClientLayout';
 
@@ -18,7 +17,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <ClientLayout>
             <MotionLayout>{children}</MotionLayout>
           </ClientLayout>
-          <Footer />
         </div>
       </body>
     </html>
