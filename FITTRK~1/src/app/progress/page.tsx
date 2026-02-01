@@ -125,8 +125,40 @@ export default function ProgressPage() {
     localStorage.setItem(progressKey, JSON.stringify(progressRecords));
   }, [progressRecords, checked, progressKey]);
 
+  const validateProgressInputs = () => {
+    if (!weight) {
+      return 'Kilo alanı zorunludur (30-300).';
+    }
+    const checks: Array<{ label: string; value?: number; min: number; max: number }> = [
+      { label: 'Kilo', value: weight ? Number(weight) : undefined, min: 30, max: 300 },
+      { label: 'Vücut yağ oranı', value: bodyFat ? Number(bodyFat) : undefined, min: 3, max: 70 },
+      { label: 'Göğüs', value: measurements.chest, min: 40, max: 160 },
+      { label: 'Bel', value: measurements.waist, min: 40, max: 160 },
+      { label: 'Kalça', value: measurements.hips, min: 50, max: 180 },
+      { label: 'Biceps', value: measurements.biceps, min: 15, max: 70 },
+      { label: 'Bacak', value: measurements.thighs, min: 30, max: 120 },
+      { label: 'Baldır', value: measurements.calves, min: 20, max: 80 },
+      { label: 'Boy', value: measurements.height, min: 120, max: 230 },
+      { label: 'Yaş', value: age ? Number(age) : undefined, min: 10, max: 100 },
+    ];
+
+    for (const check of checks) {
+      if (check.value === undefined || check.value === null || Number.isNaN(check.value)) continue;
+      if (check.value < check.min || check.value > check.max) {
+        return `${check.label} için gerçekçi aralık: ${check.min}-${check.max}.`;
+      }
+    }
+
+    return null;
+  };
+
   const handleCreateProgress = () => {
     setError(null);
+    const validationError = validateProgressInputs();
+    if (validationError) {
+      setError(validationError);
+      return;
+    }
     const newProgress = {
       _id: Date.now().toString(),
       userId: 'user123', // Geçici olarak sabit bir kullanıcı ID'si kullanıyoruz
@@ -145,6 +177,11 @@ export default function ProgressPage() {
 
   const handleUpdateProgress = (progress: Progress) => {
     setError(null);
+    const validationError = validateProgressInputs();
+    if (validationError) {
+      setError(validationError);
+      return;
+    }
     const updatedProgress: Progress = {
       ...progress,
       date,
@@ -237,6 +274,16 @@ export default function ProgressPage() {
               Vücut ölçülerinizi ve ilerlemenizi modern grafiklerle takip edin
             </p>
           </motion.div>
+          <div className="rounded-2xl border border-slate-200/70 dark:border-slate-800/70 bg-white/80 dark:bg-slate-900/80 p-4 text-sm text-slate-600 dark:text-slate-300">
+            <p className="font-semibold text-slate-800 dark:text-slate-100 mb-1">
+              Gerçekçi ilerleme sınırları
+            </p>
+            <p>
+              Sağlıklı kilo değişimi genelde haftada <b>0,3–1 kg</b> aralığındadır. Yağ oranı ve
+              ölçümler günlük dalgalanabilir; daha doğru karşılaştırma için verileri benzer saat,
+              benzer koşullarda girin.
+            </p>
+          </div>
 
           {/* Grafik ve + butonu kartı */}
           <motion.div
@@ -376,6 +423,11 @@ export default function ProgressPage() {
                 <h2 className="text-2xl font-semibold text-slate-900 dark:text-slate-100 mb-4 flex items-center gap-2">
                   <PlusIcon className="w-6 h-6" /> {editingProgress ? 'İlerleme Kaydını Düzenle' : 'Yeni İlerleme Kaydı'}
                 </h2>
+                {error && (
+                  <div className="rounded-xl border border-rose-200/70 bg-rose-50 text-rose-800 px-4 py-2 text-sm">
+                    {error}
+                  </div>
+                )}
                 <div className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
@@ -398,7 +450,8 @@ export default function ProgressPage() {
                         value={weight}
                         onChange={(e) => setWeight(e.target.value)}
                         className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
-                        min="0"
+                        min="30"
+                        max="300"
                         step="0.1"
                       />
                     </div>
@@ -413,8 +466,8 @@ export default function ProgressPage() {
                         value={bodyFat}
                         onChange={(e) => setBodyFat(e.target.value)}
                         className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
-                        min="0"
-                        max="100"
+                        min="3"
+                        max="70"
                         step="0.1"
                       />
                     </div>
@@ -433,7 +486,8 @@ export default function ProgressPage() {
                           value={measurements?.chest ?? ''}
                           onChange={(e) => handleMeasurementChange('chest', e.target.value ?? '')}
                           className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
-                          min="0"
+                          min="40"
+                          max="160"
                           step="0.1"
                         />
                       </div>
@@ -446,7 +500,8 @@ export default function ProgressPage() {
                           value={measurements?.waist ?? ''}
                           onChange={(e) => handleMeasurementChange('waist', e.target.value ?? '')}
                           className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
-                          min="0"
+                          min="40"
+                          max="160"
                           step="0.1"
                         />
                       </div>
@@ -459,7 +514,8 @@ export default function ProgressPage() {
                           value={measurements?.hips ?? ''}
                           onChange={(e) => handleMeasurementChange('hips', e.target.value ?? '')}
                           className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
-                          min="0"
+                          min="50"
+                          max="180"
                           step="0.1"
                         />
                       </div>
@@ -472,7 +528,8 @@ export default function ProgressPage() {
                           value={measurements?.biceps ?? ''}
                           onChange={(e) => handleMeasurementChange('biceps', e.target.value ?? '')}
                           className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
-                          min="0"
+                          min="15"
+                          max="70"
                           step="0.1"
                         />
                       </div>
@@ -485,7 +542,8 @@ export default function ProgressPage() {
                           value={measurements?.thighs ?? ''}
                           onChange={(e) => handleMeasurementChange('thighs', e.target.value ?? '')}
                           className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
-                          min="0"
+                          min="30"
+                          max="120"
                           step="0.1"
                         />
                       </div>
@@ -498,7 +556,8 @@ export default function ProgressPage() {
                           value={measurements?.calves ?? ''}
                           onChange={(e) => handleMeasurementChange('calves', e.target.value ?? '')}
                           className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
-                          min="0"
+                          min="20"
+                          max="80"
                           step="0.1"
                         />
                       </div>
@@ -511,7 +570,8 @@ export default function ProgressPage() {
                           value={age}
                           onChange={e => setAge(e.target.value)}
                           className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
-                          min="0"
+                          min="10"
+                          max="100"
                           step="1"
                         />
                       </div>
@@ -538,7 +598,8 @@ export default function ProgressPage() {
                           value={measurements?.height ?? ''}
                           onChange={e => handleMeasurementChange('height', e.target.value ?? '')}
                           className="input w-full rounded-xl border border-slate-200/70 dark:border-slate-800/70 bg-white dark:bg-slate-900 focus:ring-slate-400 focus:border-slate-400"
-                          min="0"
+                          min="120"
+                          max="230"
                           step="0.1"
                         />
                       </div>
