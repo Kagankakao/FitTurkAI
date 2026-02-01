@@ -1,0 +1,4 @@
+{
+  "buildCommand": "cd \"FitTürkAI Web Demo\" && npm ci && npm run build",
+  "startCommand": "cd \"FitTürkAI Web Demo\" && npm run start"
+}
