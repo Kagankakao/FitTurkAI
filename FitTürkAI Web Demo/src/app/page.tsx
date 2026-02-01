@@ -1,8 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 import {
   FireIcon,
   HeartIcon,
@@ -17,7 +17,6 @@ import {
   ScaleIcon,
 } from '@heroicons/react/24/outline';
 import { useRouter } from 'next/navigation';
-import Loader from '../components/Loader';
 import Hero from '../components/Hero';
 import FeatureCards from '../components/FeatureCards';
 import Testimonials from '../components/Testimonials';
@@ -130,21 +129,7 @@ const starVariants = {
 };
 
 export default function HomePage() {
-  const [loading, setLoading] = useState(true);
-  const [sloganIndex, setSloganIndex] = useState(0);
   const router = useRouter();
-
-  useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1200);
-    return () => clearTimeout(timer);
-  }, []);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSloganIndex((prev) => (prev + 1) % slogans.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
 
   useEffect(() => {
     // Eğer kullanıcı giriş yaptıysa profile yönlendir
@@ -168,7 +153,7 @@ export default function HomePage() {
     router.push('/chat');
   };
 
-  if (loading) return <Loader />;
+  const slogan = slogans[0];
 
   // Modern Yorumlar
   const testimonials = [
@@ -221,18 +206,14 @@ export default function HomePage() {
         <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-slate-200/70 dark:border-slate-700/70 bg-white/80 dark:bg-slate-900/80 px-4 py-1 text-xs font-medium text-slate-600 dark:text-slate-300">
           Demo modunda çalışır • Kayıt gerekmez
         </div>
-        <AnimatePresence mode="wait">
-          <motion.div
-            className="text-xl md:text-2xl font-semibold text-center mb-6 min-h-[2.5rem] text-slate-600 dark:text-slate-300"
-            key={sloganIndex}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.7 }}
-          >
-            {slogans[sloganIndex]}
-          </motion.div>
-        </AnimatePresence>
+        <motion.div
+          className="text-xl md:text-2xl font-semibold text-center mb-6 min-h-[2.5rem] text-slate-600 dark:text-slate-300"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+        >
+          {slogan}
+        </motion.div>
         <p className="max-w-2xl text-center text-slate-600 dark:text-slate-300 mb-8 text-lg">
           Yapay zeka destekli kişisel sağlık ve fitness asistanı ile hedeflerine ulaş. Akıllı
           planlama, beslenme takibi, topluluk ve daha fazlası burada!

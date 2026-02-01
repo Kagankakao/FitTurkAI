@@ -10,9 +10,14 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const reduceMotion = process.env.NODE_ENV === 'production';
   return (
     <html lang="tr">
-      <body className="font-sans bg-brand-light text-brand-dark dark:bg-slate-950 dark:text-slate-100">
+      <body
+        className={`font-sans bg-brand-light text-brand-dark dark:bg-slate-950 dark:text-slate-100${
+          reduceMotion ? ' reduce-motion' : ''
+        }`}
+      >
         <div className="min-h-screen flex flex-col">
           <ClientLayout>
             <MotionLayout>{children}</MotionLayout>

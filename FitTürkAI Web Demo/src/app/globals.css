@@ -26,6 +26,19 @@
   }
 }
 
+/* Production: minimize animation/transition work */
+.reduce-motion,
+.reduce-motion * {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
+.reduce-motion *::before,
+.reduce-motion *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
 /* Scrollbar utilities */
 @layer utilities {
   .scrollbar-none {
